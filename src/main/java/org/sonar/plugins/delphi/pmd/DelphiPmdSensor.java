@@ -31,12 +31,10 @@ import net.sourceforge.pmd.lang.ast.ParseException;
 import net.sourceforge.pmd.renderers.Renderer;
 import net.sourceforge.pmd.renderers.XMLRenderer;
 import org.sonar.api.batch.fs.InputFile;
-import org.sonar.api.batch.fs.InputModule;
 import org.sonar.api.batch.sensor.Sensor;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.SensorDescriptor;
 import org.sonar.api.batch.sensor.issue.NewIssue;
-import org.sonar.api.profiles.RulesProfile;
 import org.sonar.api.rule.RuleKey;
 import org.sonar.plugins.delphi.core.DelphiLanguage;
 import org.sonar.plugins.delphi.core.helpers.DelphiProjectHelper;
@@ -66,7 +64,6 @@ public class DelphiPmdSensor implements Sensor {
   private final DelphiProjectHelper delphiProjectHelper;
   private final List<String> errors = new ArrayList<>();
   private final DelphiPmdProfileExporter profileExporter;
-  private final RulesProfile rulesProfile;
 
   /**
    * C-tor
@@ -75,14 +72,24 @@ public class DelphiPmdSensor implements Sensor {
    * @param context             SensorContext
    * @param rulesProfile        rulesProfile used to export active rules
    * @param profileExporter     used to export active rules
+   * 
+   * This constructor is only used in unittests.
    */
-  public DelphiPmdSensor(DelphiProjectHelper delphiProjectHelper, SensorContext context, RulesProfile rulesProfile, DelphiPmdProfileExporter profileExporter) {
+  public DelphiPmdSensor(DelphiProjectHelper delphiProjectHelper, SensorContext context, DelphiPmdProfileExporter profileExporter) {
     this.delphiProjectHelper = delphiProjectHelper;
     this.context = context;
-    this.rulesProfile = rulesProfile;
     this.profileExporter = profileExporter;
   }
 
+  /*
+   * This is the actual constructor used by SonarQube. Only types from org.sonar.api can be used as parameters (dependency injection).
+   */
+  public DelphiPmdSensor(SensorContext context) {
+    this.delphiProjectHelper = new DelphiProjectHelper(context.config(), context.fileSystem());
+    this.context = context;
+    this.profileExporter = new DelphiPmdProfileExporter();
+  }
+  
   /**
    * Populate {@link SensorDescriptor} of this sensor.
    */
@@ -132,7 +139,6 @@ public class DelphiPmdSensor implements Sensor {
            String beginLine = violation.getAttributes().getNamedItem("beginline").getTextContent();
            String endLine = violation.getAttributes().getNamedItem("endline").getTextContent();
            String beginColumn = violation.getAttributes().getNamedItem("begincolumn").getTextContent();
-           String endColumn = violation.getAttributes().getNamedItem("endcolumn").getTextContent();
            String rule = violation.getAttributes().getNamedItem("rule").getTextContent();
            String priority = violation.getAttributes().getNamedItem("priority").getTextContent();
            String message = violation.getTextContent();
@@ -164,7 +170,7 @@ public class DelphiPmdSensor implements Sensor {
     ClassLoader initialClassLoader = Thread.currentThread().getContextClassLoader();
     try {
       Thread.currentThread().setContextClassLoader(getClass().getClassLoader());
-      reportFile = createPmdReport(context.module());
+      reportFile = createPmdReport();
     } finally {
       Thread.currentThread().setContextClassLoader(initialClassLoader);
     }
@@ -174,7 +180,7 @@ public class DelphiPmdSensor implements Sensor {
 
   private RuleSets createRuleSets() {
     RuleSets rulesets = new DelphiRuleSets();
-    String rulesXml = profileExporter.exportProfileToString(rulesProfile);
+    String rulesXml = profileExporter.exportActiveRulesToString(context.activeRules());
     File ruleSetFile = dumpXmlRuleSet(DelphiPmdConstants.REPOSITORY_KEY, rulesXml);
     RuleSetFactory ruleSetFactory = new RuleSetFactory();
     try {
@@ -200,7 +206,7 @@ public class DelphiPmdSensor implements Sensor {
     }
   }
 
-  private File createPmdReport(InputModule module) {
+  private File createPmdReport() {
     try {
       DelphiPMD pmd = new DelphiPMD();
       RuleContext ruleContext = new RuleContext();

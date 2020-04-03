@@ -65,8 +65,12 @@ public class ComplexityMetricsTest {
     sensorContext = SensorContextTester.create(baseDir);
 
     ActiveRulesBuilder rulesBuilder = new ActiveRulesBuilder();
-    NewActiveRule rule = rulesBuilder.create(ComplexityMetrics.RULE_KEY_METHOD_CYCLOMATIC_COMPLEXITY);
-    rule.setParam("Threshold", "3").setLanguage(DelphiLanguage.KEY).activate();
+    NewActiveRule rule = new NewActiveRule.Builder()
+        .setRuleKey(ComplexityMetrics.RULE_KEY_METHOD_CYCLOMATIC_COMPLEXITY)
+        .setParam("Threshold", "3")
+        .setLanguage(DelphiLanguage.KEY)
+        .build();
+    rulesBuilder.addRule(rule);      
     activeRules = rulesBuilder.build();
   }
 

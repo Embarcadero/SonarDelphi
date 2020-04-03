@@ -25,6 +25,7 @@ package org.sonar.plugins.delphi;
 import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.Plugin;
+import org.sonar.api.SonarEdition;
 import org.sonar.api.SonarQubeSide;
 import org.sonar.api.utils.Version;
 import org.sonar.api.internal.SonarRuntimeImpl;
@@ -45,7 +46,7 @@ public class DelphiPluginTest {
 
   @Test
   public void testExtensions() {
-    Plugin.Context context = new Plugin.Context(SonarRuntimeImpl.forSonarQube(Version.create(1, 0), SonarQubeSide.SCANNER));
+    Plugin.Context context = new Plugin.Context(SonarRuntimeImpl.forSonarQube(Version.create(1, 0), SonarQubeSide.SCANNER, SonarEdition.COMMUNITY));
     plugin.define(context);
     assertThat(context.getExtensions().size(), is(9));
   }

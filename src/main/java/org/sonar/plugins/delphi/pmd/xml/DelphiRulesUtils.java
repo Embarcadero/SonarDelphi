@@ -68,7 +68,7 @@ public final class DelphiRulesUtils {
    * @param tree Rule set tree
    * @return Rule sets
    */
-  private static String buildXmlFromRuleset(Ruleset tree) {
+  public static String buildXmlFromRuleset(Ruleset tree) {
     XStream xstream = new XStream();
     xstream.setClassLoader(DelphiRulesUtils.class.getClassLoader());
     xstream.processAnnotations(Ruleset.class);

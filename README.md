@@ -4,10 +4,11 @@ SonarQube Delphi
 ================
 Is a SonarQube (http://www.sonarqube.org/) plugin and provides
   * 49 Rules for Delphi
-  * TestCoverage using AQtime (license needed)
+  * TestCoverage using DelphiCodeCoverage or AQtime (license needed)
    * Optional .html output for TestCoverage
+  * Unittests results using DUnitX
 
-This is Plugin-Version 3.4 SonarQube 5.6.1(LTS) is needed. 
+This is Plugin-Version 1.0 SonarQube 7.9(LTS) or higher is needed (tested with SonarQube 7.9.3 and 8.2.0)
 It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi all credit goes to them.
 I have hosted it here since the orignal developer isn't active anymore.
 
@@ -22,8 +23,8 @@ Steps to Analyze a Delphi Project
 
 1. Install SonarQube Server (see [Setup and Upgrade](http://docs.sonarqube.org/display/SONAR/Setup+and+Upgrade) for more details). Check supported versions of the [latest release](https://github.com/fabriciocolombo/sonar-delphi/releases/latest) of the plugin.
 2. Install one of the supported [Runners](#supported-runners) (see below) and be sure you can call it from the directory where you have your source code
-3. Install [Delphi Plugin](https://github.com/SandroLuck/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
- NOTE: This only applies to SonarQube 5.6.1(LTS) and heigher. For older versions see [Delphi Plugin](https://github.com/fabriciocolombo/sonar-delphi/releases)
+3. Install [Delphi Plugin](https://github.com/mendrix/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
+ NOTE: This only applies to SonarQube 7.9(LTS) and heigher. For older versions see [Delphi Plugin](https://github.com/fabriciocolombo/sonar-delphi/releases)
 4. Check the sample project corresponding to your Runner to know which config file you need to create. You can find the samples in [sonar-delphi/samples](https://github.com/fabriciocolombo/sonar-delphi/tree/master/samples).
 5. Run your Analyzer command from the project root dir
 6. Follow the link provided at the end of the analysis to browse your project's quality in SonarQube UI (see: [Browsing SonarQube](http://docs.sonarqube.org/display/SONAR/Browsing+SonarQube))
@@ -67,9 +68,11 @@ Implemented Features
 * Unused files recognition
 * Unused functions
 * Unused procedures
-(Optional with AQtime)
+(Optional with AQtime and DelphiCodeCoverage)
   * Coverage using AQtime
   * Sufficient Coverage on new Code 
+(Optional with DUnit)
+  * Test results
   
 Code Assumptions
 ----------------------------------
@@ -82,7 +85,32 @@ Code Assumptions
 
 CodeCoverage
 -------------------------------
-I am very sorry but I can't release the CodeCoverage solution I used so if you want CodeCoverage please refer to [latest release](https://github.com/fabriciocolombo/sonar-delphi/releases/latest)
+CodeCoverage can be done through the DelphiCodeCoverage tool [https://sourceforge.net/p/delphicodecoverage/git/ci/master/tree/]. Use
+
+	CodeCoverage.exe -xml -xmllines
+	
+to create a XML output that can be importeded through this plugin. Therefore you have to edit your sonar project properties:
+
+	sonar.delphi.codecoverage.tool=dcc
+	sonar.delphi.codecoverage.report=Test/CoverageResults/CodeCoverage_Summary.xml
+	
+Unittests
+-------------------------------
+It is also possible to import results from DUnitX [http://docwiki.embarcadero.com/RADStudio/Rio/en/DUnitX_Overview]. Therefore you have to add the file
+
+	DUnitX.Loggers.XML.SonarQube.pas
+
+to your DUnitX project. Then change the .dpr of your application and add functionality for a sources directory (this is used to find the correct .pas file corresponding to the Delphi unit of the unittest):
+
+    TOptionsRegistry.RegisterOption<String>('sources', 's', 'Specify a file with on each line a directory where the PAS-files of the unittests can be found.', procedure (AString: String) begin
+      LSourcesDir := AString;
+    end);
+	sqLogger := TDUnitXXMLSonarQubeFileLogger.Create(LSourcesDir, TDUnitX.Options.XMLOutputFile);
+    runner.AddLogger(sqLogger);	
+
+To import the resulting XML file, add the following line to your sonar project properties:
+
+	sonar.testExecutionReportPaths=Test/TEST-dunitx-sqresults.xml
 
 Importing into Eclipse
 -------------------------------

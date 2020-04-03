@@ -171,7 +171,6 @@ public class DelphiSureFireParser {
 
       for (int f = 0; f < testsuites.getLength(); f++) {
         Element testSuite = (Element)testsuites.item(f);
-        String testSuiteName = testSuite.getAttributes().getNamedItem("name").getTextContent();
         NodeList testCases = testSuite.getElementsByTagName("testcase");
         for (int n = 0; n < testCases.getLength(); n++)
         {
