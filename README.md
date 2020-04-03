@@ -85,7 +85,7 @@ Code Assumptions
 
 CodeCoverage
 -------------------------------
-CodeCoverage can be done through the DelphiCodeCoverage tool [https://sourceforge.net/p/delphicodecoverage/git/ci/master/tree/]. Use
+CodeCoverage can be done through the [DelphiCodeCoverage tool](https://sourceforge.net/p/delphicodecoverage/git/ci/master/tree/). Use
 
 	CodeCoverage.exe -xml -xmllines
 	
@@ -96,7 +96,7 @@ to create a XML output that can be importeded through this plugin. Therefore you
 	
 Unittests
 -------------------------------
-It is also possible to import results from DUnitX [http://docwiki.embarcadero.com/RADStudio/Rio/en/DUnitX_Overview]. Therefore you have to add the file
+It is also possible to import results from [DUnitX](http://docwiki.embarcadero.com/RADStudio/Rio/en/DUnitX_Overview). Therefore you have to add the file
 
 	DUnitX.Loggers.XML.SonarQube.pas
 
