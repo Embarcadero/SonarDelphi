@@ -929,10 +929,6 @@ TkRealNum               : Digitseq ( ((DOT Digitseq)? (('e'|'E') ('+'|'-')? Digi
                         ;
 TkHexNum                : '$' Hexdigitseq
                         ;
-TkAsmHexNum             : Hexdigitseq ('h'|'H')
-                        ;
-TkAsmHexLabel           : Hexdigitseq ':'
-                        ;
 QuotedString            : '\'' ('\'\'' | ~('\''))* '\''   //taken from PASCAL grammar
                         ;
 ControlString           : Controlchar (Controlchar)*
