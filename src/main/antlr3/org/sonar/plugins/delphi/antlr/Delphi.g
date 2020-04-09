@@ -182,8 +182,8 @@ typeDecl                     : strucType
                              | stringType
                              | procedureType
                              | variantType
-                             | ('type')? typeId (genericPostfix)?
-                             | simpleType
+                             | ('type')? typeId (genericPostfix)? (paranthesePostfix)?
+                             | simpleType                             
                              ;
 strucType                    : ('packed')? strucTypePart -> strucTypePart
                              ;
@@ -266,6 +266,8 @@ genericConstraint            : ident
                              ;
 genericPostfix               : '<' typeDecl (',' typeDecl)* '>'
                              ;
+paranthesePostfix            :	'(' intRealNum ')'	//Only used for "type AnsiString(1252)"
+                             ;
 //****************************
 //section class
 //****************************
@@ -300,6 +302,8 @@ classHelperDecl              : 'class' 'helper' (classParent)? 'for' typeId (cla
 classHelperItem              : visibility
                              | classMethod
                              | classProperty
+                             | constSection
+                             | typeSection
                              | ('class')? varSection
                              ;
 interfaceTypeDecl            : interfaceKey (classParent)? (interfaceGuid)? (interfaceItem)* 'end'
@@ -472,14 +476,12 @@ factor                       : '@' factor
                              | '+' factor
                              | '-' factor
                              | '^' ident           // geeft volgnummer van letter
-                             | intNum
-                             | realNum
-                             | TkAsmHexNum          // Alleen in asm statement
+                             | intRealNum
                              | 'true'
                              | 'false'
                              | 'nil'
                              | '(' expression ')' ('^')? ('.' expression)?        //CHANGED, added  ('^')? ('.' qualifiedIdent)?
-                             | stringFactor
+                             | stringFactor ('.' simpleExpression)?
                              | setSection
                              | designator
                              | typeId '(' expression ')'
@@ -580,7 +582,7 @@ gotoStatement                : 'goto' label
 //section constExpression
 //****************************
 constExpression              : '(' recordConstExpression (';' recordConstExpression)* ')' //CHANGED reversed order
-                             | '(' constExpression (',' constExpression)* ')'
+                             | '(' constExpression (',' constExpression)* ')' (constExpression)?
                              | expression
                              ;
 recordConstExpression        : ident ':' constExpression
@@ -681,7 +683,7 @@ dispIDDirective              : 'dispid' expression ';'
 ////section general
 //****************************
 ident                        : TkIdentifier
-                             | '&' TkIdentifier
+                             | '&' TkIdentifier -> TkIdentifier
                              | usedKeywordsAsNames
                              ;
 usedKeywordsAsNames          : (NAME | READONLY | ADD | AT | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
@@ -697,10 +699,11 @@ label                        : TkIdentifier
                              | TkHexNum
                              | usedKeywordsAsNames
                              ;
+intRealNum                   : TkRealNum
+                             | intNum
+                             ;
 intNum                       : TkIntNum
                              | TkHexNum
-                             ;
-realNum                      : TkRealNum
                              ;
 namespacedQualifiedIdent     : (namespaceName '.')? qualifiedIdent
                              ;
@@ -922,7 +925,7 @@ TkIdentifier            : (Alpha | '_') (Alpha | Digit | '_')*
                         ;
 TkIntNum                : Digitseq
                         ;
-TkRealNum               : Digitseq ('.' Digitseq)? (('e'|'E') ('+'|'-')? Digitseq)?  //CHANGED
+TkRealNum               : Digitseq ( ((DOT Digitseq)? (('e'|'E') ('+'|'-')? Digitseq)?) => (DOT Digitseq)? (('e'|'E') ('+'|'-')? Digitseq)? | () { $type = TkIntNum; } )
                         ;
 TkHexNum                : '$' Hexdigitseq
                         ;
