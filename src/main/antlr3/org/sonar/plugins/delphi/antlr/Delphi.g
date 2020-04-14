@@ -247,17 +247,9 @@ typeId                       : namespacedQualifiedIdent
 //****************************
 genericTypeIdent             : qualifiedIdent (genericDefinition)? -> qualifiedIdent    //CHANGED we don't need <Type> data, it produced empty nodes
                              ;
-genericDefinition            : simpleGenericDefinition
-                             | complexGenericDefinition
-                             | constrainedGenericDefinition
+genericDefinition           : '<' innerGeneric (';' innerGeneric)*'>'
                              ;
-simpleGenericDefinition      : '<' ident (',' ident)* '>'
-                             ;
-complexGenericDefinition     : '<' qualifiedIdent (simpleGenericDefinition)? (',' qualifiedIdent (simpleGenericDefinition)?)* '>'
-                             ;
-constrainedGenericDefinition : '<' constrainedGeneric (';' constrainedGeneric)* '>'
-                             ;
-constrainedGeneric           : ident (':' genericConstraint (',' genericConstraint)*)?
+innerGeneric                 : qualifiedIdent (',' qualifiedIdent)* (':' genericConstraint (',' genericConstraint)*)?
                              ;
 genericConstraint            : ident
                              | 'record'
@@ -684,11 +676,26 @@ dispIDDirective              : 'dispid' expression ';'
 //****************************
 ident                        : TkIdentifier
                              | '&' TkIdentifier -> TkIdentifier
+                             | '&' keywordsAsIdentifier -> keywordsAsIdentifier
                              | usedKeywordsAsNames
                              ;
 usedKeywordsAsNames          : (NAME | READONLY | ADD | AT | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
                              | (READ | WRITE | REGISTER | VARIANT | OPERATOR | REMOVE | LOCAL | REFERENCE | CONTAINS | FINAL)
-                             | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED)
+                             | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED )
+                             ;
+keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)
+                             | (AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS)
+                             | (CONTINUE | DEFAULT | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO)
+                             | (DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL)
+                             | (FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF)
+                             | (IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE)
+                             | (IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT)
+                             | (OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM)
+                             | (POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE)
+                             | (READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES)
+                             | (RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED)
+                             | (STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR)
+                             | (VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE)
                              ;
 identList                    : ident (',' ident)* -> ^(ident (ident)*)
                              ;
