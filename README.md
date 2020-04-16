@@ -93,8 +93,27 @@ to create a XML output that can be importeded through this plugin. Therefore you
 
 	sonar.delphi.codecoverage.tool=dcc
 	sonar.delphi.codecoverage.report=Test/CoverageResults/CodeCoverage_Summary.xml
-	
-Unittests
+
+Unittests with DUnit
+-------------------------------
+To import the testresults from DUnit, you have to use the [DUnit extension] (https://github.com/mendrix/dunit-extension) and use the supplied runner (it is not necessary to change your test classes to TTestCaseExtension).
+
+	ExitCode := TTestRunnerUtils.RunRegisteredTests;
+
+This will run your tests with GUI if no parameters are given. With the parameter `-xml` the tool will create a XML output that is compatible with JUnit for SonarQube. With `-output` your can specify the output directory
+
+	MyTester.exe -xml -output <outputdirectory>
+
+To import these test results, add the following line to your sonar project properties:
+
+	sonar.junit.reportsPath=TestResults
+
+You also have to specify where the plugin can find your testfiles. It is important that the sourcefiles from your tests are EXCLUDED in your sources directory.
+
+	sonar.exclusions=MyTestFiles/*
+	sonar.tests=MyTestFiles
+
+Unittests with DUnitX
 -------------------------------
 It is also possible to import results from [DUnitX](http://docwiki.embarcadero.com/RADStudio/Rio/en/DUnitX_Overview). Therefore you have to add the file
 
@@ -111,6 +130,12 @@ to your DUnitX project. Then change the .dpr of your application and add functio
 To import the resulting XML file, add the following line to your sonar project properties:
 
 	sonar.testExecutionReportPaths=Test/TEST-dunitx-sqresults.xml
+
+Unittests with code coverage example
+-------------------------------
+To have both codecoverage and unittests results for SonarQube, you have to combine above options. For example:
+
+	CodeCoverage.exe -e MyTester.exe -m MyTester.map -a ^^-xml^^ ^^-output TestResults^^ -ife -spf sourcedirs.txt -uf unitstotest.txt -od CoverageResults\ -html -xml -xmllines
 
 Importing into Eclipse
 -------------------------------

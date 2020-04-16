@@ -31,6 +31,7 @@ import net.sourceforge.pmd.lang.ast.ParseException;
 import net.sourceforge.pmd.renderers.Renderer;
 import net.sourceforge.pmd.renderers.XMLRenderer;
 import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.fs.TextRange;
 import org.sonar.api.batch.sensor.Sensor;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.SensorDescriptor;
@@ -107,11 +108,22 @@ public class DelphiPmdSensor implements Sensor {
     InputFile inputFile = delphiProjectHelper.getFile(fileName);
 
     NewIssue newIssue = context.newIssue();
+    TextRange textRange;
+    try {
+      textRange = inputFile.newRange(beginLine, startColumn, endLine, startColumn +1);
+    } catch (IllegalArgumentException e) {
+      try {
+        textRange = inputFile.newRange(beginLine, 0, endLine, 0);
+      } catch(IllegalArgumentException ae) {
+        DelphiUtils.LOG.debug("Cannot add issue: " + message + "(" + ae.getMessage() + ")");
+        return;
+      }
+    }    
     newIssue
             .forRule(RuleKey.of(DelphiPmdConstants.REPOSITORY_KEY, ruleKey))
             .at(newIssue.newLocation()
                     .on(inputFile)
-                    .at(inputFile.newRange(beginLine, startColumn, endLine, startColumn +1))
+                    .at(textRange)
                     .message(message))
             .gap(0.0);
     newIssue.save();

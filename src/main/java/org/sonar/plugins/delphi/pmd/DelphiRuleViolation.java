@@ -142,13 +142,17 @@ public class DelphiRuleViolation implements RuleViolation {
       if (methodNode != null) {
         StringBuilder name = new StringBuilder();
         Tree nameNode = ((CommonTree) methodNode).getFirstChildWithType(DelphiLexer.TkFunctionName);
-        for (int i = 0; i < nameNode.getChildCount(); ++i) {
-          name.append(nameNode.getChild(i).getText());
-        }
-        methodName = name.toString();
-        if (nameNode.getChildCount() > 1) {
-          // class name from function name
-          className = nameNode.getChild(0).getText();
+        if (nameNode != null) { 
+          for (int i = 0; i < nameNode.getChildCount(); ++i) {
+            name.append(nameNode.getChild(i).getText());
+          }
+          methodName = name.toString();
+          if (nameNode.getChildCount() > 1) {
+            // class name from function name
+            className = nameNode.getChild(0).getText();
+          }
+        } else {
+          methodName = "";
         }
       } else {
         methodName = "";

@@ -24,6 +24,7 @@ package org.sonar.plugins.delphi.metrics;
 
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.fs.TextRange;
 import org.sonar.api.batch.rule.ActiveRule;
 import org.sonar.api.batch.rule.ActiveRules;
 import org.sonar.api.batch.sensor.issue.NewIssue;
@@ -206,15 +207,22 @@ public class ComplexityMetrics extends DefaultMetrics implements MetricsInterfac
   private void addIssue(InputFile inputFile, FunctionInterface func) {
     if (func.getComplexity() > threshold) {
       NewIssue newIssue = context.newIssue();
-      newIssue
-              .forRule(methodCyclomaticComplexityRule.ruleKey())
-              .at(newIssue.newLocation()
-                      .on(inputFile)
-                      .at(inputFile.newRange(func.getBodyLine(), 1,
-                              func.getBodyLine(), 2))
-                      .message(String.format("The Cyclomatic Complexity of this method \"%s\" is %d which is greater than %d authorized.",
-                              func.getRealName(), func.getComplexity(), threshold)));
-      newIssue.save();
+      TextRange textRange;
+      String message = String.format("The Cyclomatic Complexity of this method \"%s\" is %d which is greater than %d authorized.",
+          func.getRealName(), func.getComplexity(), threshold);
+      try {
+        textRange = inputFile.newRange(func.getBodyLine(), 0,
+            func.getBodyLine(), 1);
+        newIssue
+        .forRule(methodCyclomaticComplexityRule.ruleKey())
+        .at(newIssue.newLocation()
+                .on(inputFile)
+                .at(textRange)
+                .message(message));
+        newIssue.save();
+      } catch (IllegalArgumentException e) {
+        DelphiUtils.LOG.debug("Cannot add issue: " + message + " (" + e.getMessage() + ")"); 
+      }
     }
   }
 }

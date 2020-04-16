@@ -26,6 +26,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.InputFile.Type;
+import org.sonar.api.batch.fs.TextRange;
 import org.sonar.api.batch.rule.ActiveRule;
 import org.sonar.api.batch.rule.ActiveRules;
 import org.sonar.api.batch.sensor.issue.NewIssue;
@@ -109,16 +110,25 @@ public class DeadCodeMetrics extends DefaultMetrics implements MetricsInterface 
       return;
     }
 
-    if (unusedUnits.contains(fileName.toLowerCase())) {
+    //Rule enabled and unit not used?
+    if ((unitRule != null) && unusedUnits.contains(fileName.toLowerCase())) {
       NewIssue newIssue = context.newIssue();
-      newIssue
-              .forRule(unitRule.ruleKey())
-              .at(newIssue.newLocation()
-                      .on(inputFile)
-                      .at(inputFile.newRange(unit.getLine(), 1,
-                              unit.getLine(), 1))
-                      .message(unit.getName() + DEAD_UNIT_VIOLATION_MESSAGE));
-      newIssue.save();
+      TextRange textRange;
+      String message = unit.getName() + DEAD_UNIT_VIOLATION_MESSAGE;
+      try {
+        textRange = inputFile.newRange(unit.getLine(), 0,
+            unit.getLine(), 0);
+
+        newIssue
+        .forRule(unitRule.ruleKey())
+        .at(newIssue.newLocation()
+                .on(inputFile)
+                .at(textRange)
+                .message(message));
+        newIssue.save();
+      } catch(IllegalArgumentException e) {
+        DelphiUtils.LOG.debug("Cannot add issue: " + message + " (" + e.getMessage() + ")");
+      }
     }
 
     for (FunctionInterface function : getUnitFunctions(unit)) {
@@ -154,22 +164,36 @@ public class DeadCodeMetrics extends DefaultMetrics implements MetricsInterface 
         }
       }
 
-      if (unusedFunctions.contains(function)) {
+      //Rule enabled and function not used?
+      if ((functionRule != null) && unusedFunctions.contains(function)) {
 
         RuleKey rule = functionRule.ruleKey();
         if (rule != null) {
           int line = function.getLine();
           int column = function.getColumn();
 
-
           NewIssue newIssue = context.newIssue();
+          String message = function.getRealName() + DEAD_FUNCTION_VIOLATION_MESSAGE;
+          TextRange textRange;
+          try
+          {
+            textRange = inputFile.newRange(line, column,
+                line, column + function.getShortName().length());
+          } catch (IllegalArgumentException e)
+          {
+            try {
+              textRange = inputFile.newRange(line, 0, line, 0);
+            } catch(IllegalArgumentException ae) {
+              DelphiUtils.LOG.debug("Cannot add issue: " + message + "(" + ae.getMessage() + ")");
+              return;
+            }
+          }
           newIssue
               .forRule(rule)
               .at(newIssue.newLocation()
                   .on(inputFile)
-                  .at(inputFile.newRange(line, column,
-                      line, column + function.getShortName().length()))
-                  .message(function.getRealName() + DEAD_FUNCTION_VIOLATION_MESSAGE));
+                  .at(textRange)
+                  .message(message));
           newIssue.save();
         }
       }

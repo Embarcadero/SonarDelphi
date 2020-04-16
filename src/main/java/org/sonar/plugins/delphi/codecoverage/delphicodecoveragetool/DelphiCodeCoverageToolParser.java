@@ -91,7 +91,7 @@ public class DelphiCodeCoverageToolParser implements DelphiCodeCoverageParser
       newCoverage.save();
     }
     catch (FileNotFoundException e) {
-      DelphiUtils.LOG.info("File not found in project %s",fileName);
+      DelphiUtils.LOG.info("File not found in project " + fileName);
     }
 
  }
