@@ -5,7 +5,7 @@
 
 
 	<artifactId>sonar-delphi-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<groupId>org.delphi.plugin</groupId>
 	<name>Sonar Delphi Plugin</name>
 	<description>Enables analysis of Delphi projects.</description>
@@ -26,6 +26,14 @@
 			<id>fabriciocolombo</id>
 			<email>fabricio.colombo.mva@gmail.com</email>
 			<name>Fabricio Colombo</name>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>mendrix</id>
+			<email>L.vanRun@mendrix.nl</email>
+			<name>Laurens van Run</name>
 			<roles>
 				<role>developer</role>
 			</roles>
