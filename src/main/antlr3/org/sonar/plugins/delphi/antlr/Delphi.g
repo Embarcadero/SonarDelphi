@@ -182,7 +182,7 @@ typeDecl                     : strucType
                              | stringType
                              | procedureType
                              | variantType
-                             | ('type')? typeId (genericPostfix)? (paranthesePostfix)?
+                             | ('type')? typeId (genericPostfix)? ('.' typeDecl)* (paranthesePostfix)?
                              | simpleType                             
                              ;
 strucType                    : ('packed')? strucTypePart -> strucTypePart
@@ -247,11 +247,11 @@ typeId                       : namespacedQualifiedIdent
 //****************************
 genericTypeIdent             : qualifiedIdent (genericDefinition)? -> qualifiedIdent    //CHANGED we don't need <Type> data, it produced empty nodes
                              ;
-genericDefinition           : '<' innerGeneric (';' innerGeneric)*'>'
+genericDefinition           : '<' innerGeneric (';' innerGeneric)* '>'
                              ;
-innerGeneric                 : qualifiedIdent (',' qualifiedIdent)* (':' genericConstraint (',' genericConstraint)*)?
+innerGeneric                 : genericTypeIdent (',' genericTypeIdent)* (':' genericConstraint (',' genericConstraint)*)?
                              ;
-genericConstraint            : ident
+genericConstraint            : genericTypeIdent
                              | 'record'
                              | 'class'
                              | 'constructor'
@@ -415,7 +415,7 @@ methodKey                    : 'procedure'
                              | 'constructor'
                              | 'destructor'
                              ;
-methodName                   : ident (genericDefinition)? ('.' ident (genericDefinition)?)? '.' ident (genericDefinition)?
+methodName                   : ident (genericDefinition)? ('.' ident (genericDefinition)?)*
                              ;
 procDecl                     : procDeclHeading ';' (functionDirective)* (procBody)? -> procDeclHeading (procBody)?    //CHANGED
                              ;
