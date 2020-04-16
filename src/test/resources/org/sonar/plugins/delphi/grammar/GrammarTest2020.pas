@@ -62,11 +62,13 @@ type
   //Support for type definition inside a generic class
   TMyClass = class(TSortOrder<Integer>)
   private
-    procedure MyProc(AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
+    //Support [unsafe] and [weak] attributes
+    [unsafe] procedure MyProc(AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
+    [weak] procedure MyProcWeak(AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
   end;
 
   //Support generic class type in generic constraint
-  TMyGenericClassExt<A, B: TSortOrder<Integer>> = class
+  TMyGenericClassExt<A; B: TSortOrder<Integer>> = class
   end;
 
   //Support multiple different constraints in generic class definition
@@ -79,6 +81,10 @@ type
     MyType = Integer;
   end;
 
+  IMyInterface = interface(IInterface)
+  ['{D2FF7704-5F26-496E-84D4-891FF1836DE7}']
+  end;
+
 //Support for (1 * 2) + 3
 const
   A = ((1 * 2) + 3);
@@ -88,6 +94,9 @@ const
 
 procedure MyProcedure;
 
+//Support [result: unsafe] attribute
+[result: unsafe] function MyFunction: IMyInterface;
+
 const I: String = 'Warning';
 const PI: ^Integer = @I;
 const PF: Pointer = @MyProcedure;
@@ -95,6 +104,11 @@ const WarningStr: PChar = 'Warning!';
 const MyString: String = 'Hello';
 
 implementation
+
+function MyFunction: IMyInterface;
+begin
+
+end;
 
 procedure MyProcedure;
 type
@@ -122,8 +136,13 @@ end;
 { TSortOrder<T>.TSortItem<T>.TMyInner }
 
 constructor TSortOrder<T>.TSortItem<T>.TMyInner.Create;
+var
+  A: TMyGenericClassExt<TObject, TSortOrder<Integer>>;
 begin
+  //Support 'with' multiple arguments
+  with A as TMyGenericClassExt<TObject, TSortOrder<Integer>> do begin
 
+  end;
 end;
 
 { TSortOrder<T>.TSortItem<T> }
@@ -168,6 +187,12 @@ end;
 { TMyClass }
 
 procedure TMyClass.MyProc(
+  AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
+begin
+
+end;
+
+procedure TMyClass.MyProcWeak(
   AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
 begin
 

@@ -448,9 +448,10 @@ customAttribute              : customAttributeList
                              ;
 customAttributeList          : (customAttributeDecl)*
                              ;
-customAttributeDecl          : '[' namespacedQualifiedIdent ('(' (expressionList)? ')')? ']'  -> ^(TkCustomAttribute '[' namespacedQualifiedIdent ('(' (expressionList)? ')')? ']')
+customAttributeDecl          : '[' customAttributeIdent ('(' (expressionList)? ')')? ']'  -> ^(TkCustomAttribute '[' customAttributeIdent ('(' (expressionList)? ')')? ']')
                              ;
-
+customAttributeIdent         : namespacedQualifiedIdent (':' namespacedQualifiedIdent)?
+                             ;
 //****************************
 //section expression
 //****************************
@@ -552,10 +553,11 @@ forStatement                 : 'for' designator ':=' expression 'to' expression 
                              | 'for' designator ':=' expression 'downto' expression 'do' statement
                              | 'for' designator 'in' expression 'do' statement
                              ;
-withStatement                : 'with' withItem 'do' statement
+withStatement                : 'with' withItemList 'do' statement
                              ;
-withItem                     : designator 'as' designator       //ADDED
-                             | designator (',' designator)*
+withItemList                 : withItem (',' withItem)*
+                             ;
+withItem                     : designator ('as' designator)?
                              ;
 compoundStatement            : 'begin' (statementList)? 'end' -> ^('begin' (statementList)? 'end')
                              ;
@@ -682,6 +684,7 @@ ident                        : TkIdentifier
 usedKeywordsAsNames          : (NAME | READONLY | ADD | AT | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
                              | (READ | WRITE | REGISTER | VARIANT | OPERATOR | REMOVE | LOCAL | REFERENCE | CONTAINS | FINAL)
                              | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED )
+                             | (UNSAFE | STATIC)
                              ;
 keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)
                              | (AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS)
