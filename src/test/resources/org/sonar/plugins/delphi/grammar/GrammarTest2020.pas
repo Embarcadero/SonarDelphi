@@ -3,7 +3,7 @@ unit GrammarTest2020;
 interface
 
 uses
-  System.SysUtils;
+  System.SysUtils, Windows;
 
 type
   //Support array and const <value>..<value>
@@ -18,6 +18,7 @@ type
   //Support &<reserved keyword>
   MyRecord = record
     &type: TConstNumbers;
+    &implementation: Integer;
   end;
 
   TMyClass<T: class> = class(TObject)
@@ -84,7 +85,7 @@ type
   IMyInterface = interface(IInterface)
   ['{D2FF7704-5F26-496E-84D4-891FF1836DE7}']
     function MyFunction: Integer;
-    procedure MyProcedure;
+    procedure MyProcedure(AValue: Integer);
   end;
 
   IMyGenericInterface<T> = interface(IInterface)
@@ -98,10 +99,14 @@ type
     procedure IMyInterface.MyProcedure = MyProcedureHere;
     function IMyGenericInterface<T>.MyFunctionGeneric = MyFunctionHereGeneric;
 
-    procedure MyProcedureHere;
+    procedure MyProcedureHere(AValue: Integer);
     function MyFunctionHere: Integer;
     function MyFunctionHereGeneric: T;
   end;
+
+//Support for external '<dll>'
+function ImageEnumerateCertificates(FileHandle: THandle; TypeFilter: WORD;
+  out CertificateCount: DWORD; Indicies: PDWORD; IndexCount: Integer): BOOL; stdcall; external 'Imagehlp.dll';
 
 //Support for (1 * 2) + 3
 const
@@ -121,6 +126,9 @@ const PF: Pointer = @MyProcedure;
 const WarningStr: PChar = 'Warning!';
 const MyString: String = 'Test';
 
+//Support namespace.Value
+procedure PublicProcedure(ABool: Boolean=System.False);
+
 implementation
 
 function MyFunction: IMyInterface;
@@ -136,6 +144,21 @@ var
   i: Integer;
   d: Double;
   c: String;
+{ //TODO: fix that these keywords can be used as variable
+  absolute, abstract, add, ansistring, assembler, assembly: integer;
+  at , automated , break , cdecl , contains: integer;
+  continue , default , deprecated , dispid: integer;
+  dq , dw , dynamic , exit , experimental , export , external: integer;
+  far , final , forward , helper: integer;
+  implements , index: integer;
+  local , message , name , near , nodefault: integer;
+  on , operator , out , overload , override , package , pascal , platform: integer;
+  pointer , private , protected , public , published: integer;
+  read , readonly , reference , register , reintroduce , remove , requires: integer;
+  resident , safecall , sealed , static , stdcall , stored: integer;
+}
+  strict , unsafe: integer;
+  varargs , variant , virtual , write , writeonly , false , true: integer;
 begin
   //Support realnumbers
   d := 1.0e-10 + 2;
@@ -219,8 +242,11 @@ end;
 { TMethodResolution<T> }
 
 function TMethodResolution<T>.MyFunctionHere: Integer;
+var
+  bool: Boolean;
 begin
-
+//Support namespace.Value
+  WriteLn('MyBoolean: ' + bool.ToString(True, TUseBoolStrs.True));
 end;
 
 function TMethodResolution<T>.MyFunctionHereGeneric: T;
@@ -228,7 +254,12 @@ begin
 
 end;
 
-procedure TMethodResolution<T>.MyProcedureHere;
+procedure TMethodResolution<T>.MyProcedureHere(AValue: Integer);
+begin
+
+end;
+
+procedure PublicProcedure(ABool: Boolean=System.False);
 begin
 
 end;

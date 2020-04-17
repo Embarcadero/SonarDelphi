@@ -245,9 +245,14 @@ public class DeadCodeMetrics extends DefaultMetrics implements MetricsInterface 
     Set<String> usedUnits = new HashSet<>();
     List<String> result = new ArrayList<>();
     for (UnitInterface unit : units) {
-      if (unit.getFileName().toLowerCase().endsWith(".pas")) {
-        result.add(unit.getName().toLowerCase());
-        allUnits.add(unit);
+      String unitFilename = unit.getFileName();
+      if (unitFilename != "") {
+        if (unitFilename.toLowerCase().endsWith(".pas")) {
+          result.add(unit.getName().toLowerCase());
+          allUnits.add(unit);
+        }
+      } else {
+        DelphiUtils.LOG.warn("DeadCodeMetrics.findUnusedUnits: unit has no filename (" + unit.getName() + ")");
       }
 
       for (String usedUnit : unit.getIncludes()) {

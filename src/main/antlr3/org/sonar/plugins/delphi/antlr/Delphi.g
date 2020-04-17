@@ -132,7 +132,6 @@ declSection                  : labelDeclSection
                              | constSection
                              | typeSection
                              | varSection
-                             | exportedProcHeading
                              | methodDecl
                              | procDecl
                              | exportsSection
@@ -240,7 +239,7 @@ subRangeType                 : constExpression ('..' constExpression)?
                              ;
 enumType                     : '(' ident ('=' expression)? (',' ident ('=' expression)? )* ')'
                              ;
-typeId                       : namespacedQualifiedIdent
+typeId                       : qualifiedIdent
                              ;
 //****************************
 //section generics
@@ -452,7 +451,7 @@ customAttributeList          : (customAttributeDecl)*
                              ;
 customAttributeDecl          : '[' customAttributeIdent ('(' (expressionList)? ')')? ']'  -> ^(TkCustomAttribute '[' customAttributeIdent ('(' (expressionList)? ')')? ']')
                              ;
-customAttributeIdent         : namespacedQualifiedIdent (':' namespacedQualifiedIdent)?
+customAttributeIdent         : qualifiedIdent (':' qualifiedIdent)?
                              ;
 //****************************
 //section expression
@@ -487,7 +486,7 @@ stringFactor                 : ControlString (QuotedString ControlString)* (Quot
 setSection                   : '[' (expression ((',' | '..') expression)*)? ']'
                              ;
 
-designator                   : ('inherited')? ( (namespacedQualifiedIdent | typeId) )? (designatorItem)*
+designator                   : ('inherited')? ( (qualifiedIdent | typeId) )? (designatorItem)*
                              ;
 designatorItem               : '^'
                              | ('.' | '@') ident              //CHANGED added '@'
@@ -618,6 +617,7 @@ methodDirective              : reintroduceDirective         // 1
                              | hintingDirective ';'         // 4 (niet abstract)
                              | oldCallConventionDirective   // 1
                              | dispIDDirective
+                             | externalDirective
                              ;
 functionDirective            : overloadDirective          // 1
                              | inlineDirective            // 1
@@ -625,6 +625,7 @@ functionDirective            : overloadDirective          // 1
                              | oldCallConventionDirective // 1
                              | hintingDirective ';'       // 1
                              | (callConventionNoSemi)? externalDirective          // 1
+                             | externalDirective
                              | 'unsafe' ';'               // 1 .net?
                              ;
 reintroduceDirective         : 'reintroduce' ';'
@@ -686,7 +687,7 @@ ident                        : TkIdentifier
 usedKeywordsAsNames          : (NAME | READONLY | ADD | AT | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
                              | (READ | WRITE | REGISTER | VARIANT | OPERATOR | REMOVE | LOCAL | REFERENCE | CONTAINS | FINAL)
                              | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED )
-                             | (UNSAFE | STATIC)
+                             | (UNSAFE | STATIC | DQ | DW | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY | FALSE | TRUE)
                              ;
 keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)
                              | (AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS)
@@ -716,8 +717,6 @@ intRealNum                   : TkRealNum
                              ;
 intNum                       : TkIntNum
                              | TkHexNum
-                             ;
-namespacedQualifiedIdent     : (namespaceName '.')? qualifiedIdent
                              ;
 namespaceName                : ident ('.' ident)*
                              ;

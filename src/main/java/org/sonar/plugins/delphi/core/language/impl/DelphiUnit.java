@@ -67,7 +67,11 @@ public class DelphiUnit implements UnitInterface {
 
   @Override
   public String getFileName() {
-    return file.getName();
+    if (file != null) {
+      return file.getName();
+    } else {
+      return "";
+    }
   }
 
   /**
