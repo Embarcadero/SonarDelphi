@@ -64,6 +64,15 @@ package org.sonar.plugins.delphi.antlr;
 **/
 }
 
+@lexer::members {
+  private boolean isControlchar() {
+    // TODO 
+    //  - check if there are actually 2 chars ahead and not an EOF
+    //  - perhaps something else than a regex match here
+    return ((char)input.LA(1) + "" + (char)input.LA(2)).matches("\\w\\W");
+  }
+}
+
 //****************************
 //section start
 //****************************
@@ -480,8 +489,8 @@ factor                       : '@' factor
                              | designator
                              | typeId '(' expression ')'
                              ;
-stringFactor                 : ControlString (QuotedString ControlString)* (QuotedString)?
-                             | QuotedString (ControlString QuotedString)* (ControlString)?
+stringFactor                 : (ControlString | ControlChar) (QuotedString (ControlString | ControlChar))* (QuotedString)?
+                             | QuotedString ((ControlString | ControlChar) QuotedString)* (ControlString | ControlChar)?
                              ;
 setSection                   : '[' (expression ((',' | '..') expression)*)? ']'
                              ;
@@ -489,6 +498,7 @@ setSection                   : '[' (expression ((',' | '..') expression)*)? ']'
 designator                   : ('inherited')? ( (qualifiedIdent | typeId) )? (designatorItem)*
                              ;
 designatorItem               : '^'
+                             | '^^'
                              | ('.' | '@') ident              //CHANGED added '@'
                              | ('<' genericTypeIdent (',' genericTypeIdent)* '>')       //ADDED for proc<sth, sth>.foo;
                              | '[' expressionList ']'
@@ -940,14 +950,15 @@ TkRealNum               : Digitseq ( ((DOT Digitseq)? (('e'|'E') ('+'|'-')? Digi
                         ;
 TkHexNum                : '$' Hexdigitseq
                         ;
+ControlChar             : '^' ( {isControlchar()}?=> Alpha
+                            | {$type=POINTER2;}
+                            )
+                        | '#' Digitseq
+                        | '#' '$' Hexdigitseq
+                        ;
 QuotedString            : '\'' ('\'\'' | ~('\''))* '\''   //taken from PASCAL grammar
                         ;
-ControlString           : Controlchar (Controlchar)*
-                        ;
-
-fragment
-Controlchar             : '#' Digitseq
-                        | '#' '$' Hexdigitseq
+ControlString           : ControlChar (ControlChar)*
                         ;
 fragment
 Alpha                   : 'a'..'z'

@@ -124,12 +124,22 @@ const I: String = 'Warning';
 const PI: ^Integer = @I;
 const PF: Pointer = @MyProcedure;
 const WarningStr: PChar = 'Warning!';
-const MyString: String = 'Test';
+
+//Support control characters in a string (^M, #13 and combination)
+resourcestring
+  MY_RESOURCE = 'Hello'#13#10;
+  MY_RESOURCE3 = ^M'Hello';
+  MY_RESOURCE4 = 'Hello'^M#13#10'foo'#13^M;
+  MY_RESOURCE5 = 'Hello'^M^M^M;
+  MY_RESOURCE6 = 'Hello'^M^M^M'bar';
 
 //Support namespace.Value
 procedure PublicProcedure(ABool: Boolean=System.False);
 
 implementation
+
+uses
+  System.Rtti, System.TypInfo;
 
 function MyFunction: IMyInterface;
 begin
@@ -250,8 +260,14 @@ begin
 end;
 
 function TMethodResolution<T>.MyFunctionHereGeneric: T;
+var
+  localPropInfo: PPropInfo;
+  localPropTypeName: String;
+  localPropTypeKind: TTypeKind;
 begin
-
+//Support double pointer (^^) reference
+  localPropTypeName := String(localPropInfo^.PropType^^.Name);
+  localPropTypeKind := localPropInfo^.PropType^^.Kind;
 end;
 
 procedure TMethodResolution<T>.MyProcedureHere(AValue: Integer);
