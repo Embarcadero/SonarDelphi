@@ -354,6 +354,8 @@ classMethod                  : (customAttribute)? ('class')? methodKey ident (ge
                              -> (customAttribute)? ('class')? ^('function' ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (customAttribute)? ^(TkFunctionReturn typeDecl) (methodDirective)*)
                              | (customAttribute)? ('class')? 'operator' ident (genericDefinition)? (formalParameterSection)? ':' (customAttribute)? typeDecl ';'
                              -> (customAttribute)? ('class')? ^('operator' ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (customAttribute)? typeDecl )
+                             | (customAttribute)? ('class')? 'function' ident (genericDefinition)? '.' ident '=' ident ';'
+                             | (customAttribute)? ('class')? 'procedure' ident (genericDefinition)? '.' ident '=' ident ';'
                              ;
 classField                   : (customAttribute)? identList ':' typeDecl ';' (hintingDirective)*
                              -> (customAttribute)? ^(TkClassField ^(TkVariableIdents identList) ^(TkVariableType typeDecl))

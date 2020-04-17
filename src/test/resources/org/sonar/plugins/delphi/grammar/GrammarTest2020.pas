@@ -83,6 +83,24 @@ type
 
   IMyInterface = interface(IInterface)
   ['{D2FF7704-5F26-496E-84D4-891FF1836DE7}']
+    function MyFunction: Integer;
+    procedure MyProcedure;
+  end;
+
+  IMyGenericInterface<T> = interface(IInterface)
+    function MyFunctionGeneric: T;
+  end;
+
+  //Support method interface resolution
+  TMethodResolution<T> = class(TInterfacedObject, IMyInterface, IMyGenericInterface<T>)
+  private
+    function IMyInterface.MyFunction = MyFunctionHere;
+    procedure IMyInterface.MyProcedure = MyProcedureHere;
+    function IMyGenericInterface<T>.MyFunctionGeneric = MyFunctionHereGeneric;
+
+    procedure MyProcedureHere;
+    function MyFunctionHere: Integer;
+    function MyFunctionHereGeneric: T;
   end;
 
 //Support for (1 * 2) + 3
@@ -101,7 +119,7 @@ const I: String = 'Warning';
 const PI: ^Integer = @I;
 const PF: Pointer = @MyProcedure;
 const WarningStr: PChar = 'Warning!';
-const MyString: String = 'Hello';
+const MyString: String = 'Test';
 
 implementation
 
@@ -194,6 +212,23 @@ end;
 
 procedure TMyClass.MyProcWeak(
   AProcedure: TSortOrder<Integer>.TSortItem2<Integer>.TMyType);
+begin
+
+end;
+
+{ TMethodResolution<T> }
+
+function TMethodResolution<T>.MyFunctionHere: Integer;
+begin
+
+end;
+
+function TMethodResolution<T>.MyFunctionHereGeneric: T;
+begin
+
+end;
+
+procedure TMethodResolution<T>.MyProcedureHere;
 begin
 
 end;
