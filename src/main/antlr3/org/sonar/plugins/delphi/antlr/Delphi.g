@@ -489,8 +489,10 @@ factor                       : '@' factor
                              | designator
                              | typeId '(' expression ')'
                              ;
-stringFactor                 : (ControlString | ControlChar) (QuotedString (ControlString | ControlChar))* (QuotedString)?
-                             | QuotedString ((ControlString | ControlChar) QuotedString)* (ControlString | ControlChar)?
+stringFactor                 : (controlString) (QuotedString (controlString))* (QuotedString)?
+                             | QuotedString ((controlString) QuotedString)* (controlString)?
+                             ;
+controlString                : ControlChar (ControlChar)*
                              ;
 setSection                   : '[' (expression ((',' | '..') expression)*)? ']'
                              ;
@@ -957,8 +959,6 @@ ControlChar             : '^' ( {isControlchar()}?=> Alpha
                         | '#' '$' Hexdigitseq
                         ;
 QuotedString            : '\'' ('\'\'' | ~('\''))* '\''   //taken from PASCAL grammar
-                        ;
-ControlString           : ControlChar (ControlChar)*
                         ;
 fragment
 Alpha                   : 'a'..'z'
