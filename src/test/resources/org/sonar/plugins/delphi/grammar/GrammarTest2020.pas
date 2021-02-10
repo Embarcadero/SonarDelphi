@@ -280,4 +280,21 @@ begin
 
 end;
 
+// Inline variable declaration with and without type
+
+procedure Test();
+begin
+  var i := GetTickCount64();
+end;
+
+procedure Test2();
+begin
+  var s: string;
+  var t: UInt64 := GetTickCount64();
+  for var i := 0 to ControlCount - 1 do
+	  Inc(t);
+  for var i := 0 downto ControlCount - 1 do
+	  Inc(t);
+end;
+
 end.

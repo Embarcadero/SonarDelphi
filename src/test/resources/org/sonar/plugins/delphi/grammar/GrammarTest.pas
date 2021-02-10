@@ -35,7 +35,7 @@ type
   end;
 
 	myRecord = record
-	private										//visibility not included in rules
+	private										//visibility not included in rules
 		function foo(x : byte = 7): boolean;
 		function foo(x : char = 'argh'): boolean;	overload;
 	public
@@ -45,11 +45,21 @@ type
 		property isFoo : Boolean read foo write foo;
 	end;
 	
+  TDateTimeHelper = record helper for TDateTime
+  private
+	  function GetYear: integer;
+  public
+    property Year: integer read GetYear;
+  end;
+
+
+
   	// dll prototype for delphi
   	tctstatusproc = procedure();
   	tctcalebextract = function() : integer; stdcall;
   	tctsetinidir = function( dir : pansichar ) : short; stdcall;	//callConvention was not included in rule
  	tmaxpathchararray = array [0 .. max_path] of ansichar;
+ 	tmaxpathchararray2 = array [0 .. max_path - 1] of ansichar;
 
 	{$ifndef XYZ}
 		ERROR ERROR
@@ -63,6 +73,8 @@ type
 	    property Version : string read  GetVersion write SetVersion stored False;	//stored False consumed additional ';' token
 		function  getparam(paramname  : string; default : variant)  : variant;
 		property modifierg  : boolean index 4 read getmodifier write setmodifier;	//; was expected after index
+		property Intf: IInterface read fIntf implements IInterface; // Test interface redirection
+		property List: IList<string> read fList implements IList<string>; // Test interface redirection with generic interface
 	end;
 	
 	overloadClass = Class
@@ -124,6 +136,8 @@ end;
 
 //problem with <>.ident
 procedure tflightlockoutrecordset<genericrecord>.getnexthistorytag(const databaserecord : genericrecord);
+var
+  s: string;
 begin
   result  := getnexthistorytagforfields(['fsdailyid'], databaserecord);
       
@@ -142,8 +156,8 @@ begin
   Result := False;
   {$ifend}
 {$endif}
-  
-  
+// This does not currently worK  
+  s :=  {$ifdef CPUx64} '64' {$else} '32' {$endif};
 end;
 
 function myClass.writebytes(var ibytes; isize : dword) : boolean;	//no type after var
@@ -155,6 +169,8 @@ begin
 	
 	testStringWithComment := 'Blah //fooo!';
 
+  if lPortableDeviceManager.GetDevices(PWideChar(nil^)) then  // Pass nill as var paramter value
+      Exit;
 end;
 
 function myClass.foo(x : byte);  			//no return type
@@ -178,6 +194,8 @@ begin
 
 	records  := tdatabaseformrecordlist<tdatabaserecord>.create();		//<> problems
 
+    lCurrentColumnVisible := (generic1 as IList)[lIndex]; // problem with index prperty after using as operator
+
 	result  := not comparemem(@old, @new, sizeof(new));					//new keyword
 
 	unicodeString := 'âûÿâ³¢ ñïðîáó âûêë³êàöü â³ðòóàëüíû ìåòàä âûçâàëåíàãà àá''åêòà. Çàðàç áóäçå âûêë³êàíà ïàðóøýííå äîñòóïó äëÿ ïåðàïûíåííÿ áÿãó÷àé àïåðàöû³.';
@@ -187,7 +205,9 @@ begin
 	with databaserecord as tflightlockoutrecord do						//as caused problems
 	begin
 	end;
-
+  
+	OtherUnit.helper.TMyClass.MyFunction();  // problems with keyword "helper"
+	
 	try
 
 		if (tempstr[1] in ['0' .. '9', 'a' .. 'z'] = false) then 

@@ -24,6 +24,8 @@ initialization
 	generic1 := TList<Integer>.Create;
 	// issue #25 expression with nested generics
 	generic2 := TList<TList<Integer>>.Create;
+	
+	lCurrentColumnVisible := (generic1 as IList<TMetaData, TColumn>)[lIndex].Media[pMediaType].Visible;
 
 finalization
 	FreeAndNil(generic2);
