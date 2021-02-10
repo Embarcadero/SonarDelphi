@@ -9,8 +9,8 @@ Is a SonarQube (http://www.sonarqube.org/) plugin and provides
   * Unittests results using DUnitX
 
 This is Plugin-Version 1.0 SonarQube 7.9(LTS) or higher is needed (tested with SonarQube 7.9.3 and 8.2.0)
-It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi all credit goes to them.
-I have hosted it here since the orignal developer isn't active anymore.
+It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi and https://github.com/mendrix/SonarDelphi, all credit goes to them.
+JAM Software has created its own fork in order to fix issues seen with our Delphi code.
 
 This plugin was originally a [Sabre Airline Solutions](http://www.sabreairlinesolutions.com/home/) donation.
 
