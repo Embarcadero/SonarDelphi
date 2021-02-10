@@ -39,8 +39,8 @@ public class FieldNameRule extends DelphiRule {
         String name = variableIdentsNode.getChild(0).getText();
         if (name.length() > 1) {
 	        char firstCharAfterPrefix = name.charAt(1);
-
-	        if (!name.startsWith("F") || firstCharAfterPrefix != Character.toUpperCase(firstCharAfterPrefix)) {
+			//if (!name.startsWith("F") || firstCharAfterPrefix != Character.toUpperCase(firstCharAfterPrefix)) {
+			if (!((name.startsWith("f") || name.startsWith("F")) && firstCharAfterPrefix == Character.toUpperCase(firstCharAfterPrefix))) {
 	          addViolation(ctx, node);
 	        }
         } else {
