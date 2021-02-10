@@ -57,11 +57,10 @@ requests. If you want to raise an issue, please follow the recommendations below
   
 # Steps to Analyze a Delphi Project
 
-1. Install SonarQube Server (see [Setup and Upgrade](http://docs.sonarqube.org/display/SONAR/Setup+and+Upgrade) for more details). Check supported versions of the [latest release](https://github.com/fabriciocolombo/sonar-delphi/releases/latest) of the plugin.
+1. Install SonarQube Server (see [Setup and Upgrade](http://docs.sonarqube.org/display/SONAR/Setup+and+Upgrade) for more details). Check supported versions of the [latest release](https://github.com/JAM-Software/sonar-delphi/releases/latest) of the plugin.
 2. Install one of the supported [Runners](#supported-runners) (see below) and be sure you can call it from the directory where you have your source code
-3. Install [Delphi Plugin](https://github.com/mendrix/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
- NOTE: This only applies to SonarQube 7.9(LTS) and heigher. For older versions see [Delphi Plugin](https://github.com/fabriciocolombo/sonar-delphi/releases)
-4. Check the sample project corresponding to your Runner to know which config file you need to create. You can find the samples in [sonar-delphi/samples](https://github.com/fabriciocolombo/sonar-delphi/tree/master/samples).
+3. Install [Delphi Plugin](https://github.com/JAM-Software/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
+4. Check the sample project corresponding to your Runner to know which config file you need to create. You can find the samples in [sonar-delphi/samples](https://github.com/JAM-Software/sonar-delphi/tree/master/samples).
 5. Run your Analyzer command from the project root dir
 6. Follow the link provided at the end of the analysis to browse your project's quality in SonarQube UI (see: [Browsing SonarQube](http://docs.sonarqube.org/display/SONAR/Browsing+SonarQube))
 
@@ -70,7 +69,6 @@ requests. If you want to raise an issue, please follow the recommendations below
  To run an analysis of your Java project, you can use the following Runners:
 
 * [SonarQube Scanner](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner): recommended for all projects 
-* See https://github.com/fabriciocolombo/sonar-delphi for diffrent approacheds which have not been tested yet with 0.3.4
 
 ## Code Assumptions
 
