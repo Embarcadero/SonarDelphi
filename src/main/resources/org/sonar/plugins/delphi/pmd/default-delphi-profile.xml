@@ -151,11 +151,11 @@
 	</rule>
 
 	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.NoInheritedStatementRule" name="ConstructorWithoutInheritedStatementRule">
-		<priority>2</priority>
+		<priority>3</priority>
 	</rule>
 
 	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.NoInheritedStatementRule" name="DestructorWithoutInheritedStatementRule">
-		<priority>2</priority>
+		<priority>3</priority>
 	</rule>
 
 	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.NoBeginAfterDoRule" name="NoBeginAfterDoRule">
