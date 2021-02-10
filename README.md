@@ -1,3 +1,5 @@
+![Java CI with Maven](https://github.com/JAM-Software/SonarDelphi/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 # SonarQube Delphi
 
 Is a SonarQube (http://www.sonarqube.org/) plugin and provides
