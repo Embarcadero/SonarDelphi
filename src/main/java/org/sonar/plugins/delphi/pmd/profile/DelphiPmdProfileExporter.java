@@ -104,12 +104,6 @@ public class DelphiPmdProfileExporter extends ProfileExporter {
     }
   }  
 
-  /**
-   * exports profile to string
-   * 
-   * @param profile profile
-   * @return exported profile
-   */
   public String exportActiveRulesToString(ActiveRules rules) {
     StringWriter writer = new StringWriter();
     exportActiveRules(rules, writer);
