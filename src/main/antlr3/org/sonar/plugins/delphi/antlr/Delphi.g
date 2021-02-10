@@ -174,7 +174,10 @@ varKey                       : 'var'
 // threadvar geen initializations alleen globaal
 varDeclaration               : (customAttribute)? identListFlat ':' typeDecl (varValueSpec)? (hintingDirective)* ';' -> (customAttribute)? ^(TkVariableIdents identListFlat) ^(TkVariableType typeDecl)
                              ;
-varValueSpec                 : 'absolute' ident
+inlineVarDeclaration         : 'var' ident (':' typeDecl)? ':=' expression
+                             | 'var' ident ':' typeDecl 
+                             ; 
+varValueSpec                 : 'absolute' qualifiedIdent
                              | 'absolute' constExpression
                              | '=' constExpression
                              ;
@@ -272,8 +275,8 @@ paranthesePostfix            :	'(' intRealNum ')'	//Only used for "type AnsiStri
 //section class
 //****************************
 classDecl                    : classTypeTypeDecl
-                             | classTypeDecl -> ^(TkClass classTypeDecl)
                              | classHelperDecl -> ^(TkClass classHelperDecl)
+                             | classTypeDecl -> ^(TkClass classTypeDecl)
                              | interfaceTypeDecl -> ^(TkInterface interfaceTypeDecl)
                              | objectDecl -> ^(TkObject objectDecl)
                              | recordDecl -> ^(TkRecord recordDecl)
@@ -282,7 +285,7 @@ classDecl                    : classTypeTypeDecl
 classTypeTypeDecl            : 'class' 'of' typeId -> ^(TkClassOfType typeId)
                              ;
 classTypeDecl                : 'class' (classState)? (classParent)? (classItem)* 'end' -> 'class' ^(TkClassParents (classParent)?) (classItem)*
-                             | 'class' (classParent)? -> 'class' ^(TkClassParents (classParent)?)
+                             | 'class' (classState)? (classParent)? -> 'class' ^(TkClassParents (classParent)?) //added optional class state
                              ;
 classState                   : 'sealed'
                              | 'abstract'
@@ -330,7 +333,7 @@ recordDecl                   : simpleRecord
                              ;
 simpleRecord                 : 'record' (recordField)* (recordItem)* 'end' -> 'record' (recordField)* (recordItem)*
                              ;
-variantRecord                : 'record' (recordField)* recordVariantSection 'end' -> 'record' (recordField)* recordVariantSection
+variantRecord                : 'record' (recordField)* (recordItem)* recordVariantSection 'end' -> 'record' (recordField)* (recordItem)* recordVariantSection
                              ;
 recordItem                   : visibility     //ADDED
                              | classMethod
@@ -353,6 +356,7 @@ recordVariant                : constExpression (',' constExpression)* ':' '(' (r
 recordHelperDecl             : 'record' 'helper' 'for' typeId (recordHelperItem)* 'end'
                              ;
 recordHelperItem             : visibility
+                             | constSection
                              | classMethod
                              | classProperty
                              ;
@@ -360,8 +364,8 @@ classMethod                  : (customAttribute)? ('class')? methodKey ident (ge
                              ->  (customAttribute)? ('class')? ^(methodKey ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (methodDirective)*)
                              | (customAttribute)? ('class')? 'function' ident (genericDefinition)? (formalParameterSection)? ':' (customAttribute)? typeDecl ';' (methodDirective)*
                              -> (customAttribute)? ('class')? ^('function' ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (customAttribute)? ^(TkFunctionReturn typeDecl) (methodDirective)*)
-                             | (customAttribute)? ('class')? 'operator' ident (genericDefinition)? (formalParameterSection)? ':' (customAttribute)? typeDecl ';'
-                             -> (customAttribute)? ('class')? ^('operator' ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (customAttribute)? typeDecl )
+                             | (customAttribute)? ('class')? 'operator' ident (genericDefinition)? (formalParameterSection)? ':' (customAttribute)? typeDecl ';' (methodDirective)* 
+                             -> (customAttribute)? ('class')? ^('operator' ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (customAttribute)? typeDecl (methodDirective)*)
                              | (customAttribute)? ('class')? 'function' ident (genericDefinition)? '.' ident '=' ident ';'
                              | (customAttribute)? ('class')? 'procedure' ident (genericDefinition)? '.' ident '=' ident ';'
                              ;
@@ -383,7 +387,7 @@ classPropertySpecifier       : classPropertyReadWrite   //CHANGED removed ';'
                              | 'default' expression
                              | 'default'                // for array properties only (1 per class)
                              | 'nodefault'
-                             | IMPLEMENTS typeId
+                             | IMPLEMENTS genericTypeIdent
                              ;
 classPropertyEndSpecifier    : STORED expression ';'    //ADDED used in classProperty at end
                              | 'default' expression ';'
@@ -483,6 +487,8 @@ factor                       : '@' factor
                              | 'true'
                              | 'false'
                              | 'nil'
+                             | 'nil^'                                             // Used to pass nil as var paramter value
+                             | '(' expression ')' designator
                              | '(' expression ')' ('^')? ('.' expression)?        //CHANGED, added  ('^')? ('.' qualifiedIdent)?
                              | stringFactor ('.' simpleExpression)?
                              | setSection
@@ -497,7 +503,7 @@ controlString                : ControlChar (ControlChar)*
 setSection                   : '[' (expression ((',' | '..') expression)*)? ']'
                              ;
 
-designator                   : ('inherited')? ( (qualifiedIdent | typeId) )? (designatorItem)*
+designator                   : ('Inherited')? ('inherited')? ( (qualifiedIdent | typeId) )? (designatorItem)*
                              ;
 designatorItem               : '^'
                              | '^^'
@@ -514,15 +520,23 @@ colonConstruct               : ':' expression (':' expression)?
 operator                     : '+'
                              | '-'
                              | 'or'
+                             | 'OR'
                              | 'xor'
+                             | 'XOR'
                              | '*'
                              | '/'
                              | 'div'
+                             | 'DIV'
                              | 'mod'
+                             | 'MOD'
                              | 'and'
+                             | 'AND'
                              | 'shl'
+                             | 'SHL'
                              | 'shr'
+                             | 'SHR'
                              | 'as'
+                             | 'AS'
                              ;
 relOp                        : '<'
                              | '>'
@@ -562,9 +576,9 @@ repeatStatement              : 'repeat' (statementList)? 'until' expression
                              ;
 whileStatement               : 'while' expression 'do' statement
                              ;
-forStatement                 : 'for' designator ':=' expression 'to' expression 'do' statement
-                             | 'for' designator ':=' expression 'downto' expression 'do' statement
-                             | 'for' designator 'in' expression 'do' statement
+forStatement                 : 'for' ('var')? designator ':=' expression 'to' expression 'do' statement
+                             | 'for' ('var')? designator ':=' expression 'downto' expression 'do' statement
+                             | 'for' ('var')? designator 'in' expression 'do' statement
                              ;
 withStatement                : 'with' withItemList 'do' statement
                              ;
@@ -579,6 +593,7 @@ statementList                : (statement)? (';' (statement)?)*
 simpleStatement              : designator ':=' expression
                              | designator // call
                              | gotoStatement
+                             | inlineVarDeclaration
                              ;
 gotoStatement                : 'goto' label
                              | 'exit' ('(' expression ')')?
@@ -589,10 +604,10 @@ gotoStatement                : 'goto' label
 //section constExpression
 //****************************
 constExpression              : '(' recordConstExpression (';' recordConstExpression)* ')' //CHANGED reversed order
-                             | '(' constExpression (',' constExpression)* ')' (constExpression)?
+                             | '(' constExpression (',' constExpression)* ')' (constExpression)? //matches array inititialization and expressions such as (1 + 2); last constExpression matches (1 * 2) + 3
                              | expression
                              ;
-recordConstExpression        : ident ':' constExpression
+recordConstExpression        : ident ':' constExpression (';')?
                              ;
 //****************************
 //section exceptionStatement
@@ -640,7 +655,7 @@ functionDirective            : overloadDirective          // 1
                              | externalDirective
                              | 'unsafe' ';'               // 1 .net?
                              ;
-reintroduceDirective         : 'reintroduce' ';'
+reintroduceDirective         : 'reintroduce' (';')?
                              ;
 overloadDirective            : 'overload' (';')?    //CHANGE ; not needed
                              ;
@@ -681,7 +696,7 @@ hintingDirective             : 'deprecated' (stringFactor)?
                              ;
 externalDirective            : 'varargs' ';'   // alleen bij external cdecl
                              | 'external' ';'
-                             | 'external' constExpression (externalSpecifier)* ';' // expression : dll name
+                             | 'external' constExpression (externalSpecifier)* ('delayed')? ';' // expression : dll name
                              ;
 externalSpecifier            : 'name' constExpression
                              | 'index' constExpression   // specific to a platform
@@ -696,9 +711,9 @@ ident                        : TkIdentifier
                              | '&' keywordsAsIdentifier -> keywordsAsIdentifier
                              | usedKeywordsAsNames
                              ;
-usedKeywordsAsNames          : (NAME | READONLY | ADD | AT | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
+usedKeywordsAsNames          : (NAME | READONLY | ADD | DISPID | AT | IN | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
                              | (READ | WRITE | REGISTER | VARIANT | OPERATOR | REMOVE | LOCAL | REFERENCE | CONTAINS | FINAL)
-                             | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED )
+                             | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED | HELPER )
                              | (UNSAFE | STATIC | DQ | DW | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY | FALSE | TRUE)
                              ;
 keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)
@@ -758,6 +773,7 @@ CONSTRUCTOR       : 'constructor'    ;
 CONTAINS          : 'contains'       ;
 CONTINUE          : 'continue'       ;
 DEFAULT           : 'default'        ;
+DELAYED           : 'delayed'        ;		 
 DEPRECATED        : 'deprecated'     ;
 DESTRUCTOR        : 'destructor'     ;
 DISPID            : 'dispid'         ;
