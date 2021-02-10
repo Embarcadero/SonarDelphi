@@ -1,4 +1,4 @@
-// $ANTLR null C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2020-04-20 10:55:14
+// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-02-05 15:18:16
 
 /*
  * Sonar Delphi Plugin
@@ -37,9 +37,19 @@ import java.util.HashMap;
 @SuppressWarnings("all")
 public class DelphiLexer extends Lexer {
 	public static final int EOF=-1;
-	public static final int T__197=197;
 	public static final int T__198=198;
 	public static final int T__199=199;
+	public static final int T__200=200;
+	public static final int T__201=201;
+	public static final int T__202=202;
+	public static final int T__203=203;
+	public static final int T__204=204;
+	public static final int T__205=205;
+	public static final int T__206=206;
+	public static final int T__207=207;
+	public static final int T__208=208;
+	public static final int T__209=209;
+	public static final int T__210=210;
 	public static final int ABSOLUTE=4;
 	public static final int ABSTRACT=5;
 	public static final int ADD=6;
@@ -69,170 +79,171 @@ public class DelphiLexer extends Lexer {
 	public static final int CONTINUE=30;
 	public static final int ControlChar=31;
 	public static final int DEFAULT=32;
-	public static final int DEPRECATED=33;
-	public static final int DESTRUCTOR=34;
-	public static final int DISPID=35;
-	public static final int DISPINTERFACE=36;
-	public static final int DIV=37;
-	public static final int DO=38;
-	public static final int DOT=39;
-	public static final int DOTDOT=40;
-	public static final int DOWNTO=41;
-	public static final int DQ=42;
-	public static final int DW=43;
-	public static final int DYNAMIC=44;
-	public static final int Digit=45;
-	public static final int Digitseq=46;
-	public static final int ELSE=47;
-	public static final int END=48;
-	public static final int EQUAL=49;
-	public static final int EXCEPT=50;
-	public static final int EXIT=51;
-	public static final int EXPERIMENTAL=52;
-	public static final int EXPORT=53;
-	public static final int EXPORTS=54;
-	public static final int EXTERNAL=55;
-	public static final int FALSE=56;
-	public static final int FAR=57;
-	public static final int FILE=58;
-	public static final int FINAL=59;
-	public static final int FINALIZATION=60;
-	public static final int FINALLY=61;
-	public static final int FOR=62;
-	public static final int FORWARD=63;
-	public static final int FUNCTION=64;
-	public static final int GE=65;
-	public static final int GOTO=66;
-	public static final int GT=67;
-	public static final int HELPER=68;
-	public static final int Hexdigit=69;
-	public static final int Hexdigitseq=70;
-	public static final int IF=71;
-	public static final int IMPLEMENTATION=72;
-	public static final int IMPLEMENTS=73;
-	public static final int IN=74;
-	public static final int INDEX=75;
-	public static final int INHERITED=76;
-	public static final int INITIALIZATION=77;
-	public static final int INLINE=78;
-	public static final int INTERFACE=79;
-	public static final int IS=80;
-	public static final int LABEL=81;
-	public static final int LBRACK=82;
-	public static final int LBRACK2=83;
-	public static final int LCURLY=84;
-	public static final int LE=85;
-	public static final int LIBRARY=86;
-	public static final int LOCAL=87;
-	public static final int LPAREN=88;
-	public static final int LT=89;
-	public static final int MESSAGE=90;
-	public static final int MINUS=91;
-	public static final int MOD=92;
-	public static final int NAME=93;
-	public static final int NEAR=94;
-	public static final int NIL=95;
-	public static final int NODEFAULT=96;
-	public static final int NOT=97;
-	public static final int NOT_EQUAL=98;
-	public static final int OBJECT=99;
-	public static final int OF=100;
-	public static final int ON=101;
-	public static final int OPERATOR=102;
-	public static final int OR=103;
-	public static final int OUT=104;
-	public static final int OVERLOAD=105;
-	public static final int OVERRIDE=106;
-	public static final int PACKAGE=107;
-	public static final int PACKED=108;
-	public static final int PASCAL=109;
-	public static final int PLATFORM=110;
-	public static final int PLUS=111;
-	public static final int POINTER=112;
-	public static final int POINTER2=113;
-	public static final int PRIVATE=114;
-	public static final int PROCEDURE=115;
-	public static final int PROGRAM=116;
-	public static final int PROPERTY=117;
-	public static final int PROTECTED=118;
-	public static final int PUBLIC=119;
-	public static final int PUBLISHED=120;
-	public static final int QuotedString=121;
-	public static final int RAISE=122;
-	public static final int RBRACK=123;
-	public static final int RBRACK2=124;
-	public static final int RCURLY=125;
-	public static final int READ=126;
-	public static final int READONLY=127;
-	public static final int RECORD=128;
-	public static final int REFERENCE=129;
-	public static final int REGISTER=130;
-	public static final int REINTRODUCE=131;
-	public static final int REMOVE=132;
-	public static final int REPEAT=133;
-	public static final int REQUIRES=134;
-	public static final int RESIDENT=135;
-	public static final int RESOURCESTRING=136;
-	public static final int RPAREN=137;
-	public static final int SAFECALL=138;
-	public static final int SEALED=139;
-	public static final int SEMI=140;
-	public static final int SET=141;
-	public static final int SHL=142;
-	public static final int SHR=143;
-	public static final int SLASH=144;
-	public static final int STAR=145;
-	public static final int STATIC=146;
-	public static final int STDCALL=147;
-	public static final int STORED=148;
-	public static final int STRICT=149;
-	public static final int STRING=150;
-	public static final int THEN=151;
-	public static final int THREADVAR=152;
-	public static final int TO=153;
-	public static final int TRUE=154;
-	public static final int TRY=155;
-	public static final int TYPE=156;
-	public static final int TkAnonymousExpression=157;
-	public static final int TkClass=158;
-	public static final int TkClassField=159;
-	public static final int TkClassOfType=160;
-	public static final int TkClassParents=161;
-	public static final int TkCustomAttribute=162;
-	public static final int TkCustomAttributeArgs=163;
-	public static final int TkFunctionArgs=164;
-	public static final int TkFunctionBody=165;
-	public static final int TkFunctionName=166;
-	public static final int TkFunctionReturn=167;
-	public static final int TkGlobalFunction=168;
-	public static final int TkGuid=169;
-	public static final int TkHexNum=170;
-	public static final int TkIdentifier=171;
-	public static final int TkIntNum=172;
-	public static final int TkInterface=173;
-	public static final int TkNewType=174;
-	public static final int TkObject=175;
-	public static final int TkRealNum=176;
-	public static final int TkRecord=177;
-	public static final int TkRecordHelper=178;
-	public static final int TkVariableIdents=179;
-	public static final int TkVariableParam=180;
-	public static final int TkVariableType=181;
-	public static final int UNIT=182;
-	public static final int UNSAFE=183;
-	public static final int UNTIL=184;
-	public static final int USES=185;
-	public static final int UnicodeBOM=186;
-	public static final int VAR=187;
-	public static final int VARARGS=188;
-	public static final int VARIANT=189;
-	public static final int VIRTUAL=190;
-	public static final int WHILE=191;
-	public static final int WITH=192;
-	public static final int WRITE=193;
-	public static final int WRITEONLY=194;
-	public static final int WS=195;
-	public static final int XOR=196;
+	public static final int DELAYED=33;
+	public static final int DEPRECATED=34;
+	public static final int DESTRUCTOR=35;
+	public static final int DISPID=36;
+	public static final int DISPINTERFACE=37;
+	public static final int DIV=38;
+	public static final int DO=39;
+	public static final int DOT=40;
+	public static final int DOTDOT=41;
+	public static final int DOWNTO=42;
+	public static final int DQ=43;
+	public static final int DW=44;
+	public static final int DYNAMIC=45;
+	public static final int Digit=46;
+	public static final int Digitseq=47;
+	public static final int ELSE=48;
+	public static final int END=49;
+	public static final int EQUAL=50;
+	public static final int EXCEPT=51;
+	public static final int EXIT=52;
+	public static final int EXPERIMENTAL=53;
+	public static final int EXPORT=54;
+	public static final int EXPORTS=55;
+	public static final int EXTERNAL=56;
+	public static final int FALSE=57;
+	public static final int FAR=58;
+	public static final int FILE=59;
+	public static final int FINAL=60;
+	public static final int FINALIZATION=61;
+	public static final int FINALLY=62;
+	public static final int FOR=63;
+	public static final int FORWARD=64;
+	public static final int FUNCTION=65;
+	public static final int GE=66;
+	public static final int GOTO=67;
+	public static final int GT=68;
+	public static final int HELPER=69;
+	public static final int Hexdigit=70;
+	public static final int Hexdigitseq=71;
+	public static final int IF=72;
+	public static final int IMPLEMENTATION=73;
+	public static final int IMPLEMENTS=74;
+	public static final int IN=75;
+	public static final int INDEX=76;
+	public static final int INHERITED=77;
+	public static final int INITIALIZATION=78;
+	public static final int INLINE=79;
+	public static final int INTERFACE=80;
+	public static final int IS=81;
+	public static final int LABEL=82;
+	public static final int LBRACK=83;
+	public static final int LBRACK2=84;
+	public static final int LCURLY=85;
+	public static final int LE=86;
+	public static final int LIBRARY=87;
+	public static final int LOCAL=88;
+	public static final int LPAREN=89;
+	public static final int LT=90;
+	public static final int MESSAGE=91;
+	public static final int MINUS=92;
+	public static final int MOD=93;
+	public static final int NAME=94;
+	public static final int NEAR=95;
+	public static final int NIL=96;
+	public static final int NODEFAULT=97;
+	public static final int NOT=98;
+	public static final int NOT_EQUAL=99;
+	public static final int OBJECT=100;
+	public static final int OF=101;
+	public static final int ON=102;
+	public static final int OPERATOR=103;
+	public static final int OR=104;
+	public static final int OUT=105;
+	public static final int OVERLOAD=106;
+	public static final int OVERRIDE=107;
+	public static final int PACKAGE=108;
+	public static final int PACKED=109;
+	public static final int PASCAL=110;
+	public static final int PLATFORM=111;
+	public static final int PLUS=112;
+	public static final int POINTER=113;
+	public static final int POINTER2=114;
+	public static final int PRIVATE=115;
+	public static final int PROCEDURE=116;
+	public static final int PROGRAM=117;
+	public static final int PROPERTY=118;
+	public static final int PROTECTED=119;
+	public static final int PUBLIC=120;
+	public static final int PUBLISHED=121;
+	public static final int QuotedString=122;
+	public static final int RAISE=123;
+	public static final int RBRACK=124;
+	public static final int RBRACK2=125;
+	public static final int RCURLY=126;
+	public static final int READ=127;
+	public static final int READONLY=128;
+	public static final int RECORD=129;
+	public static final int REFERENCE=130;
+	public static final int REGISTER=131;
+	public static final int REINTRODUCE=132;
+	public static final int REMOVE=133;
+	public static final int REPEAT=134;
+	public static final int REQUIRES=135;
+	public static final int RESIDENT=136;
+	public static final int RESOURCESTRING=137;
+	public static final int RPAREN=138;
+	public static final int SAFECALL=139;
+	public static final int SEALED=140;
+	public static final int SEMI=141;
+	public static final int SET=142;
+	public static final int SHL=143;
+	public static final int SHR=144;
+	public static final int SLASH=145;
+	public static final int STAR=146;
+	public static final int STATIC=147;
+	public static final int STDCALL=148;
+	public static final int STORED=149;
+	public static final int STRICT=150;
+	public static final int STRING=151;
+	public static final int THEN=152;
+	public static final int THREADVAR=153;
+	public static final int TO=154;
+	public static final int TRUE=155;
+	public static final int TRY=156;
+	public static final int TYPE=157;
+	public static final int TkAnonymousExpression=158;
+	public static final int TkClass=159;
+	public static final int TkClassField=160;
+	public static final int TkClassOfType=161;
+	public static final int TkClassParents=162;
+	public static final int TkCustomAttribute=163;
+	public static final int TkCustomAttributeArgs=164;
+	public static final int TkFunctionArgs=165;
+	public static final int TkFunctionBody=166;
+	public static final int TkFunctionName=167;
+	public static final int TkFunctionReturn=168;
+	public static final int TkGlobalFunction=169;
+	public static final int TkGuid=170;
+	public static final int TkHexNum=171;
+	public static final int TkIdentifier=172;
+	public static final int TkIntNum=173;
+	public static final int TkInterface=174;
+	public static final int TkNewType=175;
+	public static final int TkObject=176;
+	public static final int TkRealNum=177;
+	public static final int TkRecord=178;
+	public static final int TkRecordHelper=179;
+	public static final int TkVariableIdents=180;
+	public static final int TkVariableParam=181;
+	public static final int TkVariableType=182;
+	public static final int UNIT=183;
+	public static final int UNSAFE=184;
+	public static final int UNTIL=185;
+	public static final int USES=186;
+	public static final int UnicodeBOM=187;
+	public static final int VAR=188;
+	public static final int VARARGS=189;
+	public static final int VARIANT=190;
+	public static final int VIRTUAL=191;
+	public static final int WHILE=192;
+	public static final int WITH=193;
+	public static final int WRITE=194;
+	public static final int WRITEONLY=195;
+	public static final int WS=196;
+	public static final int XOR=197;
 
 	  private boolean isControlchar() {
 	    // TODO 
@@ -255,38 +266,17 @@ public class DelphiLexer extends Lexer {
 	public DelphiLexer(CharStream input, RecognizerSharedState state) {
 		super(input,state);
 	}
-	@Override public String getGrammarFileName() { return "C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g"; }
-
-	// $ANTLR start "T__197"
-	public final void mT__197() throws RecognitionException {
-		try {
-			int _type = T__197;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:8: ( '&' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:10: '&'
-			{
-			match('&'); if (state.failed) return;
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "T__197"
+	@Override public String getGrammarFileName() { return "D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g"; }
 
 	// $ANTLR start "T__198"
 	public final void mT__198() throws RecognitionException {
 		try {
 			int _type = T__198;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:8: ( '@@' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:10: '@@'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:8: ( '&' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:10: '&'
 			{
-			match("@@"); if (state.failed) return;
-
+			match('&'); if (state.failed) return;
 			}
 
 			state.type = _type;
@@ -303,10 +293,10 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__199;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:8: ( '^^' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:10: '^^'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:8: ( '@@' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:10: '@@'
 			{
-			match("^^"); if (state.failed) return;
+			match("@@"); if (state.failed) return;
 
 			}
 
@@ -319,13 +309,244 @@ public class DelphiLexer extends Lexer {
 	}
 	// $ANTLR end "T__199"
 
+	// $ANTLR start "T__200"
+	public final void mT__200() throws RecognitionException {
+		try {
+			int _type = T__200;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:8: ( 'AND' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:10: 'AND'
+			{
+			match("AND"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__200"
+
+	// $ANTLR start "T__201"
+	public final void mT__201() throws RecognitionException {
+		try {
+			int _type = T__201;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:8: ( 'AS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:10: 'AS'
+			{
+			match("AS"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__201"
+
+	// $ANTLR start "T__202"
+	public final void mT__202() throws RecognitionException {
+		try {
+			int _type = T__202;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:8: ( 'DIV' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:10: 'DIV'
+			{
+			match("DIV"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__202"
+
+	// $ANTLR start "T__203"
+	public final void mT__203() throws RecognitionException {
+		try {
+			int _type = T__203;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:8: ( 'Inherited' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:10: 'Inherited'
+			{
+			match("Inherited"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__203"
+
+	// $ANTLR start "T__204"
+	public final void mT__204() throws RecognitionException {
+		try {
+			int _type = T__204;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:8: ( 'MOD' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:10: 'MOD'
+			{
+			match("MOD"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__204"
+
+	// $ANTLR start "T__205"
+	public final void mT__205() throws RecognitionException {
+		try {
+			int _type = T__205;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:8: ( 'OR' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:10: 'OR'
+			{
+			match("OR"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__205"
+
+	// $ANTLR start "T__206"
+	public final void mT__206() throws RecognitionException {
+		try {
+			int _type = T__206;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:8: ( 'SHL' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:10: 'SHL'
+			{
+			match("SHL"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__206"
+
+	// $ANTLR start "T__207"
+	public final void mT__207() throws RecognitionException {
+		try {
+			int _type = T__207;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:8: ( 'SHR' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:10: 'SHR'
+			{
+			match("SHR"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__207"
+
+	// $ANTLR start "T__208"
+	public final void mT__208() throws RecognitionException {
+		try {
+			int _type = T__208;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:8: ( 'XOR' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:10: 'XOR'
+			{
+			match("XOR"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__208"
+
+	// $ANTLR start "T__209"
+	public final void mT__209() throws RecognitionException {
+		try {
+			int _type = T__209;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:8: ( '^^' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:10: '^^'
+			{
+			match("^^"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__209"
+
+	// $ANTLR start "T__210"
+	public final void mT__210() throws RecognitionException {
+		try {
+			int _type = T__210;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:8: ( 'nil^' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:10: 'nil^'
+			{
+			match("nil^"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__210"
+
 	// $ANTLR start "ABSOLUTE"
 	public final void mABSOLUTE() throws RecognitionException {
 		try {
 			int _type = ABSOLUTE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:739:19: ( 'absolute' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:739:21: 'absolute'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:19: ( 'absolute' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:21: 'absolute'
 			{
 			match("absolute"); if (state.failed) return;
 
@@ -345,8 +566,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ABSTRACT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:740:19: ( 'abstract' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:740:21: 'abstract'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:19: ( 'abstract' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:21: 'abstract'
 			{
 			match("abstract"); if (state.failed) return;
 
@@ -366,8 +587,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ADD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:741:19: ( 'add' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:741:21: 'add'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:19: ( 'add' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:21: 'add'
 			{
 			match("add"); if (state.failed) return;
 
@@ -387,8 +608,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:742:19: ( 'and' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:742:21: 'and'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:19: ( 'and' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:21: 'and'
 			{
 			match("and"); if (state.failed) return;
 
@@ -408,8 +629,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ANSISTRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:743:19: ( 'ansistring' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:743:21: 'ansistring'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:19: ( 'ansistring' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:21: 'ansistring'
 			{
 			match("ansistring"); if (state.failed) return;
 
@@ -429,8 +650,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ARRAY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:744:19: ( 'array' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:744:21: 'array'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:19: ( 'array' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:21: 'array'
 			{
 			match("array"); if (state.failed) return;
 
@@ -450,8 +671,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:745:19: ( 'as' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:745:21: 'as'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:19: ( 'as' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:21: 'as'
 			{
 			match("as"); if (state.failed) return;
 
@@ -471,8 +692,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:746:19: ( 'asm' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:746:21: 'asm'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:19: ( 'asm' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:21: 'asm'
 			{
 			match("asm"); if (state.failed) return;
 
@@ -492,8 +713,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSEMBLER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:747:19: ( 'assembler' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:747:21: 'assembler'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:19: ( 'assembler' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:21: 'assembler'
 			{
 			match("assembler"); if (state.failed) return;
 
@@ -513,8 +734,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSEMBLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:748:19: ( 'assembly' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:748:21: 'assembly'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:19: ( 'assembly' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:21: 'assembly'
 			{
 			match("assembly"); if (state.failed) return;
 
@@ -534,8 +755,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:749:19: ( 'at' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:749:21: 'at'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:19: ( 'at' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:21: 'at'
 			{
 			match("at"); if (state.failed) return;
 
@@ -555,8 +776,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AUTOMATED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:750:19: ( 'automated' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:750:21: 'automated'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:19: ( 'automated' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:21: 'automated'
 			{
 			match("automated"); if (state.failed) return;
 
@@ -576,8 +797,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = BEGIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:751:19: ( 'begin' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:751:21: 'begin'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:19: ( 'begin' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:21: 'begin'
 			{
 			match("begin"); if (state.failed) return;
 
@@ -597,8 +818,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = BREAK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:752:19: ( 'break' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:752:21: 'break'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:19: ( 'break' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:21: 'break'
 			{
 			match("break"); if (state.failed) return;
 
@@ -618,8 +839,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CASE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:753:19: ( 'case' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:753:21: 'case'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:19: ( 'case' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:21: 'case'
 			{
 			match("case"); if (state.failed) return;
 
@@ -639,8 +860,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CDECL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:19: ( 'cdecl' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:21: 'cdecl'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:19: ( 'cdecl' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:21: 'cdecl'
 			{
 			match("cdecl"); if (state.failed) return;
 
@@ -660,8 +881,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CLASS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:19: ( 'class' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:21: 'class'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:19: ( 'class' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:21: 'class'
 			{
 			match("class"); if (state.failed) return;
 
@@ -681,8 +902,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONST;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:19: ( 'const' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:21: 'const'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:19: ( 'const' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:21: 'const'
 			{
 			match("const"); if (state.failed) return;
 
@@ -702,8 +923,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONSTRUCTOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:19: ( 'constructor' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:21: 'constructor'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:19: ( 'constructor' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:21: 'constructor'
 			{
 			match("constructor"); if (state.failed) return;
 
@@ -723,8 +944,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONTAINS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:19: ( 'contains' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:21: 'contains'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:19: ( 'contains' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:21: 'contains'
 			{
 			match("contains"); if (state.failed) return;
 
@@ -744,8 +965,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONTINUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:19: ( 'continue' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:21: 'continue'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:19: ( 'continue' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:21: 'continue'
 			{
 			match("continue"); if (state.failed) return;
 
@@ -765,8 +986,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DEFAULT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:19: ( 'default' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:21: 'default'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:19: ( 'default' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:21: 'default'
 			{
 			match("default"); if (state.failed) return;
 
@@ -781,13 +1002,34 @@ public class DelphiLexer extends Lexer {
 	}
 	// $ANTLR end "DEFAULT"
 
+	// $ANTLR start "DELAYED"
+	public final void mDELAYED() throws RecognitionException {
+		try {
+			int _type = DELAYED;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:19: ( 'delayed' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:21: 'delayed'
+			{
+			match("delayed"); if (state.failed) return;
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "DELAYED"
+
 	// $ANTLR start "DEPRECATED"
 	public final void mDEPRECATED() throws RecognitionException {
 		try {
 			int _type = DEPRECATED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:19: ( 'deprecated' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:21: 'deprecated'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:19: ( 'deprecated' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:21: 'deprecated'
 			{
 			match("deprecated"); if (state.failed) return;
 
@@ -807,8 +1049,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DESTRUCTOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:19: ( 'destructor' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:21: 'destructor'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:19: ( 'destructor' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:21: 'destructor'
 			{
 			match("destructor"); if (state.failed) return;
 
@@ -828,8 +1070,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DISPID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:19: ( 'dispid' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:21: 'dispid'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:19: ( 'dispid' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:21: 'dispid'
 			{
 			match("dispid"); if (state.failed) return;
 
@@ -849,8 +1091,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DISPINTERFACE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:19: ( 'dispinterface' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:21: 'dispinterface'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:19: ( 'dispinterface' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:21: 'dispinterface'
 			{
 			match("dispinterface"); if (state.failed) return;
 
@@ -870,8 +1112,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DIV;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:19: ( 'div' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:21: 'div'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:19: ( 'div' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:21: 'div'
 			{
 			match("div"); if (state.failed) return;
 
@@ -891,8 +1133,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:19: ( 'do' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:21: 'do'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:19: ( 'do' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:21: 'do'
 			{
 			match("do"); if (state.failed) return;
 
@@ -912,8 +1154,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOWNTO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:19: ( 'downto' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:21: 'downto'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:19: ( 'downto' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:21: 'downto'
 			{
 			match("downto"); if (state.failed) return;
 
@@ -933,8 +1175,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DQ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:19: ( 'dq' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:21: 'dq'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:19: ( 'dq' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:21: 'dq'
 			{
 			match("dq"); if (state.failed) return;
 
@@ -954,8 +1196,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DW;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:19: ( 'dw' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:21: 'dw'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:19: ( 'dw' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:21: 'dw'
 			{
 			match("dw"); if (state.failed) return;
 
@@ -975,8 +1217,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DYNAMIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:19: ( 'dynamic' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:21: 'dynamic'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:19: ( 'dynamic' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:21: 'dynamic'
 			{
 			match("dynamic"); if (state.failed) return;
 
@@ -996,8 +1238,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ELSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:19: ( 'else' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:21: 'else'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:19: ( 'else' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:21: 'else'
 			{
 			match("else"); if (state.failed) return;
 
@@ -1017,8 +1259,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = END;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:19: ( 'end' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:21: 'end'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:19: ( 'end' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:21: 'end'
 			{
 			match("end"); if (state.failed) return;
 
@@ -1038,8 +1280,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXCEPT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:19: ( 'except' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:21: 'except'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:19: ( 'except' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:21: 'except'
 			{
 			match("except"); if (state.failed) return;
 
@@ -1059,8 +1301,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXIT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:19: ( 'exit' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:21: 'exit'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:19: ( 'exit' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:21: 'exit'
 			{
 			match("exit"); if (state.failed) return;
 
@@ -1080,8 +1322,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPERIMENTAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:19: ( 'experimental' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:21: 'experimental'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:19: ( 'experimental' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:21: 'experimental'
 			{
 			match("experimental"); if (state.failed) return;
 
@@ -1101,8 +1343,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPORT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:19: ( 'export' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:21: 'export'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:19: ( 'export' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:21: 'export'
 			{
 			match("export"); if (state.failed) return;
 
@@ -1122,8 +1364,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPORTS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:19: ( 'exports' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:21: 'exports'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:19: ( 'exports' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:21: 'exports'
 			{
 			match("exports"); if (state.failed) return;
 
@@ -1143,8 +1385,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXTERNAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:19: ( 'external' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:21: 'external'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:19: ( 'external' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:21: 'external'
 			{
 			match("external"); if (state.failed) return;
 
@@ -1164,8 +1406,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:19: ( 'far' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:21: 'far'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:19: ( 'far' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:21: 'far'
 			{
 			match("far"); if (state.failed) return;
 
@@ -1185,8 +1427,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FILE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:19: ( 'file' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:21: 'file'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:19: ( 'file' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:21: 'file'
 			{
 			match("file"); if (state.failed) return;
 
@@ -1206,8 +1448,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:19: ( 'final' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:21: 'final'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:19: ( 'final' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:21: 'final'
 			{
 			match("final"); if (state.failed) return;
 
@@ -1227,8 +1469,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINALIZATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:19: ( 'finalization' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:21: 'finalization'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:19: ( 'finalization' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:21: 'finalization'
 			{
 			match("finalization"); if (state.failed) return;
 
@@ -1248,8 +1490,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINALLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:19: ( 'finally' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:21: 'finally'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:19: ( 'finally' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:21: 'finally'
 			{
 			match("finally"); if (state.failed) return;
 
@@ -1269,8 +1511,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:19: ( 'for' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:21: 'for'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:19: ( 'for' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:21: 'for'
 			{
 			match("for"); if (state.failed) return;
 
@@ -1290,8 +1532,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FORWARD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:19: ( 'forward' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:21: 'forward'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:19: ( 'forward' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:21: 'forward'
 			{
 			match("forward"); if (state.failed) return;
 
@@ -1311,8 +1553,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FUNCTION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:19: ( 'function' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:21: 'function'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:19: ( 'function' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:21: 'function'
 			{
 			match("function"); if (state.failed) return;
 
@@ -1332,8 +1574,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GOTO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:19: ( 'goto' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:21: 'goto'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:19: ( 'goto' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:21: 'goto'
 			{
 			match("goto"); if (state.failed) return;
 
@@ -1353,8 +1595,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = HELPER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:19: ( 'helper' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:21: 'helper'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:19: ( 'helper' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:21: 'helper'
 			{
 			match("helper"); if (state.failed) return;
 
@@ -1374,8 +1616,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:19: ( 'if' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:21: 'if'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:19: ( 'if' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:21: 'if'
 			{
 			match("if"); if (state.failed) return;
 
@@ -1395,8 +1637,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IMPLEMENTATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:19: ( 'implementation' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:21: 'implementation'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:19: ( 'implementation' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:21: 'implementation'
 			{
 			match("implementation"); if (state.failed) return;
 
@@ -1416,8 +1658,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IMPLEMENTS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:19: ( 'implements' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:21: 'implements'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:19: ( 'implements' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:21: 'implements'
 			{
 			match("implements"); if (state.failed) return;
 
@@ -1437,8 +1679,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:19: ( 'in' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:21: 'in'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:19: ( 'in' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:21: 'in'
 			{
 			match("in"); if (state.failed) return;
 
@@ -1458,8 +1700,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INDEX;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:19: ( 'index' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:21: 'index'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:19: ( 'index' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:21: 'index'
 			{
 			match("index"); if (state.failed) return;
 
@@ -1479,8 +1721,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INHERITED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:19: ( 'inherited' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:21: 'inherited'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:19: ( 'inherited' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:21: 'inherited'
 			{
 			match("inherited"); if (state.failed) return;
 
@@ -1500,8 +1742,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INITIALIZATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:19: ( 'initialization' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:21: 'initialization'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:19: ( 'initialization' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:21: 'initialization'
 			{
 			match("initialization"); if (state.failed) return;
 
@@ -1521,8 +1763,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INLINE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:19: ( 'inline' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:21: 'inline'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:19: ( 'inline' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:21: 'inline'
 			{
 			match("inline"); if (state.failed) return;
 
@@ -1542,8 +1784,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INTERFACE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:19: ( 'interface' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:21: 'interface'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:19: ( 'interface' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:21: 'interface'
 			{
 			match("interface"); if (state.failed) return;
 
@@ -1563,8 +1805,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:19: ( 'is' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:21: 'is'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:19: ( 'is' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:21: 'is'
 			{
 			match("is"); if (state.failed) return;
 
@@ -1584,8 +1826,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LABEL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:19: ( 'label' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:21: 'label'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:19: ( 'label' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:21: 'label'
 			{
 			match("label"); if (state.failed) return;
 
@@ -1605,8 +1847,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LIBRARY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:19: ( 'library' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:21: 'library'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:19: ( 'library' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:21: 'library'
 			{
 			match("library"); if (state.failed) return;
 
@@ -1626,8 +1868,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LOCAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:19: ( 'local' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:21: 'local'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:19: ( 'local' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:21: 'local'
 			{
 			match("local"); if (state.failed) return;
 
@@ -1647,8 +1889,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MESSAGE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:19: ( 'message' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:21: 'message'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:19: ( 'message' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:21: 'message'
 			{
 			match("message"); if (state.failed) return;
 
@@ -1668,8 +1910,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MOD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:19: ( 'mod' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:21: 'mod'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:19: ( 'mod' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:21: 'mod'
 			{
 			match("mod"); if (state.failed) return;
 
@@ -1689,8 +1931,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NAME;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:19: ( 'name' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:21: 'name'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:19: ( 'name' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:21: 'name'
 			{
 			match("name"); if (state.failed) return;
 
@@ -1710,8 +1952,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NEAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:19: ( 'near' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:21: 'near'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:19: ( 'near' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:21: 'near'
 			{
 			match("near"); if (state.failed) return;
 
@@ -1731,8 +1973,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NIL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:19: ( 'nil' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:21: 'nil'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:19: ( 'nil' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:21: 'nil'
 			{
 			match("nil"); if (state.failed) return;
 
@@ -1752,8 +1994,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NODEFAULT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:19: ( 'nodefault' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:21: 'nodefault'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:19: ( 'nodefault' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:21: 'nodefault'
 			{
 			match("nodefault"); if (state.failed) return;
 
@@ -1773,8 +2015,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:19: ( 'not' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:21: 'not'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:19: ( 'not' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:21: 'not'
 			{
 			match("not"); if (state.failed) return;
 
@@ -1794,8 +2036,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OBJECT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:19: ( 'object' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:21: 'object'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:19: ( 'object' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:21: 'object'
 			{
 			match("object"); if (state.failed) return;
 
@@ -1815,8 +2057,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:19: ( 'of' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:21: 'of'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:19: ( 'of' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:21: 'of'
 			{
 			match("of"); if (state.failed) return;
 
@@ -1836,8 +2078,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:19: ( 'on' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:21: 'on'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:19: ( 'on' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:21: 'on'
 			{
 			match("on"); if (state.failed) return;
 
@@ -1857,8 +2099,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OPERATOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:19: ( 'operator' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:21: 'operator'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:19: ( 'operator' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:21: 'operator'
 			{
 			match("operator"); if (state.failed) return;
 
@@ -1878,8 +2120,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:19: ( 'or' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:21: 'or'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:19: ( 'or' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:21: 'or'
 			{
 			match("or"); if (state.failed) return;
 
@@ -1899,8 +2141,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OUT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:19: ( 'out' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:21: 'out'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:19: ( 'out' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:21: 'out'
 			{
 			match("out"); if (state.failed) return;
 
@@ -1920,8 +2162,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OVERLOAD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:19: ( 'overload' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:21: 'overload'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:19: ( 'overload' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:21: 'overload'
 			{
 			match("overload"); if (state.failed) return;
 
@@ -1941,8 +2183,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OVERRIDE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:19: ( 'override' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:21: 'override'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:19: ( 'override' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:21: 'override'
 			{
 			match("override"); if (state.failed) return;
 
@@ -1962,8 +2204,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PACKAGE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:19: ( 'package' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:21: 'package'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:19: ( 'package' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:21: 'package'
 			{
 			match("package"); if (state.failed) return;
 
@@ -1983,8 +2225,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PACKED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:19: ( 'packed' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:21: 'packed'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:19: ( 'packed' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:21: 'packed'
 			{
 			match("packed"); if (state.failed) return;
 
@@ -2004,8 +2246,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PASCAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:19: ( 'pascal' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:21: 'pascal'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:19: ( 'pascal' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:21: 'pascal'
 			{
 			match("pascal"); if (state.failed) return;
 
@@ -2025,8 +2267,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PLATFORM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:19: ( 'platform' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:21: 'platform'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:19: ( 'platform' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:21: 'platform'
 			{
 			match("platform"); if (state.failed) return;
 
@@ -2046,8 +2288,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = POINTER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:19: ( 'pointer' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:21: 'pointer'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:19: ( 'pointer' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:21: 'pointer'
 			{
 			match("pointer"); if (state.failed) return;
 
@@ -2067,8 +2309,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PRIVATE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:19: ( 'private' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:21: 'private'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:19: ( 'private' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:21: 'private'
 			{
 			match("private"); if (state.failed) return;
 
@@ -2088,8 +2330,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROCEDURE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:19: ( 'procedure' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:21: 'procedure'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:19: ( 'procedure' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:21: 'procedure'
 			{
 			match("procedure"); if (state.failed) return;
 
@@ -2109,8 +2351,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROGRAM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:19: ( 'program' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:21: 'program'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:19: ( 'program' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:21: 'program'
 			{
 			match("program"); if (state.failed) return;
 
@@ -2130,8 +2372,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROPERTY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:19: ( 'property' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:21: 'property'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:19: ( 'property' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:21: 'property'
 			{
 			match("property"); if (state.failed) return;
 
@@ -2151,8 +2393,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROTECTED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:19: ( 'protected' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:21: 'protected'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:19: ( 'protected' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:21: 'protected'
 			{
 			match("protected"); if (state.failed) return;
 
@@ -2172,8 +2414,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PUBLIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:19: ( 'public' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:21: 'public'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:19: ( 'public' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:21: 'public'
 			{
 			match("public"); if (state.failed) return;
 
@@ -2193,8 +2435,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PUBLISHED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:19: ( 'published' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:21: 'published'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:19: ( 'published' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:21: 'published'
 			{
 			match("published"); if (state.failed) return;
 
@@ -2214,8 +2456,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RAISE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:19: ( 'raise' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:21: 'raise'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:19: ( 'raise' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:21: 'raise'
 			{
 			match("raise"); if (state.failed) return;
 
@@ -2235,8 +2477,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = READ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:19: ( 'read' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:21: 'read'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:19: ( 'read' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:21: 'read'
 			{
 			match("read"); if (state.failed) return;
 
@@ -2256,8 +2498,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = READONLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:19: ( 'readonly' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:21: 'readonly'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:19: ( 'readonly' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:21: 'readonly'
 			{
 			match("readonly"); if (state.failed) return;
 
@@ -2277,8 +2519,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RECORD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:19: ( 'record' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:21: 'record'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:19: ( 'record' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:21: 'record'
 			{
 			match("record"); if (state.failed) return;
 
@@ -2298,8 +2540,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REFERENCE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:19: ( 'reference' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:21: 'reference'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:19: ( 'reference' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:21: 'reference'
 			{
 			match("reference"); if (state.failed) return;
 
@@ -2319,8 +2561,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REGISTER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:19: ( 'register' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:21: 'register'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:19: ( 'register' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:21: 'register'
 			{
 			match("register"); if (state.failed) return;
 
@@ -2340,8 +2582,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REINTRODUCE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:19: ( 'reintroduce' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:21: 'reintroduce'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:19: ( 'reintroduce' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:21: 'reintroduce'
 			{
 			match("reintroduce"); if (state.failed) return;
 
@@ -2361,8 +2603,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REMOVE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:19: ( 'remove' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:21: 'remove'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:19: ( 'remove' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:21: 'remove'
 			{
 			match("remove"); if (state.failed) return;
 
@@ -2382,8 +2624,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REPEAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:19: ( 'repeat' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:21: 'repeat'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:19: ( 'repeat' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:21: 'repeat'
 			{
 			match("repeat"); if (state.failed) return;
 
@@ -2403,8 +2645,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REQUIRES;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:19: ( 'requires' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:21: 'requires'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:19: ( 'requires' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:21: 'requires'
 			{
 			match("requires"); if (state.failed) return;
 
@@ -2424,8 +2666,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RESIDENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:19: ( 'resident' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:21: 'resident'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:19: ( 'resident' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:21: 'resident'
 			{
 			match("resident"); if (state.failed) return;
 
@@ -2445,8 +2687,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RESOURCESTRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:19: ( 'resourcestring' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:21: 'resourcestring'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:19: ( 'resourcestring' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:21: 'resourcestring'
 			{
 			match("resourcestring"); if (state.failed) return;
 
@@ -2466,8 +2708,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SAFECALL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:19: ( 'safecall' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:21: 'safecall'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:19: ( 'safecall' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:21: 'safecall'
 			{
 			match("safecall"); if (state.failed) return;
 
@@ -2487,8 +2729,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SEALED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:19: ( 'sealed' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:21: 'sealed'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:19: ( 'sealed' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:21: 'sealed'
 			{
 			match("sealed"); if (state.failed) return;
 
@@ -2508,8 +2750,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SET;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:19: ( 'set' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:21: 'set'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:19: ( 'set' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:21: 'set'
 			{
 			match("set"); if (state.failed) return;
 
@@ -2529,8 +2771,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SHL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:19: ( 'shl' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:21: 'shl'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:19: ( 'shl' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:21: 'shl'
 			{
 			match("shl"); if (state.failed) return;
 
@@ -2550,8 +2792,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SHR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:19: ( 'shr' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:21: 'shr'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:19: ( 'shr' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:21: 'shr'
 			{
 			match("shr"); if (state.failed) return;
 
@@ -2571,8 +2813,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STATIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:19: ( 'static' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:21: 'static'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:19: ( 'static' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:21: 'static'
 			{
 			match("static"); if (state.failed) return;
 
@@ -2592,8 +2834,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STDCALL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:19: ( 'stdcall' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:21: 'stdcall'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:19: ( 'stdcall' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:21: 'stdcall'
 			{
 			match("stdcall"); if (state.failed) return;
 
@@ -2613,8 +2855,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STORED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:19: ( 'stored' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:21: 'stored'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:19: ( 'stored' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:21: 'stored'
 			{
 			match("stored"); if (state.failed) return;
 
@@ -2634,8 +2876,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STRICT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:19: ( 'strict' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:21: 'strict'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:19: ( 'strict' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:21: 'strict'
 			{
 			match("strict"); if (state.failed) return;
 
@@ -2655,8 +2897,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:19: ( 'string' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:21: 'string'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:19: ( 'string' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:21: 'string'
 			{
 			match("string"); if (state.failed) return;
 
@@ -2676,8 +2918,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = THEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:19: ( 'then' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:21: 'then'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:19: ( 'then' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:21: 'then'
 			{
 			match("then"); if (state.failed) return;
 
@@ -2697,8 +2939,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = THREADVAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:19: ( 'threadvar' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:21: 'threadvar'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:19: ( 'threadvar' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:21: 'threadvar'
 			{
 			match("threadvar"); if (state.failed) return;
 
@@ -2718,8 +2960,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:19: ( 'to' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:21: 'to'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:19: ( 'to' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:21: 'to'
 			{
 			match("to"); if (state.failed) return;
 
@@ -2739,8 +2981,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TRY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:19: ( 'try' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:21: 'try'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:19: ( 'try' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:21: 'try'
 			{
 			match("try"); if (state.failed) return;
 
@@ -2760,8 +3002,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TYPE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:19: ( 'type' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:21: 'type'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:19: ( 'type' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:21: 'type'
 			{
 			match("type"); if (state.failed) return;
 
@@ -2781,8 +3023,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNIT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:19: ( 'unit' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:21: 'unit'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:19: ( 'unit' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:21: 'unit'
 			{
 			match("unit"); if (state.failed) return;
 
@@ -2802,8 +3044,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNSAFE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:19: ( 'unsafe' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:21: 'unsafe'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:19: ( 'unsafe' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:21: 'unsafe'
 			{
 			match("unsafe"); if (state.failed) return;
 
@@ -2823,8 +3065,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNTIL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:19: ( 'until' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:21: 'until'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:19: ( 'until' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:21: 'until'
 			{
 			match("until"); if (state.failed) return;
 
@@ -2844,8 +3086,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = USES;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:19: ( 'uses' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:21: 'uses'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:19: ( 'uses' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:21: 'uses'
 			{
 			match("uses"); if (state.failed) return;
 
@@ -2865,8 +3107,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:19: ( 'var' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:21: 'var'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:19: ( 'var' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:21: 'var'
 			{
 			match("var"); if (state.failed) return;
 
@@ -2886,8 +3128,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VARARGS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:19: ( 'varargs' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:21: 'varargs'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:19: ( 'varargs' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:21: 'varargs'
 			{
 			match("varargs"); if (state.failed) return;
 
@@ -2907,8 +3149,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VARIANT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:19: ( 'variant' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:21: 'variant'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:19: ( 'variant' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:21: 'variant'
 			{
 			match("variant"); if (state.failed) return;
 
@@ -2928,8 +3170,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VIRTUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:19: ( 'virtual' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:21: 'virtual'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:19: ( 'virtual' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:21: 'virtual'
 			{
 			match("virtual"); if (state.failed) return;
 
@@ -2949,8 +3191,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WHILE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:19: ( 'while' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:21: 'while'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:19: ( 'while' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:21: 'while'
 			{
 			match("while"); if (state.failed) return;
 
@@ -2970,8 +3212,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WITH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:19: ( 'with' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:21: 'with'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:19: ( 'with' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:21: 'with'
 			{
 			match("with"); if (state.failed) return;
 
@@ -2991,8 +3233,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WRITE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:19: ( 'write' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:21: 'write'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:19: ( 'write' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:21: 'write'
 			{
 			match("write"); if (state.failed) return;
 
@@ -3012,8 +3254,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WRITEONLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:19: ( 'writeonly' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:21: 'writeonly'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:19: ( 'writeonly' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:21: 'writeonly'
 			{
 			match("writeonly"); if (state.failed) return;
 
@@ -3033,8 +3275,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = XOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:19: ( 'xor' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:21: 'xor'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:19: ( 'xor' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:21: 'xor'
 			{
 			match("xor"); if (state.failed) return;
 
@@ -3054,8 +3296,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FALSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:19: ( 'false' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:21: 'false'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:19: ( 'false' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:21: 'false'
 			{
 			match("false"); if (state.failed) return;
 
@@ -3075,8 +3317,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TRUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:19: ( 'true' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:21: 'true'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:19: ( 'true' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:21: 'true'
 			{
 			match("true"); if (state.failed) return;
 
@@ -3096,8 +3338,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PLUS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:19: ( '+' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:21: '+'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:19: ( '+' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:21: '+'
 			{
 			match('+'); if (state.failed) return;
 			}
@@ -3116,8 +3358,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MINUS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:19: ( '-' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:21: '-'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:19: ( '-' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:21: '-'
 			{
 			match('-'); if (state.failed) return;
 			}
@@ -3136,8 +3378,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:19: ( '*' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:21: '*'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:19: ( '*' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:21: '*'
 			{
 			match('*'); if (state.failed) return;
 			}
@@ -3156,8 +3398,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SLASH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:19: ( '/' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:21: '/'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:19: ( '/' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:21: '/'
 			{
 			match('/'); if (state.failed) return;
 			}
@@ -3176,8 +3418,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSIGN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:19: ( ':=' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:21: ':='
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:19: ( ':=' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:21: ':='
 			{
 			match(":="); if (state.failed) return;
 
@@ -3197,8 +3439,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COMMA;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:19: ( ',' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:21: ','
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:19: ( ',' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:21: ','
 			{
 			match(','); if (state.failed) return;
 			}
@@ -3217,8 +3459,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SEMI;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:19: ( ';' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:21: ';'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:19: ( ';' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:21: ';'
 			{
 			match(';'); if (state.failed) return;
 			}
@@ -3237,8 +3479,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COLON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:19: ( ':' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:21: ':'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:19: ( ':' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:21: ':'
 			{
 			match(':'); if (state.failed) return;
 			}
@@ -3257,8 +3499,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EQUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:19: ( '=' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:21: '='
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:19: ( '=' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:21: '='
 			{
 			match('='); if (state.failed) return;
 			}
@@ -3277,8 +3519,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NOT_EQUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:19: ( '<>' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:21: '<>'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:19: ( '<>' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:21: '<>'
 			{
 			match("<>"); if (state.failed) return;
 
@@ -3298,8 +3540,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:19: ( '<' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:21: '<'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:19: ( '<' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:21: '<'
 			{
 			match('<'); if (state.failed) return;
 			}
@@ -3318,8 +3560,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:19: ( '<=' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:21: '<='
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:19: ( '<=' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:21: '<='
 			{
 			match("<="); if (state.failed) return;
 
@@ -3339,8 +3581,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:887:19: ( '>=' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:887:21: '>='
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:19: ( '>=' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:21: '>='
 			{
 			match(">="); if (state.failed) return;
 
@@ -3360,8 +3602,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:888:19: ( '>' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:888:21: '>'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:19: ( '>' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:21: '>'
 			{
 			match('>'); if (state.failed) return;
 			}
@@ -3380,8 +3622,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LPAREN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:889:19: ( '(' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:889:21: '('
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:19: ( '(' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:21: '('
 			{
 			match('('); if (state.failed) return;
 			}
@@ -3400,8 +3642,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RPAREN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:890:19: ( ')' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:890:21: ')'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:19: ( ')' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:21: ')'
 			{
 			match(')'); if (state.failed) return;
 			}
@@ -3420,8 +3662,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LBRACK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:19: ( '[' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:21: '['
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:19: ( '[' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:21: '['
 			{
 			match('['); if (state.failed) return;
 			}
@@ -3440,8 +3682,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LBRACK2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:19: ( '(.' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:21: '(.'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:19: ( '(.' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:21: '(.'
 			{
 			match("(."); if (state.failed) return;
 
@@ -3461,8 +3703,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RBRACK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:19: ( ']' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:21: ']'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:19: ( ']' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:21: ']'
 			{
 			match(']'); if (state.failed) return;
 			}
@@ -3481,8 +3723,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RBRACK2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:19: ( '.)' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:21: '.)'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:19: ( '.)' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:21: '.)'
 			{
 			match(".)"); if (state.failed) return;
 
@@ -3502,8 +3744,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = POINTER2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:19: ( '^' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:21: '^'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:19: ( '^' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:21: '^'
 			{
 			match('^'); if (state.failed) return;
 			}
@@ -3522,8 +3764,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AT2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:19: ( '@' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:21: '@'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:19: ( '@' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:21: '@'
 			{
 			match('@'); if (state.failed) return;
 			}
@@ -3542,8 +3784,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:19: ( '.' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:21: '.'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:19: ( '.' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:21: '.'
 			{
 			match('.'); if (state.failed) return;
 			}
@@ -3562,8 +3804,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOTDOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:19: ( '..' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:21: '..'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:19: ( '..' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:21: '..'
 			{
 			match(".."); if (state.failed) return;
 
@@ -3583,8 +3825,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:19: ( '{' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:21: '{'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:19: ( '{' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:21: '{'
 			{
 			match('{'); if (state.failed) return;
 			}
@@ -3603,8 +3845,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:19: ( '}' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:21: '}'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:19: ( '}' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:21: '}'
 			{
 			match('}'); if (state.failed) return;
 			}
@@ -3623,8 +3865,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkGlobalFunction;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:25: ( 'FUNCTION_GLOBAL' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:27: 'FUNCTION_GLOBAL'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:25: ( 'FUNCTION_GLOBAL' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:27: 'FUNCTION_GLOBAL'
 			{
 			match("FUNCTION_GLOBAL"); if (state.failed) return;
 
@@ -3644,8 +3886,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionName;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:25: ( 'FUNCTION_NAME' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:27: 'FUNCTION_NAME'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:25: ( 'FUNCTION_NAME' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:27: 'FUNCTION_NAME'
 			{
 			match("FUNCTION_NAME"); if (state.failed) return;
 
@@ -3665,8 +3907,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionArgs;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:25: ( 'FUNCTION_ARGS' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:27: 'FUNCTION_ARGS'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:25: ( 'FUNCTION_ARGS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:27: 'FUNCTION_ARGS'
 			{
 			match("FUNCTION_ARGS"); if (state.failed) return;
 
@@ -3686,8 +3928,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionBody;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:25: ( 'FUNCTION_BODY' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:27: 'FUNCTION_BODY'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:25: ( 'FUNCTION_BODY' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:27: 'FUNCTION_BODY'
 			{
 			match("FUNCTION_BODY"); if (state.failed) return;
 
@@ -3707,8 +3949,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionReturn;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:25: ( 'FUNCTION_RETURN' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:27: 'FUNCTION_RETURN'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:25: ( 'FUNCTION_RETURN' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:27: 'FUNCTION_RETURN'
 			{
 			match("FUNCTION_RETURN"); if (state.failed) return;
 
@@ -3728,8 +3970,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkCustomAttribute;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:25: ( 'CUSTOM_ATTRIBUTE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:27: 'CUSTOM_ATTRIBUTE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:25: ( 'CUSTOM_ATTRIBUTE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:27: 'CUSTOM_ATTRIBUTE'
 			{
 			match("CUSTOM_ATTRIBUTE"); if (state.failed) return;
 
@@ -3749,8 +3991,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkCustomAttributeArgs;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:917:25: ( 'CUSTOM_ATTRIBUTE_ARGS' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:917:27: 'CUSTOM_ATTRIBUTE_ARGS'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:25: ( 'CUSTOM_ATTRIBUTE_ARGS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:27: 'CUSTOM_ATTRIBUTE_ARGS'
 			{
 			match("CUSTOM_ATTRIBUTE_ARGS"); if (state.failed) return;
 
@@ -3770,8 +4012,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkNewType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:919:25: ( 'NEW_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:919:27: 'NEW_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:25: ( 'NEW_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:27: 'NEW_TYPE'
 			{
 			match("NEW_TYPE"); if (state.failed) return;
 
@@ -3791,8 +4033,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClass;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:25: ( 'CLASS' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:27: 'CLASS'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:25: ( 'CLASS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:27: 'CLASS'
 			{
 			match("CLASS"); if (state.failed) return;
 
@@ -3812,8 +4054,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRecord;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:25: ( 'RECORD_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:27: 'RECORD_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:25: ( 'RECORD_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:27: 'RECORD_TYPE'
 			{
 			match("RECORD_TYPE"); if (state.failed) return;
 
@@ -3833,8 +4075,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRecordHelper;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:25: ( 'RECORD_HELPER' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:27: 'RECORD_HELPER'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:25: ( 'RECORD_HELPER' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:27: 'RECORD_HELPER'
 			{
 			match("RECORD_HELPER"); if (state.failed) return;
 
@@ -3854,8 +4096,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkInterface;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:25: ( 'INTERFACE_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:27: 'INTERFACE_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:25: ( 'INTERFACE_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:27: 'INTERFACE_TYPE'
 			{
 			match("INTERFACE_TYPE"); if (state.failed) return;
 
@@ -3875,8 +4117,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkObject;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:25: ( 'OBJECT_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:27: 'OBJECT_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:25: ( 'OBJECT_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:27: 'OBJECT_TYPE'
 			{
 			match("OBJECT_TYPE"); if (state.failed) return;
 
@@ -3896,8 +4138,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassOfType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:25: ( 'CLASS_OF_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:27: 'CLASS_OF_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:25: ( 'CLASS_OF_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:27: 'CLASS_OF_TYPE'
 			{
 			match("CLASS_OF_TYPE"); if (state.failed) return;
 
@@ -3917,8 +4159,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:25: ( 'VARIABLE_TYPE' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:27: 'VARIABLE_TYPE'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:25: ( 'VARIABLE_TYPE' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:27: 'VARIABLE_TYPE'
 			{
 			match("VARIABLE_TYPE"); if (state.failed) return;
 
@@ -3938,8 +4180,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableIdents;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:25: ( 'VARIABLE_IDENTS' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:27: 'VARIABLE_IDENTS'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:25: ( 'VARIABLE_IDENTS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:27: 'VARIABLE_IDENTS'
 			{
 			match("VARIABLE_IDENTS"); if (state.failed) return;
 
@@ -3959,8 +4201,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableParam;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:25: ( 'VARIABLE_PARAM' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:27: 'VARIABLE_PARAM'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:25: ( 'VARIABLE_PARAM' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:27: 'VARIABLE_PARAM'
 			{
 			match("VARIABLE_PARAM"); if (state.failed) return;
 
@@ -3980,8 +4222,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkGuid;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:25: ( 'INTERFACE_GUID' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:27: 'INTERFACE_GUID'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:25: ( 'INTERFACE_GUID' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:27: 'INTERFACE_GUID'
 			{
 			match("INTERFACE_GUID"); if (state.failed) return;
 
@@ -4001,8 +4243,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassParents;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:25: ( 'CLASS_PARENTS' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:27: 'CLASS_PARENTS'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:25: ( 'CLASS_PARENTS' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:27: 'CLASS_PARENTS'
 			{
 			match("CLASS_PARENTS"); if (state.failed) return;
 
@@ -4022,8 +4264,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassField;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:25: ( 'CLASS_FIELD' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:27: 'CLASS_FIELD'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:25: ( 'CLASS_FIELD' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:27: 'CLASS_FIELD'
 			{
 			match("CLASS_FIELD"); if (state.failed) return;
 
@@ -4043,8 +4285,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkAnonymousExpression;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:25: ( 'ANONYMOUS_EXPRESSION' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:27: 'ANONYMOUS_EXPRESSION'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:25: ( 'ANONYMOUS_EXPRESSION' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:27: 'ANONYMOUS_EXPRESSION'
 			{
 			match("ANONYMOUS_EXPRESSION"); if (state.failed) return;
 
@@ -4064,10 +4306,10 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkIdentifier;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:25: ( ( Alpha | '_' ) ( Alpha | Digit | '_' )* )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:27: ( Alpha | '_' ) ( Alpha | Digit | '_' )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:25: ( ( Alpha | '_' ) ( Alpha | Digit | '_' )* )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' ) ( Alpha | Digit | '_' )*
 			{
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:27: ( Alpha | '_' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' )
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( ((LA1_0 >= 'A' && LA1_0 <= 'Z')||(LA1_0 >= 'a' && LA1_0 <= 'z')||(LA1_0 >= '\u0080' && LA1_0 <= '\uFFFE')) ) {
@@ -4086,14 +4328,14 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt1) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:28: Alpha
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:28: Alpha
 					{
 					mAlpha(); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:36: '_'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:36: '_'
 					{
 					match('_'); if (state.failed) return;
 					}
@@ -4101,7 +4343,7 @@ public class DelphiLexer extends Lexer {
 
 			}
 
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:41: ( Alpha | Digit | '_' )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:41: ( Alpha | Digit | '_' )*
 			loop2:
 			while (true) {
 				int alt2=4;
@@ -4118,21 +4360,21 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt2) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:42: Alpha
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:42: Alpha
 					{
 					mAlpha(); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:50: Digit
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:50: Digit
 					{
 					mDigit(); if (state.failed) return;
 
 					}
 					break;
 				case 3 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:58: '_'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:58: '_'
 					{
 					match('_'); if (state.failed) return;
 					}
@@ -4159,8 +4401,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkIntNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:25: ( Digitseq )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:27: Digitseq
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:25: ( Digitseq )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:27: Digitseq
 			{
 			mDigitseq(); if (state.failed) return;
 
@@ -4180,12 +4422,12 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRealNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:25: ( Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () ) )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:27: Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:25: ( Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () ) )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:27: Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
 			{
 			mDigitseq(); if (state.failed) return;
 
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:36: ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:36: ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
 			int alt6=2;
 			int LA6_0 = input.LA(1);
 			if ( (LA6_0=='.') && (synpred1_Delphi())) {
@@ -4203,9 +4445,9 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt6) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 					{
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:92: ( DOT Digitseq )?
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:92: ( DOT Digitseq )?
 					int alt3=2;
 					int LA3_0 = input.LA(1);
 					if ( (LA3_0=='.') ) {
@@ -4213,7 +4455,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt3) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:93: DOT Digitseq
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:93: DOT Digitseq
 							{
 							mDOT(); if (state.failed) return;
 
@@ -4224,7 +4466,7 @@ public class DelphiLexer extends Lexer {
 
 					}
 
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:108: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:108: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 					int alt5=2;
 					int LA5_0 = input.LA(1);
 					if ( (LA5_0=='E'||LA5_0=='e') ) {
@@ -4232,7 +4474,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt5) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:109: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:109: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
 							{
 							if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 								input.consume();
@@ -4244,7 +4486,7 @@ public class DelphiLexer extends Lexer {
 								recover(mse);
 								throw mse;
 							}
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:119: ( '+' | '-' )?
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:119: ( '+' | '-' )?
 							int alt4=2;
 							int LA4_0 = input.LA(1);
 							if ( (LA4_0=='+'||LA4_0=='-') ) {
@@ -4252,7 +4494,7 @@ public class DelphiLexer extends Lexer {
 							}
 							switch (alt4) {
 								case 1 :
-									// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+									// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 									{
 									if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
 										input.consume();
@@ -4279,10 +4521,10 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:143: ()
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
 					{
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:143: ()
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:144: 
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:144: 
 					{
 					}
 
@@ -4308,8 +4550,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkHexNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:25: ( '$' Hexdigitseq )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:27: '$' Hexdigitseq
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:25: ( '$' Hexdigitseq )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:27: '$' Hexdigitseq
 			{
 			match('$'); if (state.failed) return;
 			mHexdigitseq(); if (state.failed) return;
@@ -4330,7 +4572,7 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ControlChar;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:25: ( '^' ({...}? => Alpha |) | '#' Digitseq | '#' '$' Hexdigitseq )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:25: ( '^' ({...}? => Alpha |) | '#' Digitseq | '#' '$' Hexdigitseq )
 			int alt8=3;
 			int LA8_0 = input.LA(1);
 			if ( (LA8_0=='^') ) {
@@ -4369,10 +4611,10 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt8) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:27: '^' ({...}? => Alpha |)
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:27: '^' ({...}? => Alpha |)
 					{
 					match('^'); if (state.failed) return;
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:31: ({...}? => Alpha |)
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:31: ({...}? => Alpha |)
 					int alt7=2;
 					int LA7_0 = input.LA(1);
 					if ( ((LA7_0 >= 'A' && LA7_0 <= 'Z')||(LA7_0 >= 'a' && LA7_0 <= 'z')||(LA7_0 >= '\u0080' && LA7_0 <= '\uFFFE')) && ((isControlchar()))) {
@@ -4381,7 +4623,7 @@ public class DelphiLexer extends Lexer {
 
 					switch (alt7) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:33: {...}? => Alpha
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:33: {...}? => Alpha
 							{
 							if ( !((isControlchar())) ) {
 								if (state.backtracking>0) {state.failed=true; return;}
@@ -4392,7 +4634,7 @@ public class DelphiLexer extends Lexer {
 							}
 							break;
 						case 2 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:956:31: 
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:972:31: 
 							{
 							if ( state.backtracking==0 ) {_type=POINTER2;}
 							}
@@ -4403,7 +4645,7 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:958:27: '#' Digitseq
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:974:27: '#' Digitseq
 					{
 					match('#'); if (state.failed) return;
 					mDigitseq(); if (state.failed) return;
@@ -4411,7 +4653,7 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:27: '#' '$' Hexdigitseq
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:975:27: '#' '$' Hexdigitseq
 					{
 					match('#'); if (state.failed) return;
 					match('$'); if (state.failed) return;
@@ -4435,11 +4677,11 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = QuotedString;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:25: ( '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\'' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:27: '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\''
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:25: ( '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\'' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:27: '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\''
 			{
 			match('\''); if (state.failed) return;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:32: ( '\\'\\'' |~ ( '\\'' ) )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:32: ( '\\'\\'' |~ ( '\\'' ) )*
 			loop9:
 			while (true) {
 				int alt9=3;
@@ -4457,14 +4699,14 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt9) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:33: '\\'\\''
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:33: '\\'\\''
 					{
 					match("''"); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:42: ~ ( '\\'' )
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:42: ~ ( '\\'' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -4499,7 +4741,7 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Alpha"
 	public final void mAlpha() throws RecognitionException {
 		try {
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:25: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' ) )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:25: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' ) )
 			int alt10=3;
 			int LA10_0 = input.LA(1);
 			if ( ((LA10_0 >= 'a' && LA10_0 <= 'z')) ) {
@@ -4521,19 +4763,19 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt10) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:27: 'a' .. 'z'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:27: 'a' .. 'z'
 					{
 					matchRange('a','z'); if (state.failed) return;
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:966:27: 'A' .. 'Z'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:982:27: 'A' .. 'Z'
 					{
 					matchRange('A','Z'); if (state.failed) return;
 					}
 					break;
 				case 3 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:27: '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' )
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:27: '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' )
 					{
 					matchRange('\u0080','\uFFFE'); if (state.failed) return;
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\uFEFE')||(input.LA(1) >= '\uFF00' && input.LA(1) <= '\uFFFF') ) {
@@ -4560,8 +4802,8 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Digit"
 	public final void mDigit() throws RecognitionException {
 		try {
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:970:25: ( '0' .. '9' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:986:25: ( '0' .. '9' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
 				input.consume();
@@ -4585,12 +4827,12 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Digitseq"
 	public final void mDigitseq() throws RecognitionException {
 		try {
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:973:25: ( Digit ( Digit )* )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:973:27: Digit ( Digit )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:25: ( Digit ( Digit )* )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:27: Digit ( Digit )*
 			{
 			mDigit(); if (state.failed) return;
 
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:973:33: ( Digit )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:33: ( Digit )*
 			loop11:
 			while (true) {
 				int alt11=2;
@@ -4601,7 +4843,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt11) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
 						input.consume();
@@ -4633,8 +4875,8 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Hexdigit"
 	public final void mHexdigit() throws RecognitionException {
 		try {
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:976:25: ( Digit | 'a' .. 'f' | 'A' .. 'F' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:992:25: ( Digit | 'a' .. 'f' | 'A' .. 'F' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
 				input.consume();
@@ -4660,12 +4902,12 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = Hexdigitseq;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:25: ( Hexdigit ( Hexdigit )* )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:27: Hexdigit ( Hexdigit )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:25: ( Hexdigit ( Hexdigit )* )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:27: Hexdigit ( Hexdigit )*
 			{
 			mHexdigit(); if (state.failed) return;
 
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:36: ( Hexdigit )*
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:36: ( Hexdigit )*
 			loop12:
 			while (true) {
 				int alt12=2;
@@ -4676,7 +4918,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt12) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
 						input.consume();
@@ -4712,7 +4954,7 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COMMENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:979:25: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '(*' ( options {greedy=false; } : . )* '*)' | '{' ( options {greedy=false; } : . )* '}' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:25: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '(*' ( options {greedy=false; } : . )* '*)' | '{' ( options {greedy=false; } : . )* '}' )
 			int alt17=3;
 			switch ( input.LA(1) ) {
 			case '/':
@@ -4738,11 +4980,11 @@ public class DelphiLexer extends Lexer {
 			}
 			switch (alt17) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:979:28: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:28: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
 					{
 					match("//"); if (state.failed) return;
 
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:979:33: (~ ( '\\n' | '\\r' ) )*
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:33: (~ ( '\\n' | '\\r' ) )*
 					loop13:
 					while (true) {
 						int alt13=2;
@@ -4753,7 +4995,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt13) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 							{
 							if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
 								input.consume();
@@ -4773,7 +5015,7 @@ public class DelphiLexer extends Lexer {
 						}
 					}
 
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:979:47: ( '\\r' )?
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: ( '\\r' )?
 					int alt14=2;
 					int LA14_0 = input.LA(1);
 					if ( (LA14_0=='\r') ) {
@@ -4781,7 +5023,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt14) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:979:47: '\\r'
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: '\\r'
 							{
 							match('\r'); if (state.failed) return;
 							}
@@ -4794,11 +5036,11 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:980:28: '(*' ( options {greedy=false; } : . )* '*)'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:28: '(*' ( options {greedy=false; } : . )* '*)'
 					{
 					match("(*"); if (state.failed) return;
 
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:980:33: ( options {greedy=false; } : . )*
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:33: ( options {greedy=false; } : . )*
 					loop15:
 					while (true) {
 						int alt15=2;
@@ -4819,7 +5061,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt15) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:980:61: .
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:61: .
 							{
 							matchAny(); if (state.failed) return;
 							}
@@ -4836,10 +5078,10 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:28: '{' ( options {greedy=false; } : . )* '}'
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:28: '{' ( options {greedy=false; } : . )* '}'
 					{
 					match('{'); if (state.failed) return;
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:32: ( options {greedy=false; } : . )*
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:32: ( options {greedy=false; } : . )*
 					loop16:
 					while (true) {
 						int alt16=2;
@@ -4853,7 +5095,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt16) {
 						case 1 :
-							// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:60: .
+							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:60: .
 							{
 							matchAny(); if (state.failed) return;
 							}
@@ -4884,10 +5126,10 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:25: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:25: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			{
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			int cnt18=0;
 			loop18:
 			while (true) {
@@ -4899,7 +5141,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt18) {
 				case 1 :
-					// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||(input.LA(1) >= '\f' && input.LA(1) <= '\r')||input.LA(1)==' ' ) {
 						input.consume();
@@ -4940,8 +5182,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UnicodeBOM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:985:25: ( '\\uFEFF' )
-			// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:985:27: '\\uFEFF'
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:25: ( '\\uFEFF' )
+			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:27: '\\uFEFF'
 			{
 			match('\uFEFF'); if (state.failed) return;
 			if ( state.backtracking==0 ) {_channel=HIDDEN;}
@@ -4958,1349 +5200,1426 @@ public class DelphiLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:8: ( T__197 | T__198 | T__199 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM )
-		int alt19=192;
+		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:8: ( T__198 | T__199 | T__200 | T__201 | T__202 | T__203 | T__204 | T__205 | T__206 | T__207 | T__208 | T__209 | T__210 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DELAYED | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM )
+		int alt19=203;
 		alt19 = dfa19.predict(input);
 		switch (alt19) {
 			case 1 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:10: T__197
-				{
-				mT__197(); if (state.failed) return;
-
-				}
-				break;
-			case 2 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:17: T__198
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:10: T__198
 				{
 				mT__198(); if (state.failed) return;
 
 				}
 				break;
-			case 3 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:24: T__199
+			case 2 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:17: T__199
 				{
 				mT__199(); if (state.failed) return;
 
 				}
 				break;
+			case 3 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:24: T__200
+				{
+				mT__200(); if (state.failed) return;
+
+				}
+				break;
 			case 4 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:31: ABSOLUTE
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:31: T__201
+				{
+				mT__201(); if (state.failed) return;
+
+				}
+				break;
+			case 5 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:38: T__202
+				{
+				mT__202(); if (state.failed) return;
+
+				}
+				break;
+			case 6 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:45: T__203
+				{
+				mT__203(); if (state.failed) return;
+
+				}
+				break;
+			case 7 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:52: T__204
+				{
+				mT__204(); if (state.failed) return;
+
+				}
+				break;
+			case 8 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:59: T__205
+				{
+				mT__205(); if (state.failed) return;
+
+				}
+				break;
+			case 9 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:66: T__206
+				{
+				mT__206(); if (state.failed) return;
+
+				}
+				break;
+			case 10 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:73: T__207
+				{
+				mT__207(); if (state.failed) return;
+
+				}
+				break;
+			case 11 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:80: T__208
+				{
+				mT__208(); if (state.failed) return;
+
+				}
+				break;
+			case 12 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:87: T__209
+				{
+				mT__209(); if (state.failed) return;
+
+				}
+				break;
+			case 13 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:94: T__210
+				{
+				mT__210(); if (state.failed) return;
+
+				}
+				break;
+			case 14 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:101: ABSOLUTE
 				{
 				mABSOLUTE(); if (state.failed) return;
 
 				}
 				break;
-			case 5 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:40: ABSTRACT
+			case 15 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:110: ABSTRACT
 				{
 				mABSTRACT(); if (state.failed) return;
 
 				}
 				break;
-			case 6 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:49: ADD
+			case 16 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:119: ADD
 				{
 				mADD(); if (state.failed) return;
 
 				}
 				break;
-			case 7 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:53: AND
+			case 17 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:123: AND
 				{
 				mAND(); if (state.failed) return;
 
 				}
 				break;
-			case 8 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:57: ANSISTRING
+			case 18 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:127: ANSISTRING
 				{
 				mANSISTRING(); if (state.failed) return;
 
 				}
 				break;
-			case 9 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:68: ARRAY
+			case 19 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:138: ARRAY
 				{
 				mARRAY(); if (state.failed) return;
 
 				}
 				break;
-			case 10 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:74: AS
+			case 20 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:144: AS
 				{
 				mAS(); if (state.failed) return;
 
 				}
 				break;
-			case 11 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:77: ASM
+			case 21 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:147: ASM
 				{
 				mASM(); if (state.failed) return;
 
 				}
 				break;
-			case 12 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:81: ASSEMBLER
+			case 22 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:151: ASSEMBLER
 				{
 				mASSEMBLER(); if (state.failed) return;
 
 				}
 				break;
-			case 13 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:91: ASSEMBLY
+			case 23 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:161: ASSEMBLY
 				{
 				mASSEMBLY(); if (state.failed) return;
 
 				}
 				break;
-			case 14 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:100: AT
+			case 24 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:170: AT
 				{
 				mAT(); if (state.failed) return;
 
 				}
 				break;
-			case 15 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:103: AUTOMATED
+			case 25 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:173: AUTOMATED
 				{
 				mAUTOMATED(); if (state.failed) return;
 
 				}
 				break;
-			case 16 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:113: BEGIN
+			case 26 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:183: BEGIN
 				{
 				mBEGIN(); if (state.failed) return;
 
 				}
 				break;
-			case 17 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:119: BREAK
+			case 27 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:189: BREAK
 				{
 				mBREAK(); if (state.failed) return;
 
 				}
 				break;
-			case 18 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:125: CASE
+			case 28 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:195: CASE
 				{
 				mCASE(); if (state.failed) return;
 
 				}
 				break;
-			case 19 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:130: CDECL
+			case 29 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:200: CDECL
 				{
 				mCDECL(); if (state.failed) return;
 
 				}
 				break;
-			case 20 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:136: CLASS
+			case 30 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:206: CLASS
 				{
 				mCLASS(); if (state.failed) return;
 
 				}
 				break;
-			case 21 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:142: CONST
+			case 31 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:212: CONST
 				{
 				mCONST(); if (state.failed) return;
 
 				}
 				break;
-			case 22 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:148: CONSTRUCTOR
+			case 32 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:218: CONSTRUCTOR
 				{
 				mCONSTRUCTOR(); if (state.failed) return;
 
 				}
 				break;
-			case 23 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:160: CONTAINS
+			case 33 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:230: CONTAINS
 				{
 				mCONTAINS(); if (state.failed) return;
 
 				}
 				break;
-			case 24 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:169: CONTINUE
+			case 34 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:239: CONTINUE
 				{
 				mCONTINUE(); if (state.failed) return;
 
 				}
 				break;
-			case 25 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:178: DEFAULT
+			case 35 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:248: DEFAULT
 				{
 				mDEFAULT(); if (state.failed) return;
 
 				}
 				break;
-			case 26 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:186: DEPRECATED
+			case 36 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:256: DELAYED
+				{
+				mDELAYED(); if (state.failed) return;
+
+				}
+				break;
+			case 37 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:264: DEPRECATED
 				{
 				mDEPRECATED(); if (state.failed) return;
 
 				}
 				break;
-			case 27 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:197: DESTRUCTOR
+			case 38 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:275: DESTRUCTOR
 				{
 				mDESTRUCTOR(); if (state.failed) return;
 
 				}
 				break;
-			case 28 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:208: DISPID
+			case 39 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:286: DISPID
 				{
 				mDISPID(); if (state.failed) return;
 
 				}
 				break;
-			case 29 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:215: DISPINTERFACE
+			case 40 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:293: DISPINTERFACE
 				{
 				mDISPINTERFACE(); if (state.failed) return;
 
 				}
 				break;
-			case 30 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:229: DIV
+			case 41 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:307: DIV
 				{
 				mDIV(); if (state.failed) return;
 
 				}
 				break;
-			case 31 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:233: DO
+			case 42 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:311: DO
 				{
 				mDO(); if (state.failed) return;
 
 				}
 				break;
-			case 32 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:236: DOWNTO
+			case 43 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:314: DOWNTO
 				{
 				mDOWNTO(); if (state.failed) return;
 
 				}
 				break;
-			case 33 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:243: DQ
+			case 44 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:321: DQ
 				{
 				mDQ(); if (state.failed) return;
 
 				}
 				break;
-			case 34 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:246: DW
+			case 45 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:324: DW
 				{
 				mDW(); if (state.failed) return;
 
 				}
 				break;
-			case 35 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:249: DYNAMIC
+			case 46 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:327: DYNAMIC
 				{
 				mDYNAMIC(); if (state.failed) return;
 
 				}
 				break;
-			case 36 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:257: ELSE
+			case 47 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:335: ELSE
 				{
 				mELSE(); if (state.failed) return;
 
 				}
 				break;
-			case 37 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:262: END
+			case 48 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:340: END
 				{
 				mEND(); if (state.failed) return;
 
 				}
 				break;
-			case 38 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:266: EXCEPT
+			case 49 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:344: EXCEPT
 				{
 				mEXCEPT(); if (state.failed) return;
 
 				}
 				break;
-			case 39 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:273: EXIT
+			case 50 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:351: EXIT
 				{
 				mEXIT(); if (state.failed) return;
 
 				}
 				break;
-			case 40 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:278: EXPERIMENTAL
+			case 51 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:356: EXPERIMENTAL
 				{
 				mEXPERIMENTAL(); if (state.failed) return;
 
 				}
 				break;
-			case 41 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:291: EXPORT
+			case 52 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:369: EXPORT
 				{
 				mEXPORT(); if (state.failed) return;
 
 				}
 				break;
-			case 42 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:298: EXPORTS
+			case 53 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:376: EXPORTS
 				{
 				mEXPORTS(); if (state.failed) return;
 
 				}
 				break;
-			case 43 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:306: EXTERNAL
+			case 54 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:384: EXTERNAL
 				{
 				mEXTERNAL(); if (state.failed) return;
 
 				}
 				break;
-			case 44 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:315: FAR
+			case 55 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:393: FAR
 				{
 				mFAR(); if (state.failed) return;
 
 				}
 				break;
-			case 45 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:319: FILE
+			case 56 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:397: FILE
 				{
 				mFILE(); if (state.failed) return;
 
 				}
 				break;
-			case 46 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:324: FINAL
+			case 57 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:402: FINAL
 				{
 				mFINAL(); if (state.failed) return;
 
 				}
 				break;
-			case 47 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:330: FINALIZATION
+			case 58 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:408: FINALIZATION
 				{
 				mFINALIZATION(); if (state.failed) return;
 
 				}
 				break;
-			case 48 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:343: FINALLY
+			case 59 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:421: FINALLY
 				{
 				mFINALLY(); if (state.failed) return;
 
 				}
 				break;
-			case 49 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:351: FOR
+			case 60 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:429: FOR
 				{
 				mFOR(); if (state.failed) return;
 
 				}
 				break;
-			case 50 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:355: FORWARD
+			case 61 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:433: FORWARD
 				{
 				mFORWARD(); if (state.failed) return;
 
 				}
 				break;
-			case 51 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:363: FUNCTION
+			case 62 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:441: FUNCTION
 				{
 				mFUNCTION(); if (state.failed) return;
 
 				}
 				break;
-			case 52 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:372: GOTO
+			case 63 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:450: GOTO
 				{
 				mGOTO(); if (state.failed) return;
 
 				}
 				break;
-			case 53 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:377: HELPER
+			case 64 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:455: HELPER
 				{
 				mHELPER(); if (state.failed) return;
 
 				}
 				break;
-			case 54 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:384: IF
+			case 65 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:462: IF
 				{
 				mIF(); if (state.failed) return;
 
 				}
 				break;
-			case 55 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:387: IMPLEMENTATION
+			case 66 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:465: IMPLEMENTATION
 				{
 				mIMPLEMENTATION(); if (state.failed) return;
 
 				}
 				break;
-			case 56 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:402: IMPLEMENTS
+			case 67 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:480: IMPLEMENTS
 				{
 				mIMPLEMENTS(); if (state.failed) return;
 
 				}
 				break;
-			case 57 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:413: IN
+			case 68 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:491: IN
 				{
 				mIN(); if (state.failed) return;
 
 				}
 				break;
-			case 58 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:416: INDEX
+			case 69 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:494: INDEX
 				{
 				mINDEX(); if (state.failed) return;
 
 				}
 				break;
-			case 59 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:422: INHERITED
+			case 70 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:500: INHERITED
 				{
 				mINHERITED(); if (state.failed) return;
 
 				}
 				break;
-			case 60 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:432: INITIALIZATION
+			case 71 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:510: INITIALIZATION
 				{
 				mINITIALIZATION(); if (state.failed) return;
 
 				}
 				break;
-			case 61 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:447: INLINE
+			case 72 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:525: INLINE
 				{
 				mINLINE(); if (state.failed) return;
 
 				}
 				break;
-			case 62 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:454: INTERFACE
+			case 73 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:532: INTERFACE
 				{
 				mINTERFACE(); if (state.failed) return;
 
 				}
 				break;
-			case 63 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:464: IS
+			case 74 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:542: IS
 				{
 				mIS(); if (state.failed) return;
 
 				}
 				break;
-			case 64 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:467: LABEL
+			case 75 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:545: LABEL
 				{
 				mLABEL(); if (state.failed) return;
 
 				}
 				break;
-			case 65 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:473: LIBRARY
+			case 76 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:551: LIBRARY
 				{
 				mLIBRARY(); if (state.failed) return;
 
 				}
 				break;
-			case 66 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:481: LOCAL
+			case 77 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:559: LOCAL
 				{
 				mLOCAL(); if (state.failed) return;
 
 				}
 				break;
-			case 67 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:487: MESSAGE
+			case 78 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:565: MESSAGE
 				{
 				mMESSAGE(); if (state.failed) return;
 
 				}
 				break;
-			case 68 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:495: MOD
+			case 79 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:573: MOD
 				{
 				mMOD(); if (state.failed) return;
 
 				}
 				break;
-			case 69 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:499: NAME
+			case 80 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:577: NAME
 				{
 				mNAME(); if (state.failed) return;
 
 				}
 				break;
-			case 70 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:504: NEAR
+			case 81 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:582: NEAR
 				{
 				mNEAR(); if (state.failed) return;
 
 				}
 				break;
-			case 71 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:509: NIL
+			case 82 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:587: NIL
 				{
 				mNIL(); if (state.failed) return;
 
 				}
 				break;
-			case 72 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:513: NODEFAULT
+			case 83 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:591: NODEFAULT
 				{
 				mNODEFAULT(); if (state.failed) return;
 
 				}
 				break;
-			case 73 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:523: NOT
+			case 84 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:601: NOT
 				{
 				mNOT(); if (state.failed) return;
 
 				}
 				break;
-			case 74 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:527: OBJECT
+			case 85 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:605: OBJECT
 				{
 				mOBJECT(); if (state.failed) return;
 
 				}
 				break;
-			case 75 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:534: OF
+			case 86 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:612: OF
 				{
 				mOF(); if (state.failed) return;
 
 				}
 				break;
-			case 76 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:537: ON
+			case 87 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:615: ON
 				{
 				mON(); if (state.failed) return;
 
 				}
 				break;
-			case 77 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:540: OPERATOR
+			case 88 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:618: OPERATOR
 				{
 				mOPERATOR(); if (state.failed) return;
 
 				}
 				break;
-			case 78 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:549: OR
+			case 89 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:627: OR
 				{
 				mOR(); if (state.failed) return;
 
 				}
 				break;
-			case 79 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:552: OUT
+			case 90 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:630: OUT
 				{
 				mOUT(); if (state.failed) return;
 
 				}
 				break;
-			case 80 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:556: OVERLOAD
+			case 91 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:634: OVERLOAD
 				{
 				mOVERLOAD(); if (state.failed) return;
 
 				}
 				break;
-			case 81 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:565: OVERRIDE
+			case 92 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:643: OVERRIDE
 				{
 				mOVERRIDE(); if (state.failed) return;
 
 				}
 				break;
-			case 82 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:574: PACKAGE
+			case 93 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:652: PACKAGE
 				{
 				mPACKAGE(); if (state.failed) return;
 
 				}
 				break;
-			case 83 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:582: PACKED
+			case 94 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:660: PACKED
 				{
 				mPACKED(); if (state.failed) return;
 
 				}
 				break;
-			case 84 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:589: PASCAL
+			case 95 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:667: PASCAL
 				{
 				mPASCAL(); if (state.failed) return;
 
 				}
 				break;
-			case 85 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:596: PLATFORM
+			case 96 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:674: PLATFORM
 				{
 				mPLATFORM(); if (state.failed) return;
 
 				}
 				break;
-			case 86 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:605: POINTER
+			case 97 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:683: POINTER
 				{
 				mPOINTER(); if (state.failed) return;
 
 				}
 				break;
-			case 87 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:613: PRIVATE
+			case 98 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:691: PRIVATE
 				{
 				mPRIVATE(); if (state.failed) return;
 
 				}
 				break;
-			case 88 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:621: PROCEDURE
+			case 99 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:699: PROCEDURE
 				{
 				mPROCEDURE(); if (state.failed) return;
 
 				}
 				break;
-			case 89 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:631: PROGRAM
+			case 100 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:709: PROGRAM
 				{
 				mPROGRAM(); if (state.failed) return;
 
 				}
 				break;
-			case 90 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:639: PROPERTY
+			case 101 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:717: PROPERTY
 				{
 				mPROPERTY(); if (state.failed) return;
 
 				}
 				break;
-			case 91 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:648: PROTECTED
+			case 102 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:726: PROTECTED
 				{
 				mPROTECTED(); if (state.failed) return;
 
 				}
 				break;
-			case 92 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:658: PUBLIC
+			case 103 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:736: PUBLIC
 				{
 				mPUBLIC(); if (state.failed) return;
 
 				}
 				break;
-			case 93 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:665: PUBLISHED
+			case 104 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:743: PUBLISHED
 				{
 				mPUBLISHED(); if (state.failed) return;
 
 				}
 				break;
-			case 94 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:675: RAISE
+			case 105 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:753: RAISE
 				{
 				mRAISE(); if (state.failed) return;
 
 				}
 				break;
-			case 95 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:681: READ
+			case 106 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:759: READ
 				{
 				mREAD(); if (state.failed) return;
 
 				}
 				break;
-			case 96 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:686: READONLY
+			case 107 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:764: READONLY
 				{
 				mREADONLY(); if (state.failed) return;
 
 				}
 				break;
-			case 97 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:695: RECORD
+			case 108 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:773: RECORD
 				{
 				mRECORD(); if (state.failed) return;
 
 				}
 				break;
-			case 98 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:702: REFERENCE
+			case 109 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:780: REFERENCE
 				{
 				mREFERENCE(); if (state.failed) return;
 
 				}
 				break;
-			case 99 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:712: REGISTER
+			case 110 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:790: REGISTER
 				{
 				mREGISTER(); if (state.failed) return;
 
 				}
 				break;
-			case 100 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:721: REINTRODUCE
+			case 111 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:799: REINTRODUCE
 				{
 				mREINTRODUCE(); if (state.failed) return;
 
 				}
 				break;
-			case 101 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:733: REMOVE
+			case 112 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:811: REMOVE
 				{
 				mREMOVE(); if (state.failed) return;
 
 				}
 				break;
-			case 102 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:740: REPEAT
+			case 113 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:818: REPEAT
 				{
 				mREPEAT(); if (state.failed) return;
 
 				}
 				break;
-			case 103 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:747: REQUIRES
+			case 114 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:825: REQUIRES
 				{
 				mREQUIRES(); if (state.failed) return;
 
 				}
 				break;
-			case 104 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:756: RESIDENT
+			case 115 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:834: RESIDENT
 				{
 				mRESIDENT(); if (state.failed) return;
 
 				}
 				break;
-			case 105 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:765: RESOURCESTRING
+			case 116 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:843: RESOURCESTRING
 				{
 				mRESOURCESTRING(); if (state.failed) return;
 
 				}
 				break;
-			case 106 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:780: SAFECALL
+			case 117 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:858: SAFECALL
 				{
 				mSAFECALL(); if (state.failed) return;
 
 				}
 				break;
-			case 107 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:789: SEALED
+			case 118 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:867: SEALED
 				{
 				mSEALED(); if (state.failed) return;
 
 				}
 				break;
-			case 108 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:796: SET
+			case 119 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:874: SET
 				{
 				mSET(); if (state.failed) return;
 
 				}
 				break;
-			case 109 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:800: SHL
+			case 120 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:878: SHL
 				{
 				mSHL(); if (state.failed) return;
 
 				}
 				break;
-			case 110 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:804: SHR
+			case 121 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:882: SHR
 				{
 				mSHR(); if (state.failed) return;
 
 				}
 				break;
-			case 111 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:808: STATIC
+			case 122 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:886: STATIC
 				{
 				mSTATIC(); if (state.failed) return;
 
 				}
 				break;
-			case 112 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:815: STDCALL
+			case 123 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:893: STDCALL
 				{
 				mSTDCALL(); if (state.failed) return;
 
 				}
 				break;
-			case 113 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:823: STORED
+			case 124 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:901: STORED
 				{
 				mSTORED(); if (state.failed) return;
 
 				}
 				break;
-			case 114 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:830: STRICT
+			case 125 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:908: STRICT
 				{
 				mSTRICT(); if (state.failed) return;
 
 				}
 				break;
-			case 115 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:837: STRING
+			case 126 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:915: STRING
 				{
 				mSTRING(); if (state.failed) return;
 
 				}
 				break;
-			case 116 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:844: THEN
+			case 127 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:922: THEN
 				{
 				mTHEN(); if (state.failed) return;
 
 				}
 				break;
-			case 117 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:849: THREADVAR
+			case 128 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:927: THREADVAR
 				{
 				mTHREADVAR(); if (state.failed) return;
 
 				}
 				break;
-			case 118 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:859: TO
+			case 129 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:937: TO
 				{
 				mTO(); if (state.failed) return;
 
 				}
 				break;
-			case 119 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:862: TRY
+			case 130 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:940: TRY
 				{
 				mTRY(); if (state.failed) return;
 
 				}
 				break;
-			case 120 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:866: TYPE
+			case 131 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:944: TYPE
 				{
 				mTYPE(); if (state.failed) return;
 
 				}
 				break;
-			case 121 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:871: UNIT
+			case 132 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:949: UNIT
 				{
 				mUNIT(); if (state.failed) return;
 
 				}
 				break;
-			case 122 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:876: UNSAFE
+			case 133 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:954: UNSAFE
 				{
 				mUNSAFE(); if (state.failed) return;
 
 				}
 				break;
-			case 123 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:883: UNTIL
+			case 134 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:961: UNTIL
 				{
 				mUNTIL(); if (state.failed) return;
 
 				}
 				break;
-			case 124 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:889: USES
+			case 135 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:967: USES
 				{
 				mUSES(); if (state.failed) return;
 
 				}
 				break;
-			case 125 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:894: VAR
+			case 136 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:972: VAR
 				{
 				mVAR(); if (state.failed) return;
 
 				}
 				break;
-			case 126 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:898: VARARGS
+			case 137 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:976: VARARGS
 				{
 				mVARARGS(); if (state.failed) return;
 
 				}
 				break;
-			case 127 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:906: VARIANT
+			case 138 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:984: VARIANT
 				{
 				mVARIANT(); if (state.failed) return;
 
 				}
 				break;
-			case 128 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:914: VIRTUAL
+			case 139 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:992: VIRTUAL
 				{
 				mVIRTUAL(); if (state.failed) return;
 
 				}
 				break;
-			case 129 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:922: WHILE
+			case 140 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1000: WHILE
 				{
 				mWHILE(); if (state.failed) return;
 
 				}
 				break;
-			case 130 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:928: WITH
+			case 141 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1006: WITH
 				{
 				mWITH(); if (state.failed) return;
 
 				}
 				break;
-			case 131 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:933: WRITE
+			case 142 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1011: WRITE
 				{
 				mWRITE(); if (state.failed) return;
 
 				}
 				break;
-			case 132 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:939: WRITEONLY
+			case 143 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1017: WRITEONLY
 				{
 				mWRITEONLY(); if (state.failed) return;
 
 				}
 				break;
-			case 133 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:949: XOR
+			case 144 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1027: XOR
 				{
 				mXOR(); if (state.failed) return;
 
 				}
 				break;
-			case 134 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:953: FALSE
+			case 145 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1031: FALSE
 				{
 				mFALSE(); if (state.failed) return;
 
 				}
 				break;
-			case 135 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:959: TRUE
+			case 146 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1037: TRUE
 				{
 				mTRUE(); if (state.failed) return;
 
 				}
 				break;
-			case 136 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:964: PLUS
+			case 147 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1042: PLUS
 				{
 				mPLUS(); if (state.failed) return;
 
 				}
 				break;
-			case 137 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:969: MINUS
+			case 148 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1047: MINUS
 				{
 				mMINUS(); if (state.failed) return;
 
 				}
 				break;
-			case 138 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:975: STAR
+			case 149 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1053: STAR
 				{
 				mSTAR(); if (state.failed) return;
 
 				}
 				break;
-			case 139 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:980: SLASH
+			case 150 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1058: SLASH
 				{
 				mSLASH(); if (state.failed) return;
 
 				}
 				break;
-			case 140 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:986: ASSIGN
+			case 151 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1064: ASSIGN
 				{
 				mASSIGN(); if (state.failed) return;
 
 				}
 				break;
-			case 141 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:993: COMMA
+			case 152 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1071: COMMA
 				{
 				mCOMMA(); if (state.failed) return;
 
 				}
 				break;
-			case 142 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:999: SEMI
+			case 153 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1077: SEMI
 				{
 				mSEMI(); if (state.failed) return;
 
 				}
 				break;
-			case 143 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1004: COLON
+			case 154 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1082: COLON
 				{
 				mCOLON(); if (state.failed) return;
 
 				}
 				break;
-			case 144 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1010: EQUAL
+			case 155 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1088: EQUAL
 				{
 				mEQUAL(); if (state.failed) return;
 
 				}
 				break;
-			case 145 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1016: NOT_EQUAL
+			case 156 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1094: NOT_EQUAL
 				{
 				mNOT_EQUAL(); if (state.failed) return;
 
 				}
 				break;
-			case 146 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1026: LT
+			case 157 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1104: LT
 				{
 				mLT(); if (state.failed) return;
 
 				}
 				break;
-			case 147 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1029: LE
+			case 158 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1107: LE
 				{
 				mLE(); if (state.failed) return;
 
 				}
 				break;
-			case 148 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1032: GE
+			case 159 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1110: GE
 				{
 				mGE(); if (state.failed) return;
 
 				}
 				break;
-			case 149 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1035: GT
+			case 160 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1113: GT
 				{
 				mGT(); if (state.failed) return;
 
 				}
 				break;
-			case 150 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1038: LPAREN
+			case 161 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1116: LPAREN
 				{
 				mLPAREN(); if (state.failed) return;
 
 				}
 				break;
-			case 151 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1045: RPAREN
+			case 162 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1123: RPAREN
 				{
 				mRPAREN(); if (state.failed) return;
 
 				}
 				break;
-			case 152 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1052: LBRACK
+			case 163 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1130: LBRACK
 				{
 				mLBRACK(); if (state.failed) return;
 
 				}
 				break;
-			case 153 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1059: LBRACK2
+			case 164 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1137: LBRACK2
 				{
 				mLBRACK2(); if (state.failed) return;
 
 				}
 				break;
-			case 154 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1067: RBRACK
+			case 165 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1145: RBRACK
 				{
 				mRBRACK(); if (state.failed) return;
 
 				}
 				break;
-			case 155 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1074: RBRACK2
+			case 166 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1152: RBRACK2
 				{
 				mRBRACK2(); if (state.failed) return;
 
 				}
 				break;
-			case 156 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1082: POINTER2
+			case 167 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1160: POINTER2
 				{
 				mPOINTER2(); if (state.failed) return;
 
 				}
 				break;
-			case 157 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1091: AT2
+			case 168 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1169: AT2
 				{
 				mAT2(); if (state.failed) return;
 
 				}
 				break;
-			case 158 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1095: DOT
+			case 169 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1173: DOT
 				{
 				mDOT(); if (state.failed) return;
 
 				}
 				break;
-			case 159 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1099: DOTDOT
+			case 170 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1177: DOTDOT
 				{
 				mDOTDOT(); if (state.failed) return;
 
 				}
 				break;
-			case 160 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1106: LCURLY
+			case 171 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1184: LCURLY
 				{
 				mLCURLY(); if (state.failed) return;
 
 				}
 				break;
-			case 161 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1113: RCURLY
+			case 172 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1191: RCURLY
 				{
 				mRCURLY(); if (state.failed) return;
 
 				}
 				break;
-			case 162 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1120: TkGlobalFunction
+			case 173 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1198: TkGlobalFunction
 				{
 				mTkGlobalFunction(); if (state.failed) return;
 
 				}
 				break;
-			case 163 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1137: TkFunctionName
+			case 174 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1215: TkFunctionName
 				{
 				mTkFunctionName(); if (state.failed) return;
 
 				}
 				break;
-			case 164 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1152: TkFunctionArgs
+			case 175 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1230: TkFunctionArgs
 				{
 				mTkFunctionArgs(); if (state.failed) return;
 
 				}
 				break;
-			case 165 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1167: TkFunctionBody
+			case 176 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1245: TkFunctionBody
 				{
 				mTkFunctionBody(); if (state.failed) return;
 
 				}
 				break;
-			case 166 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1182: TkFunctionReturn
+			case 177 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1260: TkFunctionReturn
 				{
 				mTkFunctionReturn(); if (state.failed) return;
 
 				}
 				break;
-			case 167 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1199: TkCustomAttribute
+			case 178 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1277: TkCustomAttribute
 				{
 				mTkCustomAttribute(); if (state.failed) return;
 
 				}
 				break;
-			case 168 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1217: TkCustomAttributeArgs
+			case 179 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1295: TkCustomAttributeArgs
 				{
 				mTkCustomAttributeArgs(); if (state.failed) return;
 
 				}
 				break;
-			case 169 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1239: TkNewType
+			case 180 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1317: TkNewType
 				{
 				mTkNewType(); if (state.failed) return;
 
 				}
 				break;
-			case 170 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1249: TkClass
+			case 181 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1327: TkClass
 				{
 				mTkClass(); if (state.failed) return;
 
 				}
 				break;
-			case 171 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1257: TkRecord
+			case 182 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1335: TkRecord
 				{
 				mTkRecord(); if (state.failed) return;
 
 				}
 				break;
-			case 172 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1266: TkRecordHelper
+			case 183 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1344: TkRecordHelper
 				{
 				mTkRecordHelper(); if (state.failed) return;
 
 				}
 				break;
-			case 173 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1281: TkInterface
+			case 184 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1359: TkInterface
 				{
 				mTkInterface(); if (state.failed) return;
 
 				}
 				break;
-			case 174 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1293: TkObject
+			case 185 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1371: TkObject
 				{
 				mTkObject(); if (state.failed) return;
 
 				}
 				break;
-			case 175 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1302: TkClassOfType
+			case 186 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1380: TkClassOfType
 				{
 				mTkClassOfType(); if (state.failed) return;
 
 				}
 				break;
-			case 176 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1316: TkVariableType
+			case 187 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1394: TkVariableType
 				{
 				mTkVariableType(); if (state.failed) return;
 
 				}
 				break;
-			case 177 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1331: TkVariableIdents
+			case 188 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1409: TkVariableIdents
 				{
 				mTkVariableIdents(); if (state.failed) return;
 
 				}
 				break;
-			case 178 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1348: TkVariableParam
+			case 189 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1426: TkVariableParam
 				{
 				mTkVariableParam(); if (state.failed) return;
 
 				}
 				break;
-			case 179 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1364: TkGuid
+			case 190 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1442: TkGuid
 				{
 				mTkGuid(); if (state.failed) return;
 
 				}
 				break;
-			case 180 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1371: TkClassParents
+			case 191 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1449: TkClassParents
 				{
 				mTkClassParents(); if (state.failed) return;
 
 				}
 				break;
-			case 181 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1386: TkClassField
+			case 192 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1464: TkClassField
 				{
 				mTkClassField(); if (state.failed) return;
 
 				}
 				break;
-			case 182 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1399: TkAnonymousExpression
+			case 193 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1477: TkAnonymousExpression
 				{
 				mTkAnonymousExpression(); if (state.failed) return;
 
 				}
 				break;
-			case 183 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1421: TkIdentifier
+			case 194 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1499: TkIdentifier
 				{
 				mTkIdentifier(); if (state.failed) return;
 
 				}
 				break;
-			case 184 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1434: TkIntNum
+			case 195 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1512: TkIntNum
 				{
 				mTkIntNum(); if (state.failed) return;
 
 				}
 				break;
-			case 185 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1443: TkRealNum
+			case 196 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1521: TkRealNum
 				{
 				mTkRealNum(); if (state.failed) return;
 
 				}
 				break;
-			case 186 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1453: TkHexNum
+			case 197 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1531: TkHexNum
 				{
 				mTkHexNum(); if (state.failed) return;
 
 				}
 				break;
-			case 187 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1462: ControlChar
+			case 198 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1540: ControlChar
 				{
 				mControlChar(); if (state.failed) return;
 
 				}
 				break;
-			case 188 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1474: QuotedString
+			case 199 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1552: QuotedString
 				{
 				mQuotedString(); if (state.failed) return;
 
 				}
 				break;
-			case 189 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1487: Hexdigitseq
+			case 200 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1565: Hexdigitseq
 				{
 				mHexdigitseq(); if (state.failed) return;
 
 				}
 				break;
-			case 190 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1499: COMMENT
+			case 201 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1577: COMMENT
 				{
 				mCOMMENT(); if (state.failed) return;
 
 				}
 				break;
-			case 191 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1507: WS
+			case 202 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1585: WS
 				{
 				mWS(); if (state.failed) return;
 
 				}
 				break;
-			case 192 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1510: UnicodeBOM
+			case 203 :
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1588: UnicodeBOM
 				{
 				mUnicodeBOM(); if (state.failed) return;
 
@@ -6312,10 +6631,10 @@ public class DelphiLexer extends Lexer {
 
 	// $ANTLR start synpred1_Delphi
 	public final void synpred1_Delphi_fragment() throws RecognitionException {
-		// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )
-		// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:39: ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )
+		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 		{
-		// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:39: ( DOT Digitseq )?
+		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )?
 		int alt20=2;
 		int LA20_0 = input.LA(1);
 		if ( (LA20_0=='.') ) {
@@ -6323,7 +6642,7 @@ public class DelphiLexer extends Lexer {
 		}
 		switch (alt20) {
 			case 1 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:40: DOT Digitseq
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:40: DOT Digitseq
 				{
 				mDOT(); if (state.failed) return;
 
@@ -6334,7 +6653,7 @@ public class DelphiLexer extends Lexer {
 
 		}
 
-		// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:55: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:55: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 		int alt22=2;
 		int LA22_0 = input.LA(1);
 		if ( (LA22_0=='E'||LA22_0=='e') ) {
@@ -6342,7 +6661,7 @@ public class DelphiLexer extends Lexer {
 		}
 		switch (alt22) {
 			case 1 :
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:56: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:56: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
 				{
 				if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 					input.consume();
@@ -6354,7 +6673,7 @@ public class DelphiLexer extends Lexer {
 					recover(mse);
 					throw mse;
 				}
-				// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:66: ( '+' | '-' )?
+				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:66: ( '+' | '-' )?
 				int alt21=2;
 				int LA21_0 = input.LA(1);
 				if ( (LA21_0=='+'||LA21_0=='-') ) {
@@ -6362,7 +6681,7 @@ public class DelphiLexer extends Lexer {
 				}
 				switch (alt21) {
 					case 1 :
-						// C:\\Dev\\SonarDelphi-mendrix\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+						// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 						{
 						if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
 							input.consume();
@@ -6409,468 +6728,466 @@ public class DelphiLexer extends Lexer {
 
 	protected DFA19 dfa19 = new DFA19(this);
 	static final String DFA19_eotS =
-		"\2\uffff\1\73\1\75\25\62\3\uffff\1\u0089\1\u008b\3\uffff\1\u008e\1\u0090"+
-		"\1\u0092\3\uffff\1\u0095\1\u0096\1\uffff\10\62\1\uffff\1\62\1\u00a0\1"+
-		"\u00a1\10\uffff\4\62\1\u00ad\1\u00ae\14\62\1\u00bc\1\u00bd\1\u00be\12"+
-		"\62\1\u00ce\1\62\1\u00d5\1\u00d6\12\62\1\u00e2\1\u00e3\1\62\1\u00e5\16"+
-		"\62\1\u0104\12\62\17\uffff\11\62\2\uffff\1\u00a1\1\uffff\1\u00a5\1\uffff"+
-		"\1\62\1\u011e\1\u011f\2\62\1\u0122\1\62\2\uffff\13\62\1\u0130\1\62\3\uffff"+
-		"\2\62\1\u0134\4\62\1\u013a\3\62\1\u013f\3\62\1\uffff\6\62\2\uffff\4\62"+
-		"\1\u014d\2\62\1\u0150\1\62\1\u0152\1\62\2\uffff\1\62\1\uffff\1\u0155\24"+
-		"\62\1\u016e\1\u016f\1\u0170\6\62\1\uffff\1\u0177\6\62\1\u0180\4\62\1\u0185"+
-		"\11\62\1\u00a3\2\62\2\uffff\2\62\1\uffff\4\62\1\u0198\10\62\1\uffff\2"+
-		"\62\1\u01a4\1\uffff\1\62\1\u01a6\3\62\1\uffff\1\62\1\u01ab\2\62\1\uffff"+
-		"\1\62\1\u01af\13\62\1\uffff\1\u01bb\1\u01bc\1\uffff\1\62\1\uffff\2\62"+
-		"\1\uffff\14\62\1\u01cf\13\62\3\uffff\4\62\1\u01e0\1\62\1\uffff\1\u01e2"+
-		"\1\u01e3\1\u01e4\2\62\1\u01e7\2\62\1\uffff\2\62\1\u01ec\1\62\1\uffff\11"+
-		"\62\1\u00a3\3\62\1\u01fa\2\62\1\u01fd\1\u01fe\1\uffff\1\u01ff\1\u0200"+
-		"\1\u0202\10\62\1\uffff\1\62\1\uffff\3\62\1\u0210\1\uffff\1\u0213\2\62"+
-		"\1\uffff\2\62\1\u0218\4\62\1\u021d\1\62\1\u021f\1\62\2\uffff\20\62\1\u0232"+
-		"\1\62\1\uffff\20\62\1\uffff\1\62\3\uffff\1\62\1\u0246\1\uffff\3\62\1\u024a"+
-		"\1\uffff\1\u024c\2\62\1\u0250\11\62\1\uffff\2\62\4\uffff\1\62\1\uffff"+
-		"\5\62\1\u0262\1\62\1\u0264\1\62\1\u0266\1\62\1\u0269\1\62\1\uffff\2\62"+
-		"\1\uffff\2\62\1\u026f\1\62\1\uffff\2\62\1\u0273\1\62\1\uffff\1\62\1\uffff"+
-		"\2\62\1\u0278\4\62\1\u027d\1\u027e\7\62\1\u0286\1\62\1\uffff\1\62\1\u0289"+
-		"\3\62\1\u028d\1\u028e\4\62\1\u0293\1\u0294\1\62\1\u0296\1\u0297\1\u0298"+
-		"\1\62\1\u029a\1\uffff\3\62\1\uffff\1\62\1\uffff\3\62\1\uffff\16\62\1\u02b3"+
-		"\2\62\1\uffff\1\62\1\uffff\1\u02b7\1\uffff\1\62\1\u02b9\1\uffff\2\62\1"+
-		"\u02bc\1\u02bd\1\62\1\uffff\3\62\1\uffff\1\62\1\u02c3\1\u02c4\1\62\1\uffff"+
-		"\3\62\1\u02c9\2\uffff\1\62\1\u02cb\1\u02cc\1\62\1\u02ce\2\62\1\uffff\2"+
-		"\62\1\uffff\3\62\2\uffff\4\62\2\uffff\1\u02da\3\uffff\1\62\1\uffff\1\u02dc"+
-		"\1\u02dd\1\u02de\14\62\1\u02ec\1\u02ed\2\62\1\u02f0\2\62\1\u02f3\1\u02f4"+
-		"\1\uffff\3\62\1\uffff\1\62\1\uffff\1\u02f9\1\62\2\uffff\1\u02fb\4\62\2"+
-		"\uffff\1\62\1\u0301\1\u0302\1\u0303\1\uffff\1\u0304\2\uffff\1\62\1\uffff"+
-		"\1\u0306\2\62\1\u0309\1\62\1\u030b\1\62\1\u030d\1\u030e\1\62\1\u0310\1"+
-		"\uffff\1\62\3\uffff\6\62\1\u0318\6\62\2\uffff\1\62\1\u0320\1\uffff\1\u0321"+
-		"\1\62\2\uffff\4\62\1\uffff\1\62\1\uffff\1\62\1\u032a\1\62\1\u032c\1\u032d"+
-		"\4\uffff\1\u032e\1\uffff\1\u032f\1\u0330\1\uffff\1\u0331\1\uffff\1\62"+
-		"\2\uffff\1\62\1\uffff\1\u0334\1\u0335\5\62\1\uffff\6\62\1\u0347\2\uffff"+
-		"\1\62\1\u0349\1\u034a\4\62\1\u034f\1\uffff\1\62\6\uffff\2\62\2\uffff\21"+
-		"\62\1\uffff\1\u0365\2\uffff\4\62\1\uffff\1\62\1\u036b\11\62\1\u0375\1"+
-		"\u0376\3\62\1\u037a\4\62\1\uffff\1\62\1\u0380\1\u0381\2\62\1\uffff\11"+
-		"\62\2\uffff\3\62\1\uffff\4\62\1\u0394\2\uffff\4\62\1\u0399\1\u039a\1\u039b"+
-		"\2\62\1\u039e\1\u039f\1\u03a0\2\62\1\u03a3\3\62\1\uffff\1\u03a7\1\u03a8"+
-		"\1\u03a9\1\62\3\uffff\2\62\3\uffff\1\u03ad\1\u03ae\1\uffff\1\62\1\u03b0"+
-		"\1\62\3\uffff\1\u03b2\1\u03b3\1\62\2\uffff\1\u03b5\1\uffff\1\62\2\uffff"+
-		"\1\u03b8\1\uffff\2\62\1\uffff\6\62\1\u03c1\1\u03c2\2\uffff";
+		"\2\uffff\1\77\7\66\1\116\25\66\3\uffff\1\u0097\1\u0099\3\uffff\1\u009c"+
+		"\1\u009e\1\u00a0\3\uffff\1\u00a3\1\u00a4\1\uffff\5\66\1\uffff\1\66\1\u00ab"+
+		"\1\u00ac\6\uffff\1\66\1\u00b3\7\66\1\u00b8\3\66\2\uffff\10\66\1\u00c9"+
+		"\1\u00ca\11\66\1\u00d9\1\u00da\1\u00db\12\66\1\u00eb\1\66\1\u00f2\1\u00f3"+
+		"\6\66\1\u00fa\1\u00fb\1\66\1\u00fd\16\66\1\u011c\12\66\17\uffff\6\66\2"+
+		"\uffff\1\u00ac\1\uffff\1\u00b0\1\uffff\1\u0131\1\66\1\uffff\1\u0133\2"+
+		"\66\1\u0136\1\uffff\1\66\1\u0138\1\u0139\1\u013a\1\u013c\3\66\1\u0140"+
+		"\1\66\1\u0143\1\u0144\2\66\1\u0147\1\66\2\uffff\14\66\1\u0156\1\66\3\uffff"+
+		"\2\66\1\u015a\4\66\1\u0160\3\66\1\u0165\3\66\1\uffff\6\66\2\uffff\4\66"+
+		"\1\u0173\1\66\2\uffff\1\66\1\uffff\1\u0176\24\66\1\u018f\1\u0190\1\u0191"+
+		"\6\66\1\uffff\1\u0198\6\66\1\u01a1\4\66\1\u01a6\6\66\1\u00ae\1\uffff\1"+
+		"\66\1\uffff\2\66\1\uffff\1\66\5\uffff\1\u01b2\1\u01b3\1\66\1\uffff\2\66"+
+		"\2\uffff\2\66\1\uffff\4\66\1\u01bd\11\66\1\uffff\2\66\1\u01ca\1\uffff"+
+		"\1\66\1\u01cc\3\66\1\uffff\1\66\1\u01d1\2\66\1\uffff\1\66\1\u01d5\13\66"+
+		"\1\uffff\2\66\1\uffff\14\66\1\u01f2\13\66\3\uffff\4\66\1\u0203\1\66\1"+
+		"\uffff\1\u0205\1\u0206\1\u0207\2\66\1\u020a\2\66\1\uffff\2\66\1\u020f"+
+		"\1\66\1\uffff\6\66\1\u00ae\4\66\2\uffff\4\66\1\u021f\2\66\1\u0222\1\u0223"+
+		"\1\uffff\1\u0224\1\u0225\1\u0227\11\66\1\uffff\1\66\1\uffff\3\66\1\u0236"+
+		"\1\uffff\1\u0239\2\66\1\uffff\2\66\1\u023e\4\66\1\u0243\1\66\1\u0245\20"+
+		"\66\1\u0257\1\66\1\uffff\20\66\1\uffff\1\66\3\uffff\1\66\1\u026b\1\uffff"+
+		"\3\66\1\u026f\1\uffff\1\u0271\2\66\1\u0275\13\66\1\uffff\2\66\4\uffff"+
+		"\1\66\1\uffff\6\66\1\u028a\1\66\1\u028c\1\66\1\u028e\1\66\1\u0291\1\66"+
+		"\1\uffff\2\66\1\uffff\2\66\1\u0297\1\66\1\uffff\2\66\1\u029b\1\66\1\uffff"+
+		"\1\66\1\uffff\1\66\1\u029f\4\66\1\u02a4\1\u02a5\7\66\1\u02ad\1\66\1\uffff"+
+		"\1\66\1\u02b0\3\66\1\u02b4\1\u02b5\4\66\1\u02ba\1\u02bb\1\66\1\u02bd\1"+
+		"\u02be\1\u02bf\1\66\1\u02c1\1\uffff\3\66\1\uffff\1\66\1\uffff\3\66\1\uffff"+
+		"\20\66\1\u02dc\1\u02dd\2\66\1\uffff\1\66\1\uffff\1\u02e1\1\uffff\1\66"+
+		"\1\u02e3\1\uffff\2\66\1\u02e6\1\u02e7\1\66\1\uffff\3\66\1\uffff\1\66\1"+
+		"\u02ed\1\u02ee\1\uffff\3\66\1\u02f2\2\uffff\1\66\1\u02f4\1\u02f5\1\66"+
+		"\1\u02f7\2\66\1\uffff\2\66\1\uffff\3\66\2\uffff\4\66\2\uffff\1\u0303\3"+
+		"\uffff\1\66\1\uffff\1\u0305\1\u0306\1\u0307\16\66\1\u0317\1\u0318\2\66"+
+		"\1\u031b\2\66\1\u031e\1\u031f\2\uffff\3\66\1\uffff\1\66\1\uffff\1\u0324"+
+		"\1\66\2\uffff\1\u0326\4\66\2\uffff\1\u032b\1\u032c\1\u032d\1\uffff\1\u032e"+
+		"\2\uffff\1\66\1\uffff\1\u0330\2\66\1\u0333\1\66\1\u0335\1\66\1\u0337\1"+
+		"\u0338\1\66\1\u033a\1\uffff\1\66\3\uffff\6\66\1\u0342\4\66\1\u0347\2\66"+
+		"\1\u034a\2\uffff\1\66\1\u034c\1\uffff\1\u034d\1\66\2\uffff\4\66\1\uffff"+
+		"\1\66\1\uffff\1\66\1\u0356\1\66\1\u0358\4\uffff\1\u0359\1\uffff\1\u035a"+
+		"\1\u035b\1\uffff\1\u035c\1\uffff\1\66\2\uffff\1\66\1\uffff\1\u035f\1\u0360"+
+		"\5\66\1\uffff\4\66\1\uffff\2\66\1\uffff\1\u0373\2\uffff\1\66\1\u0375\1"+
+		"\u0376\4\66\1\u037b\1\uffff\1\66\5\uffff\2\66\2\uffff\21\66\1\u0390\1"+
+		"\uffff\1\u0391\2\uffff\4\66\1\uffff\1\66\1\u0397\11\66\1\u03a1\1\u03a2"+
+		"\7\66\2\uffff\1\66\1\u03ab\1\u03ac\2\66\1\uffff\11\66\2\uffff\7\66\1\u03bf"+
+		"\2\uffff\4\66\1\u03c4\1\u03c5\1\u03c6\2\66\1\u03c9\1\u03ca\1\u03cb\1\u03cc"+
+		"\3\66\1\u03d0\1\u03d1\1\uffff\1\u03d2\1\u03d3\1\u03d4\1\66\3\uffff\2\66"+
+		"\4\uffff\1\66\1\u03d9\1\66\5\uffff\1\u03db\1\u03dc\1\66\1\u03de\1\uffff"+
+		"\1\66\2\uffff\1\u03e1\1\uffff\2\66\1\uffff\4\66\1\u03e8\1\66\1\uffff\1"+
+		"\u03ea\1\uffff";
 	static final String DFA19_eofS =
-		"\u03c3\uffff";
+		"\u03eb\uffff";
 	static final String DFA19_minS =
-		"\1\11\1\uffff\1\100\1\101\6\60\1\157\1\145\1\146\1\141\1\145\1\141\1\142"+
-		"\3\141\1\150\1\156\1\141\1\150\1\157\3\uffff\1\57\1\75\3\uffff\2\75\1"+
-		"\52\3\uffff\1\51\1\0\1\uffff\2\60\2\105\1\116\1\102\1\101\1\60\1\uffff"+
-		"\1\60\1\0\1\56\10\uffff\2\60\1\144\1\162\2\60\1\164\4\60\1\145\2\60\1"+
-		"\141\1\156\1\60\1\163\3\60\1\156\1\163\1\144\1\143\1\60\1\154\1\162\1"+
-		"\156\1\164\1\154\1\60\1\160\2\60\2\142\1\143\1\163\1\144\1\155\1\141\1"+
-		"\154\1\144\1\152\2\60\1\145\1\60\1\164\1\145\1\143\1\141\2\151\1\142\1"+
-		"\151\1\141\1\146\1\141\1\154\1\141\1\145\1\60\1\165\1\160\1\151\1\145"+
-		"\2\162\1\151\1\164\1\151\1\162\17\uffff\1\116\1\123\1\101\1\127\1\103"+
-		"\1\124\1\112\1\122\1\117\2\uffff\1\56\1\uffff\1\53\1\uffff\1\157\2\60"+
+		"\1\11\1\uffff\1\100\2\60\1\116\1\117\1\102\1\110\1\117\1\101\1\141\6\60"+
+		"\1\157\1\145\1\146\1\141\1\145\1\142\3\141\1\150\1\156\1\141\1\150\1\157"+
+		"\3\uffff\1\57\1\75\3\uffff\2\75\1\52\3\uffff\1\51\1\0\1\uffff\2\60\2\105"+
+		"\1\101\1\uffff\1\60\1\0\1\56\6\uffff\1\104\4\60\1\126\1\150\1\124\1\104"+
+		"\1\60\1\112\1\114\1\122\2\uffff\1\154\1\155\1\141\1\144\2\60\1\144\1\162"+
+		"\2\60\1\164\1\60\1\145\2\60\1\141\1\156\1\60\1\163\3\60\1\156\1\163\1"+
+		"\144\1\143\1\60\1\154\1\162\1\156\1\164\1\154\1\60\1\160\2\60\2\142\1"+
+		"\143\1\163\1\144\1\152\2\60\1\145\1\60\1\164\1\145\1\143\1\141\2\151\1"+
+		"\142\1\151\1\141\1\146\1\141\1\154\1\141\1\145\1\60\1\165\1\160\1\151"+
+		"\1\145\2\162\1\151\1\164\1\151\1\162\17\uffff\1\116\1\123\1\101\1\127"+
+		"\1\103\1\122\2\uffff\1\56\1\uffff\1\53\1\uffff\1\60\1\116\1\uffff\1\60"+
+		"\1\145\1\105\1\60\1\uffff\1\105\4\60\1\145\1\162\1\145\1\60\1\157\2\60"+
 		"\1\151\1\141\1\60\1\145\2\uffff\1\157\1\151\1\141\1\145\1\60\2\163\1\60"+
-		"\1\162\1\164\1\160\1\60\1\156\3\uffff\1\141\1\145\1\60\1\145\1\164\2\145"+
-		"\1\60\1\163\1\145\1\141\1\60\1\143\1\157\1\160\1\uffff\1\154\2\145\1\164"+
-		"\1\151\1\145\2\uffff\1\145\1\162\1\141\1\163\1\60\1\145\1\162\1\60\1\145"+
-		"\1\60\1\145\2\uffff\1\162\1\uffff\1\60\1\162\1\153\1\143\1\164\1\156\1"+
-		"\166\1\143\1\154\1\163\1\144\1\157\1\145\1\151\1\156\1\157\1\145\1\165"+
-		"\1\151\1\145\1\154\3\60\1\164\1\143\1\162\1\151\1\156\1\145\1\uffff\1"+
-		"\60\2\145\1\164\1\141\1\151\1\163\1\60\1\164\1\154\1\150\1\164\1\60\1"+
-		"\103\1\124\1\123\1\137\1\117\2\105\1\111\1\116\1\60\1\154\1\162\2\uffff"+
-		"\1\163\1\171\1\uffff\2\155\1\156\1\153\2\60\1\163\1\164\1\141\1\60\1\145"+
-		"\1\162\1\151\1\uffff\1\164\1\155\1\60\1\uffff\1\160\1\60\3\162\1\uffff"+
-		"\1\145\1\60\1\154\1\141\1\uffff\1\164\1\60\2\145\1\170\1\162\1\151\1\156"+
-		"\1\162\1\154\1\141\1\154\1\141\1\uffff\2\60\1\uffff\1\146\1\uffff\1\143"+
-		"\1\141\1\uffff\1\154\2\141\1\146\1\164\1\141\1\145\1\162\2\145\1\151\1"+
-		"\145\1\60\2\162\1\163\1\164\1\166\1\141\1\151\1\144\1\165\1\143\1\145"+
-		"\3\uffff\1\151\1\141\1\145\1\143\1\60\1\141\1\uffff\3\60\1\146\1\154\1"+
-		"\60\1\162\1\141\1\uffff\1\165\1\145\1\60\1\145\1\uffff\1\124\1\117\1\123"+
-		"\1\124\2\122\1\103\1\101\1\131\1\60\1\165\1\141\1\164\1\60\1\142\1\141"+
-		"\2\60\1\uffff\3\60\1\151\1\156\1\154\1\143\1\165\1\144\1\157\1\151\1\uffff"+
-		"\1\164\1\uffff\1\151\1\164\1\156\1\60\1\uffff\1\60\1\162\1\151\1\uffff"+
-		"\1\162\1\155\1\60\1\151\1\141\1\145\1\146\1\60\1\162\1\60\1\147\2\uffff"+
-		"\1\141\2\164\1\157\1\151\1\147\1\144\1\154\1\157\1\145\1\164\1\144\1\141"+
-		"\1\162\2\143\1\60\1\156\1\uffff\1\144\1\145\1\164\1\162\1\145\1\164\1"+
-		"\162\1\145\1\162\1\141\1\144\1\143\1\154\1\144\1\164\1\147\1\uffff\1\144"+
-		"\3\uffff\1\145\1\60\1\uffff\1\147\1\156\1\141\1\60\1\uffff\1\60\1\111"+
-		"\1\115\1\60\1\131\1\104\1\106\1\124\1\102\1\115\1\164\1\143\1\162\1\uffff"+
-		"\1\154\1\164\4\uffff\1\165\1\uffff\1\156\1\165\1\164\1\141\1\143\1\60"+
-		"\1\164\1\60\1\143\1\60\1\155\1\60\1\141\1\uffff\1\172\1\171\1\uffff\1"+
-		"\144\1\157\1\60\1\145\1\uffff\1\164\1\154\1\60\1\141\1\uffff\1\171\1\uffff"+
-		"\1\145\1\165\1\60\1\157\1\141\1\144\1\145\2\60\2\162\1\145\1\165\1\155"+
-		"\2\164\1\60\1\150\1\uffff\1\154\1\60\1\156\1\145\1\157\2\60\1\145\1\156"+
-		"\1\143\1\154\2\60\1\154\3\60\1\166\1\60\1\uffff\1\163\1\164\1\154\1\uffff"+
-		"\1\156\1\uffff\1\117\1\137\1\106\1\uffff\1\120\1\137\1\101\1\137\1\114"+
-		"\1\117\1\145\1\164\1\151\2\145\1\143\1\163\1\145\1\60\2\164\1\uffff\1"+
-		"\145\1\uffff\1\60\1\uffff\1\145\1\60\1\uffff\1\154\1\141\2\60\1\156\1"+
-		"\uffff\1\156\1\145\1\151\1\uffff\1\143\2\60\1\154\1\uffff\1\162\1\144"+
-		"\1\145\1\60\2\uffff\1\155\2\60\1\162\1\60\1\171\1\145\1\uffff\1\145\1"+
-		"\171\1\uffff\1\143\1\162\1\144\2\uffff\1\163\1\164\1\145\1\154\2\uffff"+
-		"\1\60\3\uffff\1\141\1\uffff\3\60\1\154\1\116\1\101\1\106\1\101\1\111\1"+
-		"\105\1\110\1\103\1\124\1\105\1\125\2\60\1\156\1\162\1\60\1\144\1\164\2"+
-		"\60\1\uffff\1\145\1\157\1\162\1\uffff\1\156\1\uffff\1\60\1\164\2\uffff"+
-		"\1\60\1\164\1\144\1\172\1\145\2\uffff\1\164\3\60\1\uffff\1\60\2\uffff"+
-		"\1\145\1\uffff\1\60\2\144\1\60\1\145\1\60\1\165\2\60\1\163\1\60\1\uffff"+
-		"\1\162\3\uffff\1\171\1\137\1\124\1\137\1\122\1\105\1\60\1\131\2\105\1"+
-		"\131\1\137\1\123\2\uffff\1\147\1\60\1\uffff\1\60\1\157\2\uffff\1\144\1"+
-		"\162\1\146\1\164\1\uffff\1\151\1\uffff\1\141\1\60\1\141\2\60\4\uffff\1"+
-		"\60\1\uffff\2\60\1\uffff\1\60\1\uffff\1\143\2\uffff\1\164\1\uffff\2\60"+
-		"\1\101\2\124\1\105\1\114\1\uffff\1\120\1\114\1\137\1\120\1\111\1\137\1"+
-		"\60\2\uffff\1\162\2\60\2\141\1\157\1\164\1\60\1\uffff\1\164\6\uffff\1"+
-		"\145\1\162\2\uffff\1\114\1\101\1\122\1\117\1\105\1\122\1\131\1\116\1\104"+
-		"\1\105\1\120\1\107\1\105\1\131\1\104\1\101\1\105\1\uffff\1\60\2\uffff"+
-		"\1\143\1\154\1\156\1\151\1\uffff\1\151\1\60\1\151\1\117\1\115\1\107\1"+
-		"\104\1\124\1\111\1\120\1\124\2\60\1\105\1\131\1\125\1\60\1\120\1\105\1"+
-		"\122\1\130\1\uffff\1\145\2\60\2\157\1\uffff\1\156\1\102\1\105\1\123\1"+
-		"\131\1\125\1\102\1\105\1\123\2\uffff\1\122\1\120\1\111\1\uffff\1\105\1"+
-		"\116\1\101\1\120\1\60\2\uffff\2\156\1\147\1\101\3\60\1\122\1\125\3\60"+
-		"\1\105\1\104\1\60\1\124\1\115\1\122\1\uffff\3\60\1\114\3\uffff\1\116\1"+
-		"\124\3\uffff\2\60\1\uffff\1\123\1\60\1\105\3\uffff\2\60\1\105\2\uffff"+
-		"\1\60\1\uffff\1\123\2\uffff\1\60\1\uffff\1\123\1\101\1\uffff\1\111\1\122"+
-		"\1\117\1\107\1\116\1\123\2\60\2\uffff";
+		"\1\141\1\162\1\164\1\160\1\60\1\156\3\uffff\1\141\1\145\1\60\1\145\1\164"+
+		"\2\145\1\60\1\163\1\145\1\141\1\60\1\143\1\157\1\160\1\uffff\1\154\2\145"+
+		"\1\164\1\151\1\145\2\uffff\1\145\1\162\1\141\1\163\1\60\1\145\2\uffff"+
+		"\1\162\1\uffff\1\60\1\162\1\153\1\143\1\164\1\156\1\166\1\143\1\154\1"+
+		"\163\1\144\1\157\1\145\1\151\1\156\1\157\1\145\1\165\1\151\1\145\1\154"+
+		"\3\60\1\164\1\143\1\162\1\151\1\156\1\145\1\uffff\1\60\2\145\1\164\1\141"+
+		"\1\151\1\163\1\60\1\164\1\154\1\150\1\164\1\60\1\103\1\124\1\123\1\137"+
+		"\1\117\1\111\1\60\1\uffff\1\131\1\uffff\1\162\1\122\1\uffff\1\103\5\uffff"+
+		"\2\60\1\146\1\uffff\1\154\1\162\2\uffff\1\163\1\171\1\uffff\2\155\1\156"+
+		"\1\153\2\60\1\163\1\164\1\141\1\60\1\171\1\145\1\162\1\151\1\uffff\1\164"+
+		"\1\155\1\60\1\uffff\1\160\1\60\3\162\1\uffff\1\145\1\60\1\154\1\141\1"+
+		"\uffff\1\164\1\60\2\145\1\170\1\162\1\151\1\156\1\162\1\154\1\141\1\154"+
+		"\1\141\1\uffff\1\143\1\141\1\uffff\1\154\2\141\1\146\1\164\1\141\1\145"+
+		"\1\162\2\145\1\151\1\145\1\60\2\162\1\163\1\164\1\166\1\141\1\151\1\144"+
+		"\1\165\1\143\1\145\3\uffff\1\151\1\141\1\145\1\143\1\60\1\141\1\uffff"+
+		"\3\60\1\146\1\154\1\60\1\162\1\141\1\uffff\1\165\1\145\1\60\1\145\1\uffff"+
+		"\1\124\1\117\1\123\1\124\1\122\1\101\1\60\1\115\1\151\1\106\1\124\2\uffff"+
+		"\1\141\1\165\1\141\1\164\1\60\1\142\1\141\2\60\1\uffff\3\60\1\151\1\156"+
+		"\1\154\1\145\1\143\1\165\1\144\1\157\1\151\1\uffff\1\164\1\uffff\1\151"+
+		"\1\164\1\156\1\60\1\uffff\1\60\1\162\1\151\1\uffff\1\162\1\155\1\60\1"+
+		"\151\1\141\1\145\1\146\1\60\1\162\1\60\1\147\2\164\1\157\1\151\1\147\1"+
+		"\144\1\154\1\157\1\145\1\164\1\144\1\141\1\162\2\143\1\60\1\156\1\uffff"+
+		"\1\144\1\145\1\164\1\162\1\145\1\164\1\162\1\145\1\162\1\141\1\144\1\143"+
+		"\1\154\1\144\1\164\1\147\1\uffff\1\144\3\uffff\1\145\1\60\1\uffff\1\147"+
+		"\1\156\1\141\1\60\1\uffff\1\60\1\111\1\115\1\60\1\131\1\104\1\102\1\117"+
+		"\1\164\1\101\1\137\1\165\1\164\1\143\1\162\1\uffff\1\154\1\164\4\uffff"+
+		"\1\165\1\uffff\1\156\1\165\1\164\1\144\1\141\1\143\1\60\1\164\1\60\1\143"+
+		"\1\60\1\155\1\60\1\141\1\uffff\1\172\1\171\1\uffff\1\144\1\157\1\60\1"+
+		"\145\1\uffff\1\164\1\154\1\60\1\141\1\uffff\1\171\1\uffff\1\145\1\60\1"+
+		"\157\1\141\1\144\1\145\2\60\2\162\1\145\1\165\1\155\2\164\1\60\1\150\1"+
+		"\uffff\1\154\1\60\1\156\1\145\1\157\2\60\1\145\1\156\1\143\1\154\2\60"+
+		"\1\154\3\60\1\166\1\60\1\uffff\1\163\1\164\1\154\1\uffff\1\156\1\uffff"+
+		"\1\117\1\137\1\106\1\uffff\1\120\1\137\1\114\1\125\1\145\1\103\1\124\1"+
+		"\154\1\145\1\164\1\151\2\145\1\143\1\163\1\145\2\60\2\164\1\uffff\1\145"+
+		"\1\uffff\1\60\1\uffff\1\145\1\60\1\uffff\1\154\1\141\2\60\1\156\1\uffff"+
+		"\1\156\1\145\1\151\1\uffff\1\143\2\60\1\uffff\1\162\1\144\1\145\1\60\2"+
+		"\uffff\1\155\2\60\1\162\1\60\1\171\1\145\1\uffff\1\145\1\171\1\uffff\1"+
+		"\143\1\162\1\144\2\uffff\1\163\1\164\1\145\1\154\2\uffff\1\60\3\uffff"+
+		"\1\141\1\uffff\3\60\1\154\1\116\1\101\1\106\1\101\1\111\1\105\1\110\1"+
+		"\105\1\123\1\144\1\105\1\131\1\164\2\60\1\156\1\162\1\60\1\144\1\164\2"+
+		"\60\2\uffff\1\145\1\157\1\162\1\uffff\1\156\1\uffff\1\60\1\164\2\uffff"+
+		"\1\60\1\164\1\144\1\172\1\145\2\uffff\3\60\1\uffff\1\60\2\uffff\1\145"+
+		"\1\uffff\1\60\2\144\1\60\1\145\1\60\1\165\2\60\1\163\1\60\1\uffff\1\162"+
+		"\3\uffff\1\171\1\137\1\124\1\137\1\122\1\105\1\60\1\131\1\105\2\137\1"+
+		"\60\1\137\1\120\1\60\2\uffff\1\147\1\60\1\uffff\1\60\1\157\2\uffff\1\144"+
+		"\1\162\1\146\1\164\1\uffff\1\151\1\uffff\1\141\1\60\1\141\1\60\4\uffff"+
+		"\1\60\1\uffff\2\60\1\uffff\1\60\1\uffff\1\143\2\uffff\1\164\1\uffff\2"+
+		"\60\1\101\2\124\1\105\1\114\1\uffff\1\120\1\114\1\111\1\105\1\uffff\1"+
+		"\107\1\105\1\uffff\1\60\2\uffff\1\162\2\60\2\141\1\157\1\164\1\60\1\uffff"+
+		"\1\164\5\uffff\1\145\1\162\2\uffff\1\114\1\101\1\122\1\117\1\105\1\122"+
+		"\1\131\1\116\1\104\1\105\1\120\1\131\1\104\1\101\1\130\1\131\1\125\1\60"+
+		"\1\uffff\1\60\2\uffff\1\143\1\154\1\156\1\151\1\uffff\1\151\1\60\1\151"+
+		"\1\117\1\115\1\107\1\104\1\124\1\111\1\120\1\124\2\60\1\105\1\120\1\105"+
+		"\1\122\2\120\1\111\2\uffff\1\145\2\60\2\157\1\uffff\1\156\1\102\1\105"+
+		"\1\123\1\131\1\125\1\102\1\105\1\123\2\uffff\1\122\1\105\1\116\1\101\1"+
+		"\122\1\105\1\104\1\60\2\uffff\2\156\1\147\1\101\3\60\1\122\1\125\4\60"+
+		"\1\124\1\115\1\105\2\60\1\uffff\3\60\1\114\3\uffff\1\116\1\124\4\uffff"+
+		"\1\123\1\60\1\123\5\uffff\2\60\1\105\1\60\1\uffff\1\123\2\uffff\1\60\1"+
+		"\uffff\1\111\1\101\1\uffff\1\117\1\122\1\116\1\107\1\60\1\123\1\uffff"+
+		"\1\60\1\uffff";
 	static final String DFA19_maxS =
-		"\1\ufffe\1\uffff\1\100\1\ufffe\1\165\1\162\1\157\1\171\1\170\1\165\1\157"+
-		"\1\145\1\163\3\157\1\166\1\165\1\145\1\164\1\171\1\163\1\151\1\162\1\157"+
-		"\3\uffff\1\57\1\75\3\uffff\1\76\1\75\1\56\3\uffff\1\56\1\uffff\1\uffff"+
-		"\2\146\2\105\1\116\1\102\1\101\1\146\1\uffff\1\146\1\uffff\1\146\10\uffff"+
-		"\1\163\1\146\1\163\1\162\2\ufffe\1\164\3\146\1\147\1\145\1\163\1\146\1"+
-		"\141\1\156\1\163\1\166\3\ufffe\1\156\1\163\1\144\1\164\1\162\1\156\1\162"+
-		"\1\156\1\164\1\154\1\ufffe\1\160\2\ufffe\2\142\1\143\1\163\1\144\1\155"+
-		"\1\141\1\154\1\164\1\152\2\ufffe\1\145\1\ufffe\1\164\1\145\1\163\1\141"+
-		"\1\151\1\157\1\142\1\151\1\163\1\146\1\164\3\162\1\ufffe\1\171\1\160\1"+
-		"\164\1\145\2\162\1\151\1\164\1\151\1\162\17\uffff\1\116\1\123\1\101\1"+
-		"\127\1\103\1\124\1\112\1\122\1\117\2\uffff\1\146\1\uffff\1\71\1\uffff"+
-		"\1\164\2\ufffe\1\151\1\141\1\ufffe\1\145\2\uffff\1\157\1\151\1\141\1\145"+
-		"\1\146\1\163\1\164\1\146\1\162\1\164\1\160\1\ufffe\1\156\3\uffff\1\141"+
-		"\1\145\1\ufffe\1\145\1\164\1\157\1\145\1\ufffe\1\163\1\145\1\141\1\ufffe"+
-		"\1\143\1\157\1\160\1\uffff\1\154\2\145\1\164\1\151\1\145\2\uffff\1\145"+
-		"\1\162\1\141\1\163\1\ufffe\1\145\1\162\1\ufffe\1\145\1\ufffe\1\145\2\uffff"+
-		"\1\162\1\uffff\1\ufffe\1\162\1\153\1\143\1\164\1\156\1\166\1\164\1\154"+
-		"\1\163\1\144\1\157\1\145\1\151\1\156\1\157\1\145\1\165\1\157\1\145\1\154"+
-		"\3\ufffe\1\164\1\143\1\162\1\151\1\156\1\145\1\uffff\1\ufffe\2\145\1\164"+
-		"\1\141\1\151\1\163\1\ufffe\1\164\1\154\1\150\1\164\1\ufffe\1\103\1\124"+
-		"\1\123\1\137\1\117\2\105\1\111\1\116\1\146\1\154\1\162\2\uffff\1\163\1"+
-		"\171\1\uffff\2\155\1\156\1\153\1\ufffe\1\154\1\163\1\164\1\151\1\165\1"+
-		"\145\1\162\1\151\1\uffff\1\164\1\155\1\ufffe\1\uffff\1\160\1\ufffe\3\162"+
-		"\1\uffff\1\145\1\ufffe\1\154\1\141\1\uffff\1\164\1\ufffe\2\145\1\170\1"+
-		"\162\1\151\1\156\1\162\1\154\1\141\1\154\1\141\1\uffff\2\ufffe\1\uffff"+
-		"\1\146\1\uffff\1\143\1\141\1\uffff\1\162\1\145\1\141\1\146\1\164\1\141"+
-		"\1\145\1\162\2\145\1\151\1\145\1\ufffe\2\162\1\163\1\164\1\166\1\141\1"+
-		"\151\1\144\1\165\1\143\1\145\3\uffff\1\151\1\141\1\145\1\156\1\ufffe\1"+
-		"\141\1\uffff\3\ufffe\1\146\1\154\1\ufffe\1\162\1\141\1\uffff\1\165\1\145"+
-		"\1\ufffe\1\145\1\uffff\1\124\1\117\1\123\1\124\2\122\1\103\1\101\1\131"+
-		"\1\146\1\165\1\141\1\164\1\ufffe\1\142\1\141\2\ufffe\1\uffff\3\ufffe\1"+
-		"\151\1\156\1\154\1\143\1\165\1\156\1\157\1\151\1\uffff\1\164\1\uffff\1"+
-		"\151\1\164\1\156\1\ufffe\1\uffff\1\ufffe\1\162\1\151\1\uffff\1\162\1\155"+
-		"\1\ufffe\1\151\1\141\1\145\1\146\1\ufffe\1\162\1\ufffe\1\147\2\uffff\1"+
-		"\141\2\164\1\157\1\151\1\147\1\144\1\154\1\157\1\145\1\164\1\144\1\141"+
-		"\1\162\1\143\1\163\1\ufffe\1\156\1\uffff\1\144\1\145\1\164\1\162\1\145"+
-		"\1\164\1\162\1\145\1\162\1\141\1\144\1\143\1\154\1\144\1\164\1\147\1\uffff"+
-		"\1\144\3\uffff\1\145\1\ufffe\1\uffff\1\147\1\156\1\141\1\ufffe\1\uffff"+
-		"\1\ufffe\1\111\1\115\1\ufffe\1\131\1\104\1\106\1\124\1\102\1\115\1\164"+
-		"\1\143\1\162\1\uffff\1\154\1\164\4\uffff\1\165\1\uffff\1\156\1\165\1\164"+
-		"\1\141\1\143\1\ufffe\1\164\1\ufffe\1\143\1\ufffe\1\155\1\ufffe\1\141\1"+
-		"\uffff\1\172\1\171\1\uffff\1\144\1\157\1\ufffe\1\145\1\uffff\1\164\1\154"+
-		"\1\ufffe\1\141\1\uffff\1\171\1\uffff\1\145\1\165\1\ufffe\1\157\1\141\1"+
-		"\144\1\145\2\ufffe\2\162\1\145\1\165\1\155\2\164\1\ufffe\1\150\1\uffff"+
-		"\1\154\1\ufffe\1\156\1\145\1\157\2\ufffe\1\145\1\156\1\143\1\154\2\ufffe"+
-		"\1\154\3\ufffe\1\166\1\ufffe\1\uffff\1\163\1\164\1\154\1\uffff\1\156\1"+
-		"\uffff\1\117\1\137\1\120\1\uffff\1\120\1\137\1\101\1\137\1\114\1\117\1"+
-		"\145\1\164\1\151\1\171\1\145\1\143\1\163\1\145\1\ufffe\2\164\1\uffff\1"+
-		"\145\1\uffff\1\ufffe\1\uffff\1\145\1\ufffe\1\uffff\1\154\1\141\2\ufffe"+
-		"\1\156\1\uffff\1\156\1\145\1\151\1\uffff\1\143\2\ufffe\1\154\1\uffff\1"+
-		"\162\1\144\1\145\1\ufffe\2\uffff\1\155\2\ufffe\1\162\1\ufffe\1\171\1\145"+
-		"\1\uffff\1\145\1\171\1\uffff\1\143\1\162\1\144\2\uffff\1\163\1\164\1\145"+
-		"\1\154\2\uffff\1\ufffe\3\uffff\1\141\1\uffff\3\ufffe\1\154\1\116\1\101"+
-		"\1\106\1\101\1\111\1\105\1\124\1\103\1\124\1\105\1\125\2\ufffe\1\156\1"+
-		"\162\1\ufffe\1\144\1\164\2\ufffe\1\uffff\1\145\1\157\1\162\1\uffff\1\156"+
-		"\1\uffff\1\ufffe\1\164\2\uffff\1\ufffe\1\164\1\144\1\172\1\145\2\uffff"+
-		"\1\164\3\ufffe\1\uffff\1\ufffe\2\uffff\1\145\1\uffff\1\ufffe\2\144\1\ufffe"+
-		"\1\145\1\ufffe\1\165\2\ufffe\1\163\1\ufffe\1\uffff\1\162\3\uffff\1\171"+
-		"\1\137\1\124\1\137\1\122\1\105\1\ufffe\1\131\2\105\1\131\1\137\1\123\2"+
-		"\uffff\1\147\1\ufffe\1\uffff\1\ufffe\1\157\2\uffff\1\144\1\162\1\146\1"+
-		"\164\1\uffff\1\151\1\uffff\1\163\1\ufffe\1\141\2\ufffe\4\uffff\1\ufffe"+
+		"\1\ufffe\1\uffff\1\100\2\146\1\156\1\117\1\122\1\110\1\117\1\ufffe\1\157"+
+		"\1\165\1\162\1\157\1\171\1\170\1\165\1\157\1\145\1\163\2\157\1\166\1\165"+
+		"\1\145\1\164\1\171\1\163\1\151\1\162\1\157\3\uffff\1\57\1\75\3\uffff\1"+
+		"\76\1\75\1\56\3\uffff\1\56\1\uffff\1\uffff\2\146\2\105\1\101\1\uffff\1"+
+		"\146\1\uffff\1\146\6\uffff\1\117\1\ufffe\3\146\1\126\1\150\1\124\1\104"+
+		"\1\ufffe\1\112\2\122\2\uffff\1\154\1\155\1\141\1\164\1\163\1\146\1\163"+
+		"\1\162\2\ufffe\1\164\1\147\1\145\1\163\1\146\1\141\1\156\1\163\1\166\3"+
+		"\ufffe\1\156\1\163\1\144\1\164\1\162\1\156\1\162\1\156\1\164\1\154\1\ufffe"+
+		"\1\160\2\ufffe\2\142\1\143\1\163\1\144\1\152\2\ufffe\1\145\1\ufffe\1\164"+
+		"\1\145\1\163\1\141\1\151\1\157\1\142\1\151\1\163\1\146\1\164\3\162\1\ufffe"+
+		"\1\171\1\160\1\164\1\145\2\162\1\151\1\164\1\151\1\162\17\uffff\1\116"+
+		"\1\123\1\101\1\127\1\103\1\122\2\uffff\1\146\1\uffff\1\71\1\uffff\1\ufffe"+
+		"\1\116\1\uffff\1\ufffe\1\145\1\105\1\ufffe\1\uffff\1\105\4\ufffe\1\145"+
+		"\1\162\1\145\1\ufffe\1\164\2\ufffe\1\151\1\141\1\ufffe\1\145\2\uffff\1"+
+		"\157\1\151\1\141\1\145\1\146\1\163\1\164\1\146\1\141\1\162\1\164\1\160"+
+		"\1\ufffe\1\156\3\uffff\1\141\1\145\1\ufffe\1\145\1\164\1\157\1\145\1\ufffe"+
+		"\1\163\1\145\1\141\1\ufffe\1\143\1\157\1\160\1\uffff\1\154\2\145\1\164"+
+		"\1\151\1\145\2\uffff\1\145\1\162\1\141\1\163\1\ufffe\1\145\2\uffff\1\162"+
+		"\1\uffff\1\ufffe\1\162\1\153\1\143\1\164\1\156\1\166\1\164\1\154\1\163"+
+		"\1\144\1\157\1\145\1\151\1\156\1\157\1\145\1\165\1\157\1\145\1\154\3\ufffe"+
+		"\1\164\1\143\1\162\1\151\1\156\1\145\1\uffff\1\ufffe\2\145\1\164\1\141"+
+		"\1\151\1\163\1\ufffe\1\164\1\154\1\150\1\164\1\ufffe\1\103\1\124\1\123"+
+		"\1\137\1\117\1\111\1\146\1\uffff\1\131\1\uffff\1\162\1\122\1\uffff\1\103"+
+		"\5\uffff\2\ufffe\1\146\1\uffff\1\154\1\162\2\uffff\1\163\1\171\1\uffff"+
+		"\2\155\1\156\1\153\1\ufffe\1\154\1\163\1\164\1\151\1\165\1\171\1\145\1"+
+		"\162\1\151\1\uffff\1\164\1\155\1\ufffe\1\uffff\1\160\1\ufffe\3\162\1\uffff"+
+		"\1\145\1\ufffe\1\154\1\141\1\uffff\1\164\1\ufffe\2\145\1\170\1\162\1\151"+
+		"\1\156\1\162\1\154\1\141\1\154\1\141\1\uffff\1\143\1\141\1\uffff\1\162"+
+		"\1\145\1\141\1\146\1\164\1\141\1\145\1\162\2\145\1\151\1\145\1\ufffe\2"+
+		"\162\1\163\1\164\1\166\1\141\1\151\1\144\1\165\1\143\1\145\3\uffff\1\151"+
+		"\1\141\1\145\1\156\1\ufffe\1\141\1\uffff\3\ufffe\1\146\1\154\1\ufffe\1"+
+		"\162\1\141\1\uffff\1\165\1\145\1\ufffe\1\145\1\uffff\1\124\1\117\1\123"+
+		"\1\124\1\122\1\101\1\146\1\115\1\151\1\106\1\124\2\uffff\1\141\1\165\1"+
+		"\141\1\164\1\ufffe\1\142\1\141\2\ufffe\1\uffff\3\ufffe\1\151\1\156\1\154"+
+		"\1\145\1\143\1\165\1\156\1\157\1\151\1\uffff\1\164\1\uffff\1\151\1\164"+
+		"\1\156\1\ufffe\1\uffff\1\ufffe\1\162\1\151\1\uffff\1\162\1\155\1\ufffe"+
+		"\1\151\1\141\1\145\1\146\1\ufffe\1\162\1\ufffe\1\147\2\164\1\157\1\151"+
+		"\1\147\1\144\1\154\1\157\1\145\1\164\1\144\1\141\1\162\1\143\1\163\1\ufffe"+
+		"\1\156\1\uffff\1\144\1\145\1\164\1\162\1\145\1\164\1\162\1\145\1\162\1"+
+		"\141\1\144\1\143\1\154\1\144\1\164\1\147\1\uffff\1\144\3\uffff\1\145\1"+
+		"\ufffe\1\uffff\1\147\1\156\1\141\1\ufffe\1\uffff\1\ufffe\1\111\1\115\1"+
+		"\ufffe\1\131\1\104\1\102\1\117\1\164\1\101\1\137\1\165\1\164\1\143\1\162"+
+		"\1\uffff\1\154\1\164\4\uffff\1\165\1\uffff\1\156\1\165\1\164\1\144\1\141"+
+		"\1\143\1\ufffe\1\164\1\ufffe\1\143\1\ufffe\1\155\1\ufffe\1\141\1\uffff"+
+		"\1\172\1\171\1\uffff\1\144\1\157\1\ufffe\1\145\1\uffff\1\164\1\154\1\ufffe"+
+		"\1\141\1\uffff\1\171\1\uffff\1\145\1\ufffe\1\157\1\141\1\144\1\145\2\ufffe"+
+		"\2\162\1\145\1\165\1\155\2\164\1\ufffe\1\150\1\uffff\1\154\1\ufffe\1\156"+
+		"\1\145\1\157\2\ufffe\1\145\1\156\1\143\1\154\2\ufffe\1\154\3\ufffe\1\166"+
+		"\1\ufffe\1\uffff\1\163\1\164\1\154\1\uffff\1\156\1\uffff\1\117\1\137\1"+
+		"\120\1\uffff\1\120\1\137\1\114\1\125\1\145\1\103\1\124\1\154\1\145\1\164"+
+		"\1\151\1\171\1\145\1\143\1\163\1\145\2\ufffe\2\164\1\uffff\1\145\1\uffff"+
+		"\1\ufffe\1\uffff\1\145\1\ufffe\1\uffff\1\154\1\141\2\ufffe\1\156\1\uffff"+
+		"\1\156\1\145\1\151\1\uffff\1\143\2\ufffe\1\uffff\1\162\1\144\1\145\1\ufffe"+
+		"\2\uffff\1\155\2\ufffe\1\162\1\ufffe\1\171\1\145\1\uffff\1\145\1\171\1"+
+		"\uffff\1\143\1\162\1\144\2\uffff\1\163\1\164\1\145\1\154\2\uffff\1\ufffe"+
+		"\3\uffff\1\141\1\uffff\3\ufffe\1\154\1\116\1\101\1\106\1\101\1\111\1\105"+
+		"\1\124\1\105\1\123\1\144\1\105\1\131\1\164\2\ufffe\1\156\1\162\1\ufffe"+
+		"\1\144\1\164\2\ufffe\2\uffff\1\145\1\157\1\162\1\uffff\1\156\1\uffff\1"+
+		"\ufffe\1\164\2\uffff\1\ufffe\1\164\1\144\1\172\1\145\2\uffff\3\ufffe\1"+
+		"\uffff\1\ufffe\2\uffff\1\145\1\uffff\1\ufffe\2\144\1\ufffe\1\145\1\ufffe"+
+		"\1\165\2\ufffe\1\163\1\ufffe\1\uffff\1\162\3\uffff\1\171\1\137\1\124\1"+
+		"\137\1\122\1\105\1\ufffe\1\131\1\105\2\137\1\ufffe\1\137\1\120\1\ufffe"+
+		"\2\uffff\1\147\1\ufffe\1\uffff\1\ufffe\1\157\2\uffff\1\144\1\162\1\146"+
+		"\1\164\1\uffff\1\151\1\uffff\1\163\1\ufffe\1\141\1\ufffe\4\uffff\1\ufffe"+
 		"\1\uffff\2\ufffe\1\uffff\1\ufffe\1\uffff\1\143\2\uffff\1\164\1\uffff\2"+
-		"\ufffe\1\122\2\124\1\105\1\114\1\uffff\1\120\1\114\1\137\1\120\1\124\1"+
-		"\137\1\ufffe\2\uffff\1\162\2\ufffe\2\141\1\157\1\164\1\ufffe\1\uffff\1"+
-		"\164\6\uffff\1\145\1\162\2\uffff\1\114\1\101\1\122\1\117\1\105\1\122\1"+
-		"\131\1\116\1\104\1\105\1\120\1\124\1\105\1\131\1\104\1\101\1\105\1\uffff"+
-		"\1\ufffe\2\uffff\1\143\1\154\1\156\1\151\1\uffff\1\151\1\ufffe\1\151\1"+
-		"\117\1\115\1\107\1\104\1\124\1\111\1\120\1\124\2\ufffe\1\105\1\131\1\125"+
-		"\1\ufffe\1\120\1\105\1\122\1\130\1\uffff\1\145\2\ufffe\2\157\1\uffff\1"+
-		"\156\1\102\1\105\1\123\1\131\1\125\1\102\1\105\1\123\2\uffff\1\122\1\120"+
-		"\1\111\1\uffff\1\105\1\116\1\101\1\120\1\ufffe\2\uffff\2\156\1\147\1\101"+
-		"\3\ufffe\1\122\1\125\3\ufffe\1\105\1\104\1\ufffe\1\124\1\115\1\122\1\uffff"+
-		"\3\ufffe\1\114\3\uffff\1\116\1\124\3\uffff\2\ufffe\1\uffff\1\123\1\ufffe"+
-		"\1\105\3\uffff\2\ufffe\1\105\2\uffff\1\ufffe\1\uffff\1\123\2\uffff\1\ufffe"+
-		"\1\uffff\1\123\1\101\1\uffff\1\111\1\122\1\117\1\107\1\116\1\123\2\ufffe"+
-		"\2\uffff";
+		"\ufffe\1\122\2\124\1\105\1\114\1\uffff\1\120\1\114\1\124\1\105\1\uffff"+
+		"\1\124\1\105\1\uffff\1\ufffe\2\uffff\1\162\2\ufffe\2\141\1\157\1\164\1"+
+		"\ufffe\1\uffff\1\164\5\uffff\1\145\1\162\2\uffff\1\114\1\101\1\122\1\117"+
+		"\1\105\1\122\1\131\1\116\1\104\1\105\1\120\1\131\1\104\1\101\1\130\1\131"+
+		"\1\125\1\ufffe\1\uffff\1\ufffe\2\uffff\1\143\1\154\1\156\1\151\1\uffff"+
+		"\1\151\1\ufffe\1\151\1\117\1\115\1\107\1\104\1\124\1\111\1\120\1\124\2"+
+		"\ufffe\1\105\1\120\1\105\1\122\2\120\1\111\2\uffff\1\145\2\ufffe\2\157"+
+		"\1\uffff\1\156\1\102\1\105\1\123\1\131\1\125\1\102\1\105\1\123\2\uffff"+
+		"\1\122\1\105\1\116\1\101\1\122\1\105\1\104\1\ufffe\2\uffff\2\156\1\147"+
+		"\1\101\3\ufffe\1\122\1\125\4\ufffe\1\124\1\115\1\105\2\ufffe\1\uffff\3"+
+		"\ufffe\1\114\3\uffff\1\116\1\124\4\uffff\1\123\1\ufffe\1\123\5\uffff\2"+
+		"\ufffe\1\105\1\ufffe\1\uffff\1\123\2\uffff\1\ufffe\1\uffff\1\111\1\101"+
+		"\1\uffff\1\117\1\122\1\116\1\107\1\ufffe\1\123\1\uffff\1\ufffe\1\uffff";
 	static final String DFA19_acceptS =
-		"\1\uffff\1\1\27\uffff\1\u0088\1\u0089\1\u008a\2\uffff\1\u008d\1\u008e"+
-		"\1\u0090\3\uffff\1\u0097\1\u0098\1\u009a\2\uffff\1\u00a1\10\uffff\1\u00b7"+
-		"\3\uffff\1\u00ba\1\u00bb\1\u00bc\1\u00bf\1\2\1\u009d\1\3\1\u009c\112\uffff"+
-		"\1\u00be\1\u008b\1\u008c\1\u008f\1\u0091\1\u0093\1\u0092\1\u0094\1\u0095"+
-		"\1\u0099\1\u0096\1\u009b\1\u009f\1\u009e\1\u00a0\11\uffff\1\u00c0\1\u00b8"+
-		"\1\uffff\1\u00b9\1\uffff\1\u00bd\7\uffff\1\12\1\16\15\uffff\1\37\1\41"+
-		"\1\42\17\uffff\1\66\6\uffff\1\71\1\77\13\uffff\1\113\1\114\1\uffff\1\116"+
-		"\36\uffff\1\166\31\uffff\1\6\1\7\2\uffff\1\13\15\uffff\1\36\3\uffff\1"+
-		"\45\5\uffff\1\54\4\uffff\1\61\15\uffff\1\104\2\uffff\1\107\1\uffff\1\111"+
-		"\2\uffff\1\117\30\uffff\1\154\1\155\1\156\6\uffff\1\167\10\uffff\1\175"+
-		"\4\uffff\1\u0085\22\uffff\1\22\13\uffff\1\44\1\uffff\1\47\4\uffff\1\55"+
-		"\3\uffff\1\64\13\uffff\1\105\1\106\22\uffff\1\137\20\uffff\1\164\1\uffff"+
-		"\1\u0087\1\170\1\171\2\uffff\1\174\4\uffff\1\u0082\15\uffff\1\11\2\uffff"+
-		"\1\20\1\21\1\23\1\24\1\uffff\1\25\15\uffff\1\u0086\2\uffff\1\56\4\uffff"+
-		"\1\72\4\uffff\1\100\1\uffff\1\102\22\uffff\1\136\23\uffff\1\173\3\uffff"+
-		"\1\u0081\1\uffff\1\u0083\3\uffff\1\u00aa\21\uffff\1\34\1\uffff\1\40\1"+
-		"\uffff\1\46\2\uffff\1\51\5\uffff\1\65\3\uffff\1\75\4\uffff\1\112\4\uffff"+
-		"\1\123\1\124\7\uffff\1\134\2\uffff\1\141\3\uffff\1\145\1\146\4\uffff\1"+
-		"\153\1\157\1\uffff\1\161\1\162\1\163\1\uffff\1\172\30\uffff\1\31\3\uffff"+
-		"\1\43\1\uffff\1\52\2\uffff\1\60\1\62\5\uffff\1\101\1\103\4\uffff\1\122"+
-		"\1\uffff\1\126\1\127\1\uffff\1\131\13\uffff\1\160\1\uffff\1\176\1\177"+
-		"\1\u0080\15\uffff\1\4\1\5\2\uffff\1\15\2\uffff\1\27\1\30\4\uffff\1\53"+
-		"\1\uffff\1\63\5\uffff\1\115\1\120\1\121\1\125\1\uffff\1\132\2\uffff\1"+
-		"\140\1\uffff\1\143\1\uffff\1\147\1\150\1\uffff\1\152\7\uffff\1\u00a9\7"+
-		"\uffff\1\14\1\17\10\uffff\1\73\1\uffff\1\76\1\110\1\130\1\133\1\135\1"+
-		"\142\2\uffff\1\165\1\u0084\21\uffff\1\10\1\uffff\1\32\1\33\4\uffff\1\70"+
-		"\25\uffff\1\26\5\uffff\1\144\11\uffff\1\u00b5\1\u00ab\3\uffff\1\u00ae"+
-		"\5\uffff\1\50\1\57\22\uffff\1\35\4\uffff\1\u00a3\1\u00a4\1\u00a5\2\uffff"+
-		"\1\u00af\1\u00b4\1\u00ac\2\uffff\1\u00b0\3\uffff\1\67\1\74\1\151\3\uffff"+
-		"\1\u00ad\1\u00b3\1\uffff\1\u00b2\1\uffff\1\u00a2\1\u00a6\1\uffff\1\u00b1"+
-		"\2\uffff\1\u00a7\10\uffff\1\u00b6\1\u00a8";
+		"\1\uffff\1\1\36\uffff\1\u0093\1\u0094\1\u0095\2\uffff\1\u0098\1\u0099"+
+		"\1\u009b\3\uffff\1\u00a2\1\u00a3\1\u00a5\2\uffff\1\u00ac\5\uffff\1\u00c2"+
+		"\3\uffff\1\u00c5\1\u00c6\1\u00c7\1\u00ca\1\2\1\u00a8\15\uffff\1\14\1\u00a7"+
+		"\107\uffff\1\u00c9\1\u0096\1\u0097\1\u009a\1\u009c\1\u009e\1\u009d\1\u009f"+
+		"\1\u00a0\1\u00a4\1\u00a1\1\u00a6\1\u00aa\1\u00a9\1\u00ab\6\uffff\1\u00cb"+
+		"\1\u00c3\1\uffff\1\u00c4\1\uffff\1\u00c8\2\uffff\1\4\4\uffff\1\10\20\uffff"+
+		"\1\24\1\30\16\uffff\1\52\1\54\1\55\17\uffff\1\101\6\uffff\1\104\1\112"+
+		"\6\uffff\1\126\1\127\1\uffff\1\131\36\uffff\1\u0081\24\uffff\1\3\1\uffff"+
+		"\1\5\2\uffff\1\7\1\uffff\1\11\1\12\1\13\1\15\1\122\3\uffff\1\124\2\uffff"+
+		"\1\20\1\21\2\uffff\1\25\16\uffff\1\51\3\uffff\1\60\5\uffff\1\67\4\uffff"+
+		"\1\74\15\uffff\1\117\2\uffff\1\132\30\uffff\1\167\1\170\1\171\6\uffff"+
+		"\1\u0082\10\uffff\1\u0088\4\uffff\1\u0090\13\uffff\1\120\1\121\11\uffff"+
+		"\1\34\14\uffff\1\57\1\uffff\1\62\4\uffff\1\70\3\uffff\1\77\34\uffff\1"+
+		"\152\20\uffff\1\177\1\uffff\1\u0092\1\u0083\1\u0084\2\uffff\1\u0087\4"+
+		"\uffff\1\u008d\17\uffff\1\23\2\uffff\1\32\1\33\1\35\1\36\1\uffff\1\37"+
+		"\16\uffff\1\u0091\2\uffff\1\71\4\uffff\1\105\4\uffff\1\113\1\uffff\1\115"+
+		"\21\uffff\1\151\23\uffff\1\u0086\3\uffff\1\u008c\1\uffff\1\u008e\3\uffff"+
+		"\1\u00b5\24\uffff\1\47\1\uffff\1\53\1\uffff\1\61\2\uffff\1\64\5\uffff"+
+		"\1\100\3\uffff\1\110\3\uffff\1\125\4\uffff\1\136\1\137\7\uffff\1\147\2"+
+		"\uffff\1\154\3\uffff\1\160\1\161\4\uffff\1\166\1\172\1\uffff\1\174\1\175"+
+		"\1\176\1\uffff\1\u0085\32\uffff\1\43\1\44\3\uffff\1\56\1\uffff\1\65\2"+
+		"\uffff\1\73\1\75\5\uffff\1\114\1\116\3\uffff\1\135\1\uffff\1\141\1\142"+
+		"\1\uffff\1\144\13\uffff\1\173\1\uffff\1\u0089\1\u008a\1\u008b\17\uffff"+
+		"\1\16\1\17\2\uffff\1\27\2\uffff\1\41\1\42\4\uffff\1\66\1\uffff\1\76\4"+
+		"\uffff\1\130\1\133\1\134\1\140\1\uffff\1\145\2\uffff\1\153\1\uffff\1\156"+
+		"\1\uffff\1\162\1\163\1\uffff\1\165\7\uffff\1\u00b4\4\uffff\1\6\2\uffff"+
+		"\1\123\1\uffff\1\26\1\31\10\uffff\1\106\1\uffff\1\111\1\143\1\146\1\150"+
+		"\1\155\2\uffff\1\u0080\1\u008f\22\uffff\1\22\1\uffff\1\45\1\46\4\uffff"+
+		"\1\103\24\uffff\1\u00b9\1\40\5\uffff\1\157\11\uffff\1\u00c0\1\u00b6\10"+
+		"\uffff\1\63\1\72\22\uffff\1\50\4\uffff\1\u00ae\1\u00af\1\u00b0\2\uffff"+
+		"\1\u00ba\1\u00bf\1\u00b7\1\u00bb\3\uffff\1\u00b8\1\u00be\1\102\1\107\1"+
+		"\164\4\uffff\1\u00bd\1\uffff\1\u00ad\1\u00b1\1\uffff\1\u00bc\2\uffff\1"+
+		"\u00b2\6\uffff\1\u00c1\1\uffff\1\u00b3";
 	static final String DFA19_specialS =
-		"\50\uffff\1\1\13\uffff\1\0\u038e\uffff}>";
+		"\57\uffff\1\1\10\uffff\1\0\u03b2\uffff}>";
 	static final String[] DFA19_transitionS = {
-			"\2\71\1\uffff\2\71\22\uffff\1\71\2\uffff\1\67\1\66\1\uffff\1\1\1\70\1"+
-			"\43\1\44\1\33\1\31\1\36\1\32\1\47\1\34\12\65\1\35\1\37\1\41\1\40\1\42"+
-			"\1\uffff\1\2\1\61\1\63\1\53\2\63\1\52\2\62\1\56\4\62\1\54\1\57\2\62\1"+
-			"\55\3\62\1\60\4\62\1\45\1\uffff\1\46\1\3\1\62\1\uffff\1\4\1\5\1\6\1\7"+
-			"\1\10\1\11\1\12\1\13\1\14\2\62\1\15\1\16\1\17\1\20\1\21\1\62\1\22\1\23"+
-			"\1\24\1\25\1\26\1\27\1\30\2\62\1\50\1\uffff\1\51\2\uffff\ufe7f\62\1\64"+
-			"\u00ff\62",
+			"\2\75\1\uffff\2\75\22\uffff\1\75\2\uffff\1\73\1\72\1\uffff\1\1\1\74\1"+
+			"\52\1\53\1\42\1\40\1\45\1\41\1\56\1\43\12\71\1\44\1\46\1\50\1\47\1\51"+
+			"\1\uffff\1\2\1\3\1\67\1\62\1\4\1\67\1\61\2\66\1\5\3\66\1\6\1\63\1\7\2"+
+			"\66\1\64\1\10\2\66\1\65\1\66\1\11\2\66\1\54\1\uffff\1\55\1\12\1\66\1"+
+			"\uffff\1\14\1\15\1\16\1\17\1\20\1\21\1\22\1\23\1\24\2\66\1\25\1\26\1"+
+			"\13\1\27\1\30\1\66\1\31\1\32\1\33\1\34\1\35\1\36\1\37\2\66\1\57\1\uffff"+
+			"\1\60\2\uffff\ufe7f\66\1\70\u00ff\66",
 			"",
-			"\1\72",
-			"\32\67\3\uffff\1\74\2\uffff\32\67\5\uffff\uff7f\67",
-			"\12\107\7\uffff\6\106\32\uffff\1\105\1\76\1\105\1\77\2\105\7\uffff\1"+
-			"\100\3\uffff\1\101\1\102\1\103\1\104",
-			"\12\107\7\uffff\6\106\32\uffff\4\105\1\110\1\105\13\uffff\1\111",
-			"\12\107\7\uffff\6\106\32\uffff\1\112\2\105\1\113\2\105\5\uffff\1\114"+
-			"\2\uffff\1\115",
-			"\12\107\7\uffff\6\106\32\uffff\4\105\1\116\1\105\2\uffff\1\117\5\uffff"+
-			"\1\120\1\uffff\1\121\5\uffff\1\122\1\uffff\1\123",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\5\uffff\1\124\1\uffff\1\125\11"+
-			"\uffff\1\126",
-			"\12\107\7\uffff\6\106\32\uffff\1\127\5\105\2\uffff\1\130\5\uffff\1\131"+
-			"\5\uffff\1\132",
-			"\1\133",
-			"\1\134",
-			"\1\135\6\uffff\1\136\1\137\4\uffff\1\140",
-			"\1\141\7\uffff\1\142\5\uffff\1\143",
-			"\1\144\11\uffff\1\145",
-			"\1\146\3\uffff\1\147\3\uffff\1\150\5\uffff\1\151",
-			"\1\152\3\uffff\1\153\7\uffff\1\154\1\uffff\1\155\1\uffff\1\156\2\uffff"+
-			"\1\157\1\160",
-			"\1\161\12\uffff\1\162\2\uffff\1\163\2\uffff\1\164\2\uffff\1\165",
-			"\1\166\3\uffff\1\167",
-			"\1\170\3\uffff\1\171\2\uffff\1\172\13\uffff\1\173",
-			"\1\174\6\uffff\1\175\2\uffff\1\176\6\uffff\1\177",
-			"\1\u0080\4\uffff\1\u0081",
-			"\1\u0082\7\uffff\1\u0083",
-			"\1\u0084\1\u0085\10\uffff\1\u0086",
-			"\1\u0087",
-			"",
-			"",
-			"",
-			"\1\u0088",
-			"\1\u008a",
-			"",
-			"",
-			"",
-			"\1\u008d\1\u008c",
-			"\1\u008f",
-			"\1\u0088\3\uffff\1\u0091",
+			"\1\76",
+			"\12\104\7\uffff\6\103\7\uffff\1\100\4\uffff\1\101\15\uffff\6\102",
+			"\12\104\7\uffff\6\103\2\uffff\1\105\27\uffff\6\102",
+			"\1\107\37\uffff\1\106",
+			"\1\110",
+			"\1\112\17\uffff\1\111",
+			"\1\113",
+			"\1\114",
+			"\32\73\3\uffff\1\115\2\uffff\32\73\5\uffff\uff7f\73",
+			"\1\120\3\uffff\1\121\3\uffff\1\117\5\uffff\1\122",
+			"\12\104\7\uffff\6\103\32\uffff\1\102\1\123\1\102\1\124\2\102\7\uffff"+
+			"\1\125\3\uffff\1\126\1\127\1\130\1\131",
+			"\12\104\7\uffff\6\103\32\uffff\4\102\1\132\1\102\13\uffff\1\133",
+			"\12\104\7\uffff\6\103\32\uffff\1\134\2\102\1\135\2\102\5\uffff\1\136"+
+			"\2\uffff\1\137",
+			"\12\104\7\uffff\6\103\32\uffff\4\102\1\140\1\102\2\uffff\1\141\5\uffff"+
+			"\1\142\1\uffff\1\143\5\uffff\1\144\1\uffff\1\145",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\5\uffff\1\146\1\uffff\1\147\11"+
+			"\uffff\1\150",
+			"\12\104\7\uffff\6\103\32\uffff\1\151\5\102\2\uffff\1\152\5\uffff\1\153"+
+			"\5\uffff\1\154",
+			"\1\155",
+			"\1\156",
+			"\1\157\6\uffff\1\160\1\161\4\uffff\1\162",
+			"\1\163\7\uffff\1\164\5\uffff\1\165",
+			"\1\166\11\uffff\1\167",
+			"\1\170\3\uffff\1\171\7\uffff\1\172\1\uffff\1\173\1\uffff\1\174\2\uffff"+
+			"\1\175\1\176",
+			"\1\177\12\uffff\1\u0080\2\uffff\1\u0081\2\uffff\1\u0082\2\uffff\1\u0083",
+			"\1\u0084\3\uffff\1\u0085",
+			"\1\u0086\3\uffff\1\u0087\2\uffff\1\u0088\13\uffff\1\u0089",
+			"\1\u008a\6\uffff\1\u008b\2\uffff\1\u008c\6\uffff\1\u008d",
+			"\1\u008e\4\uffff\1\u008f",
+			"\1\u0090\7\uffff\1\u0091",
+			"\1\u0092\1\u0093\10\uffff\1\u0094",
+			"\1\u0095",
 			"",
 			"",
 			"",
-			"\1\u0093\4\uffff\1\u0094",
-			"\0\u0088",
+			"\1\u0096",
+			"\1\u0098",
 			"",
-			"\12\107\7\uffff\6\106\16\uffff\1\u0097\13\uffff\6\105",
-			"\12\107\7\uffff\6\106\5\uffff\1\u0099\10\uffff\1\u0098\13\uffff\6\105",
-			"\1\u009a",
-			"\1\u009b",
-			"\1\u009c",
+			"",
+			"",
+			"\1\u009b\1\u009a",
 			"\1\u009d",
-			"\1\u009e",
-			"\12\107\7\uffff\6\106\7\uffff\1\u009f\22\uffff\6\105",
-			"",
-			"\12\107\7\uffff\6\106\32\uffff\6\105",
-			"\ufeff\62\1\uffff\u0100\62",
-			"\1\u00a3\1\uffff\12\u00a2\7\uffff\4\u00a5\1\u00a4\1\u00a5\32\uffff\4"+
-			"\u00a5\1\u00a4\1\u00a5",
+			"\1\u0096\3\uffff\1\u009f",
 			"",
 			"",
 			"",
+			"\1\u00a1\4\uffff\1\u00a2",
+			"\0\u0096",
 			"",
-			"",
-			"",
-			"",
-			"",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\14\uffff\1\u00a6",
-			"\12\107\7\uffff\6\106\32\uffff\3\105\1\u00a7\2\105",
-			"\1\u00a8\16\uffff\1\u00a9",
+			"\12\104\7\uffff\6\103\16\uffff\1\u00a5\13\uffff\6\102",
+			"\12\104\7\uffff\6\103\5\uffff\1\u00a7\10\uffff\1\u00a6\13\uffff\6\102",
+			"\1\u00a8",
+			"\1\u00a9",
 			"\1\u00aa",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\14\62\1\u00ab\5\62\1\u00ac"+
-			"\7\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u00af",
-			"\12\107\7\uffff\6\106\32\uffff\6\105",
-			"\12\107\7\uffff\6\106\32\uffff\6\105",
-			"\12\107\7\uffff\6\106\32\uffff\6\105",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\1\u00b0",
-			"\1\u00b1",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\14\uffff\1\u00b2",
-			"\12\107\7\uffff\6\106\32\uffff\4\105\1\u00b3\1\105",
+			"",
+			"\12\104\7\uffff\6\103\32\uffff\6\102",
+			"\ufeff\66\1\uffff\u0100\66",
+			"\1\u00ae\1\uffff\12\u00ad\7\uffff\4\u00b0\1\u00af\1\u00b0\32\uffff\4"+
+			"\u00b0\1\u00af\1\u00b0",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\1\u00b1\12\uffff\1\u00b2",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\104\7\uffff\6\103\32\uffff\6\102",
+			"\12\104\7\uffff\6\103\32\uffff\6\102",
+			"\12\104\7\uffff\6\103\32\uffff\6\102",
 			"\1\u00b4",
 			"\1\u00b5",
-			"\12\107\7\uffff\6\106\32\uffff\5\105\1\u00b6\11\uffff\1\u00b7\2\uffff"+
-			"\1\u00b8",
-			"\1\u00b9\2\uffff\1\u00ba",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\26\62\1\u00bb\3\62\5\uffff"+
-			"\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u00b6",
+			"\1\u00b7",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u00b9",
+			"\1\u00ba\5\uffff\1\u00bb",
+			"\1\u00bc",
+			"",
+			"",
+			"\1\u00bd",
+			"\1\u00be",
 			"\1\u00bf",
-			"\1\u00c0",
-			"\1\u00c1",
-			"\1\u00c2\5\uffff\1\u00c3\6\uffff\1\u00c4\3\uffff\1\u00c5",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\5\uffff\1\u00c7\5\uffff\1\u00c6",
-			"\1\u00c8\1\uffff\1\u00c9",
-			"\1\u00ca",
+			"\1\u00c0\17\uffff\1\u00c1",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\14\uffff\1\u00c2",
+			"\12\104\7\uffff\6\103\32\uffff\3\102\1\u00c3\2\102",
+			"\1\u00c4\16\uffff\1\u00c5",
+			"\1\u00c6",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\14\66\1\u00c7\5\66\1\u00c8"+
+			"\7\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u00cb",
-			"\1\u00cc",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\1\u00cc",
 			"\1\u00cd",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u00cf",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\3\62\1\u00d0\3\62\1\u00d1"+
-			"\1\u00d2\2\62\1\u00d3\7\62\1\u00d4\6\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u00d7",
-			"\1\u00d8",
-			"\1\u00d9",
-			"\1\u00da",
-			"\1\u00db",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\14\uffff\1\u00ce",
+			"\12\104\7\uffff\6\103\32\uffff\4\102\1\u00cf\1\102",
+			"\1\u00d0",
+			"\1\u00d1",
+			"\12\104\7\uffff\6\103\32\uffff\5\102\1\u00d2\5\uffff\1\u00d3\3\uffff"+
+			"\1\u00d4\2\uffff\1\u00d5",
+			"\1\u00d6\2\uffff\1\u00d7",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\26\66\1\u00d8\3\66\5\uffff"+
+			"\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u00dc",
 			"\1\u00dd",
 			"\1\u00de",
-			"\1\u00df\17\uffff\1\u00e0",
-			"\1\u00e1",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u00e4",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u00e6",
+			"\1\u00df\5\uffff\1\u00e0\6\uffff\1\u00e1\3\uffff\1\u00e2",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\5\uffff\1\u00e4\5\uffff\1\u00e3",
+			"\1\u00e5\1\uffff\1\u00e6",
 			"\1\u00e7",
-			"\1\u00e8\17\uffff\1\u00e9",
+			"\1\u00e8",
+			"\1\u00e9",
 			"\1\u00ea",
-			"\1\u00eb",
-			"\1\u00ec\5\uffff\1\u00ed",
-			"\1\u00ee",
-			"\1\u00ef",
-			"\1\u00f0\1\uffff\1\u00f1\2\uffff\1\u00f2\1\u00f3\1\uffff\1\u00f4\3\uffff"+
-			"\1\u00f5\2\uffff\1\u00f6\1\u00f7\1\uffff\1\u00f8",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u00ec",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\3\66\1\u00ed\3\66\1\u00ee"+
+			"\1\u00ef\2\66\1\u00f0\7\66\1\u00f1\6\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u00f4",
+			"\1\u00f5",
+			"\1\u00f6",
+			"\1\u00f7",
+			"\1\u00f8",
 			"\1\u00f9",
-			"\1\u00fa\22\uffff\1\u00fb",
-			"\1\u00fc\5\uffff\1\u00fd",
-			"\1\u00fe\2\uffff\1\u00ff\12\uffff\1\u0100\2\uffff\1\u0101",
-			"\1\u0102\14\uffff\1\u0103",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0106\3\uffff\1\u0105",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u00fc",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u00fe",
+			"\1\u00ff",
+			"\1\u0100\17\uffff\1\u0101",
+			"\1\u0102",
+			"\1\u0103",
+			"\1\u0104\5\uffff\1\u0105",
+			"\1\u0106",
 			"\1\u0107",
-			"\1\u0108\11\uffff\1\u0109\1\u010a",
-			"\1\u010b",
-			"\1\u010c",
-			"\1\u010d",
-			"\1\u010e",
-			"\1\u010f",
-			"\1\u0110",
+			"\1\u0108\1\uffff\1\u0109\2\uffff\1\u010a\1\u010b\1\uffff\1\u010c\3\uffff"+
+			"\1\u010d\2\uffff\1\u010e\1\u010f\1\uffff\1\u0110",
 			"\1\u0111",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"\1\u0112",
-			"\1\u0113",
-			"\1\u0114",
-			"\1\u0115",
-			"\1\u0116",
-			"\1\u0117",
-			"\1\u0118",
-			"\1\u0119",
-			"\1\u011a",
-			"",
-			"",
-			"\1\u00a3\1\uffff\12\u00a2\7\uffff\4\u00a5\1\u00a4\1\u00a5\32\uffff\4"+
-			"\u00a5\1\u00a4\1\u00a5",
-			"",
-			"\1\u00a3\1\uffff\1\u00a3\2\uffff\12\u011b",
-			"",
-			"\1\u011c\4\uffff\1\u011d",
-			"\12\107\7\uffff\6\106\24\62\4\uffff\1\62\1\uffff\6\105\24\62\5\uffff"+
-			"\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0120",
-			"\1\u0121",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0112\22\uffff\1\u0113",
+			"\1\u0114\5\uffff\1\u0115",
+			"\1\u0116\2\uffff\1\u0117\12\uffff\1\u0118\2\uffff\1\u0119",
+			"\1\u011a\14\uffff\1\u011b",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u011e\3\uffff\1\u011d",
+			"\1\u011f",
+			"\1\u0120\11\uffff\1\u0121\1\u0122",
 			"\1\u0123",
-			"",
-			"",
 			"\1\u0124",
 			"\1\u0125",
 			"\1\u0126",
 			"\1\u0127",
-			"\12\107\7\uffff\6\106\32\uffff\2\105\1\u0128\3\105",
+			"\1\u0128",
 			"\1\u0129",
-			"\1\u012a\1\u012b",
-			"\12\107\7\uffff\6\106\32\uffff\1\u012c\5\105",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\1\u012a",
+			"\1\u012b",
+			"\1\u012c",
 			"\1\u012d",
 			"\1\u012e",
 			"\1\u012f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0131",
 			"",
 			"",
+			"\1\u00ae\1\uffff\12\u00ad\7\uffff\4\u00b0\1\u00af\1\u00b0\32\uffff\4"+
+			"\u00b0\1\u00af\1\u00b0",
 			"",
+			"\1\u00ae\1\uffff\1\u00ae\2\uffff\12\u0130",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0132",
-			"\1\u0133",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0135",
-			"\1\u0136",
-			"\1\u0137\11\uffff\1\u0138",
-			"\1\u0139",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u013b",
-			"\1\u013c",
-			"\1\u013d",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\26\62\1\u013e\3\62\5\uffff"+
-			"\uff7f\62",
-			"\1\u0140",
-			"\1\u0141",
-			"\1\u0142",
 			"",
-			"\1\u0143",
-			"\1\u0144",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0134",
+			"\1\u0135",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\1\u0137",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\3\uffff\1\u013b\1\66\1\uffff\32\66\5\uffff\uff7f"+
+			"\66",
+			"\1\u013d",
+			"\1\u013e",
+			"\1\u013f",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0141\4\uffff\1\u0142",
+			"\12\104\7\uffff\6\103\24\66\4\uffff\1\66\1\uffff\6\102\24\66\5\uffff"+
+			"\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0145",
 			"\1\u0146",
-			"\1\u0147",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0148",
 			"",
 			"",
@@ -6878,388 +7195,396 @@ public class DelphiLexer extends Lexer {
 			"\1\u014a",
 			"\1\u014b",
 			"\1\u014c",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\104\7\uffff\6\103\32\uffff\2\102\1\u014d\3\102",
 			"\1\u014e",
-			"\1\u014f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0151",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u014f\1\u0150",
+			"\12\104\7\uffff\6\103\32\uffff\1\u0151\5\102",
+			"\1\u0152",
 			"\1\u0153",
-			"",
-			"",
 			"\1\u0154",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0156",
+			"\1\u0155",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0157",
+			"",
+			"",
+			"",
 			"\1\u0158",
 			"\1\u0159",
-			"\1\u015a",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u015b",
-			"\1\u015c\3\uffff\1\u015d\10\uffff\1\u015e\3\uffff\1\u015f",
-			"\1\u0160",
+			"\1\u015c",
+			"\1\u015d\11\uffff\1\u015e",
+			"\1\u015f",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0161",
 			"\1\u0162",
 			"\1\u0163",
-			"\1\u0164",
-			"\1\u0165",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\26\66\1\u0164\3\66\5\uffff"+
+			"\uff7f\66",
 			"\1\u0166",
 			"\1\u0167",
 			"\1\u0168",
+			"",
 			"\1\u0169",
-			"\1\u016a\5\uffff\1\u016b",
+			"\1\u016a",
+			"\1\u016b",
 			"\1\u016c",
 			"\1\u016d",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u016e",
+			"",
+			"",
+			"\1\u016f",
+			"\1\u0170",
 			"\1\u0171",
 			"\1\u0172",
-			"\1\u0173",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0174",
-			"\1\u0175",
-			"\1\u0176",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"",
+			"\1\u0175",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0177",
 			"\1\u0178",
 			"\1\u0179",
 			"\1\u017a",
 			"\1\u017b",
 			"\1\u017c",
-			"\1\u017d",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\1\u017e\7\62\1\u017f\21\62"+
-			"\5\uffff\uff7f\62",
+			"\1\u017d\3\uffff\1\u017e\10\uffff\1\u017f\3\uffff\1\u0180",
 			"\1\u0181",
 			"\1\u0182",
 			"\1\u0183",
 			"\1\u0184",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0185",
 			"\1\u0186",
 			"\1\u0187",
 			"\1\u0188",
 			"\1\u0189",
 			"\1\u018a",
-			"\1\u018b",
-			"\1\u018c",
+			"\1\u018b\5\uffff\1\u018c",
 			"\1\u018d",
 			"\1\u018e",
-			"\12\u018f\7\uffff\6\u00a5\32\uffff\6\u00a5",
-			"\1\u0190",
-			"\1\u0191",
-			"",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0192",
 			"\1\u0193",
-			"",
 			"\1\u0194",
 			"\1\u0195",
 			"\1\u0196",
 			"\1\u0197",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\5\uffff\1\u0199",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0199",
 			"\1\u019a",
 			"\1\u019b",
-			"\1\u019c\7\uffff\1\u019d",
-			"\12\107\7\uffff\6\106\32\uffff\6\105\16\uffff\1\u019e",
-			"\1\u019f",
-			"\1\u01a0",
-			"\1\u01a1",
-			"",
+			"\1\u019c",
+			"\1\u019d",
+			"\1\u019e",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\1\u019f\7\66\1\u01a0\21\66"+
+			"\5\uffff\uff7f\66",
 			"\1\u01a2",
 			"\1\u01a3",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\1\u01a4",
 			"\1\u01a5",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u01a7",
 			"\1\u01a8",
 			"\1\u01a9",
-			"",
 			"\1\u01aa",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u01ab",
 			"\1\u01ac",
-			"\1\u01ad",
+			"\12\u01ad\7\uffff\6\u00b0\32\uffff\6\u00b0",
 			"",
 			"\1\u01ae",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"",
+			"\1\u01af",
 			"\1\u01b0",
+			"",
 			"\1\u01b1",
-			"\1\u01b2",
-			"\1\u01b3",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u01b4",
+			"",
 			"\1\u01b5",
 			"\1\u01b6",
+			"",
+			"",
 			"\1\u01b7",
 			"\1\u01b8",
+			"",
 			"\1\u01b9",
 			"\1\u01ba",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\1\u01bd",
-			"",
-			"\1\u01be",
+			"\1\u01bb",
+			"\1\u01bc",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\5\uffff\1\u01be",
 			"\1\u01bf",
-			"",
-			"\1\u01c0\5\uffff\1\u01c1",
-			"\1\u01c2\3\uffff\1\u01c3",
+			"\1\u01c0",
+			"\1\u01c1\7\uffff\1\u01c2",
+			"\12\104\7\uffff\6\103\32\uffff\6\102\16\uffff\1\u01c3",
 			"\1\u01c4",
 			"\1\u01c5",
 			"\1\u01c6",
 			"\1\u01c7",
+			"",
 			"\1\u01c8",
 			"\1\u01c9",
-			"\1\u01ca",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u01cb",
-			"\1\u01cc",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u01cd",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\16\62\1\u01ce\13\62\5\uffff"+
-			"\uff7f\62",
+			"\1\u01ce",
+			"\1\u01cf",
+			"",
 			"\1\u01d0",
-			"\1\u01d1",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u01d2",
 			"\1\u01d3",
+			"",
 			"\1\u01d4",
-			"\1\u01d5",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u01d6",
 			"\1\u01d7",
 			"\1\u01d8",
 			"\1\u01d9",
 			"\1\u01da",
-			"",
-			"",
-			"",
 			"\1\u01db",
 			"\1\u01dc",
 			"\1\u01dd",
-			"\1\u01de\12\uffff\1\u01df",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u01e1",
+			"\1\u01de",
+			"\1\u01df",
+			"\1\u01e0",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u01e5",
-			"\1\u01e6",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u01e1",
+			"\1\u01e2",
+			"",
+			"\1\u01e3\5\uffff\1\u01e4",
+			"\1\u01e5\3\uffff\1\u01e6",
+			"\1\u01e7",
 			"\1\u01e8",
 			"\1\u01e9",
-			"",
 			"\1\u01ea",
 			"\1\u01eb",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u01ec",
 			"\1\u01ed",
-			"",
 			"\1\u01ee",
 			"\1\u01ef",
 			"\1\u01f0",
-			"\1\u01f1",
-			"\1\u01f2",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\16\66\1\u01f1\13\66\5\uffff"+
+			"\uff7f\66",
 			"\1\u01f3",
 			"\1\u01f4",
 			"\1\u01f5",
 			"\1\u01f6",
-			"\12\u018f\7\uffff\6\u00a5\32\uffff\6\u00a5",
 			"\1\u01f7",
 			"\1\u01f8",
 			"\1\u01f9",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u01fa",
 			"\1\u01fb",
 			"\1\u01fc",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u01fd",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\21\62\1\u0201\10\62\5\uffff"+
-			"\uff7f\62",
-			"\1\u0203",
+			"",
+			"",
+			"\1\u01fe",
+			"\1\u01ff",
+			"\1\u0200",
+			"\1\u0201\12\uffff\1\u0202",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0204",
-			"\1\u0205",
-			"\1\u0206",
-			"\1\u0207",
-			"\1\u0208\11\uffff\1\u0209",
-			"\1\u020a",
-			"\1\u020b",
 			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0208",
+			"\1\u0209",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u020b",
 			"\1\u020c",
 			"",
 			"\1\u020d",
 			"\1\u020e",
-			"\1\u020f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0210",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\10\62\1\u0211\2\62\1\u0212"+
-			"\16\62\5\uffff\uff7f\62",
+			"\1\u0211",
+			"\1\u0212",
+			"\1\u0213",
 			"\1\u0214",
 			"\1\u0215",
-			"",
 			"\1\u0216",
+			"\12\u01ad\7\uffff\6\u00b0\32\uffff\6\u00b0",
 			"\1\u0217",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0218",
 			"\1\u0219",
 			"\1\u021a",
+			"",
+			"",
 			"\1\u021b",
 			"\1\u021c",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u021d",
 			"\1\u021e",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0220",
-			"",
-			"",
 			"\1\u0221",
-			"\1\u0222",
-			"\1\u0223",
-			"\1\u0224",
-			"\1\u0225",
-			"\1\u0226",
-			"\1\u0227",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\21\66\1\u0226\10\66\5\uffff"+
+			"\uff7f\66",
 			"\1\u0228",
 			"\1\u0229",
 			"\1\u022a",
 			"\1\u022b",
 			"\1\u022c",
 			"\1\u022d",
-			"\1\u022e",
-			"\1\u022f",
-			"\1\u0230\17\uffff\1\u0231",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0233",
+			"\1\u022e\11\uffff\1\u022f",
+			"\1\u0230",
+			"\1\u0231",
 			"",
+			"\1\u0232",
+			"",
+			"\1\u0233",
 			"\1\u0234",
 			"\1\u0235",
-			"\1\u0236",
-			"\1\u0237",
-			"\1\u0238",
-			"\1\u0239",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\10\66\1\u0237\2\66\1\u0238"+
+			"\16\66\5\uffff\uff7f\66",
 			"\1\u023a",
 			"\1\u023b",
+			"",
 			"\1\u023c",
 			"\1\u023d",
-			"\1\u023e",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u023f",
 			"\1\u0240",
 			"\1\u0241",
 			"\1\u0242",
-			"\1\u0243",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0244",
-			"",
-			"",
-			"",
-			"\1\u0245",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0246",
 			"\1\u0247",
 			"\1\u0248",
 			"\1\u0249",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\16\62\1\u024b\13\62\5\uffff"+
-			"\uff7f\62",
+			"\1\u024a",
+			"\1\u024b",
+			"\1\u024c",
 			"\1\u024d",
 			"\1\u024e",
-			"\12\62\7\uffff\32\62\4\uffff\1\u024f\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u024f",
+			"\1\u0250",
 			"\1\u0251",
 			"\1\u0252",
 			"\1\u0253",
 			"\1\u0254",
-			"\1\u0255",
-			"\1\u0256",
-			"\1\u0257",
+			"\1\u0255\17\uffff\1\u0256",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0258",
-			"\1\u0259",
 			"",
+			"\1\u0259",
 			"\1\u025a",
 			"\1\u025b",
-			"",
-			"",
-			"",
-			"",
 			"\1\u025c",
-			"",
 			"\1\u025d",
 			"\1\u025e",
 			"\1\u025f",
 			"\1\u0260",
 			"\1\u0261",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0262",
 			"\1\u0263",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0264",
 			"\1\u0265",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0266",
 			"\1\u0267",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\22\62\1\u0268\7\62\5\uffff"+
-			"\uff7f\62",
+			"\1\u0268",
+			"",
+			"\1\u0269",
+			"",
+			"",
+			"",
 			"\1\u026a",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"\1\u026b",
 			"\1\u026c",
-			"",
 			"\1\u026d",
 			"\1\u026e",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0270",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"\1\u0271",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\16\66\1\u0270\13\66\5\uffff"+
+			"\uff7f\66",
 			"\1\u0272",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0274",
-			"",
-			"\1\u0275",
-			"",
+			"\1\u0273",
+			"\12\66\7\uffff\32\66\4\uffff\1\u0274\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0276",
 			"\1\u0277",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0278",
 			"\1\u0279",
 			"\1\u027a",
 			"\1\u027b",
 			"\1\u027c",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u027d",
+			"\1\u027e",
 			"\1\u027f",
 			"\1\u0280",
+			"",
 			"\1\u0281",
 			"\1\u0282",
+			"",
+			"",
+			"",
+			"",
 			"\1\u0283",
+			"",
 			"\1\u0284",
 			"\1\u0285",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0286",
 			"\1\u0287",
-			"",
 			"\1\u0288",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u028a",
+			"\1\u0289",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u028b",
-			"\1\u028c",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u028d",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u028f",
-			"\1\u0290",
-			"\1\u0291",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\22\66\1\u0290\7\66\5\uffff"+
+			"\uff7f\66",
 			"\1\u0292",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0295",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0299",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
 			"",
-			"\1\u029b",
+			"\1\u0293",
+			"\1\u0294",
+			"",
+			"\1\u0295",
+			"\1\u0296",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0298",
+			"",
+			"\1\u0299",
+			"\1\u029a",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u029c",
+			"",
 			"\1\u029d",
 			"",
 			"\1\u029e",
-			"",
-			"\1\u029f",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02a0",
-			"\1\u02a3\10\uffff\1\u02a1\1\u02a2",
-			"",
-			"\1\u02a4",
-			"\1\u02a5",
+			"\1\u02a1",
+			"\1\u02a2",
+			"\1\u02a3",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02a6",
 			"\1\u02a7",
 			"\1\u02a8",
@@ -7267,280 +7592,279 @@ public class DelphiLexer extends Lexer {
 			"\1\u02aa",
 			"\1\u02ab",
 			"\1\u02ac",
-			"\1\u02ad\23\uffff\1\u02ae",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u02ae",
+			"",
 			"\1\u02af",
-			"\1\u02b0",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02b1",
 			"\1\u02b2",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u02b4",
-			"\1\u02b5",
-			"",
+			"\1\u02b3",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02b6",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\1\u02b7",
 			"\1\u02b8",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\1\u02ba",
-			"\1\u02bb",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u02be",
-			"",
-			"\1\u02bf",
+			"\1\u02b9",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u02bc",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02c0",
-			"\1\u02c1",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
 			"\1\u02c2",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u02c3",
+			"\1\u02c4",
+			"",
 			"\1\u02c5",
 			"",
 			"\1\u02c6",
 			"\1\u02c7",
-			"\1\u02c8",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u02ca\10\uffff\1\u02c8\1\u02c9",
 			"",
-			"",
-			"\1\u02ca",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u02cb",
+			"\1\u02cc",
 			"\1\u02cd",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u02ce",
 			"\1\u02cf",
 			"\1\u02d0",
-			"",
 			"\1\u02d1",
 			"\1\u02d2",
-			"",
 			"\1\u02d3",
 			"\1\u02d4",
 			"\1\u02d5",
-			"",
-			"",
-			"\1\u02d6",
-			"\1\u02d7",
+			"\1\u02d6\23\uffff\1\u02d7",
 			"\1\u02d8",
 			"\1\u02d9",
-			"",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"",
-			"",
+			"\1\u02da",
 			"\1\u02db",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u02de",
 			"\1\u02df",
+			"",
 			"\1\u02e0",
-			"\1\u02e1",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u02e2",
-			"\1\u02e3",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u02e4",
 			"\1\u02e5",
-			"\1\u02e7\13\uffff\1\u02e6",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02e8",
+			"",
 			"\1\u02e9",
 			"\1\u02ea",
 			"\1\u02eb",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u02ee",
+			"",
+			"\1\u02ec",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u02ef",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u02f0",
 			"\1\u02f1",
-			"\1\u02f2",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"\1\u02f5",
+			"",
+			"\1\u02f3",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02f6",
-			"\1\u02f7",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u02f8",
+			"\1\u02f9",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
 			"\1\u02fa",
+			"\1\u02fb",
 			"",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
 			"\1\u02fc",
 			"\1\u02fd",
 			"\1\u02fe",
+			"",
+			"",
 			"\1\u02ff",
-			"",
-			"",
 			"\1\u0300",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0301",
+			"\1\u0302",
 			"",
 			"",
-			"\1\u0305",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0307",
+			"",
+			"",
+			"\1\u0304",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0308",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0309",
 			"\1\u030a",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u030b",
 			"\1\u030c",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u030f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\1\u030d",
+			"\1\u030e",
+			"\1\u0310\13\uffff\1\u030f",
 			"\1\u0311",
-			"",
-			"",
-			"",
 			"\1\u0312",
 			"\1\u0313",
 			"\1\u0314",
 			"\1\u0315",
 			"\1\u0316",
-			"\1\u0317",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0319",
 			"\1\u031a",
-			"\1\u031b",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u031c",
 			"\1\u031d",
-			"\1\u031e",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
 			"",
-			"\1\u031f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0320",
+			"\1\u0321",
 			"\1\u0322",
 			"",
-			"",
 			"\1\u0323",
-			"\1\u0324",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0325",
-			"\1\u0326",
 			"",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0327",
-			"",
-			"\1\u0328\21\uffff\1\u0329",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u032b",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0328",
+			"\1\u0329",
+			"\1\u032a",
 			"",
 			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u032f",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0331",
 			"\1\u0332",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0334",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0336",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0339",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"",
-			"\1\u0333",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u0338\1\u0339\4\uffff\1\u0336\6\uffff\1\u0337\3\uffff\1\u033a",
 			"\1\u033b",
+			"",
+			"",
+			"",
 			"\1\u033c",
 			"\1\u033d",
 			"\1\u033e",
-			"",
 			"\1\u033f",
 			"\1\u0340",
 			"\1\u0341",
-			"\1\u0342",
-			"\1\u0344\6\uffff\1\u0345\3\uffff\1\u0343",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0343",
+			"\1\u0344",
+			"\1\u0345",
 			"\1\u0346",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0348",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0349",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"",
 			"\1\u034b",
-			"\1\u034c",
-			"\1\u034d",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u034e",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
 			"",
+			"",
+			"\1\u034f",
 			"\1\u0350",
-			"",
-			"",
-			"",
-			"",
-			"",
-			"",
 			"\1\u0351",
 			"\1\u0352",
 			"",
-			"",
 			"\1\u0353",
-			"\1\u0354",
-			"\1\u0355",
-			"\1\u0356",
+			"",
+			"\1\u0354\21\uffff\1\u0355",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0357",
-			"\1\u0358",
-			"\1\u0359",
-			"\1\u035a",
-			"\1\u035b",
-			"\1\u035c",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"",
+			"",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u035d",
-			"\1\u035f\14\uffff\1\u035e",
-			"\1\u0360",
-			"\1\u0361",
-			"\1\u0362",
-			"\1\u0363",
-			"\1\u0364",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
 			"",
 			"",
+			"\1\u035e",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u0363\1\u0364\4\uffff\1\u0361\6\uffff\1\u0362\3\uffff\1\u0365",
 			"\1\u0366",
 			"\1\u0367",
 			"\1\u0368",
 			"\1\u0369",
 			"",
 			"\1\u036a",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u036c",
-			"\1\u036d",
-			"\1\u036e",
+			"\1\u036b",
+			"\1\u036d\6\uffff\1\u036e\3\uffff\1\u036c",
 			"\1\u036f",
-			"\1\u0370",
-			"\1\u0371",
+			"",
+			"\1\u0371\14\uffff\1\u0370",
 			"\1\u0372",
-			"\1\u0373",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"",
 			"\1\u0374",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0377",
 			"\1\u0378",
 			"\1\u0379",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u037b",
+			"\1\u037a",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
 			"\1\u037c",
+			"",
+			"",
+			"",
+			"",
+			"",
 			"\1\u037d",
 			"\1\u037e",
 			"",
+			"",
 			"\1\u037f",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0380",
+			"\1\u0381",
 			"\1\u0382",
 			"\1\u0383",
-			"",
 			"\1\u0384",
 			"\1\u0385",
 			"\1\u0386",
@@ -7550,83 +7874,129 @@ public class DelphiLexer extends Lexer {
 			"\1\u038a",
 			"\1\u038b",
 			"\1\u038c",
-			"",
-			"",
 			"\1\u038d",
 			"\1\u038e",
 			"\1\u038f",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
-			"\1\u0390",
-			"\1\u0391",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"",
 			"\1\u0392",
 			"\1\u0393",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
-			"",
+			"\1\u0394",
 			"\1\u0395",
+			"",
 			"\1\u0396",
-			"\1\u0397",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"\1\u0398",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u0399",
+			"\1\u039a",
+			"\1\u039b",
 			"\1\u039c",
 			"\1\u039d",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\1\u03a1",
-			"\1\u03a2",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u039e",
+			"\1\u039f",
+			"\1\u03a0",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03a3",
 			"\1\u03a4",
 			"\1\u03a5",
 			"\1\u03a6",
+			"\1\u03a7",
+			"\1\u03a8",
+			"\1\u03a9",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"",
 			"\1\u03aa",
-			"",
-			"",
-			"",
-			"\1\u03ab",
-			"\1\u03ac",
-			"",
-			"",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03ad",
+			"\1\u03ae",
 			"",
 			"\1\u03af",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u03b0",
 			"\1\u03b1",
-			"",
-			"",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\1\u03b2",
+			"\1\u03b3",
 			"\1\u03b4",
-			"",
-			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\1\u03b5",
 			"\1\u03b6",
+			"\1\u03b7",
 			"",
 			"",
-			"\12\62\7\uffff\32\62\4\uffff\1\u03b7\1\uffff\32\62\5\uffff\uff7f\62",
-			"",
+			"\1\u03b8",
 			"\1\u03b9",
 			"\1\u03ba",
-			"",
 			"\1\u03bb",
 			"\1\u03bc",
 			"\1\u03bd",
 			"\1\u03be",
-			"\1\u03bf",
-			"\1\u03c0",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
-			"\12\62\7\uffff\32\62\4\uffff\1\62\1\uffff\32\62\5\uffff\uff7f\62",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			"",
+			"",
+			"\1\u03c0",
+			"\1\u03c1",
+			"\1\u03c2",
+			"\1\u03c3",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03c7",
+			"\1\u03c8",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03cd",
+			"\1\u03ce",
+			"\1\u03cf",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03d5",
+			"",
+			"",
+			"",
+			"\1\u03d6",
+			"\1\u03d7",
+			"",
+			"",
+			"",
+			"",
+			"\1\u03d8",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03da",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03dd",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\1\u03df",
+			"",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\u03e0\1\uffff\32\66\5\uffff\uff7f\66",
+			"",
+			"\1\u03e2",
+			"\1\u03e3",
+			"",
+			"\1\u03e4",
+			"\1\u03e5",
+			"\1\u03e6",
+			"\1\u03e7",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
+			"\1\u03e9",
+			"",
+			"\12\66\7\uffff\32\66\4\uffff\1\66\1\uffff\32\66\5\uffff\uff7f\66",
 			""
 	};
 
@@ -7661,7 +8031,7 @@ public class DelphiLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "1:1: Tokens : ( T__197 | T__198 | T__199 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM );";
+			return "1:1: Tokens : ( T__198 | T__199 | T__200 | T__201 | T__202 | T__203 | T__204 | T__205 | T__206 | T__207 | T__208 | T__209 | T__210 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DELAYED | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM );";
 		}
 		@Override
 		public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
@@ -7669,18 +8039,18 @@ public class DelphiLexer extends Lexer {
 			int _s = s;
 			switch ( s ) {
 					case 0 : 
-						int LA19_52 = input.LA(1);
+						int LA19_56 = input.LA(1);
 						s = -1;
-						if ( ((LA19_52 >= '\u0000' && LA19_52 <= '\uFEFE')||(LA19_52 >= '\uFF00' && LA19_52 <= '\uFFFF')) ) {s = 50;}
-						else s = 160;
+						if ( ((LA19_56 >= '\u0000' && LA19_56 <= '\uFEFE')||(LA19_56 >= '\uFF00' && LA19_56 <= '\uFFFF')) ) {s = 54;}
+						else s = 171;
 						if ( s>=0 ) return s;
 						break;
 
 					case 1 : 
-						int LA19_40 = input.LA(1);
+						int LA19_47 = input.LA(1);
 						s = -1;
-						if ( ((LA19_40 >= '\u0000' && LA19_40 <= '\uFFFF')) ) {s = 136;}
-						else s = 150;
+						if ( ((LA19_47 >= '\u0000' && LA19_47 <= '\uFFFF')) ) {s = 150;}
+						else s = 164;
 						if ( s>=0 ) return s;
 						break;
 			}
