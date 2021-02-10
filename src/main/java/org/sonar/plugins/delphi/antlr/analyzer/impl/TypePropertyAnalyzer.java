@@ -40,16 +40,16 @@ public class TypePropertyAnalyzer extends CodeAnalyzer {
 
   @Override
   protected void doAnalyze(CodeTree codeTree, CodeAnalysisResults results) {
-    if (results.getActiveClass() == null) {
-      throw new IllegalStateException("Cannot parse class fields for no active class");
-    }
-
     String varType = getPropertyType((CommonTree) codeTree.getCurrentCodeNode().getNode());
     if (varType == null) {
       return;
     }
 
     String varName = getPropertyName((CommonTree) codeTree.getCurrentCodeNode().getNode());
+    if (results.getActiveClass() == null) {
+      throw new IllegalStateException("Cannot parse class fields for no active class: " + varName + ": "+ varType);
+    }
+
     FunctionInterface read = getPropertyReadFunction((CommonTree) codeTree.getCurrentCodeNode().getNode());
     FunctionInterface write = getPropertyWriteFunction((CommonTree) codeTree.getCurrentCodeNode().getNode());
 
