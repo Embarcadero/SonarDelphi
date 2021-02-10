@@ -71,7 +71,6 @@ public class DelphiPmdSensor implements Sensor {
    *
    * @param delphiProjectHelper delphiProjectHelper
    * @param context             SensorContext
-   * @param rulesProfile        rulesProfile used to export active rules
    * @param profileExporter     used to export active rules
    * 
    * This constructor is only used in unittests.
