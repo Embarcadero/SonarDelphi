@@ -82,13 +82,6 @@ public class DelphiRule extends AbstractRule implements DelphiParserVisitor, Imm
     return null;
   };
 
-  /**
-   * Visits all nodes in a file
-   */
-
-  /**
-   * @inheritdoc
-   */
   @Override
   public void apply(List<? extends Node> nodes, RuleContext ctx)
   {
