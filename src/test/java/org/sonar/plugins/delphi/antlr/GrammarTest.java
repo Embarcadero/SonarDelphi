@@ -134,7 +134,6 @@ public class GrammarTest {
   }
 
   @Test
-  @Ignore("https://github.com/fabriciocolombo/sonar-delphi/issues/39")
   public void parseInterfaceMethodResolutionClause() throws Exception {
     parseFile("InterfaceMethodResolutionClause.pas");
   }
