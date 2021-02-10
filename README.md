@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/ekot1/SonarDelphi.svg?branch=master)](https://travis-ci.org/ekot1/SonarDelphi)
-
 # SonarQube Delphi
 
 Is a SonarQube (http://www.sonarqube.org/) plugin and provides
