@@ -69,11 +69,11 @@
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/fabriciocolombo/sonar-delphi/issues</url>
+		<url>https://github.com/JAM-Software/sonar-delphi/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Travis</system>
-		<url>https://travis-ci.org/fabriciocolombo/sonar-delphi</url>
+		<system>GitHub</system>
+		<url>https://github.com/JAM-Software/SonarDelphi/actions</url>
 	</ciManagement>
 
 	<properties>
