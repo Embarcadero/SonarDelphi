@@ -34,7 +34,7 @@ public class FieldNameRule extends DelphiRule {
   public void visit(DelphiPMDNode node, RuleContext ctx) {
     if (node.getType() == DelphiLexer.TkClassField) {
 
-      if (!isPublished()) {
+      if (isPrivate() || isProtected()) {  // Do not apply for public or pubnlished members, the "F" prefix is uncommon here. Issue #8
         Tree variableIdentsNode = node.getChild(0);
         String name = variableIdentsNode.getChild(0).getText();
         if (name.length() > 1) {
