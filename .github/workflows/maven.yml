@@ -24,3 +24,8 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: upload JAR file
+      uses: actions/upload-artifact@v1
+      with: 
+        name: sonar-delphi-plugin.jar
+        path: target/sonar-delphi-plugin-1.0.7.jar
