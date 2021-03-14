@@ -4,7 +4,7 @@
 
 Is a SonarQube (http://www.sonarqube.org/) plugin and provides
   * 49 Rules for Delphi
-  * TestCoverage using [DelphiCodeCoverage](https://sourceforge.net/projects/delphicodecoverage/) or AQtime (license needed)
+  * TestCoverage using [DelphiCodeCoverage](https://github.com/mendrix/DelphiCodeCoverage/releases) or AQtime (license needed)
    * Optional .html output for TestCoverage
   * Unittests results using DUnitX
 
