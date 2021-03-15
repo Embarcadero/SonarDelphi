@@ -711,10 +711,10 @@ ident                        : TkIdentifier
                              | '&' keywordsAsIdentifier -> keywordsAsIdentifier
                              | usedKeywordsAsNames
                              ;
-usedKeywordsAsNames          : (NAME | READONLY | ADD | DISPID | AT | IN | MESSAGE | POINTER | INDEX | DEFAULT | STRING | CONTINUE)
-                             | (READ | WRITE | REGISTER | VARIANT | OPERATOR | REMOVE | LOCAL | REFERENCE | CONTAINS | FINAL)
-                             | (BREAK | EXIT | STRICT | OUT | OBJECT | EXPORT | ANSISTRING | IMPLEMENTS | STORED | HELPER )
-                             | (UNSAFE | STATIC | DQ | DW | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY | FALSE | TRUE)
+usedKeywordsAsNames          : (ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT)
+                             | (FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME)
+                             | (OBJECT | OUT | OPERATOR | POINTER | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED )
+                             | (STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY)
                              ;
 keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)
                              | (AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS)
