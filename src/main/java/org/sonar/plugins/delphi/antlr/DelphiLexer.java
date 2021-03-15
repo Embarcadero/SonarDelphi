@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-02-05 15:18:16
+// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-03-15 16:52:29
 
 /*
  * Sonar Delphi Plugin
@@ -266,15 +266,15 @@ public class DelphiLexer extends Lexer {
 	public DelphiLexer(CharStream input, RecognizerSharedState state) {
 		super(input,state);
 	}
-	@Override public String getGrammarFileName() { return "D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g"; }
+	@Override public String getGrammarFileName() { return "D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g"; }
 
 	// $ANTLR start "T__198"
 	public final void mT__198() throws RecognitionException {
 		try {
 			int _type = T__198;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:8: ( '&' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:10: '&'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:8: ( '&' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:38:10: '&'
 			{
 			match('&'); if (state.failed) return;
 			}
@@ -293,8 +293,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__199;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:8: ( '@@' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:10: '@@'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:8: ( '@@' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:39:10: '@@'
 			{
 			match("@@"); if (state.failed) return;
 
@@ -314,8 +314,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__200;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:8: ( 'AND' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:10: 'AND'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:8: ( 'AND' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:40:10: 'AND'
 			{
 			match("AND"); if (state.failed) return;
 
@@ -335,8 +335,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__201;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:8: ( 'AS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:10: 'AS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:8: ( 'AS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:41:10: 'AS'
 			{
 			match("AS"); if (state.failed) return;
 
@@ -356,8 +356,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__202;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:8: ( 'DIV' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:10: 'DIV'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:8: ( 'DIV' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:42:10: 'DIV'
 			{
 			match("DIV"); if (state.failed) return;
 
@@ -377,8 +377,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__203;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:8: ( 'Inherited' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:10: 'Inherited'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:8: ( 'Inherited' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:43:10: 'Inherited'
 			{
 			match("Inherited"); if (state.failed) return;
 
@@ -398,8 +398,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__204;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:8: ( 'MOD' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:10: 'MOD'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:8: ( 'MOD' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:44:10: 'MOD'
 			{
 			match("MOD"); if (state.failed) return;
 
@@ -419,8 +419,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__205;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:8: ( 'OR' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:10: 'OR'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:8: ( 'OR' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:45:10: 'OR'
 			{
 			match("OR"); if (state.failed) return;
 
@@ -440,8 +440,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__206;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:8: ( 'SHL' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:10: 'SHL'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:8: ( 'SHL' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:46:10: 'SHL'
 			{
 			match("SHL"); if (state.failed) return;
 
@@ -461,8 +461,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__207;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:8: ( 'SHR' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:10: 'SHR'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:8: ( 'SHR' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:47:10: 'SHR'
 			{
 			match("SHR"); if (state.failed) return;
 
@@ -482,8 +482,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__208;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:8: ( 'XOR' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:10: 'XOR'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:8: ( 'XOR' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:48:10: 'XOR'
 			{
 			match("XOR"); if (state.failed) return;
 
@@ -503,8 +503,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__209;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:8: ( '^^' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:10: '^^'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:8: ( '^^' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:49:10: '^^'
 			{
 			match("^^"); if (state.failed) return;
 
@@ -524,8 +524,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = T__210;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:8: ( 'nil^' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:10: 'nil^'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:8: ( 'nil^' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:50:10: 'nil^'
 			{
 			match("nil^"); if (state.failed) return;
 
@@ -545,8 +545,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ABSOLUTE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:19: ( 'absolute' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:21: 'absolute'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:19: ( 'absolute' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:754:21: 'absolute'
 			{
 			match("absolute"); if (state.failed) return;
 
@@ -566,8 +566,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ABSTRACT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:19: ( 'abstract' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:21: 'abstract'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:19: ( 'abstract' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:755:21: 'abstract'
 			{
 			match("abstract"); if (state.failed) return;
 
@@ -587,8 +587,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ADD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:19: ( 'add' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:21: 'add'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:19: ( 'add' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:756:21: 'add'
 			{
 			match("add"); if (state.failed) return;
 
@@ -608,8 +608,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:19: ( 'and' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:21: 'and'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:19: ( 'and' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:757:21: 'and'
 			{
 			match("and"); if (state.failed) return;
 
@@ -629,8 +629,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ANSISTRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:19: ( 'ansistring' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:21: 'ansistring'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:19: ( 'ansistring' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:758:21: 'ansistring'
 			{
 			match("ansistring"); if (state.failed) return;
 
@@ -650,8 +650,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ARRAY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:19: ( 'array' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:21: 'array'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:19: ( 'array' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:759:21: 'array'
 			{
 			match("array"); if (state.failed) return;
 
@@ -671,8 +671,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:19: ( 'as' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:21: 'as'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:19: ( 'as' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:760:21: 'as'
 			{
 			match("as"); if (state.failed) return;
 
@@ -692,8 +692,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:19: ( 'asm' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:21: 'asm'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:19: ( 'asm' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:761:21: 'asm'
 			{
 			match("asm"); if (state.failed) return;
 
@@ -713,8 +713,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSEMBLER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:19: ( 'assembler' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:21: 'assembler'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:19: ( 'assembler' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:762:21: 'assembler'
 			{
 			match("assembler"); if (state.failed) return;
 
@@ -734,8 +734,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSEMBLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:19: ( 'assembly' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:21: 'assembly'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:19: ( 'assembly' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:763:21: 'assembly'
 			{
 			match("assembly"); if (state.failed) return;
 
@@ -755,8 +755,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:19: ( 'at' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:21: 'at'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:19: ( 'at' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:764:21: 'at'
 			{
 			match("at"); if (state.failed) return;
 
@@ -776,8 +776,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AUTOMATED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:19: ( 'automated' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:21: 'automated'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:19: ( 'automated' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:765:21: 'automated'
 			{
 			match("automated"); if (state.failed) return;
 
@@ -797,8 +797,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = BEGIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:19: ( 'begin' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:21: 'begin'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:19: ( 'begin' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:766:21: 'begin'
 			{
 			match("begin"); if (state.failed) return;
 
@@ -818,8 +818,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = BREAK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:19: ( 'break' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:21: 'break'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:19: ( 'break' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:767:21: 'break'
 			{
 			match("break"); if (state.failed) return;
 
@@ -839,8 +839,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CASE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:19: ( 'case' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:21: 'case'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:19: ( 'case' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:768:21: 'case'
 			{
 			match("case"); if (state.failed) return;
 
@@ -860,8 +860,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CDECL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:19: ( 'cdecl' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:21: 'cdecl'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:19: ( 'cdecl' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:769:21: 'cdecl'
 			{
 			match("cdecl"); if (state.failed) return;
 
@@ -881,8 +881,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CLASS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:19: ( 'class' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:21: 'class'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:19: ( 'class' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:770:21: 'class'
 			{
 			match("class"); if (state.failed) return;
 
@@ -902,8 +902,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONST;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:19: ( 'const' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:21: 'const'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:19: ( 'const' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:771:21: 'const'
 			{
 			match("const"); if (state.failed) return;
 
@@ -923,8 +923,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONSTRUCTOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:19: ( 'constructor' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:21: 'constructor'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:19: ( 'constructor' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:772:21: 'constructor'
 			{
 			match("constructor"); if (state.failed) return;
 
@@ -944,8 +944,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONTAINS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:19: ( 'contains' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:21: 'contains'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:19: ( 'contains' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:773:21: 'contains'
 			{
 			match("contains"); if (state.failed) return;
 
@@ -965,8 +965,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = CONTINUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:19: ( 'continue' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:21: 'continue'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:19: ( 'continue' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:774:21: 'continue'
 			{
 			match("continue"); if (state.failed) return;
 
@@ -986,8 +986,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DEFAULT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:19: ( 'default' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:21: 'default'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:19: ( 'default' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:775:21: 'default'
 			{
 			match("default"); if (state.failed) return;
 
@@ -1007,8 +1007,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DELAYED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:19: ( 'delayed' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:21: 'delayed'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:19: ( 'delayed' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:776:21: 'delayed'
 			{
 			match("delayed"); if (state.failed) return;
 
@@ -1028,8 +1028,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DEPRECATED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:19: ( 'deprecated' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:21: 'deprecated'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:19: ( 'deprecated' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:777:21: 'deprecated'
 			{
 			match("deprecated"); if (state.failed) return;
 
@@ -1049,8 +1049,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DESTRUCTOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:19: ( 'destructor' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:21: 'destructor'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:19: ( 'destructor' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:778:21: 'destructor'
 			{
 			match("destructor"); if (state.failed) return;
 
@@ -1070,8 +1070,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DISPID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:19: ( 'dispid' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:21: 'dispid'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:19: ( 'dispid' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:779:21: 'dispid'
 			{
 			match("dispid"); if (state.failed) return;
 
@@ -1091,8 +1091,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DISPINTERFACE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:19: ( 'dispinterface' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:21: 'dispinterface'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:19: ( 'dispinterface' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:780:21: 'dispinterface'
 			{
 			match("dispinterface"); if (state.failed) return;
 
@@ -1112,8 +1112,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DIV;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:19: ( 'div' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:21: 'div'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:19: ( 'div' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:781:21: 'div'
 			{
 			match("div"); if (state.failed) return;
 
@@ -1133,8 +1133,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:19: ( 'do' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:21: 'do'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:19: ( 'do' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:782:21: 'do'
 			{
 			match("do"); if (state.failed) return;
 
@@ -1154,8 +1154,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOWNTO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:19: ( 'downto' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:21: 'downto'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:19: ( 'downto' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:783:21: 'downto'
 			{
 			match("downto"); if (state.failed) return;
 
@@ -1175,8 +1175,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DQ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:19: ( 'dq' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:21: 'dq'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:19: ( 'dq' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:784:21: 'dq'
 			{
 			match("dq"); if (state.failed) return;
 
@@ -1196,8 +1196,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DW;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:19: ( 'dw' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:21: 'dw'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:19: ( 'dw' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:785:21: 'dw'
 			{
 			match("dw"); if (state.failed) return;
 
@@ -1217,8 +1217,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DYNAMIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:19: ( 'dynamic' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:21: 'dynamic'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:19: ( 'dynamic' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:786:21: 'dynamic'
 			{
 			match("dynamic"); if (state.failed) return;
 
@@ -1238,8 +1238,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ELSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:19: ( 'else' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:21: 'else'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:19: ( 'else' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:787:21: 'else'
 			{
 			match("else"); if (state.failed) return;
 
@@ -1259,8 +1259,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = END;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:19: ( 'end' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:21: 'end'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:19: ( 'end' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:788:21: 'end'
 			{
 			match("end"); if (state.failed) return;
 
@@ -1280,8 +1280,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXCEPT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:19: ( 'except' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:21: 'except'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:19: ( 'except' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:789:21: 'except'
 			{
 			match("except"); if (state.failed) return;
 
@@ -1301,8 +1301,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXIT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:19: ( 'exit' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:21: 'exit'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:19: ( 'exit' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:790:21: 'exit'
 			{
 			match("exit"); if (state.failed) return;
 
@@ -1322,8 +1322,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPERIMENTAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:19: ( 'experimental' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:21: 'experimental'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:19: ( 'experimental' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:791:21: 'experimental'
 			{
 			match("experimental"); if (state.failed) return;
 
@@ -1343,8 +1343,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPORT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:19: ( 'export' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:21: 'export'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:19: ( 'export' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:792:21: 'export'
 			{
 			match("export"); if (state.failed) return;
 
@@ -1364,8 +1364,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXPORTS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:19: ( 'exports' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:21: 'exports'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:19: ( 'exports' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:793:21: 'exports'
 			{
 			match("exports"); if (state.failed) return;
 
@@ -1385,8 +1385,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EXTERNAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:19: ( 'external' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:21: 'external'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:19: ( 'external' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:794:21: 'external'
 			{
 			match("external"); if (state.failed) return;
 
@@ -1406,8 +1406,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:19: ( 'far' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:21: 'far'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:19: ( 'far' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:795:21: 'far'
 			{
 			match("far"); if (state.failed) return;
 
@@ -1427,8 +1427,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FILE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:19: ( 'file' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:21: 'file'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:19: ( 'file' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:796:21: 'file'
 			{
 			match("file"); if (state.failed) return;
 
@@ -1448,8 +1448,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:19: ( 'final' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:21: 'final'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:19: ( 'final' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:797:21: 'final'
 			{
 			match("final"); if (state.failed) return;
 
@@ -1469,8 +1469,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINALIZATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:19: ( 'finalization' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:21: 'finalization'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:19: ( 'finalization' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:798:21: 'finalization'
 			{
 			match("finalization"); if (state.failed) return;
 
@@ -1490,8 +1490,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FINALLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:19: ( 'finally' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:21: 'finally'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:19: ( 'finally' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:799:21: 'finally'
 			{
 			match("finally"); if (state.failed) return;
 
@@ -1511,8 +1511,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:19: ( 'for' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:21: 'for'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:19: ( 'for' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:800:21: 'for'
 			{
 			match("for"); if (state.failed) return;
 
@@ -1532,8 +1532,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FORWARD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:19: ( 'forward' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:21: 'forward'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:19: ( 'forward' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:801:21: 'forward'
 			{
 			match("forward"); if (state.failed) return;
 
@@ -1553,8 +1553,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FUNCTION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:19: ( 'function' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:21: 'function'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:19: ( 'function' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:802:21: 'function'
 			{
 			match("function"); if (state.failed) return;
 
@@ -1574,8 +1574,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GOTO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:19: ( 'goto' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:21: 'goto'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:19: ( 'goto' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:803:21: 'goto'
 			{
 			match("goto"); if (state.failed) return;
 
@@ -1595,8 +1595,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = HELPER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:19: ( 'helper' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:21: 'helper'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:19: ( 'helper' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:804:21: 'helper'
 			{
 			match("helper"); if (state.failed) return;
 
@@ -1616,8 +1616,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:19: ( 'if' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:21: 'if'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:19: ( 'if' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:805:21: 'if'
 			{
 			match("if"); if (state.failed) return;
 
@@ -1637,8 +1637,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IMPLEMENTATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:19: ( 'implementation' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:21: 'implementation'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:19: ( 'implementation' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:806:21: 'implementation'
 			{
 			match("implementation"); if (state.failed) return;
 
@@ -1658,8 +1658,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IMPLEMENTS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:19: ( 'implements' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:21: 'implements'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:19: ( 'implements' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:807:21: 'implements'
 			{
 			match("implements"); if (state.failed) return;
 
@@ -1679,8 +1679,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:19: ( 'in' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:21: 'in'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:19: ( 'in' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:808:21: 'in'
 			{
 			match("in"); if (state.failed) return;
 
@@ -1700,8 +1700,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INDEX;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:19: ( 'index' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:21: 'index'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:19: ( 'index' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:809:21: 'index'
 			{
 			match("index"); if (state.failed) return;
 
@@ -1721,8 +1721,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INHERITED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:19: ( 'inherited' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:21: 'inherited'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:19: ( 'inherited' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:810:21: 'inherited'
 			{
 			match("inherited"); if (state.failed) return;
 
@@ -1742,8 +1742,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INITIALIZATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:19: ( 'initialization' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:21: 'initialization'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:19: ( 'initialization' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:811:21: 'initialization'
 			{
 			match("initialization"); if (state.failed) return;
 
@@ -1763,8 +1763,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INLINE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:19: ( 'inline' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:21: 'inline'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:19: ( 'inline' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:812:21: 'inline'
 			{
 			match("inline"); if (state.failed) return;
 
@@ -1784,8 +1784,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = INTERFACE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:19: ( 'interface' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:21: 'interface'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:19: ( 'interface' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:813:21: 'interface'
 			{
 			match("interface"); if (state.failed) return;
 
@@ -1805,8 +1805,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = IS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:19: ( 'is' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:21: 'is'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:19: ( 'is' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:814:21: 'is'
 			{
 			match("is"); if (state.failed) return;
 
@@ -1826,8 +1826,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LABEL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:19: ( 'label' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:21: 'label'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:19: ( 'label' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:815:21: 'label'
 			{
 			match("label"); if (state.failed) return;
 
@@ -1847,8 +1847,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LIBRARY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:19: ( 'library' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:21: 'library'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:19: ( 'library' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:816:21: 'library'
 			{
 			match("library"); if (state.failed) return;
 
@@ -1868,8 +1868,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LOCAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:19: ( 'local' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:21: 'local'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:19: ( 'local' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:817:21: 'local'
 			{
 			match("local"); if (state.failed) return;
 
@@ -1889,8 +1889,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MESSAGE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:19: ( 'message' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:21: 'message'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:19: ( 'message' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:818:21: 'message'
 			{
 			match("message"); if (state.failed) return;
 
@@ -1910,8 +1910,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MOD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:19: ( 'mod' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:21: 'mod'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:19: ( 'mod' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:819:21: 'mod'
 			{
 			match("mod"); if (state.failed) return;
 
@@ -1931,8 +1931,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NAME;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:19: ( 'name' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:21: 'name'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:19: ( 'name' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:820:21: 'name'
 			{
 			match("name"); if (state.failed) return;
 
@@ -1952,8 +1952,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NEAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:19: ( 'near' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:21: 'near'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:19: ( 'near' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:821:21: 'near'
 			{
 			match("near"); if (state.failed) return;
 
@@ -1973,8 +1973,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NIL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:19: ( 'nil' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:21: 'nil'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:19: ( 'nil' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:822:21: 'nil'
 			{
 			match("nil"); if (state.failed) return;
 
@@ -1994,8 +1994,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NODEFAULT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:19: ( 'nodefault' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:21: 'nodefault'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:19: ( 'nodefault' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:823:21: 'nodefault'
 			{
 			match("nodefault"); if (state.failed) return;
 
@@ -2015,8 +2015,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:19: ( 'not' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:21: 'not'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:19: ( 'not' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:824:21: 'not'
 			{
 			match("not"); if (state.failed) return;
 
@@ -2036,8 +2036,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OBJECT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:19: ( 'object' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:21: 'object'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:19: ( 'object' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:825:21: 'object'
 			{
 			match("object"); if (state.failed) return;
 
@@ -2057,8 +2057,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OF;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:19: ( 'of' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:21: 'of'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:19: ( 'of' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:826:21: 'of'
 			{
 			match("of"); if (state.failed) return;
 
@@ -2078,8 +2078,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:19: ( 'on' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:21: 'on'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:19: ( 'on' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:827:21: 'on'
 			{
 			match("on"); if (state.failed) return;
 
@@ -2099,8 +2099,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OPERATOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:19: ( 'operator' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:21: 'operator'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:19: ( 'operator' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:828:21: 'operator'
 			{
 			match("operator"); if (state.failed) return;
 
@@ -2120,8 +2120,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:19: ( 'or' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:21: 'or'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:19: ( 'or' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:829:21: 'or'
 			{
 			match("or"); if (state.failed) return;
 
@@ -2141,8 +2141,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OUT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:19: ( 'out' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:21: 'out'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:19: ( 'out' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:830:21: 'out'
 			{
 			match("out"); if (state.failed) return;
 
@@ -2162,8 +2162,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OVERLOAD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:19: ( 'overload' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:21: 'overload'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:19: ( 'overload' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:831:21: 'overload'
 			{
 			match("overload"); if (state.failed) return;
 
@@ -2183,8 +2183,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = OVERRIDE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:19: ( 'override' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:21: 'override'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:19: ( 'override' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:832:21: 'override'
 			{
 			match("override"); if (state.failed) return;
 
@@ -2204,8 +2204,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PACKAGE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:19: ( 'package' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:21: 'package'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:19: ( 'package' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:833:21: 'package'
 			{
 			match("package"); if (state.failed) return;
 
@@ -2225,8 +2225,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PACKED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:19: ( 'packed' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:21: 'packed'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:19: ( 'packed' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:834:21: 'packed'
 			{
 			match("packed"); if (state.failed) return;
 
@@ -2246,8 +2246,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PASCAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:19: ( 'pascal' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:21: 'pascal'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:19: ( 'pascal' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:835:21: 'pascal'
 			{
 			match("pascal"); if (state.failed) return;
 
@@ -2267,8 +2267,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PLATFORM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:19: ( 'platform' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:21: 'platform'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:19: ( 'platform' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:836:21: 'platform'
 			{
 			match("platform"); if (state.failed) return;
 
@@ -2288,8 +2288,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = POINTER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:19: ( 'pointer' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:21: 'pointer'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:19: ( 'pointer' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:837:21: 'pointer'
 			{
 			match("pointer"); if (state.failed) return;
 
@@ -2309,8 +2309,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PRIVATE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:19: ( 'private' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:21: 'private'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:19: ( 'private' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:838:21: 'private'
 			{
 			match("private"); if (state.failed) return;
 
@@ -2330,8 +2330,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROCEDURE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:19: ( 'procedure' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:21: 'procedure'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:19: ( 'procedure' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:839:21: 'procedure'
 			{
 			match("procedure"); if (state.failed) return;
 
@@ -2351,8 +2351,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROGRAM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:19: ( 'program' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:21: 'program'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:19: ( 'program' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:840:21: 'program'
 			{
 			match("program"); if (state.failed) return;
 
@@ -2372,8 +2372,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROPERTY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:19: ( 'property' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:21: 'property'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:19: ( 'property' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:841:21: 'property'
 			{
 			match("property"); if (state.failed) return;
 
@@ -2393,8 +2393,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PROTECTED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:19: ( 'protected' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:21: 'protected'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:19: ( 'protected' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:842:21: 'protected'
 			{
 			match("protected"); if (state.failed) return;
 
@@ -2414,8 +2414,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PUBLIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:19: ( 'public' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:21: 'public'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:19: ( 'public' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:843:21: 'public'
 			{
 			match("public"); if (state.failed) return;
 
@@ -2435,8 +2435,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PUBLISHED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:19: ( 'published' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:21: 'published'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:19: ( 'published' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:844:21: 'published'
 			{
 			match("published"); if (state.failed) return;
 
@@ -2456,8 +2456,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RAISE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:19: ( 'raise' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:21: 'raise'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:19: ( 'raise' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:845:21: 'raise'
 			{
 			match("raise"); if (state.failed) return;
 
@@ -2477,8 +2477,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = READ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:19: ( 'read' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:21: 'read'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:19: ( 'read' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:846:21: 'read'
 			{
 			match("read"); if (state.failed) return;
 
@@ -2498,8 +2498,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = READONLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:19: ( 'readonly' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:21: 'readonly'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:19: ( 'readonly' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:847:21: 'readonly'
 			{
 			match("readonly"); if (state.failed) return;
 
@@ -2519,8 +2519,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RECORD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:19: ( 'record' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:21: 'record'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:19: ( 'record' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:848:21: 'record'
 			{
 			match("record"); if (state.failed) return;
 
@@ -2540,8 +2540,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REFERENCE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:19: ( 'reference' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:21: 'reference'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:19: ( 'reference' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:849:21: 'reference'
 			{
 			match("reference"); if (state.failed) return;
 
@@ -2561,8 +2561,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REGISTER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:19: ( 'register' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:21: 'register'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:19: ( 'register' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:850:21: 'register'
 			{
 			match("register"); if (state.failed) return;
 
@@ -2582,8 +2582,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REINTRODUCE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:19: ( 'reintroduce' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:21: 'reintroduce'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:19: ( 'reintroduce' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:851:21: 'reintroduce'
 			{
 			match("reintroduce"); if (state.failed) return;
 
@@ -2603,8 +2603,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REMOVE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:19: ( 'remove' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:21: 'remove'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:19: ( 'remove' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:852:21: 'remove'
 			{
 			match("remove"); if (state.failed) return;
 
@@ -2624,8 +2624,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REPEAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:19: ( 'repeat' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:21: 'repeat'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:19: ( 'repeat' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:853:21: 'repeat'
 			{
 			match("repeat"); if (state.failed) return;
 
@@ -2645,8 +2645,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = REQUIRES;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:19: ( 'requires' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:21: 'requires'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:19: ( 'requires' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:854:21: 'requires'
 			{
 			match("requires"); if (state.failed) return;
 
@@ -2666,8 +2666,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RESIDENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:19: ( 'resident' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:21: 'resident'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:19: ( 'resident' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:855:21: 'resident'
 			{
 			match("resident"); if (state.failed) return;
 
@@ -2687,8 +2687,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RESOURCESTRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:19: ( 'resourcestring' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:21: 'resourcestring'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:19: ( 'resourcestring' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:856:21: 'resourcestring'
 			{
 			match("resourcestring"); if (state.failed) return;
 
@@ -2708,8 +2708,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SAFECALL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:19: ( 'safecall' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:21: 'safecall'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:19: ( 'safecall' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:857:21: 'safecall'
 			{
 			match("safecall"); if (state.failed) return;
 
@@ -2729,8 +2729,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SEALED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:19: ( 'sealed' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:21: 'sealed'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:19: ( 'sealed' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:858:21: 'sealed'
 			{
 			match("sealed"); if (state.failed) return;
 
@@ -2750,8 +2750,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SET;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:19: ( 'set' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:21: 'set'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:19: ( 'set' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:859:21: 'set'
 			{
 			match("set"); if (state.failed) return;
 
@@ -2771,8 +2771,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SHL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:19: ( 'shl' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:21: 'shl'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:19: ( 'shl' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:860:21: 'shl'
 			{
 			match("shl"); if (state.failed) return;
 
@@ -2792,8 +2792,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SHR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:19: ( 'shr' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:21: 'shr'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:19: ( 'shr' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:861:21: 'shr'
 			{
 			match("shr"); if (state.failed) return;
 
@@ -2813,8 +2813,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STATIC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:19: ( 'static' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:21: 'static'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:19: ( 'static' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:862:21: 'static'
 			{
 			match("static"); if (state.failed) return;
 
@@ -2834,8 +2834,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STDCALL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:19: ( 'stdcall' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:21: 'stdcall'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:19: ( 'stdcall' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:863:21: 'stdcall'
 			{
 			match("stdcall"); if (state.failed) return;
 
@@ -2855,8 +2855,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STORED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:19: ( 'stored' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:21: 'stored'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:19: ( 'stored' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:864:21: 'stored'
 			{
 			match("stored"); if (state.failed) return;
 
@@ -2876,8 +2876,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STRICT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:19: ( 'strict' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:21: 'strict'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:19: ( 'strict' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:865:21: 'strict'
 			{
 			match("strict"); if (state.failed) return;
 
@@ -2897,8 +2897,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:19: ( 'string' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:21: 'string'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:19: ( 'string' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:866:21: 'string'
 			{
 			match("string"); if (state.failed) return;
 
@@ -2918,8 +2918,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = THEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:19: ( 'then' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:21: 'then'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:19: ( 'then' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:867:21: 'then'
 			{
 			match("then"); if (state.failed) return;
 
@@ -2939,8 +2939,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = THREADVAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:19: ( 'threadvar' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:21: 'threadvar'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:19: ( 'threadvar' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:868:21: 'threadvar'
 			{
 			match("threadvar"); if (state.failed) return;
 
@@ -2960,8 +2960,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:19: ( 'to' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:21: 'to'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:19: ( 'to' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:869:21: 'to'
 			{
 			match("to"); if (state.failed) return;
 
@@ -2981,8 +2981,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TRY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:19: ( 'try' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:21: 'try'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:19: ( 'try' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:870:21: 'try'
 			{
 			match("try"); if (state.failed) return;
 
@@ -3002,8 +3002,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TYPE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:19: ( 'type' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:21: 'type'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:19: ( 'type' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:871:21: 'type'
 			{
 			match("type"); if (state.failed) return;
 
@@ -3023,8 +3023,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNIT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:19: ( 'unit' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:21: 'unit'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:19: ( 'unit' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:872:21: 'unit'
 			{
 			match("unit"); if (state.failed) return;
 
@@ -3044,8 +3044,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNSAFE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:19: ( 'unsafe' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:21: 'unsafe'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:19: ( 'unsafe' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:873:21: 'unsafe'
 			{
 			match("unsafe"); if (state.failed) return;
 
@@ -3065,8 +3065,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UNTIL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:19: ( 'until' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:21: 'until'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:19: ( 'until' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:874:21: 'until'
 			{
 			match("until"); if (state.failed) return;
 
@@ -3086,8 +3086,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = USES;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:19: ( 'uses' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:21: 'uses'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:19: ( 'uses' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:875:21: 'uses'
 			{
 			match("uses"); if (state.failed) return;
 
@@ -3107,8 +3107,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:19: ( 'var' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:21: 'var'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:19: ( 'var' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:876:21: 'var'
 			{
 			match("var"); if (state.failed) return;
 
@@ -3128,8 +3128,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VARARGS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:19: ( 'varargs' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:21: 'varargs'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:19: ( 'varargs' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:877:21: 'varargs'
 			{
 			match("varargs"); if (state.failed) return;
 
@@ -3149,8 +3149,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VARIANT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:19: ( 'variant' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:21: 'variant'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:19: ( 'variant' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:878:21: 'variant'
 			{
 			match("variant"); if (state.failed) return;
 
@@ -3170,8 +3170,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = VIRTUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:19: ( 'virtual' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:21: 'virtual'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:19: ( 'virtual' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:879:21: 'virtual'
 			{
 			match("virtual"); if (state.failed) return;
 
@@ -3191,8 +3191,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WHILE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:19: ( 'while' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:21: 'while'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:19: ( 'while' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:880:21: 'while'
 			{
 			match("while"); if (state.failed) return;
 
@@ -3212,8 +3212,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WITH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:19: ( 'with' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:21: 'with'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:19: ( 'with' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:881:21: 'with'
 			{
 			match("with"); if (state.failed) return;
 
@@ -3233,8 +3233,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WRITE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:19: ( 'write' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:21: 'write'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:19: ( 'write' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:882:21: 'write'
 			{
 			match("write"); if (state.failed) return;
 
@@ -3254,8 +3254,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WRITEONLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:19: ( 'writeonly' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:21: 'writeonly'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:19: ( 'writeonly' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:883:21: 'writeonly'
 			{
 			match("writeonly"); if (state.failed) return;
 
@@ -3275,8 +3275,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = XOR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:19: ( 'xor' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:21: 'xor'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:19: ( 'xor' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:884:21: 'xor'
 			{
 			match("xor"); if (state.failed) return;
 
@@ -3296,8 +3296,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = FALSE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:19: ( 'false' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:21: 'false'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:19: ( 'false' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:885:21: 'false'
 			{
 			match("false"); if (state.failed) return;
 
@@ -3317,8 +3317,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TRUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:19: ( 'true' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:21: 'true'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:19: ( 'true' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:886:21: 'true'
 			{
 			match("true"); if (state.failed) return;
 
@@ -3338,8 +3338,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = PLUS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:19: ( '+' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:21: '+'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:19: ( '+' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:891:21: '+'
 			{
 			match('+'); if (state.failed) return;
 			}
@@ -3358,8 +3358,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = MINUS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:19: ( '-' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:21: '-'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:19: ( '-' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:892:21: '-'
 			{
 			match('-'); if (state.failed) return;
 			}
@@ -3378,8 +3378,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = STAR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:19: ( '*' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:21: '*'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:19: ( '*' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:893:21: '*'
 			{
 			match('*'); if (state.failed) return;
 			}
@@ -3398,8 +3398,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SLASH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:19: ( '/' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:21: '/'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:19: ( '/' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:894:21: '/'
 			{
 			match('/'); if (state.failed) return;
 			}
@@ -3418,8 +3418,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ASSIGN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:19: ( ':=' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:21: ':='
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:19: ( ':=' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:895:21: ':='
 			{
 			match(":="); if (state.failed) return;
 
@@ -3439,8 +3439,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COMMA;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:19: ( ',' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:21: ','
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:19: ( ',' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:896:21: ','
 			{
 			match(','); if (state.failed) return;
 			}
@@ -3459,8 +3459,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = SEMI;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:19: ( ';' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:21: ';'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:19: ( ';' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:897:21: ';'
 			{
 			match(';'); if (state.failed) return;
 			}
@@ -3479,8 +3479,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COLON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:19: ( ':' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:21: ':'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:19: ( ':' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:898:21: ':'
 			{
 			match(':'); if (state.failed) return;
 			}
@@ -3499,8 +3499,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = EQUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:19: ( '=' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:21: '='
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:19: ( '=' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:899:21: '='
 			{
 			match('='); if (state.failed) return;
 			}
@@ -3519,8 +3519,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = NOT_EQUAL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:19: ( '<>' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:21: '<>'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:19: ( '<>' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:900:21: '<>'
 			{
 			match("<>"); if (state.failed) return;
 
@@ -3540,8 +3540,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:19: ( '<' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:21: '<'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:19: ( '<' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:901:21: '<'
 			{
 			match('<'); if (state.failed) return;
 			}
@@ -3560,8 +3560,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:19: ( '<=' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:21: '<='
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:19: ( '<=' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:902:21: '<='
 			{
 			match("<="); if (state.failed) return;
 
@@ -3581,8 +3581,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:19: ( '>=' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:21: '>='
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:19: ( '>=' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:903:21: '>='
 			{
 			match(">="); if (state.failed) return;
 
@@ -3602,8 +3602,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = GT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:19: ( '>' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:21: '>'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:19: ( '>' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:904:21: '>'
 			{
 			match('>'); if (state.failed) return;
 			}
@@ -3622,8 +3622,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LPAREN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:19: ( '(' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:21: '('
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:19: ( '(' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:905:21: '('
 			{
 			match('('); if (state.failed) return;
 			}
@@ -3642,8 +3642,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RPAREN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:19: ( ')' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:21: ')'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:19: ( ')' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:906:21: ')'
 			{
 			match(')'); if (state.failed) return;
 			}
@@ -3662,8 +3662,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LBRACK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:19: ( '[' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:21: '['
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:19: ( '[' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:907:21: '['
 			{
 			match('['); if (state.failed) return;
 			}
@@ -3682,8 +3682,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LBRACK2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:19: ( '(.' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:21: '(.'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:19: ( '(.' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:908:21: '(.'
 			{
 			match("(."); if (state.failed) return;
 
@@ -3703,8 +3703,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RBRACK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:19: ( ']' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:21: ']'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:19: ( ']' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:909:21: ']'
 			{
 			match(']'); if (state.failed) return;
 			}
@@ -3723,8 +3723,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RBRACK2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:19: ( '.)' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:21: '.)'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:19: ( '.)' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:910:21: '.)'
 			{
 			match(".)"); if (state.failed) return;
 
@@ -3744,8 +3744,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = POINTER2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:19: ( '^' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:21: '^'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:19: ( '^' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:911:21: '^'
 			{
 			match('^'); if (state.failed) return;
 			}
@@ -3764,8 +3764,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = AT2;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:19: ( '@' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:21: '@'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:19: ( '@' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:912:21: '@'
 			{
 			match('@'); if (state.failed) return;
 			}
@@ -3784,8 +3784,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:19: ( '.' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:21: '.'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:19: ( '.' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:913:21: '.'
 			{
 			match('.'); if (state.failed) return;
 			}
@@ -3804,8 +3804,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = DOTDOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:19: ( '..' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:21: '..'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:19: ( '..' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:914:21: '..'
 			{
 			match(".."); if (state.failed) return;
 
@@ -3825,8 +3825,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = LCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:19: ( '{' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:21: '{'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:19: ( '{' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:915:21: '{'
 			{
 			match('{'); if (state.failed) return;
 			}
@@ -3845,8 +3845,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = RCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:19: ( '}' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:21: '}'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:19: ( '}' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:916:21: '}'
 			{
 			match('}'); if (state.failed) return;
 			}
@@ -3865,8 +3865,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkGlobalFunction;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:25: ( 'FUNCTION_GLOBAL' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:27: 'FUNCTION_GLOBAL'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:25: ( 'FUNCTION_GLOBAL' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:921:27: 'FUNCTION_GLOBAL'
 			{
 			match("FUNCTION_GLOBAL"); if (state.failed) return;
 
@@ -3886,8 +3886,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionName;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:25: ( 'FUNCTION_NAME' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:27: 'FUNCTION_NAME'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:25: ( 'FUNCTION_NAME' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:923:27: 'FUNCTION_NAME'
 			{
 			match("FUNCTION_NAME"); if (state.failed) return;
 
@@ -3907,8 +3907,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionArgs;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:25: ( 'FUNCTION_ARGS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:27: 'FUNCTION_ARGS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:25: ( 'FUNCTION_ARGS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:925:27: 'FUNCTION_ARGS'
 			{
 			match("FUNCTION_ARGS"); if (state.failed) return;
 
@@ -3928,8 +3928,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionBody;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:25: ( 'FUNCTION_BODY' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:27: 'FUNCTION_BODY'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:25: ( 'FUNCTION_BODY' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:927:27: 'FUNCTION_BODY'
 			{
 			match("FUNCTION_BODY"); if (state.failed) return;
 
@@ -3949,8 +3949,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkFunctionReturn;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:25: ( 'FUNCTION_RETURN' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:27: 'FUNCTION_RETURN'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:25: ( 'FUNCTION_RETURN' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:929:27: 'FUNCTION_RETURN'
 			{
 			match("FUNCTION_RETURN"); if (state.failed) return;
 
@@ -3970,8 +3970,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkCustomAttribute;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:25: ( 'CUSTOM_ATTRIBUTE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:27: 'CUSTOM_ATTRIBUTE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:25: ( 'CUSTOM_ATTRIBUTE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:931:27: 'CUSTOM_ATTRIBUTE'
 			{
 			match("CUSTOM_ATTRIBUTE"); if (state.failed) return;
 
@@ -3991,8 +3991,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkCustomAttributeArgs;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:25: ( 'CUSTOM_ATTRIBUTE_ARGS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:27: 'CUSTOM_ATTRIBUTE_ARGS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:25: ( 'CUSTOM_ATTRIBUTE_ARGS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:933:27: 'CUSTOM_ATTRIBUTE_ARGS'
 			{
 			match("CUSTOM_ATTRIBUTE_ARGS"); if (state.failed) return;
 
@@ -4012,8 +4012,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkNewType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:25: ( 'NEW_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:27: 'NEW_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:25: ( 'NEW_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:935:27: 'NEW_TYPE'
 			{
 			match("NEW_TYPE"); if (state.failed) return;
 
@@ -4033,8 +4033,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClass;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:25: ( 'CLASS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:27: 'CLASS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:25: ( 'CLASS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:937:27: 'CLASS'
 			{
 			match("CLASS"); if (state.failed) return;
 
@@ -4054,8 +4054,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRecord;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:25: ( 'RECORD_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:27: 'RECORD_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:25: ( 'RECORD_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:939:27: 'RECORD_TYPE'
 			{
 			match("RECORD_TYPE"); if (state.failed) return;
 
@@ -4075,8 +4075,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRecordHelper;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:25: ( 'RECORD_HELPER' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:27: 'RECORD_HELPER'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:25: ( 'RECORD_HELPER' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:941:27: 'RECORD_HELPER'
 			{
 			match("RECORD_HELPER"); if (state.failed) return;
 
@@ -4096,8 +4096,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkInterface;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:25: ( 'INTERFACE_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:27: 'INTERFACE_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:25: ( 'INTERFACE_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:943:27: 'INTERFACE_TYPE'
 			{
 			match("INTERFACE_TYPE"); if (state.failed) return;
 
@@ -4117,8 +4117,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkObject;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:25: ( 'OBJECT_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:27: 'OBJECT_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:25: ( 'OBJECT_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:945:27: 'OBJECT_TYPE'
 			{
 			match("OBJECT_TYPE"); if (state.failed) return;
 
@@ -4138,8 +4138,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassOfType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:25: ( 'CLASS_OF_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:27: 'CLASS_OF_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:25: ( 'CLASS_OF_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:947:27: 'CLASS_OF_TYPE'
 			{
 			match("CLASS_OF_TYPE"); if (state.failed) return;
 
@@ -4159,8 +4159,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableType;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:25: ( 'VARIABLE_TYPE' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:27: 'VARIABLE_TYPE'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:25: ( 'VARIABLE_TYPE' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:949:27: 'VARIABLE_TYPE'
 			{
 			match("VARIABLE_TYPE"); if (state.failed) return;
 
@@ -4180,8 +4180,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableIdents;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:25: ( 'VARIABLE_IDENTS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:27: 'VARIABLE_IDENTS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:25: ( 'VARIABLE_IDENTS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:951:27: 'VARIABLE_IDENTS'
 			{
 			match("VARIABLE_IDENTS"); if (state.failed) return;
 
@@ -4201,8 +4201,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkVariableParam;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:25: ( 'VARIABLE_PARAM' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:27: 'VARIABLE_PARAM'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:25: ( 'VARIABLE_PARAM' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:953:27: 'VARIABLE_PARAM'
 			{
 			match("VARIABLE_PARAM"); if (state.failed) return;
 
@@ -4222,8 +4222,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkGuid;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:25: ( 'INTERFACE_GUID' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:27: 'INTERFACE_GUID'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:25: ( 'INTERFACE_GUID' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:955:27: 'INTERFACE_GUID'
 			{
 			match("INTERFACE_GUID"); if (state.failed) return;
 
@@ -4243,8 +4243,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassParents;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:25: ( 'CLASS_PARENTS' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:27: 'CLASS_PARENTS'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:25: ( 'CLASS_PARENTS' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:957:27: 'CLASS_PARENTS'
 			{
 			match("CLASS_PARENTS"); if (state.failed) return;
 
@@ -4264,8 +4264,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkClassField;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:25: ( 'CLASS_FIELD' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:27: 'CLASS_FIELD'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:25: ( 'CLASS_FIELD' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:959:27: 'CLASS_FIELD'
 			{
 			match("CLASS_FIELD"); if (state.failed) return;
 
@@ -4285,8 +4285,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkAnonymousExpression;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:25: ( 'ANONYMOUS_EXPRESSION' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:27: 'ANONYMOUS_EXPRESSION'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:25: ( 'ANONYMOUS_EXPRESSION' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:961:27: 'ANONYMOUS_EXPRESSION'
 			{
 			match("ANONYMOUS_EXPRESSION"); if (state.failed) return;
 
@@ -4306,10 +4306,10 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkIdentifier;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:25: ( ( Alpha | '_' ) ( Alpha | Digit | '_' )* )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' ) ( Alpha | Digit | '_' )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:25: ( ( Alpha | '_' ) ( Alpha | Digit | '_' )* )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' ) ( Alpha | Digit | '_' )*
 			{
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:27: ( Alpha | '_' )
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( ((LA1_0 >= 'A' && LA1_0 <= 'Z')||(LA1_0 >= 'a' && LA1_0 <= 'z')||(LA1_0 >= '\u0080' && LA1_0 <= '\uFFFE')) ) {
@@ -4328,14 +4328,14 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt1) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:28: Alpha
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:28: Alpha
 					{
 					mAlpha(); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:36: '_'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:36: '_'
 					{
 					match('_'); if (state.failed) return;
 					}
@@ -4343,7 +4343,7 @@ public class DelphiLexer extends Lexer {
 
 			}
 
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:41: ( Alpha | Digit | '_' )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:41: ( Alpha | Digit | '_' )*
 			loop2:
 			while (true) {
 				int alt2=4;
@@ -4360,21 +4360,21 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt2) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:42: Alpha
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:42: Alpha
 					{
 					mAlpha(); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:50: Digit
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:50: Digit
 					{
 					mDigit(); if (state.failed) return;
 
 					}
 					break;
 				case 3 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:58: '_'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:963:58: '_'
 					{
 					match('_'); if (state.failed) return;
 					}
@@ -4401,8 +4401,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkIntNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:25: ( Digitseq )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:27: Digitseq
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:25: ( Digitseq )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:965:27: Digitseq
 			{
 			mDigitseq(); if (state.failed) return;
 
@@ -4422,12 +4422,12 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkRealNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:25: ( Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () ) )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:27: Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:25: ( Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () ) )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:27: Digitseq ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
 			{
 			mDigitseq(); if (state.failed) return;
 
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:36: ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:36: ( ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? | () )
 			int alt6=2;
 			int LA6_0 = input.LA(1);
 			if ( (LA6_0=='.') && (synpred1_Delphi())) {
@@ -4445,9 +4445,9 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt6) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )=> ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 					{
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:92: ( DOT Digitseq )?
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:92: ( DOT Digitseq )?
 					int alt3=2;
 					int LA3_0 = input.LA(1);
 					if ( (LA3_0=='.') ) {
@@ -4455,7 +4455,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt3) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:93: DOT Digitseq
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:93: DOT Digitseq
 							{
 							mDOT(); if (state.failed) return;
 
@@ -4466,7 +4466,7 @@ public class DelphiLexer extends Lexer {
 
 					}
 
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:108: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:108: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 					int alt5=2;
 					int LA5_0 = input.LA(1);
 					if ( (LA5_0=='E'||LA5_0=='e') ) {
@@ -4474,7 +4474,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt5) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:109: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:109: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
 							{
 							if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 								input.consume();
@@ -4486,7 +4486,7 @@ public class DelphiLexer extends Lexer {
 								recover(mse);
 								throw mse;
 							}
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:119: ( '+' | '-' )?
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:119: ( '+' | '-' )?
 							int alt4=2;
 							int LA4_0 = input.LA(1);
 							if ( (LA4_0=='+'||LA4_0=='-') ) {
@@ -4494,7 +4494,7 @@ public class DelphiLexer extends Lexer {
 							}
 							switch (alt4) {
 								case 1 :
-									// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+									// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 									{
 									if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
 										input.consume();
@@ -4521,10 +4521,10 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
 					{
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:144: 
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:143: ()
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:144: 
 					{
 					}
 
@@ -4550,8 +4550,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = TkHexNum;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:25: ( '$' Hexdigitseq )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:27: '$' Hexdigitseq
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:25: ( '$' Hexdigitseq )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:969:27: '$' Hexdigitseq
 			{
 			match('$'); if (state.failed) return;
 			mHexdigitseq(); if (state.failed) return;
@@ -4572,7 +4572,7 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = ControlChar;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:25: ( '^' ({...}? => Alpha |) | '#' Digitseq | '#' '$' Hexdigitseq )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:25: ( '^' ({...}? => Alpha |) | '#' Digitseq | '#' '$' Hexdigitseq )
 			int alt8=3;
 			int LA8_0 = input.LA(1);
 			if ( (LA8_0=='^') ) {
@@ -4611,10 +4611,10 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt8) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:27: '^' ({...}? => Alpha |)
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:27: '^' ({...}? => Alpha |)
 					{
 					match('^'); if (state.failed) return;
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:31: ({...}? => Alpha |)
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:31: ({...}? => Alpha |)
 					int alt7=2;
 					int LA7_0 = input.LA(1);
 					if ( ((LA7_0 >= 'A' && LA7_0 <= 'Z')||(LA7_0 >= 'a' && LA7_0 <= 'z')||(LA7_0 >= '\u0080' && LA7_0 <= '\uFFFE')) && ((isControlchar()))) {
@@ -4623,7 +4623,7 @@ public class DelphiLexer extends Lexer {
 
 					switch (alt7) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:33: {...}? => Alpha
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:971:33: {...}? => Alpha
 							{
 							if ( !((isControlchar())) ) {
 								if (state.backtracking>0) {state.failed=true; return;}
@@ -4634,7 +4634,7 @@ public class DelphiLexer extends Lexer {
 							}
 							break;
 						case 2 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:972:31: 
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:972:31: 
 							{
 							if ( state.backtracking==0 ) {_type=POINTER2;}
 							}
@@ -4645,7 +4645,7 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:974:27: '#' Digitseq
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:974:27: '#' Digitseq
 					{
 					match('#'); if (state.failed) return;
 					mDigitseq(); if (state.failed) return;
@@ -4653,7 +4653,7 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:975:27: '#' '$' Hexdigitseq
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:975:27: '#' '$' Hexdigitseq
 					{
 					match('#'); if (state.failed) return;
 					match('$'); if (state.failed) return;
@@ -4677,11 +4677,11 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = QuotedString;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:25: ( '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\'' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:27: '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\''
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:25: ( '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\'' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:27: '\\'' ( '\\'\\'' |~ ( '\\'' ) )* '\\''
 			{
 			match('\''); if (state.failed) return;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:32: ( '\\'\\'' |~ ( '\\'' ) )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:32: ( '\\'\\'' |~ ( '\\'' ) )*
 			loop9:
 			while (true) {
 				int alt9=3;
@@ -4699,14 +4699,14 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt9) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:33: '\\'\\''
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:33: '\\'\\''
 					{
 					match("''"); if (state.failed) return;
 
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:42: ~ ( '\\'' )
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:977:42: ~ ( '\\'' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -4741,7 +4741,7 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Alpha"
 	public final void mAlpha() throws RecognitionException {
 		try {
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:25: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' ) )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:25: ( 'a' .. 'z' | 'A' .. 'Z' | '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' ) )
 			int alt10=3;
 			int LA10_0 = input.LA(1);
 			if ( ((LA10_0 >= 'a' && LA10_0 <= 'z')) ) {
@@ -4763,19 +4763,19 @@ public class DelphiLexer extends Lexer {
 
 			switch (alt10) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:27: 'a' .. 'z'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:981:27: 'a' .. 'z'
 					{
 					matchRange('a','z'); if (state.failed) return;
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:982:27: 'A' .. 'Z'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:982:27: 'A' .. 'Z'
 					{
 					matchRange('A','Z'); if (state.failed) return;
 					}
 					break;
 				case 3 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:27: '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' )
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:983:27: '\\u0080' .. '\\uFFFE' ~ ( '\\uFEFF' )
 					{
 					matchRange('\u0080','\uFFFE'); if (state.failed) return;
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\uFEFE')||(input.LA(1) >= '\uFF00' && input.LA(1) <= '\uFFFF') ) {
@@ -4802,8 +4802,8 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Digit"
 	public final void mDigit() throws RecognitionException {
 		try {
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:986:25: ( '0' .. '9' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:986:25: ( '0' .. '9' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
 				input.consume();
@@ -4827,12 +4827,12 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Digitseq"
 	public final void mDigitseq() throws RecognitionException {
 		try {
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:25: ( Digit ( Digit )* )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:27: Digit ( Digit )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:25: ( Digit ( Digit )* )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:27: Digit ( Digit )*
 			{
 			mDigit(); if (state.failed) return;
 
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:33: ( Digit )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:989:33: ( Digit )*
 			loop11:
 			while (true) {
 				int alt11=2;
@@ -4843,7 +4843,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt11) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
 						input.consume();
@@ -4875,8 +4875,8 @@ public class DelphiLexer extends Lexer {
 	// $ANTLR start "Hexdigit"
 	public final void mHexdigit() throws RecognitionException {
 		try {
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:992:25: ( Digit | 'a' .. 'f' | 'A' .. 'F' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:992:25: ( Digit | 'a' .. 'f' | 'A' .. 'F' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
 				input.consume();
@@ -4902,12 +4902,12 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = Hexdigitseq;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:25: ( Hexdigit ( Hexdigit )* )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:27: Hexdigit ( Hexdigit )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:25: ( Hexdigit ( Hexdigit )* )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:27: Hexdigit ( Hexdigit )*
 			{
 			mHexdigit(); if (state.failed) return;
 
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:36: ( Hexdigit )*
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:993:36: ( Hexdigit )*
 			loop12:
 			while (true) {
 				int alt12=2;
@@ -4918,7 +4918,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt12) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
 						input.consume();
@@ -4954,7 +4954,7 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = COMMENT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:25: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '(*' ( options {greedy=false; } : . )* '*)' | '{' ( options {greedy=false; } : . )* '}' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:25: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '(*' ( options {greedy=false; } : . )* '*)' | '{' ( options {greedy=false; } : . )* '}' )
 			int alt17=3;
 			switch ( input.LA(1) ) {
 			case '/':
@@ -4980,11 +4980,11 @@ public class DelphiLexer extends Lexer {
 			}
 			switch (alt17) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:28: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:28: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
 					{
 					match("//"); if (state.failed) return;
 
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:33: (~ ( '\\n' | '\\r' ) )*
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:33: (~ ( '\\n' | '\\r' ) )*
 					loop13:
 					while (true) {
 						int alt13=2;
@@ -4995,7 +4995,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt13) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 							{
 							if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
 								input.consume();
@@ -5015,7 +5015,7 @@ public class DelphiLexer extends Lexer {
 						}
 					}
 
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: ( '\\r' )?
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: ( '\\r' )?
 					int alt14=2;
 					int LA14_0 = input.LA(1);
 					if ( (LA14_0=='\r') ) {
@@ -5023,7 +5023,7 @@ public class DelphiLexer extends Lexer {
 					}
 					switch (alt14) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: '\\r'
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:995:47: '\\r'
 							{
 							match('\r'); if (state.failed) return;
 							}
@@ -5036,11 +5036,11 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:28: '(*' ( options {greedy=false; } : . )* '*)'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:28: '(*' ( options {greedy=false; } : . )* '*)'
 					{
 					match("(*"); if (state.failed) return;
 
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:33: ( options {greedy=false; } : . )*
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:33: ( options {greedy=false; } : . )*
 					loop15:
 					while (true) {
 						int alt15=2;
@@ -5061,7 +5061,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt15) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:61: .
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:996:61: .
 							{
 							matchAny(); if (state.failed) return;
 							}
@@ -5078,10 +5078,10 @@ public class DelphiLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:28: '{' ( options {greedy=false; } : . )* '}'
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:28: '{' ( options {greedy=false; } : . )* '}'
 					{
 					match('{'); if (state.failed) return;
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:32: ( options {greedy=false; } : . )*
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:32: ( options {greedy=false; } : . )*
 					loop16:
 					while (true) {
 						int alt16=2;
@@ -5095,7 +5095,7 @@ public class DelphiLexer extends Lexer {
 
 						switch (alt16) {
 						case 1 :
-							// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:60: .
+							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:997:60: .
 							{
 							matchAny(); if (state.failed) return;
 							}
@@ -5126,10 +5126,10 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:25: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:25: ( ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+ )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			{
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:999:27: ( ' ' | '\\t' | '\\r' | '\\n' | '\\f' )+
 			int cnt18=0;
 			loop18:
 			while (true) {
@@ -5141,7 +5141,7 @@ public class DelphiLexer extends Lexer {
 
 				switch (alt18) {
 				case 1 :
-					// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 					{
 					if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||(input.LA(1) >= '\f' && input.LA(1) <= '\r')||input.LA(1)==' ' ) {
 						input.consume();
@@ -5182,8 +5182,8 @@ public class DelphiLexer extends Lexer {
 		try {
 			int _type = UnicodeBOM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:25: ( '\\uFEFF' )
-			// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:27: '\\uFEFF'
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:25: ( '\\uFEFF' )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1001:27: '\\uFEFF'
 			{
 			match('\uFEFF'); if (state.failed) return;
 			if ( state.backtracking==0 ) {_channel=HIDDEN;}
@@ -5200,1426 +5200,1426 @@ public class DelphiLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:8: ( T__198 | T__199 | T__200 | T__201 | T__202 | T__203 | T__204 | T__205 | T__206 | T__207 | T__208 | T__209 | T__210 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DELAYED | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM )
+		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:8: ( T__198 | T__199 | T__200 | T__201 | T__202 | T__203 | T__204 | T__205 | T__206 | T__207 | T__208 | T__209 | T__210 | ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY | AT | AUTOMATED | BEGIN | BREAK | CASE | CDECL | CLASS | CONST | CONSTRUCTOR | CONTAINS | CONTINUE | DEFAULT | DELAYED | DEPRECATED | DESTRUCTOR | DISPID | DISPINTERFACE | DIV | DO | DOWNTO | DQ | DW | DYNAMIC | ELSE | END | EXCEPT | EXIT | EXPERIMENTAL | EXPORT | EXPORTS | EXTERNAL | FAR | FILE | FINAL | FINALIZATION | FINALLY | FOR | FORWARD | FUNCTION | GOTO | HELPER | IF | IMPLEMENTATION | IMPLEMENTS | IN | INDEX | INHERITED | INITIALIZATION | INLINE | INTERFACE | IS | LABEL | LIBRARY | LOCAL | MESSAGE | MOD | NAME | NEAR | NIL | NODEFAULT | NOT | OBJECT | OF | ON | OPERATOR | OR | OUT | OVERLOAD | OVERRIDE | PACKAGE | PACKED | PASCAL | PLATFORM | POINTER | PRIVATE | PROCEDURE | PROGRAM | PROPERTY | PROTECTED | PUBLIC | PUBLISHED | RAISE | READ | READONLY | RECORD | REFERENCE | REGISTER | REINTRODUCE | REMOVE | REPEAT | REQUIRES | RESIDENT | RESOURCESTRING | SAFECALL | SEALED | SET | SHL | SHR | STATIC | STDCALL | STORED | STRICT | STRING | THEN | THREADVAR | TO | TRY | TYPE | UNIT | UNSAFE | UNTIL | USES | VAR | VARARGS | VARIANT | VIRTUAL | WHILE | WITH | WRITE | WRITEONLY | XOR | FALSE | TRUE | PLUS | MINUS | STAR | SLASH | ASSIGN | COMMA | SEMI | COLON | EQUAL | NOT_EQUAL | LT | LE | GE | GT | LPAREN | RPAREN | LBRACK | LBRACK2 | RBRACK | RBRACK2 | POINTER2 | AT2 | DOT | DOTDOT | LCURLY | RCURLY | TkGlobalFunction | TkFunctionName | TkFunctionArgs | TkFunctionBody | TkFunctionReturn | TkCustomAttribute | TkCustomAttributeArgs | TkNewType | TkClass | TkRecord | TkRecordHelper | TkInterface | TkObject | TkClassOfType | TkVariableType | TkVariableIdents | TkVariableParam | TkGuid | TkClassParents | TkClassField | TkAnonymousExpression | TkIdentifier | TkIntNum | TkRealNum | TkHexNum | ControlChar | QuotedString | Hexdigitseq | COMMENT | WS | UnicodeBOM )
 		int alt19=203;
 		alt19 = dfa19.predict(input);
 		switch (alt19) {
 			case 1 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:10: T__198
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:10: T__198
 				{
 				mT__198(); if (state.failed) return;
 
 				}
 				break;
 			case 2 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:17: T__199
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:17: T__199
 				{
 				mT__199(); if (state.failed) return;
 
 				}
 				break;
 			case 3 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:24: T__200
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:24: T__200
 				{
 				mT__200(); if (state.failed) return;
 
 				}
 				break;
 			case 4 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:31: T__201
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:31: T__201
 				{
 				mT__201(); if (state.failed) return;
 
 				}
 				break;
 			case 5 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:38: T__202
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:38: T__202
 				{
 				mT__202(); if (state.failed) return;
 
 				}
 				break;
 			case 6 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:45: T__203
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:45: T__203
 				{
 				mT__203(); if (state.failed) return;
 
 				}
 				break;
 			case 7 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:52: T__204
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:52: T__204
 				{
 				mT__204(); if (state.failed) return;
 
 				}
 				break;
 			case 8 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:59: T__205
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:59: T__205
 				{
 				mT__205(); if (state.failed) return;
 
 				}
 				break;
 			case 9 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:66: T__206
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:66: T__206
 				{
 				mT__206(); if (state.failed) return;
 
 				}
 				break;
 			case 10 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:73: T__207
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:73: T__207
 				{
 				mT__207(); if (state.failed) return;
 
 				}
 				break;
 			case 11 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:80: T__208
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:80: T__208
 				{
 				mT__208(); if (state.failed) return;
 
 				}
 				break;
 			case 12 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:87: T__209
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:87: T__209
 				{
 				mT__209(); if (state.failed) return;
 
 				}
 				break;
 			case 13 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:94: T__210
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:94: T__210
 				{
 				mT__210(); if (state.failed) return;
 
 				}
 				break;
 			case 14 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:101: ABSOLUTE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:101: ABSOLUTE
 				{
 				mABSOLUTE(); if (state.failed) return;
 
 				}
 				break;
 			case 15 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:110: ABSTRACT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:110: ABSTRACT
 				{
 				mABSTRACT(); if (state.failed) return;
 
 				}
 				break;
 			case 16 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:119: ADD
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:119: ADD
 				{
 				mADD(); if (state.failed) return;
 
 				}
 				break;
 			case 17 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:123: AND
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:123: AND
 				{
 				mAND(); if (state.failed) return;
 
 				}
 				break;
 			case 18 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:127: ANSISTRING
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:127: ANSISTRING
 				{
 				mANSISTRING(); if (state.failed) return;
 
 				}
 				break;
 			case 19 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:138: ARRAY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:138: ARRAY
 				{
 				mARRAY(); if (state.failed) return;
 
 				}
 				break;
 			case 20 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:144: AS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:144: AS
 				{
 				mAS(); if (state.failed) return;
 
 				}
 				break;
 			case 21 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:147: ASM
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:147: ASM
 				{
 				mASM(); if (state.failed) return;
 
 				}
 				break;
 			case 22 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:151: ASSEMBLER
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:151: ASSEMBLER
 				{
 				mASSEMBLER(); if (state.failed) return;
 
 				}
 				break;
 			case 23 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:161: ASSEMBLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:161: ASSEMBLY
 				{
 				mASSEMBLY(); if (state.failed) return;
 
 				}
 				break;
 			case 24 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:170: AT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:170: AT
 				{
 				mAT(); if (state.failed) return;
 
 				}
 				break;
 			case 25 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:173: AUTOMATED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:173: AUTOMATED
 				{
 				mAUTOMATED(); if (state.failed) return;
 
 				}
 				break;
 			case 26 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:183: BEGIN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:183: BEGIN
 				{
 				mBEGIN(); if (state.failed) return;
 
 				}
 				break;
 			case 27 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:189: BREAK
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:189: BREAK
 				{
 				mBREAK(); if (state.failed) return;
 
 				}
 				break;
 			case 28 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:195: CASE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:195: CASE
 				{
 				mCASE(); if (state.failed) return;
 
 				}
 				break;
 			case 29 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:200: CDECL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:200: CDECL
 				{
 				mCDECL(); if (state.failed) return;
 
 				}
 				break;
 			case 30 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:206: CLASS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:206: CLASS
 				{
 				mCLASS(); if (state.failed) return;
 
 				}
 				break;
 			case 31 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:212: CONST
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:212: CONST
 				{
 				mCONST(); if (state.failed) return;
 
 				}
 				break;
 			case 32 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:218: CONSTRUCTOR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:218: CONSTRUCTOR
 				{
 				mCONSTRUCTOR(); if (state.failed) return;
 
 				}
 				break;
 			case 33 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:230: CONTAINS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:230: CONTAINS
 				{
 				mCONTAINS(); if (state.failed) return;
 
 				}
 				break;
 			case 34 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:239: CONTINUE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:239: CONTINUE
 				{
 				mCONTINUE(); if (state.failed) return;
 
 				}
 				break;
 			case 35 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:248: DEFAULT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:248: DEFAULT
 				{
 				mDEFAULT(); if (state.failed) return;
 
 				}
 				break;
 			case 36 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:256: DELAYED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:256: DELAYED
 				{
 				mDELAYED(); if (state.failed) return;
 
 				}
 				break;
 			case 37 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:264: DEPRECATED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:264: DEPRECATED
 				{
 				mDEPRECATED(); if (state.failed) return;
 
 				}
 				break;
 			case 38 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:275: DESTRUCTOR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:275: DESTRUCTOR
 				{
 				mDESTRUCTOR(); if (state.failed) return;
 
 				}
 				break;
 			case 39 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:286: DISPID
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:286: DISPID
 				{
 				mDISPID(); if (state.failed) return;
 
 				}
 				break;
 			case 40 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:293: DISPINTERFACE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:293: DISPINTERFACE
 				{
 				mDISPINTERFACE(); if (state.failed) return;
 
 				}
 				break;
 			case 41 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:307: DIV
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:307: DIV
 				{
 				mDIV(); if (state.failed) return;
 
 				}
 				break;
 			case 42 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:311: DO
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:311: DO
 				{
 				mDO(); if (state.failed) return;
 
 				}
 				break;
 			case 43 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:314: DOWNTO
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:314: DOWNTO
 				{
 				mDOWNTO(); if (state.failed) return;
 
 				}
 				break;
 			case 44 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:321: DQ
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:321: DQ
 				{
 				mDQ(); if (state.failed) return;
 
 				}
 				break;
 			case 45 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:324: DW
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:324: DW
 				{
 				mDW(); if (state.failed) return;
 
 				}
 				break;
 			case 46 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:327: DYNAMIC
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:327: DYNAMIC
 				{
 				mDYNAMIC(); if (state.failed) return;
 
 				}
 				break;
 			case 47 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:335: ELSE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:335: ELSE
 				{
 				mELSE(); if (state.failed) return;
 
 				}
 				break;
 			case 48 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:340: END
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:340: END
 				{
 				mEND(); if (state.failed) return;
 
 				}
 				break;
 			case 49 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:344: EXCEPT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:344: EXCEPT
 				{
 				mEXCEPT(); if (state.failed) return;
 
 				}
 				break;
 			case 50 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:351: EXIT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:351: EXIT
 				{
 				mEXIT(); if (state.failed) return;
 
 				}
 				break;
 			case 51 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:356: EXPERIMENTAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:356: EXPERIMENTAL
 				{
 				mEXPERIMENTAL(); if (state.failed) return;
 
 				}
 				break;
 			case 52 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:369: EXPORT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:369: EXPORT
 				{
 				mEXPORT(); if (state.failed) return;
 
 				}
 				break;
 			case 53 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:376: EXPORTS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:376: EXPORTS
 				{
 				mEXPORTS(); if (state.failed) return;
 
 				}
 				break;
 			case 54 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:384: EXTERNAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:384: EXTERNAL
 				{
 				mEXTERNAL(); if (state.failed) return;
 
 				}
 				break;
 			case 55 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:393: FAR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:393: FAR
 				{
 				mFAR(); if (state.failed) return;
 
 				}
 				break;
 			case 56 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:397: FILE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:397: FILE
 				{
 				mFILE(); if (state.failed) return;
 
 				}
 				break;
 			case 57 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:402: FINAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:402: FINAL
 				{
 				mFINAL(); if (state.failed) return;
 
 				}
 				break;
 			case 58 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:408: FINALIZATION
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:408: FINALIZATION
 				{
 				mFINALIZATION(); if (state.failed) return;
 
 				}
 				break;
 			case 59 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:421: FINALLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:421: FINALLY
 				{
 				mFINALLY(); if (state.failed) return;
 
 				}
 				break;
 			case 60 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:429: FOR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:429: FOR
 				{
 				mFOR(); if (state.failed) return;
 
 				}
 				break;
 			case 61 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:433: FORWARD
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:433: FORWARD
 				{
 				mFORWARD(); if (state.failed) return;
 
 				}
 				break;
 			case 62 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:441: FUNCTION
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:441: FUNCTION
 				{
 				mFUNCTION(); if (state.failed) return;
 
 				}
 				break;
 			case 63 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:450: GOTO
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:450: GOTO
 				{
 				mGOTO(); if (state.failed) return;
 
 				}
 				break;
 			case 64 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:455: HELPER
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:455: HELPER
 				{
 				mHELPER(); if (state.failed) return;
 
 				}
 				break;
 			case 65 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:462: IF
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:462: IF
 				{
 				mIF(); if (state.failed) return;
 
 				}
 				break;
 			case 66 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:465: IMPLEMENTATION
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:465: IMPLEMENTATION
 				{
 				mIMPLEMENTATION(); if (state.failed) return;
 
 				}
 				break;
 			case 67 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:480: IMPLEMENTS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:480: IMPLEMENTS
 				{
 				mIMPLEMENTS(); if (state.failed) return;
 
 				}
 				break;
 			case 68 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:491: IN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:491: IN
 				{
 				mIN(); if (state.failed) return;
 
 				}
 				break;
 			case 69 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:494: INDEX
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:494: INDEX
 				{
 				mINDEX(); if (state.failed) return;
 
 				}
 				break;
 			case 70 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:500: INHERITED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:500: INHERITED
 				{
 				mINHERITED(); if (state.failed) return;
 
 				}
 				break;
 			case 71 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:510: INITIALIZATION
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:510: INITIALIZATION
 				{
 				mINITIALIZATION(); if (state.failed) return;
 
 				}
 				break;
 			case 72 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:525: INLINE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:525: INLINE
 				{
 				mINLINE(); if (state.failed) return;
 
 				}
 				break;
 			case 73 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:532: INTERFACE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:532: INTERFACE
 				{
 				mINTERFACE(); if (state.failed) return;
 
 				}
 				break;
 			case 74 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:542: IS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:542: IS
 				{
 				mIS(); if (state.failed) return;
 
 				}
 				break;
 			case 75 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:545: LABEL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:545: LABEL
 				{
 				mLABEL(); if (state.failed) return;
 
 				}
 				break;
 			case 76 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:551: LIBRARY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:551: LIBRARY
 				{
 				mLIBRARY(); if (state.failed) return;
 
 				}
 				break;
 			case 77 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:559: LOCAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:559: LOCAL
 				{
 				mLOCAL(); if (state.failed) return;
 
 				}
 				break;
 			case 78 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:565: MESSAGE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:565: MESSAGE
 				{
 				mMESSAGE(); if (state.failed) return;
 
 				}
 				break;
 			case 79 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:573: MOD
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:573: MOD
 				{
 				mMOD(); if (state.failed) return;
 
 				}
 				break;
 			case 80 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:577: NAME
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:577: NAME
 				{
 				mNAME(); if (state.failed) return;
 
 				}
 				break;
 			case 81 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:582: NEAR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:582: NEAR
 				{
 				mNEAR(); if (state.failed) return;
 
 				}
 				break;
 			case 82 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:587: NIL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:587: NIL
 				{
 				mNIL(); if (state.failed) return;
 
 				}
 				break;
 			case 83 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:591: NODEFAULT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:591: NODEFAULT
 				{
 				mNODEFAULT(); if (state.failed) return;
 
 				}
 				break;
 			case 84 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:601: NOT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:601: NOT
 				{
 				mNOT(); if (state.failed) return;
 
 				}
 				break;
 			case 85 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:605: OBJECT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:605: OBJECT
 				{
 				mOBJECT(); if (state.failed) return;
 
 				}
 				break;
 			case 86 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:612: OF
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:612: OF
 				{
 				mOF(); if (state.failed) return;
 
 				}
 				break;
 			case 87 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:615: ON
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:615: ON
 				{
 				mON(); if (state.failed) return;
 
 				}
 				break;
 			case 88 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:618: OPERATOR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:618: OPERATOR
 				{
 				mOPERATOR(); if (state.failed) return;
 
 				}
 				break;
 			case 89 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:627: OR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:627: OR
 				{
 				mOR(); if (state.failed) return;
 
 				}
 				break;
 			case 90 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:630: OUT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:630: OUT
 				{
 				mOUT(); if (state.failed) return;
 
 				}
 				break;
 			case 91 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:634: OVERLOAD
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:634: OVERLOAD
 				{
 				mOVERLOAD(); if (state.failed) return;
 
 				}
 				break;
 			case 92 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:643: OVERRIDE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:643: OVERRIDE
 				{
 				mOVERRIDE(); if (state.failed) return;
 
 				}
 				break;
 			case 93 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:652: PACKAGE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:652: PACKAGE
 				{
 				mPACKAGE(); if (state.failed) return;
 
 				}
 				break;
 			case 94 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:660: PACKED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:660: PACKED
 				{
 				mPACKED(); if (state.failed) return;
 
 				}
 				break;
 			case 95 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:667: PASCAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:667: PASCAL
 				{
 				mPASCAL(); if (state.failed) return;
 
 				}
 				break;
 			case 96 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:674: PLATFORM
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:674: PLATFORM
 				{
 				mPLATFORM(); if (state.failed) return;
 
 				}
 				break;
 			case 97 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:683: POINTER
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:683: POINTER
 				{
 				mPOINTER(); if (state.failed) return;
 
 				}
 				break;
 			case 98 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:691: PRIVATE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:691: PRIVATE
 				{
 				mPRIVATE(); if (state.failed) return;
 
 				}
 				break;
 			case 99 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:699: PROCEDURE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:699: PROCEDURE
 				{
 				mPROCEDURE(); if (state.failed) return;
 
 				}
 				break;
 			case 100 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:709: PROGRAM
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:709: PROGRAM
 				{
 				mPROGRAM(); if (state.failed) return;
 
 				}
 				break;
 			case 101 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:717: PROPERTY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:717: PROPERTY
 				{
 				mPROPERTY(); if (state.failed) return;
 
 				}
 				break;
 			case 102 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:726: PROTECTED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:726: PROTECTED
 				{
 				mPROTECTED(); if (state.failed) return;
 
 				}
 				break;
 			case 103 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:736: PUBLIC
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:736: PUBLIC
 				{
 				mPUBLIC(); if (state.failed) return;
 
 				}
 				break;
 			case 104 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:743: PUBLISHED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:743: PUBLISHED
 				{
 				mPUBLISHED(); if (state.failed) return;
 
 				}
 				break;
 			case 105 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:753: RAISE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:753: RAISE
 				{
 				mRAISE(); if (state.failed) return;
 
 				}
 				break;
 			case 106 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:759: READ
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:759: READ
 				{
 				mREAD(); if (state.failed) return;
 
 				}
 				break;
 			case 107 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:764: READONLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:764: READONLY
 				{
 				mREADONLY(); if (state.failed) return;
 
 				}
 				break;
 			case 108 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:773: RECORD
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:773: RECORD
 				{
 				mRECORD(); if (state.failed) return;
 
 				}
 				break;
 			case 109 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:780: REFERENCE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:780: REFERENCE
 				{
 				mREFERENCE(); if (state.failed) return;
 
 				}
 				break;
 			case 110 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:790: REGISTER
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:790: REGISTER
 				{
 				mREGISTER(); if (state.failed) return;
 
 				}
 				break;
 			case 111 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:799: REINTRODUCE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:799: REINTRODUCE
 				{
 				mREINTRODUCE(); if (state.failed) return;
 
 				}
 				break;
 			case 112 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:811: REMOVE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:811: REMOVE
 				{
 				mREMOVE(); if (state.failed) return;
 
 				}
 				break;
 			case 113 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:818: REPEAT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:818: REPEAT
 				{
 				mREPEAT(); if (state.failed) return;
 
 				}
 				break;
 			case 114 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:825: REQUIRES
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:825: REQUIRES
 				{
 				mREQUIRES(); if (state.failed) return;
 
 				}
 				break;
 			case 115 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:834: RESIDENT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:834: RESIDENT
 				{
 				mRESIDENT(); if (state.failed) return;
 
 				}
 				break;
 			case 116 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:843: RESOURCESTRING
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:843: RESOURCESTRING
 				{
 				mRESOURCESTRING(); if (state.failed) return;
 
 				}
 				break;
 			case 117 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:858: SAFECALL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:858: SAFECALL
 				{
 				mSAFECALL(); if (state.failed) return;
 
 				}
 				break;
 			case 118 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:867: SEALED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:867: SEALED
 				{
 				mSEALED(); if (state.failed) return;
 
 				}
 				break;
 			case 119 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:874: SET
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:874: SET
 				{
 				mSET(); if (state.failed) return;
 
 				}
 				break;
 			case 120 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:878: SHL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:878: SHL
 				{
 				mSHL(); if (state.failed) return;
 
 				}
 				break;
 			case 121 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:882: SHR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:882: SHR
 				{
 				mSHR(); if (state.failed) return;
 
 				}
 				break;
 			case 122 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:886: STATIC
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:886: STATIC
 				{
 				mSTATIC(); if (state.failed) return;
 
 				}
 				break;
 			case 123 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:893: STDCALL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:893: STDCALL
 				{
 				mSTDCALL(); if (state.failed) return;
 
 				}
 				break;
 			case 124 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:901: STORED
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:901: STORED
 				{
 				mSTORED(); if (state.failed) return;
 
 				}
 				break;
 			case 125 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:908: STRICT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:908: STRICT
 				{
 				mSTRICT(); if (state.failed) return;
 
 				}
 				break;
 			case 126 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:915: STRING
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:915: STRING
 				{
 				mSTRING(); if (state.failed) return;
 
 				}
 				break;
 			case 127 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:922: THEN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:922: THEN
 				{
 				mTHEN(); if (state.failed) return;
 
 				}
 				break;
 			case 128 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:927: THREADVAR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:927: THREADVAR
 				{
 				mTHREADVAR(); if (state.failed) return;
 
 				}
 				break;
 			case 129 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:937: TO
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:937: TO
 				{
 				mTO(); if (state.failed) return;
 
 				}
 				break;
 			case 130 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:940: TRY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:940: TRY
 				{
 				mTRY(); if (state.failed) return;
 
 				}
 				break;
 			case 131 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:944: TYPE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:944: TYPE
 				{
 				mTYPE(); if (state.failed) return;
 
 				}
 				break;
 			case 132 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:949: UNIT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:949: UNIT
 				{
 				mUNIT(); if (state.failed) return;
 
 				}
 				break;
 			case 133 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:954: UNSAFE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:954: UNSAFE
 				{
 				mUNSAFE(); if (state.failed) return;
 
 				}
 				break;
 			case 134 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:961: UNTIL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:961: UNTIL
 				{
 				mUNTIL(); if (state.failed) return;
 
 				}
 				break;
 			case 135 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:967: USES
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:967: USES
 				{
 				mUSES(); if (state.failed) return;
 
 				}
 				break;
 			case 136 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:972: VAR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:972: VAR
 				{
 				mVAR(); if (state.failed) return;
 
 				}
 				break;
 			case 137 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:976: VARARGS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:976: VARARGS
 				{
 				mVARARGS(); if (state.failed) return;
 
 				}
 				break;
 			case 138 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:984: VARIANT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:984: VARIANT
 				{
 				mVARIANT(); if (state.failed) return;
 
 				}
 				break;
 			case 139 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:992: VIRTUAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:992: VIRTUAL
 				{
 				mVIRTUAL(); if (state.failed) return;
 
 				}
 				break;
 			case 140 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1000: WHILE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1000: WHILE
 				{
 				mWHILE(); if (state.failed) return;
 
 				}
 				break;
 			case 141 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1006: WITH
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1006: WITH
 				{
 				mWITH(); if (state.failed) return;
 
 				}
 				break;
 			case 142 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1011: WRITE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1011: WRITE
 				{
 				mWRITE(); if (state.failed) return;
 
 				}
 				break;
 			case 143 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1017: WRITEONLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1017: WRITEONLY
 				{
 				mWRITEONLY(); if (state.failed) return;
 
 				}
 				break;
 			case 144 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1027: XOR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1027: XOR
 				{
 				mXOR(); if (state.failed) return;
 
 				}
 				break;
 			case 145 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1031: FALSE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1031: FALSE
 				{
 				mFALSE(); if (state.failed) return;
 
 				}
 				break;
 			case 146 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1037: TRUE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1037: TRUE
 				{
 				mTRUE(); if (state.failed) return;
 
 				}
 				break;
 			case 147 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1042: PLUS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1042: PLUS
 				{
 				mPLUS(); if (state.failed) return;
 
 				}
 				break;
 			case 148 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1047: MINUS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1047: MINUS
 				{
 				mMINUS(); if (state.failed) return;
 
 				}
 				break;
 			case 149 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1053: STAR
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1053: STAR
 				{
 				mSTAR(); if (state.failed) return;
 
 				}
 				break;
 			case 150 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1058: SLASH
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1058: SLASH
 				{
 				mSLASH(); if (state.failed) return;
 
 				}
 				break;
 			case 151 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1064: ASSIGN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1064: ASSIGN
 				{
 				mASSIGN(); if (state.failed) return;
 
 				}
 				break;
 			case 152 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1071: COMMA
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1071: COMMA
 				{
 				mCOMMA(); if (state.failed) return;
 
 				}
 				break;
 			case 153 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1077: SEMI
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1077: SEMI
 				{
 				mSEMI(); if (state.failed) return;
 
 				}
 				break;
 			case 154 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1082: COLON
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1082: COLON
 				{
 				mCOLON(); if (state.failed) return;
 
 				}
 				break;
 			case 155 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1088: EQUAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1088: EQUAL
 				{
 				mEQUAL(); if (state.failed) return;
 
 				}
 				break;
 			case 156 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1094: NOT_EQUAL
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1094: NOT_EQUAL
 				{
 				mNOT_EQUAL(); if (state.failed) return;
 
 				}
 				break;
 			case 157 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1104: LT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1104: LT
 				{
 				mLT(); if (state.failed) return;
 
 				}
 				break;
 			case 158 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1107: LE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1107: LE
 				{
 				mLE(); if (state.failed) return;
 
 				}
 				break;
 			case 159 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1110: GE
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1110: GE
 				{
 				mGE(); if (state.failed) return;
 
 				}
 				break;
 			case 160 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1113: GT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1113: GT
 				{
 				mGT(); if (state.failed) return;
 
 				}
 				break;
 			case 161 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1116: LPAREN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1116: LPAREN
 				{
 				mLPAREN(); if (state.failed) return;
 
 				}
 				break;
 			case 162 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1123: RPAREN
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1123: RPAREN
 				{
 				mRPAREN(); if (state.failed) return;
 
 				}
 				break;
 			case 163 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1130: LBRACK
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1130: LBRACK
 				{
 				mLBRACK(); if (state.failed) return;
 
 				}
 				break;
 			case 164 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1137: LBRACK2
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1137: LBRACK2
 				{
 				mLBRACK2(); if (state.failed) return;
 
 				}
 				break;
 			case 165 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1145: RBRACK
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1145: RBRACK
 				{
 				mRBRACK(); if (state.failed) return;
 
 				}
 				break;
 			case 166 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1152: RBRACK2
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1152: RBRACK2
 				{
 				mRBRACK2(); if (state.failed) return;
 
 				}
 				break;
 			case 167 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1160: POINTER2
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1160: POINTER2
 				{
 				mPOINTER2(); if (state.failed) return;
 
 				}
 				break;
 			case 168 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1169: AT2
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1169: AT2
 				{
 				mAT2(); if (state.failed) return;
 
 				}
 				break;
 			case 169 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1173: DOT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1173: DOT
 				{
 				mDOT(); if (state.failed) return;
 
 				}
 				break;
 			case 170 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1177: DOTDOT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1177: DOTDOT
 				{
 				mDOTDOT(); if (state.failed) return;
 
 				}
 				break;
 			case 171 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1184: LCURLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1184: LCURLY
 				{
 				mLCURLY(); if (state.failed) return;
 
 				}
 				break;
 			case 172 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1191: RCURLY
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1191: RCURLY
 				{
 				mRCURLY(); if (state.failed) return;
 
 				}
 				break;
 			case 173 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1198: TkGlobalFunction
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1198: TkGlobalFunction
 				{
 				mTkGlobalFunction(); if (state.failed) return;
 
 				}
 				break;
 			case 174 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1215: TkFunctionName
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1215: TkFunctionName
 				{
 				mTkFunctionName(); if (state.failed) return;
 
 				}
 				break;
 			case 175 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1230: TkFunctionArgs
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1230: TkFunctionArgs
 				{
 				mTkFunctionArgs(); if (state.failed) return;
 
 				}
 				break;
 			case 176 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1245: TkFunctionBody
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1245: TkFunctionBody
 				{
 				mTkFunctionBody(); if (state.failed) return;
 
 				}
 				break;
 			case 177 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1260: TkFunctionReturn
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1260: TkFunctionReturn
 				{
 				mTkFunctionReturn(); if (state.failed) return;
 
 				}
 				break;
 			case 178 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1277: TkCustomAttribute
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1277: TkCustomAttribute
 				{
 				mTkCustomAttribute(); if (state.failed) return;
 
 				}
 				break;
 			case 179 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1295: TkCustomAttributeArgs
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1295: TkCustomAttributeArgs
 				{
 				mTkCustomAttributeArgs(); if (state.failed) return;
 
 				}
 				break;
 			case 180 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1317: TkNewType
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1317: TkNewType
 				{
 				mTkNewType(); if (state.failed) return;
 
 				}
 				break;
 			case 181 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1327: TkClass
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1327: TkClass
 				{
 				mTkClass(); if (state.failed) return;
 
 				}
 				break;
 			case 182 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1335: TkRecord
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1335: TkRecord
 				{
 				mTkRecord(); if (state.failed) return;
 
 				}
 				break;
 			case 183 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1344: TkRecordHelper
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1344: TkRecordHelper
 				{
 				mTkRecordHelper(); if (state.failed) return;
 
 				}
 				break;
 			case 184 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1359: TkInterface
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1359: TkInterface
 				{
 				mTkInterface(); if (state.failed) return;
 
 				}
 				break;
 			case 185 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1371: TkObject
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1371: TkObject
 				{
 				mTkObject(); if (state.failed) return;
 
 				}
 				break;
 			case 186 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1380: TkClassOfType
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1380: TkClassOfType
 				{
 				mTkClassOfType(); if (state.failed) return;
 
 				}
 				break;
 			case 187 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1394: TkVariableType
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1394: TkVariableType
 				{
 				mTkVariableType(); if (state.failed) return;
 
 				}
 				break;
 			case 188 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1409: TkVariableIdents
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1409: TkVariableIdents
 				{
 				mTkVariableIdents(); if (state.failed) return;
 
 				}
 				break;
 			case 189 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1426: TkVariableParam
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1426: TkVariableParam
 				{
 				mTkVariableParam(); if (state.failed) return;
 
 				}
 				break;
 			case 190 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1442: TkGuid
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1442: TkGuid
 				{
 				mTkGuid(); if (state.failed) return;
 
 				}
 				break;
 			case 191 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1449: TkClassParents
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1449: TkClassParents
 				{
 				mTkClassParents(); if (state.failed) return;
 
 				}
 				break;
 			case 192 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1464: TkClassField
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1464: TkClassField
 				{
 				mTkClassField(); if (state.failed) return;
 
 				}
 				break;
 			case 193 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1477: TkAnonymousExpression
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1477: TkAnonymousExpression
 				{
 				mTkAnonymousExpression(); if (state.failed) return;
 
 				}
 				break;
 			case 194 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1499: TkIdentifier
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1499: TkIdentifier
 				{
 				mTkIdentifier(); if (state.failed) return;
 
 				}
 				break;
 			case 195 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1512: TkIntNum
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1512: TkIntNum
 				{
 				mTkIntNum(); if (state.failed) return;
 
 				}
 				break;
 			case 196 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1521: TkRealNum
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1521: TkRealNum
 				{
 				mTkRealNum(); if (state.failed) return;
 
 				}
 				break;
 			case 197 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1531: TkHexNum
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1531: TkHexNum
 				{
 				mTkHexNum(); if (state.failed) return;
 
 				}
 				break;
 			case 198 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1540: ControlChar
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1540: ControlChar
 				{
 				mControlChar(); if (state.failed) return;
 
 				}
 				break;
 			case 199 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1552: QuotedString
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1552: QuotedString
 				{
 				mQuotedString(); if (state.failed) return;
 
 				}
 				break;
 			case 200 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1565: Hexdigitseq
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1565: Hexdigitseq
 				{
 				mHexdigitseq(); if (state.failed) return;
 
 				}
 				break;
 			case 201 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1577: COMMENT
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1577: COMMENT
 				{
 				mCOMMENT(); if (state.failed) return;
 
 				}
 				break;
 			case 202 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1585: WS
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1585: WS
 				{
 				mWS(); if (state.failed) return;
 
 				}
 				break;
 			case 203 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1588: UnicodeBOM
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:1:1588: UnicodeBOM
 				{
 				mUnicodeBOM(); if (state.failed) return;
 
@@ -6631,10 +6631,10 @@ public class DelphiLexer extends Lexer {
 
 	// $ANTLR start synpred1_Delphi
 	public final void synpred1_Delphi_fragment() throws RecognitionException {
-		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )
-		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:38: ( ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )? )
+		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )? ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 		{
-		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )?
+		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:39: ( DOT Digitseq )?
 		int alt20=2;
 		int LA20_0 = input.LA(1);
 		if ( (LA20_0=='.') ) {
@@ -6642,7 +6642,7 @@ public class DelphiLexer extends Lexer {
 		}
 		switch (alt20) {
 			case 1 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:40: DOT Digitseq
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:40: DOT Digitseq
 				{
 				mDOT(); if (state.failed) return;
 
@@ -6653,7 +6653,7 @@ public class DelphiLexer extends Lexer {
 
 		}
 
-		// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:55: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
+		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:55: ( ( 'e' | 'E' ) ( '+' | '-' )? Digitseq )?
 		int alt22=2;
 		int LA22_0 = input.LA(1);
 		if ( (LA22_0=='E'||LA22_0=='e') ) {
@@ -6661,7 +6661,7 @@ public class DelphiLexer extends Lexer {
 		}
 		switch (alt22) {
 			case 1 :
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:56: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:56: ( 'e' | 'E' ) ( '+' | '-' )? Digitseq
 				{
 				if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
 					input.consume();
@@ -6673,7 +6673,7 @@ public class DelphiLexer extends Lexer {
 					recover(mse);
 					throw mse;
 				}
-				// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:66: ( '+' | '-' )?
+				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:967:66: ( '+' | '-' )?
 				int alt21=2;
 				int LA21_0 = input.LA(1);
 				if ( (LA21_0=='+'||LA21_0=='-') ) {
@@ -6681,7 +6681,7 @@ public class DelphiLexer extends Lexer {
 				}
 				switch (alt21) {
 					case 1 :
-						// D:\\Projects\\SonarDelphi-master\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
+						// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 						{
 						if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
 							input.consume();
