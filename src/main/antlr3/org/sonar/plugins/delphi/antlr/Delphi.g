@@ -711,7 +711,7 @@ ident                        : TkIdentifier
                              | '&' keywordsAsIdentifier -> keywordsAsIdentifier
                              | usedKeywordsAsNames
                              ;
-usedKeywordsAsNames          : (ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT)
+usedKeywordsAsNames          : (ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT)
                              | (FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME)
                              | (OBJECT | OUT | OPERATOR | POINTER | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED )
                              | (STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY)
