@@ -295,6 +295,8 @@ begin
 	  Inc(t);
   for var i := 0 downto ControlCount - 1 do
 	  Inc(t);
+  for var i: Integer := 0 to 10 do
+	WriteLn(i);
 end;
 
 end.
