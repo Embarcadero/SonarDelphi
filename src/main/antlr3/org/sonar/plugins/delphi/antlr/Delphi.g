@@ -576,9 +576,9 @@ repeatStatement              : 'repeat' (statementList)? 'until' expression
                              ;
 whileStatement               : 'while' expression 'do' statement
                              ;
-forStatement                 : 'for' ('var')? designator ':=' expression 'to' expression 'do' statement
-                             | 'for' ('var')? designator ':=' expression 'downto' expression 'do' statement
-                             | 'for' ('var')? designator 'in' expression 'do' statement
+forStatement                 : 'for' ('var')? designator (':' typeDecl)? ':=' expression 'to' expression 'do' statement
+                             | 'for' ('var')? designator (':' typeDecl)? ':=' expression 'downto' expression 'do' statement
+                             | 'for' ('var')? designator (':' typeDecl)? 'in' expression 'do' statement
                              ;
 withStatement                : 'with' withItemList 'do' statement
                              ;
