@@ -152,6 +152,7 @@ public class DefineResolverTest {
 
     String resultSourceCode = results.getFileData().toString();
     System.out.println(resultSourceCode);
+    assertThat(resultSourceCode, containsString("SOIChar"));
     assertThat(resultSourceCode, containsString("(*{$if"));
     assertThat(resultSourceCode, containsString("$else}*)"));
     assertThat(resultSourceCode, containsString("(*{$ifend}*)"));
