@@ -136,6 +136,13 @@ end;
 
 //problem with <>.ident
 procedure tflightlockoutrecordset<genericrecord>.getnexthistorytag(const databaserecord : genericrecord);
+const 
+  cLength =
+{$if CompilerVersion >= 22}
+   500;	
+{$else}
+   250;
+{$ifend}
 var
   s: string;
 begin
@@ -156,7 +163,7 @@ begin
   Result := False;
   {$ifend}
 {$endif}
-// This does not currently worK  
+// This does not currently work if you do not use spaces 
   s :=  {$ifdef CPUx64} '64' {$else} '32' {$endif};
 end;
 
