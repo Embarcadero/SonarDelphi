@@ -105,7 +105,7 @@ public class DefineResolver extends SourceResolver {
         defines.remove(directive.getItem());
       } else if (type == CompilerDirectiveType.IF) {
         // mark places to cut off
-        toDelete.addAll(getMatchingEndIfCutRange(directives, i, excluded, false));
+        toDelete.addAll(getMatchingEndIfCutRange(directives, i, excluded, true));
       } else if (type == CompilerDirectiveType.IFDEF) {
         boolean isDefined = defines.contains(directive.getItem());
         boolean isPositive = ((IfDefDirective) directive).isPositive();
