@@ -75,7 +75,7 @@ requests. If you want to raise an issue, please follow the recommendations below
 * Grammar is NOT case insensitive, but Delphi code is. Plugin deals with it by DelphiSourceSanitizer class, which feeds ANTLR parser lowercase characters (the "LA" method)
 * Number of classes includes: classes, records
 * Directory is count as a package. Number of packages equals number of directories.
-* Preprocessor definitions between {$if xxx} and {$ifend} are removed (DefineResolver class).
+* Preprocessor definitions between {$if xxx} and {$ifend} are removed, the {$else} part is kept. (DefineResolver class).
 * Sources imported to SonarQube are parsed through IncludeResolver class. It means, that the source will be lowercased and unknown preprocessor definitions will be cut out.
 
 ## CodeCoverage and unit testing
