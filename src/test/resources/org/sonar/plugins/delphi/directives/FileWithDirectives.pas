@@ -41,6 +41,14 @@ unit TestUnit;
 
 interface
 
+const 
+  cLenght =
+{$if CompilerVersion >= 22}
+   500;	
+{$else}
+   250;
+{$ifend}
+
 implementation
 
 begin
