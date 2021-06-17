@@ -713,7 +713,7 @@ ident                        : TkIdentifier
                              ;
 usedKeywordsAsNames          : (ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT)
                              | (FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME)
-                             | (OBJECT | OUT | OPERATOR | POINTER | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED )
+                             | (OBJECT | OUT | OPERATOR | POINTER | PUBLIC | PRIVATE | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED )
                              | (STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY)
                              ;
 keywordsAsIdentifier         : (ABSOLUTE | ABSTRACT | ADD | AND | ANSISTRING | ARRAY | AS | ASM | ASSEMBLER | ASSEMBLY)

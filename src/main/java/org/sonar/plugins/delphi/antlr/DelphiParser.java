@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-06-17 15:29:03
+// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-06-17 16:04:11
 
 /*
  * Sonar Delphi Plugin
@@ -294,7 +294,7 @@ public class DelphiParser extends Parser {
 	}
 	public DelphiParser(TokenStream input, RecognizerSharedState state) {
 		super(input, state);
-		this.state.ruleMemo = new HashMap[832+1];
+		this.state.ruleMemo = new HashMap[834+1];
 
 
 	}
@@ -713,7 +713,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:89:36: ( ident ( ',' ident )* )?
 			int alt6=2;
 			int LA6_0 = input.LA(1);
-			if ( (LA6_0==ABSOLUTE||LA6_0==ADD||LA6_0==ANSISTRING||LA6_0==AT||LA6_0==BREAK||(LA6_0 >= CONTAINS && LA6_0 <= CONTINUE)||LA6_0==DEFAULT||LA6_0==DISPID||(LA6_0 >= DQ && LA6_0 <= DW)||LA6_0==EXIT||LA6_0==EXPORT||LA6_0==FALSE||LA6_0==FINAL||LA6_0==HELPER||(LA6_0 >= IMPLEMENTS && LA6_0 <= INDEX)||LA6_0==LOCAL||LA6_0==MESSAGE||LA6_0==NAME||LA6_0==OBJECT||LA6_0==OPERATOR||LA6_0==OUT||LA6_0==POINTER||(LA6_0 >= READ && LA6_0 <= READONLY)||(LA6_0 >= REFERENCE && LA6_0 <= REGISTER)||LA6_0==REMOVE||LA6_0==STATIC||(LA6_0 >= STORED && LA6_0 <= STRING)||LA6_0==TRUE||LA6_0==TkIdentifier||LA6_0==UNSAFE||(LA6_0 >= VARARGS && LA6_0 <= VIRTUAL)||(LA6_0 >= WRITE && LA6_0 <= WRITEONLY)||LA6_0==198) ) {
+			if ( (LA6_0==ABSOLUTE||LA6_0==ADD||LA6_0==ANSISTRING||LA6_0==AT||LA6_0==BREAK||(LA6_0 >= CONTAINS && LA6_0 <= CONTINUE)||LA6_0==DEFAULT||LA6_0==DISPID||(LA6_0 >= DQ && LA6_0 <= DW)||LA6_0==EXIT||LA6_0==EXPORT||LA6_0==FALSE||LA6_0==FINAL||LA6_0==HELPER||(LA6_0 >= IMPLEMENTS && LA6_0 <= INDEX)||LA6_0==LOCAL||LA6_0==MESSAGE||LA6_0==NAME||LA6_0==OBJECT||LA6_0==OPERATOR||LA6_0==OUT||LA6_0==POINTER||LA6_0==PRIVATE||LA6_0==PUBLIC||(LA6_0 >= READ && LA6_0 <= READONLY)||(LA6_0 >= REFERENCE && LA6_0 <= REGISTER)||LA6_0==REMOVE||LA6_0==STATIC||(LA6_0 >= STORED && LA6_0 <= STRING)||LA6_0==TRUE||LA6_0==TkIdentifier||LA6_0==UNSAFE||(LA6_0 >= VARARGS && LA6_0 <= VIRTUAL)||(LA6_0 >= WRITE && LA6_0 <= WRITEONLY)||LA6_0==198) ) {
 				alt6=1;
 			}
 			switch (alt6) {
@@ -1348,7 +1348,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_SEMI.add(char_literal42);
 
 			// AST REWRITE
-			// elements: namespaceName, hintingDirective, UNIT
+			// elements: hintingDirective, UNIT, namespaceName
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -2139,7 +2139,7 @@ public class DelphiParser extends Parser {
 			if (state.failed) return retval;
 			if ( state.backtracking==0 ) stream_namespaceNameList.add(namespaceNameList63.getTree());
 			// AST REWRITE
-			// elements: USES, namespaceNameList
+			// elements: namespaceNameList, USES
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -2459,7 +2459,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: namespaceName, QuotedString
+			// elements: QuotedString, namespaceName
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -3809,6 +3809,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -3913,7 +3915,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_SEMI.add(char_literal110);
 
 			// AST REWRITE
-			// elements: EQUAL, ident, constExpression, typeDecl
+			// elements: constExpression, ident, typeDecl, EQUAL
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -4026,7 +4028,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: TYPE, typeDeclaration, typeDeclaration
+			// elements: typeDeclaration, typeDeclaration, TYPE
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -4171,6 +4173,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -4252,7 +4256,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_SEMI.add(char_literal119);
 
 			// AST REWRITE
-			// elements: genericTypeIdent, typeDecl, hintingDirective, customAttribute
+			// elements: customAttribute, genericTypeIdent, hintingDirective, typeDecl
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -4384,7 +4388,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: varDeclaration, varKey, varDeclaration
+			// elements: varKey, varDeclaration, varDeclaration
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -4596,6 +4600,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -4697,7 +4703,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_SEMI.add(char_literal130);
 
 			// AST REWRITE
-			// elements: identListFlat, typeDecl, customAttribute
+			// elements: customAttribute, identListFlat, typeDecl
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -5229,6 +5235,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -5562,7 +5570,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:186:37: ( formalParameterList )?
 					int alt41=2;
 					int LA41_0 = input.LA(1);
-					if ( (LA41_0==ABSOLUTE||LA41_0==ADD||LA41_0==ANSISTRING||LA41_0==AT||LA41_0==BREAK||LA41_0==CONST||(LA41_0 >= CONTAINS && LA41_0 <= CONTINUE)||LA41_0==DEFAULT||LA41_0==DISPID||(LA41_0 >= DQ && LA41_0 <= DW)||LA41_0==EXIT||LA41_0==EXPORT||LA41_0==FALSE||LA41_0==FINAL||LA41_0==HELPER||(LA41_0 >= IMPLEMENTS && LA41_0 <= INDEX)||LA41_0==LBRACK||LA41_0==LOCAL||LA41_0==MESSAGE||LA41_0==NAME||LA41_0==OBJECT||LA41_0==OPERATOR||LA41_0==OUT||LA41_0==POINTER||(LA41_0 >= READ && LA41_0 <= READONLY)||(LA41_0 >= REFERENCE && LA41_0 <= REGISTER)||LA41_0==REMOVE||LA41_0==STATIC||(LA41_0 >= STORED && LA41_0 <= STRING)||LA41_0==TRUE||LA41_0==TkIdentifier||LA41_0==UNSAFE||(LA41_0 >= VAR && LA41_0 <= VIRTUAL)||(LA41_0 >= WRITE && LA41_0 <= WRITEONLY)||LA41_0==198) ) {
+					if ( (LA41_0==ABSOLUTE||LA41_0==ADD||LA41_0==ANSISTRING||LA41_0==AT||LA41_0==BREAK||LA41_0==CONST||(LA41_0 >= CONTAINS && LA41_0 <= CONTINUE)||LA41_0==DEFAULT||LA41_0==DISPID||(LA41_0 >= DQ && LA41_0 <= DW)||LA41_0==EXIT||LA41_0==EXPORT||LA41_0==FALSE||LA41_0==FINAL||LA41_0==HELPER||(LA41_0 >= IMPLEMENTS && LA41_0 <= INDEX)||LA41_0==LBRACK||LA41_0==LOCAL||LA41_0==MESSAGE||LA41_0==NAME||LA41_0==OBJECT||LA41_0==OPERATOR||LA41_0==OUT||LA41_0==POINTER||LA41_0==PRIVATE||LA41_0==PUBLIC||(LA41_0 >= READ && LA41_0 <= READONLY)||(LA41_0 >= REFERENCE && LA41_0 <= REGISTER)||LA41_0==REMOVE||LA41_0==STATIC||(LA41_0 >= STORED && LA41_0 <= STRING)||LA41_0==TRUE||LA41_0==TkIdentifier||LA41_0==UNSAFE||(LA41_0 >= VAR && LA41_0 <= VIRTUAL)||(LA41_0 >= WRITE && LA41_0 <= WRITEONLY)||LA41_0==198) ) {
 						alt41=1;
 					}
 					switch (alt41) {
@@ -6104,6 +6112,8 @@ public class DelphiParser extends Parser {
 			case NAME:
 			case OPERATOR:
 			case OUT:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REGISTER:
@@ -6678,7 +6688,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:208:46: ( arrayIndex )?
 					int alt53=2;
 					int LA53_0 = input.LA(1);
-					if ( (LA53_0==ABSOLUTE||(LA53_0 >= ADD && LA53_0 <= ANSISTRING)||LA53_0==AS||(LA53_0 >= AT && LA53_0 <= AT2)||LA53_0==BREAK||(LA53_0 >= CONTAINS && LA53_0 <= DEFAULT)||LA53_0==DISPID||LA53_0==DIV||(LA53_0 >= DOT && LA53_0 <= DOTDOT)||(LA53_0 >= DQ && LA53_0 <= DW)||LA53_0==EQUAL||LA53_0==EXIT||LA53_0==EXPORT||LA53_0==FALSE||LA53_0==FINAL||(LA53_0 >= FUNCTION && LA53_0 <= GE)||(LA53_0 >= GT && LA53_0 <= HELPER)||(LA53_0 >= IMPLEMENTS && LA53_0 <= INHERITED)||LA53_0==IS||LA53_0==LBRACK||LA53_0==LE||(LA53_0 >= LOCAL && LA53_0 <= NAME)||LA53_0==NIL||(LA53_0 >= NOT && LA53_0 <= OBJECT)||(LA53_0 >= OPERATOR && LA53_0 <= OUT)||(LA53_0 >= PLUS && LA53_0 <= POINTER2)||LA53_0==PROCEDURE||LA53_0==QuotedString||(LA53_0 >= READ && LA53_0 <= READONLY)||(LA53_0 >= REFERENCE && LA53_0 <= REGISTER)||LA53_0==REMOVE||(LA53_0 >= SHL && LA53_0 <= STATIC)||(LA53_0 >= STORED && LA53_0 <= STRING)||LA53_0==TRUE||(LA53_0 >= TkHexNum && LA53_0 <= TkIntNum)||LA53_0==TkRealNum||LA53_0==UNSAFE||(LA53_0 >= VARARGS && LA53_0 <= VIRTUAL)||(LA53_0 >= WRITE && LA53_0 <= WRITEONLY)||(LA53_0 >= XOR && LA53_0 <= 210)) ) {
+					if ( (LA53_0==ABSOLUTE||(LA53_0 >= ADD && LA53_0 <= ANSISTRING)||LA53_0==AS||(LA53_0 >= AT && LA53_0 <= AT2)||LA53_0==BREAK||(LA53_0 >= CONTAINS && LA53_0 <= DEFAULT)||LA53_0==DISPID||LA53_0==DIV||(LA53_0 >= DOT && LA53_0 <= DOTDOT)||(LA53_0 >= DQ && LA53_0 <= DW)||LA53_0==EQUAL||LA53_0==EXIT||LA53_0==EXPORT||LA53_0==FALSE||LA53_0==FINAL||(LA53_0 >= FUNCTION && LA53_0 <= GE)||(LA53_0 >= GT && LA53_0 <= HELPER)||(LA53_0 >= IMPLEMENTS && LA53_0 <= INHERITED)||LA53_0==IS||LA53_0==LBRACK||LA53_0==LE||(LA53_0 >= LOCAL && LA53_0 <= NAME)||LA53_0==NIL||(LA53_0 >= NOT && LA53_0 <= OBJECT)||(LA53_0 >= OPERATOR && LA53_0 <= OUT)||(LA53_0 >= PLUS && LA53_0 <= PROCEDURE)||LA53_0==PUBLIC||LA53_0==QuotedString||(LA53_0 >= READ && LA53_0 <= READONLY)||(LA53_0 >= REFERENCE && LA53_0 <= REGISTER)||LA53_0==REMOVE||(LA53_0 >= SHL && LA53_0 <= STATIC)||(LA53_0 >= STORED && LA53_0 <= STRING)||LA53_0==TRUE||(LA53_0 >= TkHexNum && LA53_0 <= TkIntNum)||LA53_0==TkRealNum||LA53_0==UNSAFE||(LA53_0 >= VARARGS && LA53_0 <= VIRTUAL)||(LA53_0 >= WRITE && LA53_0 <= WRITEONLY)||(LA53_0 >= XOR && LA53_0 <= 210)) ) {
 						alt53=1;
 					}
 					switch (alt53) {
@@ -6714,7 +6724,7 @@ public class DelphiParser extends Parser {
 							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:208:65: ( arrayIndex )?
 							int alt54=2;
 							int LA54_0 = input.LA(1);
-							if ( (LA54_0==ABSOLUTE||(LA54_0 >= ADD && LA54_0 <= ANSISTRING)||LA54_0==AS||(LA54_0 >= AT && LA54_0 <= AT2)||LA54_0==BREAK||(LA54_0 >= CONTAINS && LA54_0 <= DEFAULT)||LA54_0==DISPID||LA54_0==DIV||(LA54_0 >= DOT && LA54_0 <= DOTDOT)||(LA54_0 >= DQ && LA54_0 <= DW)||LA54_0==EQUAL||LA54_0==EXIT||LA54_0==EXPORT||LA54_0==FALSE||LA54_0==FINAL||(LA54_0 >= FUNCTION && LA54_0 <= GE)||(LA54_0 >= GT && LA54_0 <= HELPER)||(LA54_0 >= IMPLEMENTS && LA54_0 <= INHERITED)||LA54_0==IS||LA54_0==LBRACK||LA54_0==LE||(LA54_0 >= LOCAL && LA54_0 <= NAME)||LA54_0==NIL||(LA54_0 >= NOT && LA54_0 <= OBJECT)||(LA54_0 >= OPERATOR && LA54_0 <= OUT)||(LA54_0 >= PLUS && LA54_0 <= POINTER2)||LA54_0==PROCEDURE||LA54_0==QuotedString||(LA54_0 >= READ && LA54_0 <= READONLY)||(LA54_0 >= REFERENCE && LA54_0 <= REGISTER)||LA54_0==REMOVE||(LA54_0 >= SHL && LA54_0 <= STATIC)||(LA54_0 >= STORED && LA54_0 <= STRING)||LA54_0==TRUE||(LA54_0 >= TkHexNum && LA54_0 <= TkIntNum)||LA54_0==TkRealNum||LA54_0==UNSAFE||(LA54_0 >= VARARGS && LA54_0 <= VIRTUAL)||(LA54_0 >= WRITE && LA54_0 <= WRITEONLY)||(LA54_0 >= XOR && LA54_0 <= 210)) ) {
+							if ( (LA54_0==ABSOLUTE||(LA54_0 >= ADD && LA54_0 <= ANSISTRING)||LA54_0==AS||(LA54_0 >= AT && LA54_0 <= AT2)||LA54_0==BREAK||(LA54_0 >= CONTAINS && LA54_0 <= DEFAULT)||LA54_0==DISPID||LA54_0==DIV||(LA54_0 >= DOT && LA54_0 <= DOTDOT)||(LA54_0 >= DQ && LA54_0 <= DW)||LA54_0==EQUAL||LA54_0==EXIT||LA54_0==EXPORT||LA54_0==FALSE||LA54_0==FINAL||(LA54_0 >= FUNCTION && LA54_0 <= GE)||(LA54_0 >= GT && LA54_0 <= HELPER)||(LA54_0 >= IMPLEMENTS && LA54_0 <= INHERITED)||LA54_0==IS||LA54_0==LBRACK||LA54_0==LE||(LA54_0 >= LOCAL && LA54_0 <= NAME)||LA54_0==NIL||(LA54_0 >= NOT && LA54_0 <= OBJECT)||(LA54_0 >= OPERATOR && LA54_0 <= OUT)||(LA54_0 >= PLUS && LA54_0 <= PROCEDURE)||LA54_0==PUBLIC||LA54_0==QuotedString||(LA54_0 >= READ && LA54_0 <= READONLY)||(LA54_0 >= REFERENCE && LA54_0 <= REGISTER)||LA54_0==REMOVE||(LA54_0 >= SHL && LA54_0 <= STATIC)||(LA54_0 >= STORED && LA54_0 <= STRING)||LA54_0==TRUE||(LA54_0 >= TkHexNum && LA54_0 <= TkIntNum)||LA54_0==TkRealNum||LA54_0==UNSAFE||(LA54_0 >= VARARGS && LA54_0 <= VIRTUAL)||(LA54_0 >= WRITE && LA54_0 <= WRITEONLY)||(LA54_0 >= XOR && LA54_0 <= 210)) ) {
 								alt54=1;
 							}
 							switch (alt54) {
@@ -6756,7 +6766,7 @@ public class DelphiParser extends Parser {
 			if (state.failed) return retval;
 			if ( state.backtracking==0 ) stream_arraySubType.add(arraySubType188.getTree());
 			// AST REWRITE
-			// elements: RBRACK, COMMA, arraySubType, ARRAY, arrayIndex, arrayIndex, LBRACK
+			// elements: LBRACK, arraySubType, ARRAY, arrayIndex, arrayIndex, RBRACK, COMMA
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -6775,7 +6785,7 @@ public class DelphiParser extends Parser {
 				root_1 = (Object)adaptor.becomeRoot(stream_arraySubType.nextNode(), root_1);
 				adaptor.addChild(root_1, stream_ARRAY.nextNode());
 				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:209:56: ( '[' ( arrayIndex )? ( ',' ( arrayIndex )? )* ']' )?
-				if ( stream_RBRACK.hasNext()||stream_COMMA.hasNext()||stream_arrayIndex.hasNext()||stream_LBRACK.hasNext() ) {
+				if ( stream_LBRACK.hasNext()||stream_arrayIndex.hasNext()||stream_RBRACK.hasNext()||stream_COMMA.hasNext() ) {
 					adaptor.addChild(root_1, stream_LBRACK.nextNode());
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:209:61: ( arrayIndex )?
 					if ( stream_arrayIndex.hasNext() ) {
@@ -6797,10 +6807,10 @@ public class DelphiParser extends Parser {
 
 					adaptor.addChild(root_1, stream_RBRACK.nextNode());
 				}
+				stream_LBRACK.reset();
+				stream_arrayIndex.reset();
 				stream_RBRACK.reset();
 				stream_COMMA.reset();
-				stream_arrayIndex.reset();
-				stream_LBRACK.reset();
 
 				adaptor.addChild(root_0, root_1);
 				}
@@ -6959,7 +6969,7 @@ public class DelphiParser extends Parser {
 			if ( (LA58_0==CONST) ) {
 				alt58=1;
 			}
-			else if ( (LA58_0==ABSOLUTE||(LA58_0 >= ADD && LA58_0 <= AS)||(LA58_0 >= AT && LA58_0 <= AT2)||LA58_0==BREAK||LA58_0==CLASS||(LA58_0 >= CONTAINS && LA58_0 <= DEFAULT)||(LA58_0 >= DISPID && LA58_0 <= DIV)||(LA58_0 >= DOT && LA58_0 <= DOTDOT)||(LA58_0 >= DQ && LA58_0 <= DW)||LA58_0==EQUAL||LA58_0==EXIT||LA58_0==EXPORT||LA58_0==FALSE||(LA58_0 >= FILE && LA58_0 <= FINAL)||(LA58_0 >= FUNCTION && LA58_0 <= GE)||(LA58_0 >= GT && LA58_0 <= HELPER)||(LA58_0 >= IMPLEMENTS && LA58_0 <= INHERITED)||(LA58_0 >= INTERFACE && LA58_0 <= IS)||LA58_0==LBRACK||LA58_0==LE||(LA58_0 >= LOCAL && LA58_0 <= NAME)||LA58_0==NIL||(LA58_0 >= NOT && LA58_0 <= OBJECT)||(LA58_0 >= OPERATOR && LA58_0 <= OUT)||LA58_0==PACKED||(LA58_0 >= PLUS && LA58_0 <= POINTER2)||LA58_0==PROCEDURE||LA58_0==QuotedString||(LA58_0 >= READ && LA58_0 <= REGISTER)||LA58_0==REMOVE||(LA58_0 >= SET && LA58_0 <= STATIC)||(LA58_0 >= STORED && LA58_0 <= STRING)||LA58_0==TRUE||LA58_0==TYPE||(LA58_0 >= TkHexNum && LA58_0 <= TkIntNum)||LA58_0==TkRealNum||LA58_0==UNSAFE||(LA58_0 >= VARARGS && LA58_0 <= VIRTUAL)||(LA58_0 >= WRITE && LA58_0 <= WRITEONLY)||(LA58_0 >= XOR && LA58_0 <= 210)) ) {
+			else if ( (LA58_0==ABSOLUTE||(LA58_0 >= ADD && LA58_0 <= AS)||(LA58_0 >= AT && LA58_0 <= AT2)||LA58_0==BREAK||LA58_0==CLASS||(LA58_0 >= CONTAINS && LA58_0 <= DEFAULT)||(LA58_0 >= DISPID && LA58_0 <= DIV)||(LA58_0 >= DOT && LA58_0 <= DOTDOT)||(LA58_0 >= DQ && LA58_0 <= DW)||LA58_0==EQUAL||LA58_0==EXIT||LA58_0==EXPORT||LA58_0==FALSE||(LA58_0 >= FILE && LA58_0 <= FINAL)||(LA58_0 >= FUNCTION && LA58_0 <= GE)||(LA58_0 >= GT && LA58_0 <= HELPER)||(LA58_0 >= IMPLEMENTS && LA58_0 <= INHERITED)||(LA58_0 >= INTERFACE && LA58_0 <= IS)||LA58_0==LBRACK||LA58_0==LE||(LA58_0 >= LOCAL && LA58_0 <= NAME)||LA58_0==NIL||(LA58_0 >= NOT && LA58_0 <= OBJECT)||(LA58_0 >= OPERATOR && LA58_0 <= OUT)||LA58_0==PACKED||(LA58_0 >= PLUS && LA58_0 <= PROCEDURE)||LA58_0==PUBLIC||LA58_0==QuotedString||(LA58_0 >= READ && LA58_0 <= REGISTER)||LA58_0==REMOVE||(LA58_0 >= SET && LA58_0 <= STATIC)||(LA58_0 >= STORED && LA58_0 <= STRING)||LA58_0==TRUE||LA58_0==TYPE||(LA58_0 >= TkHexNum && LA58_0 <= TkIntNum)||LA58_0==TkRealNum||LA58_0==UNSAFE||(LA58_0 >= VARARGS && LA58_0 <= VIRTUAL)||(LA58_0 >= WRITE && LA58_0 <= WRITEONLY)||(LA58_0 >= XOR && LA58_0 <= 210)) ) {
 				alt58=2;
 			}
 
@@ -7067,7 +7077,7 @@ public class DelphiParser extends Parser {
 			if (state.failed) return retval;
 			if ( state.backtracking==0 ) stream_typeDecl.add(typeDecl197.getTree());
 			// AST REWRITE
-			// elements: typeDecl, SET
+			// elements: SET, typeDecl
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -8484,6 +8494,8 @@ public class DelphiParser extends Parser {
 						case NAME:
 						case OPERATOR:
 						case OUT:
+						case PRIVATE:
+						case PUBLIC:
 						case READ:
 						case READONLY:
 						case REGISTER:
@@ -8552,7 +8564,7 @@ public class DelphiParser extends Parser {
 					if (state.failed) return retval;
 					if ( state.backtracking==0 ) stream_typeDecl.add(typeDecl230.getTree());
 					// AST REWRITE
-					// elements: formalParameterSection, typeDecl, FUNCTION
+					// elements: typeDecl, formalParameterSection, FUNCTION
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -8729,7 +8741,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:247:30: ( ident | enumType )
 			int alt72=2;
 			int LA72_0 = input.LA(1);
-			if ( (LA72_0==ABSOLUTE||LA72_0==ADD||LA72_0==ANSISTRING||LA72_0==AT||LA72_0==BREAK||(LA72_0 >= CONTAINS && LA72_0 <= CONTINUE)||LA72_0==DEFAULT||LA72_0==DISPID||(LA72_0 >= DQ && LA72_0 <= DW)||LA72_0==EXIT||LA72_0==EXPORT||LA72_0==FALSE||LA72_0==FINAL||LA72_0==HELPER||(LA72_0 >= IMPLEMENTS && LA72_0 <= INDEX)||LA72_0==LOCAL||LA72_0==MESSAGE||LA72_0==NAME||LA72_0==OBJECT||LA72_0==OPERATOR||LA72_0==OUT||LA72_0==POINTER||(LA72_0 >= READ && LA72_0 <= READONLY)||(LA72_0 >= REFERENCE && LA72_0 <= REGISTER)||LA72_0==REMOVE||LA72_0==STATIC||(LA72_0 >= STORED && LA72_0 <= STRING)||LA72_0==TRUE||LA72_0==TkIdentifier||LA72_0==UNSAFE||(LA72_0 >= VARARGS && LA72_0 <= VIRTUAL)||(LA72_0 >= WRITE && LA72_0 <= WRITEONLY)||LA72_0==198) ) {
+			if ( (LA72_0==ABSOLUTE||LA72_0==ADD||LA72_0==ANSISTRING||LA72_0==AT||LA72_0==BREAK||(LA72_0 >= CONTAINS && LA72_0 <= CONTINUE)||LA72_0==DEFAULT||LA72_0==DISPID||(LA72_0 >= DQ && LA72_0 <= DW)||LA72_0==EXIT||LA72_0==EXPORT||LA72_0==FALSE||LA72_0==FINAL||LA72_0==HELPER||(LA72_0 >= IMPLEMENTS && LA72_0 <= INDEX)||LA72_0==LOCAL||LA72_0==MESSAGE||LA72_0==NAME||LA72_0==OBJECT||LA72_0==OPERATOR||LA72_0==OUT||LA72_0==POINTER||LA72_0==PRIVATE||LA72_0==PUBLIC||(LA72_0 >= READ && LA72_0 <= READONLY)||(LA72_0 >= REFERENCE && LA72_0 <= REGISTER)||LA72_0==REMOVE||LA72_0==STATIC||(LA72_0 >= STORED && LA72_0 <= STRING)||LA72_0==TRUE||LA72_0==TkIdentifier||LA72_0==UNSAFE||(LA72_0 >= VARARGS && LA72_0 <= VIRTUAL)||(LA72_0 >= WRITE && LA72_0 <= WRITEONLY)||LA72_0==198) ) {
 				alt72=1;
 			}
 			else if ( (LA72_0==LPAREN) ) {
@@ -9522,6 +9534,8 @@ public class DelphiParser extends Parser {
 			case OPERATOR:
 			case OUT:
 			case POINTER:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REFERENCE:
@@ -10421,7 +10435,7 @@ public class DelphiParser extends Parser {
 					if ( state.backtracking==0 ) stream_END.add(string_literal289);
 
 					// AST REWRITE
-					// elements: CLASS, classParent, classItem
+					// elements: classParent, CLASS, classItem
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -10816,12 +10830,60 @@ public class DelphiParser extends Parser {
 				}
 				break;
 			case AUTOMATED:
-			case PRIVATE:
 			case PROTECTED:
-			case PUBLIC:
 			case PUBLISHED:
 				{
 				alt92=1;
+				}
+				break;
+			case PRIVATE:
+				{
+				int LA92_3 = input.LA(2);
+				if ( (synpred124_Delphi()) ) {
+					alt92=1;
+				}
+				else if ( (synpred126_Delphi()) ) {
+					alt92=3;
+				}
+
+				else {
+					if (state.backtracking>0) {state.failed=true; return retval;}
+					int nvaeMark = input.mark();
+					try {
+						input.consume();
+						NoViableAltException nvae =
+							new NoViableAltException("", 92, 3, input);
+						throw nvae;
+					} finally {
+						input.rewind(nvaeMark);
+					}
+				}
+
+				}
+				break;
+			case PUBLIC:
+				{
+				int LA92_4 = input.LA(2);
+				if ( (synpred124_Delphi()) ) {
+					alt92=1;
+				}
+				else if ( (synpred126_Delphi()) ) {
+					alt92=3;
+				}
+
+				else {
+					if (state.backtracking>0) {state.failed=true; return retval;}
+					int nvaeMark = input.mark();
+					try {
+						input.consume();
+						NoViableAltException nvae =
+							new NoViableAltException("", 92, 4, input);
+						throw nvae;
+					} finally {
+						input.rewind(nvaeMark);
+					}
+				}
+
 				}
 				break;
 			case LBRACK:
@@ -11224,7 +11286,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_END.add(string_literal313);
 
 			// AST REWRITE
-			// elements: CLASS, classHelperItem, typeId
+			// elements: typeId, CLASS, classHelperItem
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -11667,7 +11729,7 @@ public class DelphiParser extends Parser {
 					if ( state.backtracking==0 ) stream_END.add(string_literal325);
 
 					// AST REWRITE
-					// elements: interfaceGuid, interfaceKey, interfaceItem, classParent
+					// elements: interfaceGuid, interfaceItem, interfaceKey, classParent
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -12194,7 +12256,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_END.add(string_literal338);
 
 			// AST REWRITE
-			// elements: OBJECT, objectItem, classParent
+			// elements: OBJECT, classParent, objectItem
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -12290,12 +12352,34 @@ public class DelphiParser extends Parser {
 				}
 				break;
 			case AUTOMATED:
-			case PRIVATE:
 			case PROTECTED:
-			case PUBLIC:
 			case PUBLISHED:
 				{
 				alt106=1;
+				}
+				break;
+			case PRIVATE:
+				{
+				int LA106_3 = input.LA(2);
+				if ( (synpred149_Delphi()) ) {
+					alt106=1;
+				}
+				else if ( (true) ) {
+					alt106=3;
+				}
+
+				}
+				break;
+			case PUBLIC:
+				{
+				int LA106_4 = input.LA(2);
+				if ( (synpred149_Delphi()) ) {
+					alt106=1;
+				}
+				else if ( (true) ) {
+					alt106=3;
+				}
+
 				}
 				break;
 			case LBRACK:
@@ -12598,6 +12682,24 @@ public class DelphiParser extends Parser {
 
 					}
 					break;
+				case PRIVATE:
+					{
+					int LA108_3 = input.LA(2);
+					if ( (synpred152_Delphi()) ) {
+						alt108=1;
+					}
+
+					}
+					break;
+				case PUBLIC:
+					{
+					int LA108_4 = input.LA(2);
+					if ( (synpred152_Delphi()) ) {
+						alt108=1;
+					}
+
+					}
+					break;
 				case OPERATOR:
 					{
 					int LA108_11 = input.LA(2);
@@ -12721,7 +12823,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_END.add(string_literal347);
 
 			// AST REWRITE
-			// elements: recordField, recordItem, RECORD
+			// elements: recordField, RECORD, recordItem
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -12824,6 +12926,24 @@ public class DelphiParser extends Parser {
 				case STRICT:
 					{
 					int LA110_1 = input.LA(2);
+					if ( (synpred154_Delphi()) ) {
+						alt110=1;
+					}
+
+					}
+					break;
+				case PRIVATE:
+					{
+					int LA110_3 = input.LA(2);
+					if ( (synpred154_Delphi()) ) {
+						alt110=1;
+					}
+
+					}
+					break;
+				case PUBLIC:
+					{
+					int LA110_4 = input.LA(2);
 					if ( (synpred154_Delphi()) ) {
 						alt110=1;
 					}
@@ -12958,7 +13078,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_END.add(string_literal352);
 
 			// AST REWRITE
-			// elements: recordItem, recordField, recordVariantSection, RECORD
+			// elements: recordField, recordItem, recordVariantSection, RECORD
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -13074,12 +13194,60 @@ public class DelphiParser extends Parser {
 				}
 				break;
 			case AUTOMATED:
-			case PRIVATE:
 			case PROTECTED:
-			case PUBLIC:
 			case PUBLISHED:
 				{
 				alt113=1;
+				}
+				break;
+			case PRIVATE:
+				{
+				int LA113_3 = input.LA(2);
+				if ( (synpred156_Delphi()) ) {
+					alt113=1;
+				}
+				else if ( (synpred161_Delphi()) ) {
+					alt113=6;
+				}
+
+				else {
+					if (state.backtracking>0) {state.failed=true; return retval;}
+					int nvaeMark = input.mark();
+					try {
+						input.consume();
+						NoViableAltException nvae =
+							new NoViableAltException("", 113, 3, input);
+						throw nvae;
+					} finally {
+						input.rewind(nvaeMark);
+					}
+				}
+
+				}
+				break;
+			case PUBLIC:
+				{
+				int LA113_4 = input.LA(2);
+				if ( (synpred156_Delphi()) ) {
+					alt113=1;
+				}
+				else if ( (synpred161_Delphi()) ) {
+					alt113=6;
+				}
+
+				else {
+					if (state.backtracking>0) {state.failed=true; return retval;}
+					int nvaeMark = input.mark();
+					try {
+						input.consume();
+						NoViableAltException nvae =
+							new NoViableAltException("", 113, 4, input);
+						throw nvae;
+					} finally {
+						input.rewind(nvaeMark);
+					}
+				}
+
 				}
 				break;
 			case LBRACK:
@@ -13833,6 +14001,8 @@ public class DelphiParser extends Parser {
 				case NAME:
 				case OPERATOR:
 				case OUT:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REGISTER:
@@ -13889,7 +14059,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:352:66: ( recordVariant | ';' )
 			int alt119=2;
 			int LA119_0 = input.LA(1);
-			if ( (LA119_0==ABSOLUTE||(LA119_0 >= ADD && LA119_0 <= ANSISTRING)||LA119_0==AS||(LA119_0 >= AT && LA119_0 <= AT2)||LA119_0==BREAK||(LA119_0 >= COLON && LA119_0 <= COMMA)||(LA119_0 >= CONTAINS && LA119_0 <= DEFAULT)||LA119_0==DISPID||LA119_0==DIV||LA119_0==DOT||(LA119_0 >= DQ && LA119_0 <= DW)||LA119_0==EQUAL||LA119_0==EXIT||LA119_0==EXPORT||LA119_0==FALSE||LA119_0==FINAL||(LA119_0 >= FUNCTION && LA119_0 <= GE)||(LA119_0 >= GT && LA119_0 <= HELPER)||(LA119_0 >= IMPLEMENTS && LA119_0 <= INHERITED)||LA119_0==IS||LA119_0==LBRACK||LA119_0==LE||(LA119_0 >= LOCAL && LA119_0 <= NAME)||LA119_0==NIL||(LA119_0 >= NOT && LA119_0 <= OBJECT)||(LA119_0 >= OPERATOR && LA119_0 <= OUT)||(LA119_0 >= PLUS && LA119_0 <= POINTER2)||LA119_0==PROCEDURE||LA119_0==QuotedString||(LA119_0 >= READ && LA119_0 <= READONLY)||(LA119_0 >= REFERENCE && LA119_0 <= REGISTER)||LA119_0==REMOVE||(LA119_0 >= SHL && LA119_0 <= STATIC)||(LA119_0 >= STORED && LA119_0 <= STRING)||LA119_0==TRUE||(LA119_0 >= TkHexNum && LA119_0 <= TkIntNum)||LA119_0==TkRealNum||LA119_0==UNSAFE||(LA119_0 >= VARARGS && LA119_0 <= VIRTUAL)||(LA119_0 >= WRITE && LA119_0 <= WRITEONLY)||(LA119_0 >= XOR && LA119_0 <= 210)) ) {
+			if ( (LA119_0==ABSOLUTE||(LA119_0 >= ADD && LA119_0 <= ANSISTRING)||LA119_0==AS||(LA119_0 >= AT && LA119_0 <= AT2)||LA119_0==BREAK||(LA119_0 >= COLON && LA119_0 <= COMMA)||(LA119_0 >= CONTAINS && LA119_0 <= DEFAULT)||LA119_0==DISPID||LA119_0==DIV||LA119_0==DOT||(LA119_0 >= DQ && LA119_0 <= DW)||LA119_0==EQUAL||LA119_0==EXIT||LA119_0==EXPORT||LA119_0==FALSE||LA119_0==FINAL||(LA119_0 >= FUNCTION && LA119_0 <= GE)||(LA119_0 >= GT && LA119_0 <= HELPER)||(LA119_0 >= IMPLEMENTS && LA119_0 <= INHERITED)||LA119_0==IS||LA119_0==LBRACK||LA119_0==LE||(LA119_0 >= LOCAL && LA119_0 <= NAME)||LA119_0==NIL||(LA119_0 >= NOT && LA119_0 <= OBJECT)||(LA119_0 >= OPERATOR && LA119_0 <= OUT)||(LA119_0 >= PLUS && LA119_0 <= PROCEDURE)||LA119_0==PUBLIC||LA119_0==QuotedString||(LA119_0 >= READ && LA119_0 <= READONLY)||(LA119_0 >= REFERENCE && LA119_0 <= REGISTER)||LA119_0==REMOVE||(LA119_0 >= SHL && LA119_0 <= STATIC)||(LA119_0 >= STORED && LA119_0 <= STRING)||LA119_0==TRUE||(LA119_0 >= TkHexNum && LA119_0 <= TkIntNum)||LA119_0==TkRealNum||LA119_0==UNSAFE||(LA119_0 >= VARARGS && LA119_0 <= VIRTUAL)||(LA119_0 >= WRITE && LA119_0 <= WRITEONLY)||(LA119_0 >= XOR && LA119_0 <= 210)) ) {
 				alt119=1;
 			}
 			else if ( (LA119_0==SEMI) ) {
@@ -13934,7 +14104,7 @@ public class DelphiParser extends Parser {
 			while (true) {
 				int alt120=3;
 				int LA120_0 = input.LA(1);
-				if ( (LA120_0==ABSOLUTE||(LA120_0 >= ADD && LA120_0 <= ANSISTRING)||LA120_0==AS||(LA120_0 >= AT && LA120_0 <= AT2)||LA120_0==BREAK||(LA120_0 >= COLON && LA120_0 <= COMMA)||(LA120_0 >= CONTAINS && LA120_0 <= DEFAULT)||LA120_0==DISPID||LA120_0==DIV||LA120_0==DOT||(LA120_0 >= DQ && LA120_0 <= DW)||LA120_0==EQUAL||LA120_0==EXIT||LA120_0==EXPORT||LA120_0==FALSE||LA120_0==FINAL||(LA120_0 >= FUNCTION && LA120_0 <= GE)||(LA120_0 >= GT && LA120_0 <= HELPER)||(LA120_0 >= IMPLEMENTS && LA120_0 <= INHERITED)||LA120_0==IS||LA120_0==LBRACK||LA120_0==LE||(LA120_0 >= LOCAL && LA120_0 <= NAME)||LA120_0==NIL||(LA120_0 >= NOT && LA120_0 <= OBJECT)||(LA120_0 >= OPERATOR && LA120_0 <= OUT)||(LA120_0 >= PLUS && LA120_0 <= POINTER2)||LA120_0==PROCEDURE||LA120_0==QuotedString||(LA120_0 >= READ && LA120_0 <= READONLY)||(LA120_0 >= REFERENCE && LA120_0 <= REGISTER)||LA120_0==REMOVE||(LA120_0 >= SHL && LA120_0 <= STATIC)||(LA120_0 >= STORED && LA120_0 <= STRING)||LA120_0==TRUE||(LA120_0 >= TkHexNum && LA120_0 <= TkIntNum)||LA120_0==TkRealNum||LA120_0==UNSAFE||(LA120_0 >= VARARGS && LA120_0 <= VIRTUAL)||(LA120_0 >= WRITE && LA120_0 <= WRITEONLY)||(LA120_0 >= XOR && LA120_0 <= 210)) ) {
+				if ( (LA120_0==ABSOLUTE||(LA120_0 >= ADD && LA120_0 <= ANSISTRING)||LA120_0==AS||(LA120_0 >= AT && LA120_0 <= AT2)||LA120_0==BREAK||(LA120_0 >= COLON && LA120_0 <= COMMA)||(LA120_0 >= CONTAINS && LA120_0 <= DEFAULT)||LA120_0==DISPID||LA120_0==DIV||LA120_0==DOT||(LA120_0 >= DQ && LA120_0 <= DW)||LA120_0==EQUAL||LA120_0==EXIT||LA120_0==EXPORT||LA120_0==FALSE||LA120_0==FINAL||(LA120_0 >= FUNCTION && LA120_0 <= GE)||(LA120_0 >= GT && LA120_0 <= HELPER)||(LA120_0 >= IMPLEMENTS && LA120_0 <= INHERITED)||LA120_0==IS||LA120_0==LBRACK||LA120_0==LE||(LA120_0 >= LOCAL && LA120_0 <= NAME)||LA120_0==NIL||(LA120_0 >= NOT && LA120_0 <= OBJECT)||(LA120_0 >= OPERATOR && LA120_0 <= OUT)||(LA120_0 >= PLUS && LA120_0 <= PROCEDURE)||LA120_0==PUBLIC||LA120_0==QuotedString||(LA120_0 >= READ && LA120_0 <= READONLY)||(LA120_0 >= REFERENCE && LA120_0 <= REGISTER)||LA120_0==REMOVE||(LA120_0 >= SHL && LA120_0 <= STATIC)||(LA120_0 >= STORED && LA120_0 <= STRING)||LA120_0==TRUE||(LA120_0 >= TkHexNum && LA120_0 <= TkIntNum)||LA120_0==TkRealNum||LA120_0==UNSAFE||(LA120_0 >= VARARGS && LA120_0 <= VIRTUAL)||(LA120_0 >= WRITE && LA120_0 <= WRITEONLY)||(LA120_0 >= XOR && LA120_0 <= 210)) ) {
 					alt120=1;
 				}
 				else if ( (LA120_0==SEMI) ) {
@@ -14088,7 +14258,7 @@ public class DelphiParser extends Parser {
 			while (true) {
 				int alt122=2;
 				int LA122_0 = input.LA(1);
-				if ( (LA122_0==ABSOLUTE||LA122_0==ADD||LA122_0==ANSISTRING||LA122_0==AT||LA122_0==BREAK||(LA122_0 >= CONTAINS && LA122_0 <= CONTINUE)||LA122_0==DEFAULT||LA122_0==DISPID||(LA122_0 >= DQ && LA122_0 <= DW)||LA122_0==EXIT||LA122_0==EXPORT||LA122_0==FALSE||LA122_0==FINAL||LA122_0==HELPER||(LA122_0 >= IMPLEMENTS && LA122_0 <= INDEX)||LA122_0==LOCAL||LA122_0==MESSAGE||LA122_0==NAME||LA122_0==OBJECT||LA122_0==OPERATOR||LA122_0==OUT||LA122_0==POINTER||(LA122_0 >= READ && LA122_0 <= READONLY)||(LA122_0 >= REFERENCE && LA122_0 <= REGISTER)||LA122_0==REMOVE||LA122_0==STATIC||(LA122_0 >= STORED && LA122_0 <= STRING)||LA122_0==TRUE||LA122_0==TkIdentifier||LA122_0==UNSAFE||(LA122_0 >= VARARGS && LA122_0 <= VIRTUAL)||(LA122_0 >= WRITE && LA122_0 <= WRITEONLY)||LA122_0==198) ) {
+				if ( (LA122_0==ABSOLUTE||LA122_0==ADD||LA122_0==ANSISTRING||LA122_0==AT||LA122_0==BREAK||(LA122_0 >= CONTAINS && LA122_0 <= CONTINUE)||LA122_0==DEFAULT||LA122_0==DISPID||(LA122_0 >= DQ && LA122_0 <= DW)||LA122_0==EXIT||LA122_0==EXPORT||LA122_0==FALSE||LA122_0==FINAL||LA122_0==HELPER||(LA122_0 >= IMPLEMENTS && LA122_0 <= INDEX)||LA122_0==LOCAL||LA122_0==MESSAGE||LA122_0==NAME||LA122_0==OBJECT||LA122_0==OPERATOR||LA122_0==OUT||LA122_0==POINTER||LA122_0==PRIVATE||LA122_0==PUBLIC||(LA122_0 >= READ && LA122_0 <= READONLY)||(LA122_0 >= REFERENCE && LA122_0 <= REGISTER)||LA122_0==REMOVE||LA122_0==STATIC||(LA122_0 >= STORED && LA122_0 <= STRING)||LA122_0==TRUE||LA122_0==TkIdentifier||LA122_0==UNSAFE||(LA122_0 >= VARARGS && LA122_0 <= VIRTUAL)||(LA122_0 >= WRITE && LA122_0 <= WRITEONLY)||LA122_0==198) ) {
 					alt122=1;
 				}
 
@@ -14753,7 +14923,7 @@ public class DelphiParser extends Parser {
 						case MESSAGE:
 							{
 							int LA129_2 = input.LA(2);
-							if ( (LA129_2==ABSOLUTE||(LA129_2 >= ADD && LA129_2 <= ANSISTRING)||LA129_2==AS||(LA129_2 >= AT && LA129_2 <= AT2)||LA129_2==BREAK||(LA129_2 >= CONTAINS && LA129_2 <= DEFAULT)||LA129_2==DISPID||LA129_2==DIV||LA129_2==DOT||(LA129_2 >= DQ && LA129_2 <= DW)||LA129_2==EQUAL||LA129_2==EXIT||LA129_2==EXPORT||LA129_2==FALSE||LA129_2==FINAL||(LA129_2 >= FUNCTION && LA129_2 <= GE)||(LA129_2 >= GT && LA129_2 <= HELPER)||(LA129_2 >= IMPLEMENTS && LA129_2 <= INHERITED)||LA129_2==IS||LA129_2==LBRACK||LA129_2==LE||(LA129_2 >= LOCAL && LA129_2 <= NAME)||LA129_2==NIL||(LA129_2 >= NOT && LA129_2 <= OBJECT)||(LA129_2 >= OPERATOR && LA129_2 <= OUT)||(LA129_2 >= PLUS && LA129_2 <= POINTER2)||LA129_2==PROCEDURE||LA129_2==QuotedString||(LA129_2 >= READ && LA129_2 <= READONLY)||(LA129_2 >= REFERENCE && LA129_2 <= REGISTER)||LA129_2==REMOVE||LA129_2==SEMI||(LA129_2 >= SHL && LA129_2 <= STATIC)||(LA129_2 >= STORED && LA129_2 <= STRING)||LA129_2==TRUE||(LA129_2 >= TkHexNum && LA129_2 <= TkIntNum)||LA129_2==TkRealNum||LA129_2==UNSAFE||(LA129_2 >= VARARGS && LA129_2 <= VIRTUAL)||(LA129_2 >= WRITE && LA129_2 <= WRITEONLY)||(LA129_2 >= XOR && LA129_2 <= 210)) ) {
+							if ( (LA129_2==ABSOLUTE||(LA129_2 >= ADD && LA129_2 <= ANSISTRING)||LA129_2==AS||(LA129_2 >= AT && LA129_2 <= AT2)||LA129_2==BREAK||(LA129_2 >= CONTAINS && LA129_2 <= DEFAULT)||LA129_2==DISPID||LA129_2==DIV||LA129_2==DOT||(LA129_2 >= DQ && LA129_2 <= DW)||LA129_2==EQUAL||LA129_2==EXIT||LA129_2==EXPORT||LA129_2==FALSE||LA129_2==FINAL||(LA129_2 >= FUNCTION && LA129_2 <= GE)||(LA129_2 >= GT && LA129_2 <= HELPER)||(LA129_2 >= IMPLEMENTS && LA129_2 <= INHERITED)||LA129_2==IS||LA129_2==LBRACK||LA129_2==LE||(LA129_2 >= LOCAL && LA129_2 <= NAME)||LA129_2==NIL||(LA129_2 >= NOT && LA129_2 <= OBJECT)||(LA129_2 >= OPERATOR && LA129_2 <= OUT)||(LA129_2 >= PLUS && LA129_2 <= PROCEDURE)||LA129_2==PUBLIC||LA129_2==QuotedString||(LA129_2 >= READ && LA129_2 <= READONLY)||(LA129_2 >= REFERENCE && LA129_2 <= REGISTER)||LA129_2==REMOVE||LA129_2==SEMI||(LA129_2 >= SHL && LA129_2 <= STATIC)||(LA129_2 >= STORED && LA129_2 <= STRING)||LA129_2==TRUE||(LA129_2 >= TkHexNum && LA129_2 <= TkIntNum)||LA129_2==TkRealNum||LA129_2==UNSAFE||(LA129_2 >= VARARGS && LA129_2 <= VIRTUAL)||(LA129_2 >= WRITE && LA129_2 <= WRITEONLY)||(LA129_2 >= XOR && LA129_2 <= 210)) ) {
 								alt129=1;
 							}
 
@@ -14838,7 +15008,7 @@ public class DelphiParser extends Parser {
 						case DISPID:
 							{
 							int LA129_10 = input.LA(2);
-							if ( (LA129_10==ABSOLUTE||(LA129_10 >= ADD && LA129_10 <= ANSISTRING)||LA129_10==AS||(LA129_10 >= AT && LA129_10 <= AT2)||LA129_10==BREAK||(LA129_10 >= CONTAINS && LA129_10 <= DEFAULT)||LA129_10==DISPID||LA129_10==DIV||LA129_10==DOT||(LA129_10 >= DQ && LA129_10 <= DW)||LA129_10==EQUAL||LA129_10==EXIT||LA129_10==EXPORT||LA129_10==FALSE||LA129_10==FINAL||(LA129_10 >= FUNCTION && LA129_10 <= GE)||(LA129_10 >= GT && LA129_10 <= HELPER)||(LA129_10 >= IMPLEMENTS && LA129_10 <= INHERITED)||LA129_10==IS||LA129_10==LBRACK||LA129_10==LE||(LA129_10 >= LOCAL && LA129_10 <= NAME)||LA129_10==NIL||(LA129_10 >= NOT && LA129_10 <= OBJECT)||(LA129_10 >= OPERATOR && LA129_10 <= OUT)||(LA129_10 >= PLUS && LA129_10 <= POINTER2)||LA129_10==PROCEDURE||LA129_10==QuotedString||(LA129_10 >= READ && LA129_10 <= READONLY)||(LA129_10 >= REFERENCE && LA129_10 <= REGISTER)||LA129_10==REMOVE||LA129_10==SEMI||(LA129_10 >= SHL && LA129_10 <= STATIC)||(LA129_10 >= STORED && LA129_10 <= STRING)||LA129_10==TRUE||(LA129_10 >= TkHexNum && LA129_10 <= TkIntNum)||LA129_10==TkRealNum||LA129_10==UNSAFE||(LA129_10 >= VARARGS && LA129_10 <= VIRTUAL)||(LA129_10 >= WRITE && LA129_10 <= WRITEONLY)||(LA129_10 >= XOR && LA129_10 <= 210)) ) {
+							if ( (LA129_10==ABSOLUTE||(LA129_10 >= ADD && LA129_10 <= ANSISTRING)||LA129_10==AS||(LA129_10 >= AT && LA129_10 <= AT2)||LA129_10==BREAK||(LA129_10 >= CONTAINS && LA129_10 <= DEFAULT)||LA129_10==DISPID||LA129_10==DIV||LA129_10==DOT||(LA129_10 >= DQ && LA129_10 <= DW)||LA129_10==EQUAL||LA129_10==EXIT||LA129_10==EXPORT||LA129_10==FALSE||LA129_10==FINAL||(LA129_10 >= FUNCTION && LA129_10 <= GE)||(LA129_10 >= GT && LA129_10 <= HELPER)||(LA129_10 >= IMPLEMENTS && LA129_10 <= INHERITED)||LA129_10==IS||LA129_10==LBRACK||LA129_10==LE||(LA129_10 >= LOCAL && LA129_10 <= NAME)||LA129_10==NIL||(LA129_10 >= NOT && LA129_10 <= OBJECT)||(LA129_10 >= OPERATOR && LA129_10 <= OUT)||(LA129_10 >= PLUS && LA129_10 <= PROCEDURE)||LA129_10==PUBLIC||LA129_10==QuotedString||(LA129_10 >= READ && LA129_10 <= READONLY)||(LA129_10 >= REFERENCE && LA129_10 <= REGISTER)||LA129_10==REMOVE||LA129_10==SEMI||(LA129_10 >= SHL && LA129_10 <= STATIC)||(LA129_10 >= STORED && LA129_10 <= STRING)||LA129_10==TRUE||(LA129_10 >= TkHexNum && LA129_10 <= TkIntNum)||LA129_10==TkRealNum||LA129_10==UNSAFE||(LA129_10 >= VARARGS && LA129_10 <= VIRTUAL)||(LA129_10 >= WRITE && LA129_10 <= WRITEONLY)||(LA129_10 >= XOR && LA129_10 <= 210)) ) {
 								alt129=1;
 							}
 
@@ -14872,7 +15042,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: customAttribute, CLASS, methodKey, formalParameterSection, ident, genericDefinition, methodDirective
+					// elements: customAttribute, formalParameterSection, ident, methodDirective, methodKey, CLASS, genericDefinition
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -15427,6 +15597,8 @@ public class DelphiParser extends Parser {
 						case NAME:
 						case OPERATOR:
 						case OUT:
+						case PRIVATE:
+						case PUBLIC:
 						case READ:
 						case READONLY:
 						case REGISTER:
@@ -15505,7 +15677,7 @@ public class DelphiParser extends Parser {
 						case MESSAGE:
 							{
 							int LA135_2 = input.LA(2);
-							if ( (LA135_2==ABSOLUTE||(LA135_2 >= ADD && LA135_2 <= ANSISTRING)||LA135_2==AS||(LA135_2 >= AT && LA135_2 <= AT2)||LA135_2==BREAK||(LA135_2 >= CONTAINS && LA135_2 <= DEFAULT)||LA135_2==DISPID||LA135_2==DIV||LA135_2==DOT||(LA135_2 >= DQ && LA135_2 <= DW)||LA135_2==EQUAL||LA135_2==EXIT||LA135_2==EXPORT||LA135_2==FALSE||LA135_2==FINAL||(LA135_2 >= FUNCTION && LA135_2 <= GE)||(LA135_2 >= GT && LA135_2 <= HELPER)||(LA135_2 >= IMPLEMENTS && LA135_2 <= INHERITED)||LA135_2==IS||LA135_2==LBRACK||LA135_2==LE||(LA135_2 >= LOCAL && LA135_2 <= NAME)||LA135_2==NIL||(LA135_2 >= NOT && LA135_2 <= OBJECT)||(LA135_2 >= OPERATOR && LA135_2 <= OUT)||(LA135_2 >= PLUS && LA135_2 <= POINTER2)||LA135_2==PROCEDURE||LA135_2==QuotedString||(LA135_2 >= READ && LA135_2 <= READONLY)||(LA135_2 >= REFERENCE && LA135_2 <= REGISTER)||LA135_2==REMOVE||LA135_2==SEMI||(LA135_2 >= SHL && LA135_2 <= STATIC)||(LA135_2 >= STORED && LA135_2 <= STRING)||LA135_2==TRUE||(LA135_2 >= TkHexNum && LA135_2 <= TkIntNum)||LA135_2==TkRealNum||LA135_2==UNSAFE||(LA135_2 >= VARARGS && LA135_2 <= VIRTUAL)||(LA135_2 >= WRITE && LA135_2 <= WRITEONLY)||(LA135_2 >= XOR && LA135_2 <= 210)) ) {
+							if ( (LA135_2==ABSOLUTE||(LA135_2 >= ADD && LA135_2 <= ANSISTRING)||LA135_2==AS||(LA135_2 >= AT && LA135_2 <= AT2)||LA135_2==BREAK||(LA135_2 >= CONTAINS && LA135_2 <= DEFAULT)||LA135_2==DISPID||LA135_2==DIV||LA135_2==DOT||(LA135_2 >= DQ && LA135_2 <= DW)||LA135_2==EQUAL||LA135_2==EXIT||LA135_2==EXPORT||LA135_2==FALSE||LA135_2==FINAL||(LA135_2 >= FUNCTION && LA135_2 <= GE)||(LA135_2 >= GT && LA135_2 <= HELPER)||(LA135_2 >= IMPLEMENTS && LA135_2 <= INHERITED)||LA135_2==IS||LA135_2==LBRACK||LA135_2==LE||(LA135_2 >= LOCAL && LA135_2 <= NAME)||LA135_2==NIL||(LA135_2 >= NOT && LA135_2 <= OBJECT)||(LA135_2 >= OPERATOR && LA135_2 <= OUT)||(LA135_2 >= PLUS && LA135_2 <= PROCEDURE)||LA135_2==PUBLIC||LA135_2==QuotedString||(LA135_2 >= READ && LA135_2 <= READONLY)||(LA135_2 >= REFERENCE && LA135_2 <= REGISTER)||LA135_2==REMOVE||LA135_2==SEMI||(LA135_2 >= SHL && LA135_2 <= STATIC)||(LA135_2 >= STORED && LA135_2 <= STRING)||LA135_2==TRUE||(LA135_2 >= TkHexNum && LA135_2 <= TkIntNum)||LA135_2==TkRealNum||LA135_2==UNSAFE||(LA135_2 >= VARARGS && LA135_2 <= VIRTUAL)||(LA135_2 >= WRITE && LA135_2 <= WRITEONLY)||(LA135_2 >= XOR && LA135_2 <= 210)) ) {
 								alt135=1;
 							}
 
@@ -15590,7 +15762,7 @@ public class DelphiParser extends Parser {
 						case DISPID:
 							{
 							int LA135_10 = input.LA(2);
-							if ( (LA135_10==ABSOLUTE||(LA135_10 >= ADD && LA135_10 <= ANSISTRING)||LA135_10==AS||(LA135_10 >= AT && LA135_10 <= AT2)||LA135_10==BREAK||(LA135_10 >= CONTAINS && LA135_10 <= DEFAULT)||LA135_10==DISPID||LA135_10==DIV||LA135_10==DOT||(LA135_10 >= DQ && LA135_10 <= DW)||LA135_10==EQUAL||LA135_10==EXIT||LA135_10==EXPORT||LA135_10==FALSE||LA135_10==FINAL||(LA135_10 >= FUNCTION && LA135_10 <= GE)||(LA135_10 >= GT && LA135_10 <= HELPER)||(LA135_10 >= IMPLEMENTS && LA135_10 <= INHERITED)||LA135_10==IS||LA135_10==LBRACK||LA135_10==LE||(LA135_10 >= LOCAL && LA135_10 <= NAME)||LA135_10==NIL||(LA135_10 >= NOT && LA135_10 <= OBJECT)||(LA135_10 >= OPERATOR && LA135_10 <= OUT)||(LA135_10 >= PLUS && LA135_10 <= POINTER2)||LA135_10==PROCEDURE||LA135_10==QuotedString||(LA135_10 >= READ && LA135_10 <= READONLY)||(LA135_10 >= REFERENCE && LA135_10 <= REGISTER)||LA135_10==REMOVE||LA135_10==SEMI||(LA135_10 >= SHL && LA135_10 <= STATIC)||(LA135_10 >= STORED && LA135_10 <= STRING)||LA135_10==TRUE||(LA135_10 >= TkHexNum && LA135_10 <= TkIntNum)||LA135_10==TkRealNum||LA135_10==UNSAFE||(LA135_10 >= VARARGS && LA135_10 <= VIRTUAL)||(LA135_10 >= WRITE && LA135_10 <= WRITEONLY)||(LA135_10 >= XOR && LA135_10 <= 210)) ) {
+							if ( (LA135_10==ABSOLUTE||(LA135_10 >= ADD && LA135_10 <= ANSISTRING)||LA135_10==AS||(LA135_10 >= AT && LA135_10 <= AT2)||LA135_10==BREAK||(LA135_10 >= CONTAINS && LA135_10 <= DEFAULT)||LA135_10==DISPID||LA135_10==DIV||LA135_10==DOT||(LA135_10 >= DQ && LA135_10 <= DW)||LA135_10==EQUAL||LA135_10==EXIT||LA135_10==EXPORT||LA135_10==FALSE||LA135_10==FINAL||(LA135_10 >= FUNCTION && LA135_10 <= GE)||(LA135_10 >= GT && LA135_10 <= HELPER)||(LA135_10 >= IMPLEMENTS && LA135_10 <= INHERITED)||LA135_10==IS||LA135_10==LBRACK||LA135_10==LE||(LA135_10 >= LOCAL && LA135_10 <= NAME)||LA135_10==NIL||(LA135_10 >= NOT && LA135_10 <= OBJECT)||(LA135_10 >= OPERATOR && LA135_10 <= OUT)||(LA135_10 >= PLUS && LA135_10 <= PROCEDURE)||LA135_10==PUBLIC||LA135_10==QuotedString||(LA135_10 >= READ && LA135_10 <= READONLY)||(LA135_10 >= REFERENCE && LA135_10 <= REGISTER)||LA135_10==REMOVE||LA135_10==SEMI||(LA135_10 >= SHL && LA135_10 <= STATIC)||(LA135_10 >= STORED && LA135_10 <= STRING)||LA135_10==TRUE||(LA135_10 >= TkHexNum && LA135_10 <= TkIntNum)||LA135_10==TkRealNum||LA135_10==UNSAFE||(LA135_10 >= VARARGS && LA135_10 <= VIRTUAL)||(LA135_10 >= WRITE && LA135_10 <= WRITEONLY)||(LA135_10 >= XOR && LA135_10 <= 210)) ) {
 								alt135=1;
 							}
 
@@ -15624,7 +15796,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: FUNCTION, genericDefinition, CLASS, customAttribute, methodDirective, customAttribute, formalParameterSection, ident, typeDecl
+					// elements: formalParameterSection, CLASS, typeDecl, FUNCTION, genericDefinition, customAttribute, customAttribute, ident, methodDirective
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -16193,6 +16365,8 @@ public class DelphiParser extends Parser {
 						case NAME:
 						case OPERATOR:
 						case OUT:
+						case PRIVATE:
+						case PUBLIC:
 						case READ:
 						case READONLY:
 						case REGISTER:
@@ -16271,7 +16445,7 @@ public class DelphiParser extends Parser {
 						case MESSAGE:
 							{
 							int LA141_2 = input.LA(2);
-							if ( (LA141_2==ABSOLUTE||(LA141_2 >= ADD && LA141_2 <= ANSISTRING)||LA141_2==AS||(LA141_2 >= AT && LA141_2 <= AT2)||LA141_2==BREAK||(LA141_2 >= CONTAINS && LA141_2 <= DEFAULT)||LA141_2==DISPID||LA141_2==DIV||LA141_2==DOT||(LA141_2 >= DQ && LA141_2 <= DW)||LA141_2==EQUAL||LA141_2==EXIT||LA141_2==EXPORT||LA141_2==FALSE||LA141_2==FINAL||(LA141_2 >= FUNCTION && LA141_2 <= GE)||(LA141_2 >= GT && LA141_2 <= HELPER)||(LA141_2 >= IMPLEMENTS && LA141_2 <= INHERITED)||LA141_2==IS||LA141_2==LBRACK||LA141_2==LE||(LA141_2 >= LOCAL && LA141_2 <= NAME)||LA141_2==NIL||(LA141_2 >= NOT && LA141_2 <= OBJECT)||(LA141_2 >= OPERATOR && LA141_2 <= OUT)||(LA141_2 >= PLUS && LA141_2 <= POINTER2)||LA141_2==PROCEDURE||LA141_2==QuotedString||(LA141_2 >= READ && LA141_2 <= READONLY)||(LA141_2 >= REFERENCE && LA141_2 <= REGISTER)||LA141_2==REMOVE||LA141_2==SEMI||(LA141_2 >= SHL && LA141_2 <= STATIC)||(LA141_2 >= STORED && LA141_2 <= STRING)||LA141_2==TRUE||(LA141_2 >= TkHexNum && LA141_2 <= TkIntNum)||LA141_2==TkRealNum||LA141_2==UNSAFE||(LA141_2 >= VARARGS && LA141_2 <= VIRTUAL)||(LA141_2 >= WRITE && LA141_2 <= WRITEONLY)||(LA141_2 >= XOR && LA141_2 <= 210)) ) {
+							if ( (LA141_2==ABSOLUTE||(LA141_2 >= ADD && LA141_2 <= ANSISTRING)||LA141_2==AS||(LA141_2 >= AT && LA141_2 <= AT2)||LA141_2==BREAK||(LA141_2 >= CONTAINS && LA141_2 <= DEFAULT)||LA141_2==DISPID||LA141_2==DIV||LA141_2==DOT||(LA141_2 >= DQ && LA141_2 <= DW)||LA141_2==EQUAL||LA141_2==EXIT||LA141_2==EXPORT||LA141_2==FALSE||LA141_2==FINAL||(LA141_2 >= FUNCTION && LA141_2 <= GE)||(LA141_2 >= GT && LA141_2 <= HELPER)||(LA141_2 >= IMPLEMENTS && LA141_2 <= INHERITED)||LA141_2==IS||LA141_2==LBRACK||LA141_2==LE||(LA141_2 >= LOCAL && LA141_2 <= NAME)||LA141_2==NIL||(LA141_2 >= NOT && LA141_2 <= OBJECT)||(LA141_2 >= OPERATOR && LA141_2 <= OUT)||(LA141_2 >= PLUS && LA141_2 <= PROCEDURE)||LA141_2==PUBLIC||LA141_2==QuotedString||(LA141_2 >= READ && LA141_2 <= READONLY)||(LA141_2 >= REFERENCE && LA141_2 <= REGISTER)||LA141_2==REMOVE||LA141_2==SEMI||(LA141_2 >= SHL && LA141_2 <= STATIC)||(LA141_2 >= STORED && LA141_2 <= STRING)||LA141_2==TRUE||(LA141_2 >= TkHexNum && LA141_2 <= TkIntNum)||LA141_2==TkRealNum||LA141_2==UNSAFE||(LA141_2 >= VARARGS && LA141_2 <= VIRTUAL)||(LA141_2 >= WRITE && LA141_2 <= WRITEONLY)||(LA141_2 >= XOR && LA141_2 <= 210)) ) {
 								alt141=1;
 							}
 
@@ -16356,7 +16530,7 @@ public class DelphiParser extends Parser {
 						case DISPID:
 							{
 							int LA141_10 = input.LA(2);
-							if ( (LA141_10==ABSOLUTE||(LA141_10 >= ADD && LA141_10 <= ANSISTRING)||LA141_10==AS||(LA141_10 >= AT && LA141_10 <= AT2)||LA141_10==BREAK||(LA141_10 >= CONTAINS && LA141_10 <= DEFAULT)||LA141_10==DISPID||LA141_10==DIV||LA141_10==DOT||(LA141_10 >= DQ && LA141_10 <= DW)||LA141_10==EQUAL||LA141_10==EXIT||LA141_10==EXPORT||LA141_10==FALSE||LA141_10==FINAL||(LA141_10 >= FUNCTION && LA141_10 <= GE)||(LA141_10 >= GT && LA141_10 <= HELPER)||(LA141_10 >= IMPLEMENTS && LA141_10 <= INHERITED)||LA141_10==IS||LA141_10==LBRACK||LA141_10==LE||(LA141_10 >= LOCAL && LA141_10 <= NAME)||LA141_10==NIL||(LA141_10 >= NOT && LA141_10 <= OBJECT)||(LA141_10 >= OPERATOR && LA141_10 <= OUT)||(LA141_10 >= PLUS && LA141_10 <= POINTER2)||LA141_10==PROCEDURE||LA141_10==QuotedString||(LA141_10 >= READ && LA141_10 <= READONLY)||(LA141_10 >= REFERENCE && LA141_10 <= REGISTER)||LA141_10==REMOVE||LA141_10==SEMI||(LA141_10 >= SHL && LA141_10 <= STATIC)||(LA141_10 >= STORED && LA141_10 <= STRING)||LA141_10==TRUE||(LA141_10 >= TkHexNum && LA141_10 <= TkIntNum)||LA141_10==TkRealNum||LA141_10==UNSAFE||(LA141_10 >= VARARGS && LA141_10 <= VIRTUAL)||(LA141_10 >= WRITE && LA141_10 <= WRITEONLY)||(LA141_10 >= XOR && LA141_10 <= 210)) ) {
+							if ( (LA141_10==ABSOLUTE||(LA141_10 >= ADD && LA141_10 <= ANSISTRING)||LA141_10==AS||(LA141_10 >= AT && LA141_10 <= AT2)||LA141_10==BREAK||(LA141_10 >= CONTAINS && LA141_10 <= DEFAULT)||LA141_10==DISPID||LA141_10==DIV||LA141_10==DOT||(LA141_10 >= DQ && LA141_10 <= DW)||LA141_10==EQUAL||LA141_10==EXIT||LA141_10==EXPORT||LA141_10==FALSE||LA141_10==FINAL||(LA141_10 >= FUNCTION && LA141_10 <= GE)||(LA141_10 >= GT && LA141_10 <= HELPER)||(LA141_10 >= IMPLEMENTS && LA141_10 <= INHERITED)||LA141_10==IS||LA141_10==LBRACK||LA141_10==LE||(LA141_10 >= LOCAL && LA141_10 <= NAME)||LA141_10==NIL||(LA141_10 >= NOT && LA141_10 <= OBJECT)||(LA141_10 >= OPERATOR && LA141_10 <= OUT)||(LA141_10 >= PLUS && LA141_10 <= PROCEDURE)||LA141_10==PUBLIC||LA141_10==QuotedString||(LA141_10 >= READ && LA141_10 <= READONLY)||(LA141_10 >= REFERENCE && LA141_10 <= REGISTER)||LA141_10==REMOVE||LA141_10==SEMI||(LA141_10 >= SHL && LA141_10 <= STATIC)||(LA141_10 >= STORED && LA141_10 <= STRING)||LA141_10==TRUE||(LA141_10 >= TkHexNum && LA141_10 <= TkIntNum)||LA141_10==TkRealNum||LA141_10==UNSAFE||(LA141_10 >= VARARGS && LA141_10 <= VIRTUAL)||(LA141_10 >= WRITE && LA141_10 <= WRITEONLY)||(LA141_10 >= XOR && LA141_10 <= 210)) ) {
 								alt141=1;
 							}
 
@@ -16390,7 +16564,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: methodDirective, customAttribute, CLASS, ident, OPERATOR, formalParameterSection, genericDefinition, typeDecl, customAttribute
+					// elements: CLASS, methodDirective, customAttribute, OPERATOR, customAttribute, ident, genericDefinition, typeDecl, formalParameterSection
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -16846,6 +17020,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -17214,7 +17390,7 @@ public class DelphiParser extends Parser {
 				case STORED:
 					{
 					int LA157_2 = input.LA(2);
-					if ( (LA157_2==ABSOLUTE||(LA157_2 >= ADD && LA157_2 <= ANSISTRING)||LA157_2==AS||(LA157_2 >= AT && LA157_2 <= AT2)||LA157_2==BREAK||(LA157_2 >= CONTAINS && LA157_2 <= DEFAULT)||LA157_2==DISPID||LA157_2==DIV||LA157_2==DOT||(LA157_2 >= DQ && LA157_2 <= DW)||LA157_2==EQUAL||LA157_2==EXIT||LA157_2==EXPORT||LA157_2==FALSE||LA157_2==FINAL||(LA157_2 >= FUNCTION && LA157_2 <= GE)||(LA157_2 >= GT && LA157_2 <= HELPER)||(LA157_2 >= IMPLEMENTS && LA157_2 <= INHERITED)||LA157_2==IS||LA157_2==LBRACK||LA157_2==LE||(LA157_2 >= LOCAL && LA157_2 <= NAME)||LA157_2==NIL||(LA157_2 >= NOT && LA157_2 <= OBJECT)||(LA157_2 >= OPERATOR && LA157_2 <= OUT)||(LA157_2 >= PLUS && LA157_2 <= POINTER2)||LA157_2==PROCEDURE||LA157_2==QuotedString||(LA157_2 >= READ && LA157_2 <= READONLY)||(LA157_2 >= REFERENCE && LA157_2 <= REGISTER)||LA157_2==REMOVE||LA157_2==SEMI||(LA157_2 >= SHL && LA157_2 <= STATIC)||(LA157_2 >= STORED && LA157_2 <= STRING)||LA157_2==TRUE||(LA157_2 >= TkHexNum && LA157_2 <= TkIntNum)||LA157_2==TkRealNum||LA157_2==UNSAFE||(LA157_2 >= VARARGS && LA157_2 <= VIRTUAL)||(LA157_2 >= WRITE && LA157_2 <= WRITEONLY)||(LA157_2 >= XOR && LA157_2 <= 210)) ) {
+					if ( (LA157_2==ABSOLUTE||(LA157_2 >= ADD && LA157_2 <= ANSISTRING)||LA157_2==AS||(LA157_2 >= AT && LA157_2 <= AT2)||LA157_2==BREAK||(LA157_2 >= CONTAINS && LA157_2 <= DEFAULT)||LA157_2==DISPID||LA157_2==DIV||LA157_2==DOT||(LA157_2 >= DQ && LA157_2 <= DW)||LA157_2==EQUAL||LA157_2==EXIT||LA157_2==EXPORT||LA157_2==FALSE||LA157_2==FINAL||(LA157_2 >= FUNCTION && LA157_2 <= GE)||(LA157_2 >= GT && LA157_2 <= HELPER)||(LA157_2 >= IMPLEMENTS && LA157_2 <= INHERITED)||LA157_2==IS||LA157_2==LBRACK||LA157_2==LE||(LA157_2 >= LOCAL && LA157_2 <= NAME)||LA157_2==NIL||(LA157_2 >= NOT && LA157_2 <= OBJECT)||(LA157_2 >= OPERATOR && LA157_2 <= OUT)||(LA157_2 >= PLUS && LA157_2 <= PROCEDURE)||LA157_2==PUBLIC||LA157_2==QuotedString||(LA157_2 >= READ && LA157_2 <= READONLY)||(LA157_2 >= REFERENCE && LA157_2 <= REGISTER)||LA157_2==REMOVE||LA157_2==SEMI||(LA157_2 >= SHL && LA157_2 <= STATIC)||(LA157_2 >= STORED && LA157_2 <= STRING)||LA157_2==TRUE||(LA157_2 >= TkHexNum && LA157_2 <= TkIntNum)||LA157_2==TkRealNum||LA157_2==UNSAFE||(LA157_2 >= VARARGS && LA157_2 <= VIRTUAL)||(LA157_2 >= WRITE && LA157_2 <= WRITEONLY)||(LA157_2 >= XOR && LA157_2 <= 210)) ) {
 						alt157=1;
 					}
 
@@ -17223,7 +17399,7 @@ public class DelphiParser extends Parser {
 				case DEFAULT:
 					{
 					int LA157_3 = input.LA(2);
-					if ( (LA157_3==ABSOLUTE||(LA157_3 >= ADD && LA157_3 <= ANSISTRING)||LA157_3==AS||(LA157_3 >= AT && LA157_3 <= AT2)||LA157_3==BREAK||(LA157_3 >= CONTAINS && LA157_3 <= DEFAULT)||LA157_3==DISPID||LA157_3==DIV||LA157_3==DOT||(LA157_3 >= DQ && LA157_3 <= DW)||LA157_3==EQUAL||LA157_3==EXIT||LA157_3==EXPORT||LA157_3==FALSE||LA157_3==FINAL||(LA157_3 >= FUNCTION && LA157_3 <= GE)||(LA157_3 >= GT && LA157_3 <= HELPER)||(LA157_3 >= IMPLEMENTS && LA157_3 <= INHERITED)||LA157_3==IS||LA157_3==LBRACK||LA157_3==LE||(LA157_3 >= LOCAL && LA157_3 <= NAME)||LA157_3==NIL||(LA157_3 >= NOT && LA157_3 <= OBJECT)||(LA157_3 >= OPERATOR && LA157_3 <= OUT)||(LA157_3 >= PLUS && LA157_3 <= POINTER2)||LA157_3==PROCEDURE||LA157_3==QuotedString||(LA157_3 >= READ && LA157_3 <= READONLY)||(LA157_3 >= REFERENCE && LA157_3 <= REGISTER)||LA157_3==REMOVE||LA157_3==SEMI||(LA157_3 >= SHL && LA157_3 <= STATIC)||(LA157_3 >= STORED && LA157_3 <= STRING)||LA157_3==TRUE||(LA157_3 >= TkHexNum && LA157_3 <= TkIntNum)||LA157_3==TkRealNum||LA157_3==UNSAFE||(LA157_3 >= VARARGS && LA157_3 <= VIRTUAL)||(LA157_3 >= WRITE && LA157_3 <= WRITEONLY)||(LA157_3 >= XOR && LA157_3 <= 210)) ) {
+					if ( (LA157_3==ABSOLUTE||(LA157_3 >= ADD && LA157_3 <= ANSISTRING)||LA157_3==AS||(LA157_3 >= AT && LA157_3 <= AT2)||LA157_3==BREAK||(LA157_3 >= CONTAINS && LA157_3 <= DEFAULT)||LA157_3==DISPID||LA157_3==DIV||LA157_3==DOT||(LA157_3 >= DQ && LA157_3 <= DW)||LA157_3==EQUAL||LA157_3==EXIT||LA157_3==EXPORT||LA157_3==FALSE||LA157_3==FINAL||(LA157_3 >= FUNCTION && LA157_3 <= GE)||(LA157_3 >= GT && LA157_3 <= HELPER)||(LA157_3 >= IMPLEMENTS && LA157_3 <= INHERITED)||LA157_3==IS||LA157_3==LBRACK||LA157_3==LE||(LA157_3 >= LOCAL && LA157_3 <= NAME)||LA157_3==NIL||(LA157_3 >= NOT && LA157_3 <= OBJECT)||(LA157_3 >= OPERATOR && LA157_3 <= OUT)||(LA157_3 >= PLUS && LA157_3 <= PROCEDURE)||LA157_3==PUBLIC||LA157_3==QuotedString||(LA157_3 >= READ && LA157_3 <= READONLY)||(LA157_3 >= REFERENCE && LA157_3 <= REGISTER)||LA157_3==REMOVE||LA157_3==SEMI||(LA157_3 >= SHL && LA157_3 <= STATIC)||(LA157_3 >= STORED && LA157_3 <= STRING)||LA157_3==TRUE||(LA157_3 >= TkHexNum && LA157_3 <= TkIntNum)||LA157_3==TkRealNum||LA157_3==UNSAFE||(LA157_3 >= VARARGS && LA157_3 <= VIRTUAL)||(LA157_3 >= WRITE && LA157_3 <= WRITEONLY)||(LA157_3 >= XOR && LA157_3 <= 210)) ) {
 						alt157=1;
 					}
 
@@ -17253,7 +17429,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: genericTypeIdent, PROPERTY, ident, classPropertySpecifier
+			// elements: ident, classPropertySpecifier, PROPERTY, genericTypeIdent
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -17810,7 +17986,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA160_2==ABSOLUTE||(LA160_2 >= ADD && LA160_2 <= ANSISTRING)||LA160_2==AS||(LA160_2 >= AT && LA160_2 <= AT2)||LA160_2==BREAK||(LA160_2 >= CONTAINS && LA160_2 <= DEFAULT)||LA160_2==DISPID||LA160_2==DIV||LA160_2==DOT||(LA160_2 >= DQ && LA160_2 <= DW)||LA160_2==EQUAL||LA160_2==EXIT||LA160_2==EXPORT||LA160_2==FALSE||LA160_2==FINAL||(LA160_2 >= FUNCTION && LA160_2 <= GE)||(LA160_2 >= GT && LA160_2 <= HELPER)||(LA160_2 >= IMPLEMENTS && LA160_2 <= INHERITED)||LA160_2==IS||LA160_2==LBRACK||LA160_2==LE||(LA160_2 >= LOCAL && LA160_2 <= NAME)||LA160_2==NIL||(LA160_2 >= NOT && LA160_2 <= OBJECT)||(LA160_2 >= OPERATOR && LA160_2 <= OUT)||(LA160_2 >= PLUS && LA160_2 <= POINTER2)||LA160_2==PROCEDURE||LA160_2==QuotedString||(LA160_2 >= READ && LA160_2 <= READONLY)||(LA160_2 >= REFERENCE && LA160_2 <= REGISTER)||LA160_2==REMOVE||(LA160_2 >= SHL && LA160_2 <= STATIC)||(LA160_2 >= STORED && LA160_2 <= STRING)||LA160_2==TRUE||(LA160_2 >= TkHexNum && LA160_2 <= TkIntNum)||LA160_2==TkRealNum||LA160_2==UNSAFE||(LA160_2 >= VARARGS && LA160_2 <= VIRTUAL)||(LA160_2 >= WRITE && LA160_2 <= WRITEONLY)||(LA160_2 >= XOR && LA160_2 <= 210)) ) {
+				else if ( (LA160_2==ABSOLUTE||(LA160_2 >= ADD && LA160_2 <= ANSISTRING)||LA160_2==AS||(LA160_2 >= AT && LA160_2 <= AT2)||LA160_2==BREAK||(LA160_2 >= CONTAINS && LA160_2 <= DEFAULT)||LA160_2==DISPID||LA160_2==DIV||LA160_2==DOT||(LA160_2 >= DQ && LA160_2 <= DW)||LA160_2==EQUAL||LA160_2==EXIT||LA160_2==EXPORT||LA160_2==FALSE||LA160_2==FINAL||(LA160_2 >= FUNCTION && LA160_2 <= GE)||(LA160_2 >= GT && LA160_2 <= HELPER)||(LA160_2 >= IMPLEMENTS && LA160_2 <= INHERITED)||LA160_2==IS||LA160_2==LBRACK||LA160_2==LE||(LA160_2 >= LOCAL && LA160_2 <= NAME)||LA160_2==NIL||(LA160_2 >= NOT && LA160_2 <= OBJECT)||(LA160_2 >= OPERATOR && LA160_2 <= OUT)||(LA160_2 >= PLUS && LA160_2 <= PROCEDURE)||LA160_2==PUBLIC||LA160_2==QuotedString||(LA160_2 >= READ && LA160_2 <= READONLY)||(LA160_2 >= REFERENCE && LA160_2 <= REGISTER)||LA160_2==REMOVE||(LA160_2 >= SHL && LA160_2 <= STATIC)||(LA160_2 >= STORED && LA160_2 <= STRING)||LA160_2==TRUE||(LA160_2 >= TkHexNum && LA160_2 <= TkIntNum)||LA160_2==TkRealNum||LA160_2==UNSAFE||(LA160_2 >= VARARGS && LA160_2 <= VIRTUAL)||(LA160_2 >= WRITE && LA160_2 <= WRITEONLY)||(LA160_2 >= XOR && LA160_2 <= 210)) ) {
 					alt160=2;
 				}
 
@@ -18056,7 +18232,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: qualifiedIdent, READ
+					// elements: READ, qualifiedIdent
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -19013,6 +19189,8 @@ public class DelphiParser extends Parser {
 						case NAME:
 						case OPERATOR:
 						case OUT:
+						case PRIVATE:
+						case PUBLIC:
 						case READ:
 						case READONLY:
 						case REGISTER:
@@ -19404,7 +19582,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: methodBody, methodDeclHeading
+			// elements: methodDeclHeading, methodBody
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -19657,7 +19835,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: methodKey, methodName, formalParameterSection, customAttribute, CLASS
+					// elements: customAttribute, methodKey, methodName, CLASS, formalParameterSection
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -20190,6 +20368,8 @@ public class DelphiParser extends Parser {
 								case NAME:
 								case OPERATOR:
 								case OUT:
+								case PRIVATE:
+								case PUBLIC:
 								case READ:
 								case READONLY:
 								case REGISTER:
@@ -20263,7 +20443,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: customAttribute, typeDecl, methodName, formalParameterSection, customAttribute, FUNCTION, CLASS
+					// elements: FUNCTION, methodName, customAttribute, CLASS, formalParameterSection, typeDecl, customAttribute
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -20787,6 +20967,8 @@ public class DelphiParser extends Parser {
 								case NAME:
 								case OPERATOR:
 								case OUT:
+								case PRIVATE:
+								case PUBLIC:
 								case READ:
 								case READONLY:
 								case REGISTER:
@@ -20860,7 +21042,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: customAttribute, formalParameterSection, OPERATOR, customAttribute, typeDecl, methodName, CLASS
+					// elements: OPERATOR, formalParameterSection, methodName, CLASS, customAttribute, typeDecl, customAttribute
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -21545,7 +21727,7 @@ public class DelphiParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: PROCEDURE, formalParameterSection, ident
+					// elements: formalParameterSection, PROCEDURE, ident
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -21660,7 +21842,7 @@ public class DelphiParser extends Parser {
 					if (state.failed) return retval;
 					if ( state.backtracking==0 ) stream_typeDecl.add(typeDecl569.getTree());
 					// AST REWRITE
-					// elements: formalParameterSection, ident, FUNCTION, typeDecl
+					// elements: formalParameterSection, FUNCTION, ident, typeDecl
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -21779,7 +21961,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:441:36: ( formalParameterList )?
 			int alt199=2;
 			int LA199_0 = input.LA(1);
-			if ( (LA199_0==ABSOLUTE||LA199_0==ADD||LA199_0==ANSISTRING||LA199_0==AT||LA199_0==BREAK||LA199_0==CONST||(LA199_0 >= CONTAINS && LA199_0 <= CONTINUE)||LA199_0==DEFAULT||LA199_0==DISPID||(LA199_0 >= DQ && LA199_0 <= DW)||LA199_0==EXIT||LA199_0==EXPORT||LA199_0==FALSE||LA199_0==FINAL||LA199_0==HELPER||(LA199_0 >= IMPLEMENTS && LA199_0 <= INDEX)||LA199_0==LBRACK||LA199_0==LOCAL||LA199_0==MESSAGE||LA199_0==NAME||LA199_0==OBJECT||LA199_0==OPERATOR||LA199_0==OUT||LA199_0==POINTER||(LA199_0 >= READ && LA199_0 <= READONLY)||(LA199_0 >= REFERENCE && LA199_0 <= REGISTER)||LA199_0==REMOVE||LA199_0==STATIC||(LA199_0 >= STORED && LA199_0 <= STRING)||LA199_0==TRUE||LA199_0==TkIdentifier||LA199_0==UNSAFE||(LA199_0 >= VAR && LA199_0 <= VIRTUAL)||(LA199_0 >= WRITE && LA199_0 <= WRITEONLY)||LA199_0==198) ) {
+			if ( (LA199_0==ABSOLUTE||LA199_0==ADD||LA199_0==ANSISTRING||LA199_0==AT||LA199_0==BREAK||LA199_0==CONST||(LA199_0 >= CONTAINS && LA199_0 <= CONTINUE)||LA199_0==DEFAULT||LA199_0==DISPID||(LA199_0 >= DQ && LA199_0 <= DW)||LA199_0==EXIT||LA199_0==EXPORT||LA199_0==FALSE||LA199_0==FINAL||LA199_0==HELPER||(LA199_0 >= IMPLEMENTS && LA199_0 <= INDEX)||LA199_0==LBRACK||LA199_0==LOCAL||LA199_0==MESSAGE||LA199_0==NAME||LA199_0==OBJECT||LA199_0==OPERATOR||LA199_0==OUT||LA199_0==POINTER||LA199_0==PRIVATE||LA199_0==PUBLIC||(LA199_0 >= READ && LA199_0 <= READONLY)||(LA199_0 >= REFERENCE && LA199_0 <= REGISTER)||LA199_0==REMOVE||LA199_0==STATIC||(LA199_0 >= STORED && LA199_0 <= STRING)||LA199_0==TRUE||LA199_0==TkIdentifier||LA199_0==UNSAFE||(LA199_0 >= VAR && LA199_0 <= VIRTUAL)||(LA199_0 >= WRITE && LA199_0 <= WRITEONLY)||LA199_0==198) ) {
 				alt199=1;
 			}
 			switch (alt199) {
@@ -22070,6 +22252,8 @@ public class DelphiParser extends Parser {
 				case OBJECT:
 				case OPERATOR:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -22113,7 +22297,7 @@ public class DelphiParser extends Parser {
 			int LA202_0 = input.LA(1);
 			if ( (LA202_0==OUT) ) {
 				int LA202_1 = input.LA(2);
-				if ( (LA202_1==ABSOLUTE||LA202_1==ADD||LA202_1==ANSISTRING||LA202_1==AT||LA202_1==BREAK||(LA202_1 >= CONTAINS && LA202_1 <= CONTINUE)||LA202_1==DEFAULT||LA202_1==DISPID||(LA202_1 >= DQ && LA202_1 <= DW)||LA202_1==EXIT||LA202_1==EXPORT||LA202_1==FALSE||LA202_1==FINAL||LA202_1==HELPER||(LA202_1 >= IMPLEMENTS && LA202_1 <= INDEX)||LA202_1==LOCAL||LA202_1==MESSAGE||LA202_1==NAME||LA202_1==OBJECT||LA202_1==OPERATOR||LA202_1==OUT||LA202_1==POINTER||(LA202_1 >= READ && LA202_1 <= READONLY)||(LA202_1 >= REFERENCE && LA202_1 <= REGISTER)||LA202_1==REMOVE||LA202_1==STATIC||(LA202_1 >= STORED && LA202_1 <= STRING)||LA202_1==TRUE||LA202_1==TkIdentifier||LA202_1==UNSAFE||(LA202_1 >= VARARGS && LA202_1 <= VIRTUAL)||(LA202_1 >= WRITE && LA202_1 <= WRITEONLY)||LA202_1==198) ) {
+				if ( (LA202_1==ABSOLUTE||LA202_1==ADD||LA202_1==ANSISTRING||LA202_1==AT||LA202_1==BREAK||(LA202_1 >= CONTAINS && LA202_1 <= CONTINUE)||LA202_1==DEFAULT||LA202_1==DISPID||(LA202_1 >= DQ && LA202_1 <= DW)||LA202_1==EXIT||LA202_1==EXPORT||LA202_1==FALSE||LA202_1==FINAL||LA202_1==HELPER||(LA202_1 >= IMPLEMENTS && LA202_1 <= INDEX)||LA202_1==LOCAL||LA202_1==MESSAGE||LA202_1==NAME||LA202_1==OBJECT||LA202_1==OPERATOR||LA202_1==OUT||LA202_1==POINTER||LA202_1==PRIVATE||LA202_1==PUBLIC||(LA202_1 >= READ && LA202_1 <= READONLY)||(LA202_1 >= REFERENCE && LA202_1 <= REGISTER)||LA202_1==REMOVE||LA202_1==STATIC||(LA202_1 >= STORED && LA202_1 <= STRING)||LA202_1==TRUE||LA202_1==TkIdentifier||LA202_1==UNSAFE||(LA202_1 >= VARARGS && LA202_1 <= VIRTUAL)||(LA202_1 >= WRITE && LA202_1 <= WRITEONLY)||LA202_1==198) ) {
 					alt202=1;
 				}
 			}
@@ -22186,7 +22370,7 @@ public class DelphiParser extends Parser {
 			}
 
 			// AST REWRITE
-			// elements: typeDecl, parmType, customAttribute, identListFlat
+			// elements: customAttribute, typeDecl, identListFlat, parmType
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -23056,7 +23240,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:465:62: ( expressionList )?
 					int alt210=2;
 					int LA210_0 = input.LA(1);
-					if ( (LA210_0==ABSOLUTE||(LA210_0 >= ADD && LA210_0 <= ANSISTRING)||LA210_0==AS||(LA210_0 >= AT && LA210_0 <= AT2)||LA210_0==BREAK||LA210_0==COMMA||(LA210_0 >= CONTAINS && LA210_0 <= DEFAULT)||LA210_0==DISPID||LA210_0==DIV||LA210_0==DOT||(LA210_0 >= DQ && LA210_0 <= DW)||LA210_0==EQUAL||LA210_0==EXIT||LA210_0==EXPORT||LA210_0==FALSE||LA210_0==FINAL||(LA210_0 >= FUNCTION && LA210_0 <= GE)||(LA210_0 >= GT && LA210_0 <= HELPER)||(LA210_0 >= IMPLEMENTS && LA210_0 <= INHERITED)||LA210_0==IS||LA210_0==LBRACK||LA210_0==LE||(LA210_0 >= LOCAL && LA210_0 <= NAME)||LA210_0==NIL||(LA210_0 >= NOT && LA210_0 <= OBJECT)||(LA210_0 >= OPERATOR && LA210_0 <= OUT)||(LA210_0 >= PLUS && LA210_0 <= POINTER2)||LA210_0==PROCEDURE||LA210_0==QuotedString||(LA210_0 >= READ && LA210_0 <= READONLY)||(LA210_0 >= REFERENCE && LA210_0 <= REGISTER)||LA210_0==REMOVE||(LA210_0 >= SHL && LA210_0 <= STATIC)||(LA210_0 >= STORED && LA210_0 <= STRING)||LA210_0==TRUE||(LA210_0 >= TkHexNum && LA210_0 <= TkIntNum)||LA210_0==TkRealNum||LA210_0==UNSAFE||(LA210_0 >= VARARGS && LA210_0 <= VIRTUAL)||(LA210_0 >= WRITE && LA210_0 <= WRITEONLY)||(LA210_0 >= XOR && LA210_0 <= 210)) ) {
+					if ( (LA210_0==ABSOLUTE||(LA210_0 >= ADD && LA210_0 <= ANSISTRING)||LA210_0==AS||(LA210_0 >= AT && LA210_0 <= AT2)||LA210_0==BREAK||LA210_0==COMMA||(LA210_0 >= CONTAINS && LA210_0 <= DEFAULT)||LA210_0==DISPID||LA210_0==DIV||LA210_0==DOT||(LA210_0 >= DQ && LA210_0 <= DW)||LA210_0==EQUAL||LA210_0==EXIT||LA210_0==EXPORT||LA210_0==FALSE||LA210_0==FINAL||(LA210_0 >= FUNCTION && LA210_0 <= GE)||(LA210_0 >= GT && LA210_0 <= HELPER)||(LA210_0 >= IMPLEMENTS && LA210_0 <= INHERITED)||LA210_0==IS||LA210_0==LBRACK||LA210_0==LE||(LA210_0 >= LOCAL && LA210_0 <= NAME)||LA210_0==NIL||(LA210_0 >= NOT && LA210_0 <= OBJECT)||(LA210_0 >= OPERATOR && LA210_0 <= OUT)||(LA210_0 >= PLUS && LA210_0 <= PROCEDURE)||LA210_0==PUBLIC||LA210_0==QuotedString||(LA210_0 >= READ && LA210_0 <= READONLY)||(LA210_0 >= REFERENCE && LA210_0 <= REGISTER)||LA210_0==REMOVE||(LA210_0 >= SHL && LA210_0 <= STATIC)||(LA210_0 >= STORED && LA210_0 <= STRING)||LA210_0==TRUE||(LA210_0 >= TkHexNum && LA210_0 <= TkIntNum)||LA210_0==TkRealNum||LA210_0==UNSAFE||(LA210_0 >= VARARGS && LA210_0 <= VIRTUAL)||(LA210_0 >= WRITE && LA210_0 <= WRITEONLY)||(LA210_0 >= XOR && LA210_0 <= 210)) ) {
 						alt210=1;
 					}
 					else if ( (LA210_0==RPAREN) ) {
@@ -23091,7 +23275,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_RBRACK.add(char_literal604);
 
 			// AST REWRITE
-			// elements: RBRACK, LBRACK, RPAREN, LPAREN, expressionList, customAttributeIdent
+			// elements: RBRACK, LPAREN, LBRACK, customAttributeIdent, expressionList, RPAREN
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -23111,7 +23295,7 @@ public class DelphiParser extends Parser {
 				adaptor.addChild(root_1, stream_LBRACK.nextNode());
 				adaptor.addChild(root_1, stream_customAttributeIdent.nextTree());
 				// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:465:139: ( '(' ( expressionList )? ')' )?
-				if ( stream_RPAREN.hasNext()||stream_LPAREN.hasNext()||stream_expressionList.hasNext() ) {
+				if ( stream_LPAREN.hasNext()||stream_expressionList.hasNext()||stream_RPAREN.hasNext() ) {
 					adaptor.addChild(root_1, stream_LPAREN.nextNode());
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:465:144: ( expressionList )?
 					if ( stream_expressionList.hasNext() ) {
@@ -23121,9 +23305,9 @@ public class DelphiParser extends Parser {
 
 					adaptor.addChild(root_1, stream_RPAREN.nextNode());
 				}
-				stream_RPAREN.reset();
 				stream_LPAREN.reset();
 				stream_expressionList.reset();
+				stream_RPAREN.reset();
 
 				adaptor.addChild(root_1, stream_RBRACK.nextNode());
 				adaptor.addChild(root_0, root_1);
@@ -24815,7 +24999,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:503:36: ( expression ( ( ',' | '..' ) expression )* )?
 			int alt231=2;
 			int LA231_0 = input.LA(1);
-			if ( (LA231_0==ABSOLUTE||(LA231_0 >= ADD && LA231_0 <= ANSISTRING)||LA231_0==AS||(LA231_0 >= AT && LA231_0 <= AT2)||LA231_0==BREAK||LA231_0==COMMA||(LA231_0 >= CONTAINS && LA231_0 <= DEFAULT)||LA231_0==DISPID||LA231_0==DIV||(LA231_0 >= DOT && LA231_0 <= DOTDOT)||(LA231_0 >= DQ && LA231_0 <= DW)||LA231_0==EQUAL||LA231_0==EXIT||LA231_0==EXPORT||LA231_0==FALSE||LA231_0==FINAL||(LA231_0 >= FUNCTION && LA231_0 <= GE)||(LA231_0 >= GT && LA231_0 <= HELPER)||(LA231_0 >= IMPLEMENTS && LA231_0 <= INHERITED)||LA231_0==IS||LA231_0==LBRACK||LA231_0==LE||(LA231_0 >= LOCAL && LA231_0 <= NAME)||LA231_0==NIL||(LA231_0 >= NOT && LA231_0 <= OBJECT)||(LA231_0 >= OPERATOR && LA231_0 <= OUT)||(LA231_0 >= PLUS && LA231_0 <= POINTER2)||LA231_0==PROCEDURE||LA231_0==QuotedString||(LA231_0 >= READ && LA231_0 <= READONLY)||(LA231_0 >= REFERENCE && LA231_0 <= REGISTER)||LA231_0==REMOVE||(LA231_0 >= SHL && LA231_0 <= STATIC)||(LA231_0 >= STORED && LA231_0 <= STRING)||LA231_0==TRUE||(LA231_0 >= TkHexNum && LA231_0 <= TkIntNum)||LA231_0==TkRealNum||LA231_0==UNSAFE||(LA231_0 >= VARARGS && LA231_0 <= VIRTUAL)||(LA231_0 >= WRITE && LA231_0 <= WRITEONLY)||(LA231_0 >= XOR && LA231_0 <= 210)) ) {
+			if ( (LA231_0==ABSOLUTE||(LA231_0 >= ADD && LA231_0 <= ANSISTRING)||LA231_0==AS||(LA231_0 >= AT && LA231_0 <= AT2)||LA231_0==BREAK||LA231_0==COMMA||(LA231_0 >= CONTAINS && LA231_0 <= DEFAULT)||LA231_0==DISPID||LA231_0==DIV||(LA231_0 >= DOT && LA231_0 <= DOTDOT)||(LA231_0 >= DQ && LA231_0 <= DW)||LA231_0==EQUAL||LA231_0==EXIT||LA231_0==EXPORT||LA231_0==FALSE||LA231_0==FINAL||(LA231_0 >= FUNCTION && LA231_0 <= GE)||(LA231_0 >= GT && LA231_0 <= HELPER)||(LA231_0 >= IMPLEMENTS && LA231_0 <= INHERITED)||LA231_0==IS||LA231_0==LBRACK||LA231_0==LE||(LA231_0 >= LOCAL && LA231_0 <= NAME)||LA231_0==NIL||(LA231_0 >= NOT && LA231_0 <= OBJECT)||(LA231_0 >= OPERATOR && LA231_0 <= OUT)||(LA231_0 >= PLUS && LA231_0 <= PROCEDURE)||LA231_0==PUBLIC||LA231_0==QuotedString||(LA231_0 >= READ && LA231_0 <= READONLY)||(LA231_0 >= REFERENCE && LA231_0 <= REGISTER)||LA231_0==REMOVE||(LA231_0 >= SHL && LA231_0 <= STATIC)||(LA231_0 >= STORED && LA231_0 <= STRING)||LA231_0==TRUE||(LA231_0 >= TkHexNum && LA231_0 <= TkIntNum)||LA231_0==TkRealNum||LA231_0==UNSAFE||(LA231_0 >= VARARGS && LA231_0 <= VIRTUAL)||(LA231_0 >= WRITE && LA231_0 <= WRITEONLY)||(LA231_0 >= XOR && LA231_0 <= 210)) ) {
 				alt231=1;
 			}
 			else if ( (LA231_0==RBRACK) ) {
@@ -25169,7 +25353,7 @@ public class DelphiParser extends Parser {
 					}
 					}
 					break;
-				case OPERATOR:
+				case PRIVATE:
 					{
 					int LA235_24 = input.LA(2);
 					if ( (synpred324_Delphi()) ) {
@@ -25177,9 +25361,25 @@ public class DelphiParser extends Parser {
 					}
 					}
 					break;
-				case AT:
+				case PUBLIC:
 					{
 					int LA235_25 = input.LA(2);
+					if ( (synpred324_Delphi()) ) {
+						alt235=1;
+					}
+					}
+					break;
+				case OPERATOR:
+					{
+					int LA235_26 = input.LA(2);
+					if ( (synpred324_Delphi()) ) {
+						alt235=1;
+					}
+					}
+					break;
+				case AT:
+					{
+					int LA235_27 = input.LA(2);
 					if ( (synpred324_Delphi()) ) {
 						alt235=1;
 					}
@@ -25206,7 +25406,7 @@ public class DelphiParser extends Parser {
 				case VARIANT:
 				case VIRTUAL:
 					{
-					int LA235_26 = input.LA(2);
+					int LA235_28 = input.LA(2);
 					if ( (synpred324_Delphi()) ) {
 						alt235=1;
 					}
@@ -25297,6 +25497,8 @@ public class DelphiParser extends Parser {
 					case OPERATOR:
 					case OUT:
 					case POINTER:
+					case PRIVATE:
+					case PUBLIC:
 					case READ:
 					case READONLY:
 					case REFERENCE:
@@ -25658,7 +25860,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:513:36: ( expression ( colonConstruct )? ( ',' expression ( colonConstruct )? )* )?
 					int alt241=2;
 					int LA241_0 = input.LA(1);
-					if ( (LA241_0==ABSOLUTE||(LA241_0 >= ADD && LA241_0 <= ANSISTRING)||LA241_0==AS||(LA241_0 >= AT && LA241_0 <= AT2)||LA241_0==BREAK||(LA241_0 >= COLON && LA241_0 <= COMMA)||(LA241_0 >= CONTAINS && LA241_0 <= DEFAULT)||LA241_0==DISPID||LA241_0==DIV||LA241_0==DOT||(LA241_0 >= DQ && LA241_0 <= DW)||LA241_0==EQUAL||LA241_0==EXIT||LA241_0==EXPORT||LA241_0==FALSE||LA241_0==FINAL||(LA241_0 >= FUNCTION && LA241_0 <= GE)||(LA241_0 >= GT && LA241_0 <= HELPER)||(LA241_0 >= IMPLEMENTS && LA241_0 <= INHERITED)||LA241_0==IS||LA241_0==LBRACK||LA241_0==LE||(LA241_0 >= LOCAL && LA241_0 <= NAME)||LA241_0==NIL||(LA241_0 >= NOT && LA241_0 <= OBJECT)||(LA241_0 >= OPERATOR && LA241_0 <= OUT)||(LA241_0 >= PLUS && LA241_0 <= POINTER2)||LA241_0==PROCEDURE||LA241_0==QuotedString||(LA241_0 >= READ && LA241_0 <= READONLY)||(LA241_0 >= REFERENCE && LA241_0 <= REGISTER)||LA241_0==REMOVE||(LA241_0 >= SHL && LA241_0 <= STATIC)||(LA241_0 >= STORED && LA241_0 <= STRING)||LA241_0==TRUE||(LA241_0 >= TkHexNum && LA241_0 <= TkIntNum)||LA241_0==TkRealNum||LA241_0==UNSAFE||(LA241_0 >= VARARGS && LA241_0 <= VIRTUAL)||(LA241_0 >= WRITE && LA241_0 <= WRITEONLY)||(LA241_0 >= XOR && LA241_0 <= 210)) ) {
+					if ( (LA241_0==ABSOLUTE||(LA241_0 >= ADD && LA241_0 <= ANSISTRING)||LA241_0==AS||(LA241_0 >= AT && LA241_0 <= AT2)||LA241_0==BREAK||(LA241_0 >= COLON && LA241_0 <= COMMA)||(LA241_0 >= CONTAINS && LA241_0 <= DEFAULT)||LA241_0==DISPID||LA241_0==DIV||LA241_0==DOT||(LA241_0 >= DQ && LA241_0 <= DW)||LA241_0==EQUAL||LA241_0==EXIT||LA241_0==EXPORT||LA241_0==FALSE||LA241_0==FINAL||(LA241_0 >= FUNCTION && LA241_0 <= GE)||(LA241_0 >= GT && LA241_0 <= HELPER)||(LA241_0 >= IMPLEMENTS && LA241_0 <= INHERITED)||LA241_0==IS||LA241_0==LBRACK||LA241_0==LE||(LA241_0 >= LOCAL && LA241_0 <= NAME)||LA241_0==NIL||(LA241_0 >= NOT && LA241_0 <= OBJECT)||(LA241_0 >= OPERATOR && LA241_0 <= OUT)||(LA241_0 >= PLUS && LA241_0 <= PROCEDURE)||LA241_0==PUBLIC||LA241_0==QuotedString||(LA241_0 >= READ && LA241_0 <= READONLY)||(LA241_0 >= REFERENCE && LA241_0 <= REGISTER)||LA241_0==REMOVE||(LA241_0 >= SHL && LA241_0 <= STATIC)||(LA241_0 >= STORED && LA241_0 <= STRING)||LA241_0==TRUE||(LA241_0 >= TkHexNum && LA241_0 <= TkIntNum)||LA241_0==TkRealNum||LA241_0==UNSAFE||(LA241_0 >= VARARGS && LA241_0 <= VIRTUAL)||(LA241_0 >= WRITE && LA241_0 <= WRITEONLY)||(LA241_0 >= XOR && LA241_0 <= 210)) ) {
 						alt241=1;
 					}
 					else if ( (LA241_0==RPAREN) ) {
@@ -25754,7 +25956,7 @@ public class DelphiParser extends Parser {
 					if ( state.backtracking==0 ) stream_RPAREN.add(char_literal699);
 
 					// AST REWRITE
-					// elements: expression, colonConstruct, expression, colonConstruct, RPAREN, LPAREN
+					// elements: expression, LPAREN, expression, colonConstruct, colonConstruct, RPAREN
 					// token labels: 
 					// rule labels: retval
 					// token list labels: 
@@ -25769,7 +25971,7 @@ public class DelphiParser extends Parser {
 					{
 						adaptor.addChild(root_0, stream_LPAREN.nextNode());
 						// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:513:115: ( expression ( colonConstruct )? ( expression ( colonConstruct )? )* )?
-						if ( stream_expression.hasNext()||stream_colonConstruct.hasNext()||stream_expression.hasNext() ) {
+						if ( stream_expression.hasNext()||stream_expression.hasNext()||stream_colonConstruct.hasNext() ) {
 							adaptor.addChild(root_0, stream_expression.nextTree());
 							// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:513:127: ( colonConstruct )?
 							if ( stream_colonConstruct.hasNext() ) {
@@ -25791,8 +25993,8 @@ public class DelphiParser extends Parser {
 
 						}
 						stream_expression.reset();
-						stream_colonConstruct.reset();
 						stream_expression.reset();
+						stream_colonConstruct.reset();
 
 						adaptor.addChild(root_0, stream_RPAREN.nextNode());
 					}
@@ -26249,7 +26451,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_11==EOF||LA245_11==ABSOLUTE||(LA245_11 >= ADD && LA245_11 <= ANSISTRING)||LA245_11==AS||(LA245_11 >= ASSIGN && LA245_11 <= AT2)||LA245_11==BREAK||LA245_11==COMMA||(LA245_11 >= CONTAINS && LA245_11 <= DEFAULT)||LA245_11==DISPID||LA245_11==DIV||(LA245_11 >= DOT && LA245_11 <= DOTDOT)||(LA245_11 >= DQ && LA245_11 <= DW)||(LA245_11 >= ELSE && LA245_11 <= EXIT)||LA245_11==EXPORT||LA245_11==FALSE||(LA245_11 >= FINAL && LA245_11 <= FINALLY)||(LA245_11 >= FUNCTION && LA245_11 <= GE)||(LA245_11 >= GT && LA245_11 <= HELPER)||(LA245_11 >= IMPLEMENTS && LA245_11 <= INHERITED)||LA245_11==IS||LA245_11==LBRACK||LA245_11==LE||(LA245_11 >= LOCAL && LA245_11 <= NAME)||LA245_11==NIL||(LA245_11 >= NOT && LA245_11 <= OBJECT)||(LA245_11 >= ON && LA245_11 <= OUT)||(LA245_11 >= PLUS && LA245_11 <= POINTER2)||LA245_11==PROCEDURE||LA245_11==QuotedString||(LA245_11 >= READ && LA245_11 <= READONLY)||(LA245_11 >= REFERENCE && LA245_11 <= REGISTER)||LA245_11==REMOVE||LA245_11==SEMI||(LA245_11 >= SHL && LA245_11 <= STATIC)||(LA245_11 >= STORED && LA245_11 <= STRING)||LA245_11==TRUE||(LA245_11 >= TkHexNum && LA245_11 <= TkIntNum)||LA245_11==TkRealNum||(LA245_11 >= UNSAFE && LA245_11 <= UNTIL)||(LA245_11 >= VARARGS && LA245_11 <= VIRTUAL)||(LA245_11 >= WRITE && LA245_11 <= WRITEONLY)||(LA245_11 >= XOR && LA245_11 <= 210)) ) {
+				else if ( (LA245_11==EOF||LA245_11==ABSOLUTE||(LA245_11 >= ADD && LA245_11 <= ANSISTRING)||LA245_11==AS||(LA245_11 >= ASSIGN && LA245_11 <= AT2)||LA245_11==BREAK||LA245_11==COMMA||(LA245_11 >= CONTAINS && LA245_11 <= DEFAULT)||LA245_11==DISPID||LA245_11==DIV||(LA245_11 >= DOT && LA245_11 <= DOTDOT)||(LA245_11 >= DQ && LA245_11 <= DW)||(LA245_11 >= ELSE && LA245_11 <= EXIT)||LA245_11==EXPORT||LA245_11==FALSE||(LA245_11 >= FINAL && LA245_11 <= FINALLY)||(LA245_11 >= FUNCTION && LA245_11 <= GE)||(LA245_11 >= GT && LA245_11 <= HELPER)||(LA245_11 >= IMPLEMENTS && LA245_11 <= INHERITED)||LA245_11==IS||LA245_11==LBRACK||LA245_11==LE||(LA245_11 >= LOCAL && LA245_11 <= NAME)||LA245_11==NIL||(LA245_11 >= NOT && LA245_11 <= OBJECT)||(LA245_11 >= ON && LA245_11 <= OUT)||(LA245_11 >= PLUS && LA245_11 <= PROCEDURE)||LA245_11==PUBLIC||LA245_11==QuotedString||(LA245_11 >= READ && LA245_11 <= READONLY)||(LA245_11 >= REFERENCE && LA245_11 <= REGISTER)||LA245_11==REMOVE||LA245_11==SEMI||(LA245_11 >= SHL && LA245_11 <= STATIC)||(LA245_11 >= STORED && LA245_11 <= STRING)||LA245_11==TRUE||(LA245_11 >= TkHexNum && LA245_11 <= TkIntNum)||LA245_11==TkRealNum||(LA245_11 >= UNSAFE && LA245_11 <= UNTIL)||(LA245_11 >= VARARGS && LA245_11 <= VIRTUAL)||(LA245_11 >= WRITE && LA245_11 <= WRITEONLY)||(LA245_11 >= XOR && LA245_11 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26345,7 +26547,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_14==EOF||LA245_14==ABSOLUTE||(LA245_14 >= ADD && LA245_14 <= ANSISTRING)||LA245_14==AS||(LA245_14 >= ASSIGN && LA245_14 <= AT2)||LA245_14==BREAK||LA245_14==COMMA||(LA245_14 >= CONTAINS && LA245_14 <= DEFAULT)||LA245_14==DISPID||LA245_14==DIV||(LA245_14 >= DOT && LA245_14 <= DOTDOT)||(LA245_14 >= DQ && LA245_14 <= DW)||(LA245_14 >= ELSE && LA245_14 <= EXIT)||LA245_14==EXPORT||LA245_14==FALSE||(LA245_14 >= FINAL && LA245_14 <= FINALLY)||(LA245_14 >= FUNCTION && LA245_14 <= GE)||(LA245_14 >= GT && LA245_14 <= HELPER)||(LA245_14 >= IMPLEMENTS && LA245_14 <= INHERITED)||LA245_14==IS||LA245_14==LBRACK||LA245_14==LE||(LA245_14 >= LOCAL && LA245_14 <= NAME)||LA245_14==NIL||(LA245_14 >= NOT && LA245_14 <= OBJECT)||(LA245_14 >= ON && LA245_14 <= OUT)||(LA245_14 >= PLUS && LA245_14 <= POINTER2)||LA245_14==PROCEDURE||LA245_14==QuotedString||(LA245_14 >= READ && LA245_14 <= READONLY)||(LA245_14 >= REFERENCE && LA245_14 <= REGISTER)||LA245_14==REMOVE||LA245_14==SEMI||(LA245_14 >= SHL && LA245_14 <= STATIC)||(LA245_14 >= STORED && LA245_14 <= STRING)||LA245_14==TRUE||(LA245_14 >= TkHexNum && LA245_14 <= TkIntNum)||LA245_14==TkRealNum||(LA245_14 >= UNSAFE && LA245_14 <= UNTIL)||(LA245_14 >= VARARGS && LA245_14 <= VIRTUAL)||(LA245_14 >= WRITE && LA245_14 <= WRITEONLY)||(LA245_14 >= XOR && LA245_14 <= 210)) ) {
+				else if ( (LA245_14==EOF||LA245_14==ABSOLUTE||(LA245_14 >= ADD && LA245_14 <= ANSISTRING)||LA245_14==AS||(LA245_14 >= ASSIGN && LA245_14 <= AT2)||LA245_14==BREAK||LA245_14==COMMA||(LA245_14 >= CONTAINS && LA245_14 <= DEFAULT)||LA245_14==DISPID||LA245_14==DIV||(LA245_14 >= DOT && LA245_14 <= DOTDOT)||(LA245_14 >= DQ && LA245_14 <= DW)||(LA245_14 >= ELSE && LA245_14 <= EXIT)||LA245_14==EXPORT||LA245_14==FALSE||(LA245_14 >= FINAL && LA245_14 <= FINALLY)||(LA245_14 >= FUNCTION && LA245_14 <= GE)||(LA245_14 >= GT && LA245_14 <= HELPER)||(LA245_14 >= IMPLEMENTS && LA245_14 <= INHERITED)||LA245_14==IS||LA245_14==LBRACK||LA245_14==LE||(LA245_14 >= LOCAL && LA245_14 <= NAME)||LA245_14==NIL||(LA245_14 >= NOT && LA245_14 <= OBJECT)||(LA245_14 >= ON && LA245_14 <= OUT)||(LA245_14 >= PLUS && LA245_14 <= PROCEDURE)||LA245_14==PUBLIC||LA245_14==QuotedString||(LA245_14 >= READ && LA245_14 <= READONLY)||(LA245_14 >= REFERENCE && LA245_14 <= REGISTER)||LA245_14==REMOVE||LA245_14==SEMI||(LA245_14 >= SHL && LA245_14 <= STATIC)||(LA245_14 >= STORED && LA245_14 <= STRING)||LA245_14==TRUE||(LA245_14 >= TkHexNum && LA245_14 <= TkIntNum)||LA245_14==TkRealNum||(LA245_14 >= UNSAFE && LA245_14 <= UNTIL)||(LA245_14 >= VARARGS && LA245_14 <= VIRTUAL)||(LA245_14 >= WRITE && LA245_14 <= WRITEONLY)||(LA245_14 >= XOR && LA245_14 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26441,7 +26643,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_16==EOF||LA245_16==ABSOLUTE||(LA245_16 >= ADD && LA245_16 <= ANSISTRING)||LA245_16==AS||(LA245_16 >= ASSIGN && LA245_16 <= AT2)||LA245_16==BREAK||LA245_16==COMMA||(LA245_16 >= CONTAINS && LA245_16 <= DEFAULT)||LA245_16==DISPID||LA245_16==DIV||(LA245_16 >= DOT && LA245_16 <= DOTDOT)||(LA245_16 >= DQ && LA245_16 <= DW)||(LA245_16 >= ELSE && LA245_16 <= EXIT)||LA245_16==EXPORT||LA245_16==FALSE||(LA245_16 >= FINAL && LA245_16 <= FINALLY)||(LA245_16 >= FUNCTION && LA245_16 <= GE)||(LA245_16 >= GT && LA245_16 <= HELPER)||(LA245_16 >= IMPLEMENTS && LA245_16 <= INHERITED)||LA245_16==IS||LA245_16==LBRACK||LA245_16==LE||(LA245_16 >= LOCAL && LA245_16 <= NAME)||LA245_16==NIL||(LA245_16 >= NOT && LA245_16 <= OBJECT)||(LA245_16 >= ON && LA245_16 <= OUT)||(LA245_16 >= PLUS && LA245_16 <= POINTER2)||LA245_16==PROCEDURE||LA245_16==QuotedString||(LA245_16 >= READ && LA245_16 <= READONLY)||(LA245_16 >= REFERENCE && LA245_16 <= REGISTER)||LA245_16==REMOVE||LA245_16==SEMI||(LA245_16 >= SHL && LA245_16 <= STATIC)||(LA245_16 >= STORED && LA245_16 <= STRING)||LA245_16==TRUE||(LA245_16 >= TkHexNum && LA245_16 <= TkIntNum)||LA245_16==TkRealNum||(LA245_16 >= UNSAFE && LA245_16 <= UNTIL)||(LA245_16 >= VARARGS && LA245_16 <= VIRTUAL)||(LA245_16 >= WRITE && LA245_16 <= WRITEONLY)||(LA245_16 >= XOR && LA245_16 <= 210)) ) {
+				else if ( (LA245_16==EOF||LA245_16==ABSOLUTE||(LA245_16 >= ADD && LA245_16 <= ANSISTRING)||LA245_16==AS||(LA245_16 >= ASSIGN && LA245_16 <= AT2)||LA245_16==BREAK||LA245_16==COMMA||(LA245_16 >= CONTAINS && LA245_16 <= DEFAULT)||LA245_16==DISPID||LA245_16==DIV||(LA245_16 >= DOT && LA245_16 <= DOTDOT)||(LA245_16 >= DQ && LA245_16 <= DW)||(LA245_16 >= ELSE && LA245_16 <= EXIT)||LA245_16==EXPORT||LA245_16==FALSE||(LA245_16 >= FINAL && LA245_16 <= FINALLY)||(LA245_16 >= FUNCTION && LA245_16 <= GE)||(LA245_16 >= GT && LA245_16 <= HELPER)||(LA245_16 >= IMPLEMENTS && LA245_16 <= INHERITED)||LA245_16==IS||LA245_16==LBRACK||LA245_16==LE||(LA245_16 >= LOCAL && LA245_16 <= NAME)||LA245_16==NIL||(LA245_16 >= NOT && LA245_16 <= OBJECT)||(LA245_16 >= ON && LA245_16 <= OUT)||(LA245_16 >= PLUS && LA245_16 <= PROCEDURE)||LA245_16==PUBLIC||LA245_16==QuotedString||(LA245_16 >= READ && LA245_16 <= READONLY)||(LA245_16 >= REFERENCE && LA245_16 <= REGISTER)||LA245_16==REMOVE||LA245_16==SEMI||(LA245_16 >= SHL && LA245_16 <= STATIC)||(LA245_16 >= STORED && LA245_16 <= STRING)||LA245_16==TRUE||(LA245_16 >= TkHexNum && LA245_16 <= TkIntNum)||LA245_16==TkRealNum||(LA245_16 >= UNSAFE && LA245_16 <= UNTIL)||(LA245_16 >= VARARGS && LA245_16 <= VIRTUAL)||(LA245_16 >= WRITE && LA245_16 <= WRITEONLY)||(LA245_16 >= XOR && LA245_16 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26473,7 +26675,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_17==EOF||LA245_17==ABSOLUTE||(LA245_17 >= ADD && LA245_17 <= ANSISTRING)||LA245_17==AS||(LA245_17 >= ASSIGN && LA245_17 <= AT2)||LA245_17==BREAK||LA245_17==COMMA||(LA245_17 >= CONTAINS && LA245_17 <= DEFAULT)||LA245_17==DISPID||LA245_17==DIV||(LA245_17 >= DOT && LA245_17 <= DOTDOT)||(LA245_17 >= DQ && LA245_17 <= DW)||(LA245_17 >= ELSE && LA245_17 <= EXIT)||LA245_17==EXPORT||LA245_17==FALSE||(LA245_17 >= FINAL && LA245_17 <= FINALLY)||(LA245_17 >= FUNCTION && LA245_17 <= GE)||(LA245_17 >= GT && LA245_17 <= HELPER)||(LA245_17 >= IMPLEMENTS && LA245_17 <= INHERITED)||LA245_17==IS||LA245_17==LBRACK||LA245_17==LE||(LA245_17 >= LOCAL && LA245_17 <= NAME)||LA245_17==NIL||(LA245_17 >= NOT && LA245_17 <= OBJECT)||(LA245_17 >= ON && LA245_17 <= OUT)||(LA245_17 >= PLUS && LA245_17 <= POINTER2)||LA245_17==PROCEDURE||LA245_17==QuotedString||(LA245_17 >= READ && LA245_17 <= READONLY)||(LA245_17 >= REFERENCE && LA245_17 <= REGISTER)||LA245_17==REMOVE||LA245_17==SEMI||(LA245_17 >= SHL && LA245_17 <= STATIC)||(LA245_17 >= STORED && LA245_17 <= STRING)||LA245_17==TRUE||(LA245_17 >= TkHexNum && LA245_17 <= TkIntNum)||LA245_17==TkRealNum||(LA245_17 >= UNSAFE && LA245_17 <= UNTIL)||(LA245_17 >= VARARGS && LA245_17 <= VIRTUAL)||(LA245_17 >= WRITE && LA245_17 <= WRITEONLY)||(LA245_17 >= XOR && LA245_17 <= 210)) ) {
+				else if ( (LA245_17==EOF||LA245_17==ABSOLUTE||(LA245_17 >= ADD && LA245_17 <= ANSISTRING)||LA245_17==AS||(LA245_17 >= ASSIGN && LA245_17 <= AT2)||LA245_17==BREAK||LA245_17==COMMA||(LA245_17 >= CONTAINS && LA245_17 <= DEFAULT)||LA245_17==DISPID||LA245_17==DIV||(LA245_17 >= DOT && LA245_17 <= DOTDOT)||(LA245_17 >= DQ && LA245_17 <= DW)||(LA245_17 >= ELSE && LA245_17 <= EXIT)||LA245_17==EXPORT||LA245_17==FALSE||(LA245_17 >= FINAL && LA245_17 <= FINALLY)||(LA245_17 >= FUNCTION && LA245_17 <= GE)||(LA245_17 >= GT && LA245_17 <= HELPER)||(LA245_17 >= IMPLEMENTS && LA245_17 <= INHERITED)||LA245_17==IS||LA245_17==LBRACK||LA245_17==LE||(LA245_17 >= LOCAL && LA245_17 <= NAME)||LA245_17==NIL||(LA245_17 >= NOT && LA245_17 <= OBJECT)||(LA245_17 >= ON && LA245_17 <= OUT)||(LA245_17 >= PLUS && LA245_17 <= PROCEDURE)||LA245_17==PUBLIC||LA245_17==QuotedString||(LA245_17 >= READ && LA245_17 <= READONLY)||(LA245_17 >= REFERENCE && LA245_17 <= REGISTER)||LA245_17==REMOVE||LA245_17==SEMI||(LA245_17 >= SHL && LA245_17 <= STATIC)||(LA245_17 >= STORED && LA245_17 <= STRING)||LA245_17==TRUE||(LA245_17 >= TkHexNum && LA245_17 <= TkIntNum)||LA245_17==TkRealNum||(LA245_17 >= UNSAFE && LA245_17 <= UNTIL)||(LA245_17 >= VARARGS && LA245_17 <= VIRTUAL)||(LA245_17 >= WRITE && LA245_17 <= WRITEONLY)||(LA245_17 >= XOR && LA245_17 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26505,7 +26707,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_18==EOF||LA245_18==ABSOLUTE||(LA245_18 >= ADD && LA245_18 <= ANSISTRING)||LA245_18==AS||(LA245_18 >= ASSIGN && LA245_18 <= AT2)||LA245_18==BREAK||LA245_18==COMMA||(LA245_18 >= CONTAINS && LA245_18 <= DEFAULT)||LA245_18==DISPID||LA245_18==DIV||(LA245_18 >= DOT && LA245_18 <= DOTDOT)||(LA245_18 >= DQ && LA245_18 <= DW)||(LA245_18 >= ELSE && LA245_18 <= EXIT)||LA245_18==EXPORT||LA245_18==FALSE||(LA245_18 >= FINAL && LA245_18 <= FINALLY)||(LA245_18 >= FUNCTION && LA245_18 <= GE)||(LA245_18 >= GT && LA245_18 <= HELPER)||(LA245_18 >= IMPLEMENTS && LA245_18 <= INHERITED)||LA245_18==IS||LA245_18==LBRACK||LA245_18==LE||(LA245_18 >= LOCAL && LA245_18 <= NAME)||LA245_18==NIL||(LA245_18 >= NOT && LA245_18 <= OBJECT)||(LA245_18 >= ON && LA245_18 <= OUT)||(LA245_18 >= PLUS && LA245_18 <= POINTER2)||LA245_18==PROCEDURE||LA245_18==QuotedString||(LA245_18 >= READ && LA245_18 <= READONLY)||(LA245_18 >= REFERENCE && LA245_18 <= REGISTER)||LA245_18==REMOVE||LA245_18==SEMI||(LA245_18 >= SHL && LA245_18 <= STATIC)||(LA245_18 >= STORED && LA245_18 <= STRING)||LA245_18==TRUE||(LA245_18 >= TkHexNum && LA245_18 <= TkIntNum)||LA245_18==TkRealNum||(LA245_18 >= UNSAFE && LA245_18 <= UNTIL)||(LA245_18 >= VARARGS && LA245_18 <= VIRTUAL)||(LA245_18 >= WRITE && LA245_18 <= WRITEONLY)||(LA245_18 >= XOR && LA245_18 <= 210)) ) {
+				else if ( (LA245_18==EOF||LA245_18==ABSOLUTE||(LA245_18 >= ADD && LA245_18 <= ANSISTRING)||LA245_18==AS||(LA245_18 >= ASSIGN && LA245_18 <= AT2)||LA245_18==BREAK||LA245_18==COMMA||(LA245_18 >= CONTAINS && LA245_18 <= DEFAULT)||LA245_18==DISPID||LA245_18==DIV||(LA245_18 >= DOT && LA245_18 <= DOTDOT)||(LA245_18 >= DQ && LA245_18 <= DW)||(LA245_18 >= ELSE && LA245_18 <= EXIT)||LA245_18==EXPORT||LA245_18==FALSE||(LA245_18 >= FINAL && LA245_18 <= FINALLY)||(LA245_18 >= FUNCTION && LA245_18 <= GE)||(LA245_18 >= GT && LA245_18 <= HELPER)||(LA245_18 >= IMPLEMENTS && LA245_18 <= INHERITED)||LA245_18==IS||LA245_18==LBRACK||LA245_18==LE||(LA245_18 >= LOCAL && LA245_18 <= NAME)||LA245_18==NIL||(LA245_18 >= NOT && LA245_18 <= OBJECT)||(LA245_18 >= ON && LA245_18 <= OUT)||(LA245_18 >= PLUS && LA245_18 <= PROCEDURE)||LA245_18==PUBLIC||LA245_18==QuotedString||(LA245_18 >= READ && LA245_18 <= READONLY)||(LA245_18 >= REFERENCE && LA245_18 <= REGISTER)||LA245_18==REMOVE||LA245_18==SEMI||(LA245_18 >= SHL && LA245_18 <= STATIC)||(LA245_18 >= STORED && LA245_18 <= STRING)||LA245_18==TRUE||(LA245_18 >= TkHexNum && LA245_18 <= TkIntNum)||LA245_18==TkRealNum||(LA245_18 >= UNSAFE && LA245_18 <= UNTIL)||(LA245_18 >= VARARGS && LA245_18 <= VIRTUAL)||(LA245_18 >= WRITE && LA245_18 <= WRITEONLY)||(LA245_18 >= XOR && LA245_18 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26537,7 +26739,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_19==EOF||LA245_19==ABSOLUTE||(LA245_19 >= ADD && LA245_19 <= ANSISTRING)||LA245_19==AS||(LA245_19 >= ASSIGN && LA245_19 <= AT2)||LA245_19==BREAK||LA245_19==COMMA||(LA245_19 >= CONTAINS && LA245_19 <= DEFAULT)||LA245_19==DISPID||LA245_19==DIV||(LA245_19 >= DOT && LA245_19 <= DOTDOT)||(LA245_19 >= DQ && LA245_19 <= DW)||(LA245_19 >= ELSE && LA245_19 <= EXIT)||LA245_19==EXPORT||LA245_19==FALSE||(LA245_19 >= FINAL && LA245_19 <= FINALLY)||(LA245_19 >= FUNCTION && LA245_19 <= GE)||(LA245_19 >= GT && LA245_19 <= HELPER)||(LA245_19 >= IMPLEMENTS && LA245_19 <= INHERITED)||LA245_19==IS||LA245_19==LBRACK||LA245_19==LE||(LA245_19 >= LOCAL && LA245_19 <= NAME)||LA245_19==NIL||(LA245_19 >= NOT && LA245_19 <= OBJECT)||(LA245_19 >= ON && LA245_19 <= OUT)||(LA245_19 >= PLUS && LA245_19 <= POINTER2)||LA245_19==PROCEDURE||LA245_19==QuotedString||(LA245_19 >= READ && LA245_19 <= READONLY)||(LA245_19 >= REFERENCE && LA245_19 <= REGISTER)||LA245_19==REMOVE||LA245_19==SEMI||(LA245_19 >= SHL && LA245_19 <= STATIC)||(LA245_19 >= STORED && LA245_19 <= STRING)||LA245_19==TRUE||(LA245_19 >= TkHexNum && LA245_19 <= TkIntNum)||LA245_19==TkRealNum||(LA245_19 >= UNSAFE && LA245_19 <= UNTIL)||(LA245_19 >= VARARGS && LA245_19 <= VIRTUAL)||(LA245_19 >= WRITE && LA245_19 <= WRITEONLY)||(LA245_19 >= XOR && LA245_19 <= 210)) ) {
+				else if ( (LA245_19==EOF||LA245_19==ABSOLUTE||(LA245_19 >= ADD && LA245_19 <= ANSISTRING)||LA245_19==AS||(LA245_19 >= ASSIGN && LA245_19 <= AT2)||LA245_19==BREAK||LA245_19==COMMA||(LA245_19 >= CONTAINS && LA245_19 <= DEFAULT)||LA245_19==DISPID||LA245_19==DIV||(LA245_19 >= DOT && LA245_19 <= DOTDOT)||(LA245_19 >= DQ && LA245_19 <= DW)||(LA245_19 >= ELSE && LA245_19 <= EXIT)||LA245_19==EXPORT||LA245_19==FALSE||(LA245_19 >= FINAL && LA245_19 <= FINALLY)||(LA245_19 >= FUNCTION && LA245_19 <= GE)||(LA245_19 >= GT && LA245_19 <= HELPER)||(LA245_19 >= IMPLEMENTS && LA245_19 <= INHERITED)||LA245_19==IS||LA245_19==LBRACK||LA245_19==LE||(LA245_19 >= LOCAL && LA245_19 <= NAME)||LA245_19==NIL||(LA245_19 >= NOT && LA245_19 <= OBJECT)||(LA245_19 >= ON && LA245_19 <= OUT)||(LA245_19 >= PLUS && LA245_19 <= PROCEDURE)||LA245_19==PUBLIC||LA245_19==QuotedString||(LA245_19 >= READ && LA245_19 <= READONLY)||(LA245_19 >= REFERENCE && LA245_19 <= REGISTER)||LA245_19==REMOVE||LA245_19==SEMI||(LA245_19 >= SHL && LA245_19 <= STATIC)||(LA245_19 >= STORED && LA245_19 <= STRING)||LA245_19==TRUE||(LA245_19 >= TkHexNum && LA245_19 <= TkIntNum)||LA245_19==TkRealNum||(LA245_19 >= UNSAFE && LA245_19 <= UNTIL)||(LA245_19 >= VARARGS && LA245_19 <= VIRTUAL)||(LA245_19 >= WRITE && LA245_19 <= WRITEONLY)||(LA245_19 >= XOR && LA245_19 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26569,7 +26771,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_20==EOF||LA245_20==ABSOLUTE||(LA245_20 >= ADD && LA245_20 <= ANSISTRING)||LA245_20==AS||(LA245_20 >= ASSIGN && LA245_20 <= AT2)||LA245_20==BREAK||LA245_20==COMMA||(LA245_20 >= CONTAINS && LA245_20 <= DEFAULT)||LA245_20==DISPID||LA245_20==DIV||(LA245_20 >= DOT && LA245_20 <= DOTDOT)||(LA245_20 >= DQ && LA245_20 <= DW)||(LA245_20 >= ELSE && LA245_20 <= EXIT)||LA245_20==EXPORT||LA245_20==FALSE||(LA245_20 >= FINAL && LA245_20 <= FINALLY)||(LA245_20 >= FUNCTION && LA245_20 <= GE)||(LA245_20 >= GT && LA245_20 <= HELPER)||(LA245_20 >= IMPLEMENTS && LA245_20 <= INHERITED)||LA245_20==IS||LA245_20==LBRACK||LA245_20==LE||(LA245_20 >= LOCAL && LA245_20 <= NAME)||LA245_20==NIL||(LA245_20 >= NOT && LA245_20 <= OBJECT)||(LA245_20 >= ON && LA245_20 <= OUT)||(LA245_20 >= PLUS && LA245_20 <= POINTER2)||LA245_20==PROCEDURE||LA245_20==QuotedString||(LA245_20 >= READ && LA245_20 <= READONLY)||(LA245_20 >= REFERENCE && LA245_20 <= REGISTER)||LA245_20==REMOVE||LA245_20==SEMI||(LA245_20 >= SHL && LA245_20 <= STATIC)||(LA245_20 >= STORED && LA245_20 <= STRING)||LA245_20==TRUE||(LA245_20 >= TkHexNum && LA245_20 <= TkIntNum)||LA245_20==TkRealNum||(LA245_20 >= UNSAFE && LA245_20 <= UNTIL)||(LA245_20 >= VARARGS && LA245_20 <= VIRTUAL)||(LA245_20 >= WRITE && LA245_20 <= WRITEONLY)||(LA245_20 >= XOR && LA245_20 <= 210)) ) {
+				else if ( (LA245_20==EOF||LA245_20==ABSOLUTE||(LA245_20 >= ADD && LA245_20 <= ANSISTRING)||LA245_20==AS||(LA245_20 >= ASSIGN && LA245_20 <= AT2)||LA245_20==BREAK||LA245_20==COMMA||(LA245_20 >= CONTAINS && LA245_20 <= DEFAULT)||LA245_20==DISPID||LA245_20==DIV||(LA245_20 >= DOT && LA245_20 <= DOTDOT)||(LA245_20 >= DQ && LA245_20 <= DW)||(LA245_20 >= ELSE && LA245_20 <= EXIT)||LA245_20==EXPORT||LA245_20==FALSE||(LA245_20 >= FINAL && LA245_20 <= FINALLY)||(LA245_20 >= FUNCTION && LA245_20 <= GE)||(LA245_20 >= GT && LA245_20 <= HELPER)||(LA245_20 >= IMPLEMENTS && LA245_20 <= INHERITED)||LA245_20==IS||LA245_20==LBRACK||LA245_20==LE||(LA245_20 >= LOCAL && LA245_20 <= NAME)||LA245_20==NIL||(LA245_20 >= NOT && LA245_20 <= OBJECT)||(LA245_20 >= ON && LA245_20 <= OUT)||(LA245_20 >= PLUS && LA245_20 <= PROCEDURE)||LA245_20==PUBLIC||LA245_20==QuotedString||(LA245_20 >= READ && LA245_20 <= READONLY)||(LA245_20 >= REFERENCE && LA245_20 <= REGISTER)||LA245_20==REMOVE||LA245_20==SEMI||(LA245_20 >= SHL && LA245_20 <= STATIC)||(LA245_20 >= STORED && LA245_20 <= STRING)||LA245_20==TRUE||(LA245_20 >= TkHexNum && LA245_20 <= TkIntNum)||LA245_20==TkRealNum||(LA245_20 >= UNSAFE && LA245_20 <= UNTIL)||(LA245_20 >= VARARGS && LA245_20 <= VIRTUAL)||(LA245_20 >= WRITE && LA245_20 <= WRITEONLY)||(LA245_20 >= XOR && LA245_20 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -26609,6 +26811,8 @@ public class DelphiParser extends Parser {
 			case OPERATOR:
 			case OUT:
 			case POINTER:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REFERENCE:
@@ -26636,7 +26840,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA245_21==EOF||LA245_21==ABSOLUTE||(LA245_21 >= ADD && LA245_21 <= ANSISTRING)||LA245_21==AS||(LA245_21 >= ASSIGN && LA245_21 <= AT2)||LA245_21==BREAK||LA245_21==COMMA||(LA245_21 >= CONTAINS && LA245_21 <= DEFAULT)||LA245_21==DISPID||LA245_21==DIV||(LA245_21 >= DOT && LA245_21 <= DOTDOT)||(LA245_21 >= DQ && LA245_21 <= DW)||(LA245_21 >= ELSE && LA245_21 <= EXIT)||LA245_21==EXPORT||LA245_21==FALSE||(LA245_21 >= FINAL && LA245_21 <= FINALLY)||(LA245_21 >= FUNCTION && LA245_21 <= GE)||(LA245_21 >= GT && LA245_21 <= HELPER)||(LA245_21 >= IMPLEMENTS && LA245_21 <= INHERITED)||LA245_21==IS||LA245_21==LBRACK||LA245_21==LE||(LA245_21 >= LOCAL && LA245_21 <= NAME)||LA245_21==NIL||(LA245_21 >= NOT && LA245_21 <= OBJECT)||(LA245_21 >= ON && LA245_21 <= OUT)||(LA245_21 >= PLUS && LA245_21 <= POINTER2)||LA245_21==PROCEDURE||LA245_21==QuotedString||(LA245_21 >= READ && LA245_21 <= READONLY)||(LA245_21 >= REFERENCE && LA245_21 <= REGISTER)||LA245_21==REMOVE||LA245_21==SEMI||(LA245_21 >= SHL && LA245_21 <= STATIC)||(LA245_21 >= STORED && LA245_21 <= STRING)||LA245_21==TRUE||(LA245_21 >= TkHexNum && LA245_21 <= TkIntNum)||LA245_21==TkRealNum||(LA245_21 >= UNSAFE && LA245_21 <= UNTIL)||(LA245_21 >= VARARGS && LA245_21 <= VIRTUAL)||(LA245_21 >= WRITE && LA245_21 <= WRITEONLY)||(LA245_21 >= XOR && LA245_21 <= 210)) ) {
+				else if ( (LA245_21==EOF||LA245_21==ABSOLUTE||(LA245_21 >= ADD && LA245_21 <= ANSISTRING)||LA245_21==AS||(LA245_21 >= ASSIGN && LA245_21 <= AT2)||LA245_21==BREAK||LA245_21==COMMA||(LA245_21 >= CONTAINS && LA245_21 <= DEFAULT)||LA245_21==DISPID||LA245_21==DIV||(LA245_21 >= DOT && LA245_21 <= DOTDOT)||(LA245_21 >= DQ && LA245_21 <= DW)||(LA245_21 >= ELSE && LA245_21 <= EXIT)||LA245_21==EXPORT||LA245_21==FALSE||(LA245_21 >= FINAL && LA245_21 <= FINALLY)||(LA245_21 >= FUNCTION && LA245_21 <= GE)||(LA245_21 >= GT && LA245_21 <= HELPER)||(LA245_21 >= IMPLEMENTS && LA245_21 <= INHERITED)||LA245_21==IS||LA245_21==LBRACK||LA245_21==LE||(LA245_21 >= LOCAL && LA245_21 <= NAME)||LA245_21==NIL||(LA245_21 >= NOT && LA245_21 <= OBJECT)||(LA245_21 >= ON && LA245_21 <= OUT)||(LA245_21 >= PLUS && LA245_21 <= PROCEDURE)||LA245_21==PUBLIC||LA245_21==QuotedString||(LA245_21 >= READ && LA245_21 <= READONLY)||(LA245_21 >= REFERENCE && LA245_21 <= REGISTER)||LA245_21==REMOVE||LA245_21==SEMI||(LA245_21 >= SHL && LA245_21 <= STATIC)||(LA245_21 >= STORED && LA245_21 <= STRING)||LA245_21==TRUE||(LA245_21 >= TkHexNum && LA245_21 <= TkIntNum)||LA245_21==TkRealNum||(LA245_21 >= UNSAFE && LA245_21 <= UNTIL)||(LA245_21 >= VARARGS && LA245_21 <= VIRTUAL)||(LA245_21 >= WRITE && LA245_21 <= WRITEONLY)||(LA245_21 >= XOR && LA245_21 <= 210)) ) {
 					alt245=12;
 				}
 
@@ -27043,7 +27247,7 @@ public class DelphiParser extends Parser {
 			while (true) {
 				int alt247=2;
 				int LA247_0 = input.LA(1);
-				if ( (LA247_0==ABSOLUTE||(LA247_0 >= ADD && LA247_0 <= ANSISTRING)||LA247_0==AS||(LA247_0 >= AT && LA247_0 <= AT2)||LA247_0==BREAK||(LA247_0 >= COLON && LA247_0 <= COMMA)||(LA247_0 >= CONTAINS && LA247_0 <= DEFAULT)||LA247_0==DISPID||LA247_0==DIV||(LA247_0 >= DOT && LA247_0 <= DOTDOT)||(LA247_0 >= DQ && LA247_0 <= DW)||LA247_0==EQUAL||LA247_0==EXIT||LA247_0==EXPORT||LA247_0==FALSE||LA247_0==FINAL||(LA247_0 >= FUNCTION && LA247_0 <= GE)||(LA247_0 >= GT && LA247_0 <= HELPER)||(LA247_0 >= IMPLEMENTS && LA247_0 <= INHERITED)||LA247_0==IS||LA247_0==LBRACK||LA247_0==LE||(LA247_0 >= LOCAL && LA247_0 <= NAME)||LA247_0==NIL||(LA247_0 >= NOT && LA247_0 <= OBJECT)||(LA247_0 >= OPERATOR && LA247_0 <= OUT)||(LA247_0 >= PLUS && LA247_0 <= POINTER2)||LA247_0==PROCEDURE||LA247_0==QuotedString||(LA247_0 >= READ && LA247_0 <= READONLY)||(LA247_0 >= REFERENCE && LA247_0 <= REGISTER)||LA247_0==REMOVE||(LA247_0 >= SHL && LA247_0 <= STATIC)||(LA247_0 >= STORED && LA247_0 <= STRING)||LA247_0==TRUE||(LA247_0 >= TkHexNum && LA247_0 <= TkIntNum)||LA247_0==TkRealNum||LA247_0==UNSAFE||(LA247_0 >= VARARGS && LA247_0 <= VIRTUAL)||(LA247_0 >= WRITE && LA247_0 <= WRITEONLY)||(LA247_0 >= XOR && LA247_0 <= 210)) ) {
+				if ( (LA247_0==ABSOLUTE||(LA247_0 >= ADD && LA247_0 <= ANSISTRING)||LA247_0==AS||(LA247_0 >= AT && LA247_0 <= AT2)||LA247_0==BREAK||(LA247_0 >= COLON && LA247_0 <= COMMA)||(LA247_0 >= CONTAINS && LA247_0 <= DEFAULT)||LA247_0==DISPID||LA247_0==DIV||(LA247_0 >= DOT && LA247_0 <= DOTDOT)||(LA247_0 >= DQ && LA247_0 <= DW)||LA247_0==EQUAL||LA247_0==EXIT||LA247_0==EXPORT||LA247_0==FALSE||LA247_0==FINAL||(LA247_0 >= FUNCTION && LA247_0 <= GE)||(LA247_0 >= GT && LA247_0 <= HELPER)||(LA247_0 >= IMPLEMENTS && LA247_0 <= INHERITED)||LA247_0==IS||LA247_0==LBRACK||LA247_0==LE||(LA247_0 >= LOCAL && LA247_0 <= NAME)||LA247_0==NIL||(LA247_0 >= NOT && LA247_0 <= OBJECT)||(LA247_0 >= OPERATOR && LA247_0 <= OUT)||(LA247_0 >= PLUS && LA247_0 <= PROCEDURE)||LA247_0==PUBLIC||LA247_0==QuotedString||(LA247_0 >= READ && LA247_0 <= READONLY)||(LA247_0 >= REFERENCE && LA247_0 <= REGISTER)||LA247_0==REMOVE||(LA247_0 >= SHL && LA247_0 <= STATIC)||(LA247_0 >= STORED && LA247_0 <= STRING)||LA247_0==TRUE||(LA247_0 >= TkHexNum && LA247_0 <= TkIntNum)||LA247_0==TkRealNum||LA247_0==UNSAFE||(LA247_0 >= VARARGS && LA247_0 <= VIRTUAL)||(LA247_0 >= WRITE && LA247_0 <= WRITEONLY)||(LA247_0 >= XOR && LA247_0 <= 210)) ) {
 					alt247=1;
 				}
 
@@ -27405,7 +27609,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:575:41: ( statementList )?
 			int alt253=2;
 			int LA253_0 = input.LA(1);
-			if ( (LA253_0==ABSOLUTE||LA253_0==ADD||LA253_0==ANSISTRING||LA253_0==ASM||(LA253_0 >= ASSIGN && LA253_0 <= AT2)||(LA253_0 >= BEGIN && LA253_0 <= CASE)||(LA253_0 >= CONTAINS && LA253_0 <= CONTINUE)||LA253_0==DEFAULT||LA253_0==DISPID||LA253_0==DOT||(LA253_0 >= DQ && LA253_0 <= DW)||LA253_0==EXIT||LA253_0==EXPORT||LA253_0==FALSE||LA253_0==FINAL||LA253_0==FOR||LA253_0==GOTO||LA253_0==HELPER||LA253_0==IF||(LA253_0 >= IMPLEMENTS && LA253_0 <= INHERITED)||LA253_0==LBRACK||(LA253_0 >= LOCAL && LA253_0 <= MESSAGE)||LA253_0==NAME||LA253_0==OBJECT||LA253_0==OPERATOR||LA253_0==OUT||(LA253_0 >= POINTER && LA253_0 <= POINTER2)||LA253_0==RAISE||(LA253_0 >= READ && LA253_0 <= READONLY)||(LA253_0 >= REFERENCE && LA253_0 <= REGISTER)||(LA253_0 >= REMOVE && LA253_0 <= REPEAT)||LA253_0==SEMI||LA253_0==STATIC||(LA253_0 >= STORED && LA253_0 <= STRING)||(LA253_0 >= TRUE && LA253_0 <= TRY)||(LA253_0 >= TkHexNum && LA253_0 <= TkIntNum)||LA253_0==UNSAFE||(LA253_0 >= VAR && LA253_0 <= WRITEONLY)||LA253_0==198||LA253_0==203||LA253_0==209) ) {
+			if ( (LA253_0==ABSOLUTE||LA253_0==ADD||LA253_0==ANSISTRING||LA253_0==ASM||(LA253_0 >= ASSIGN && LA253_0 <= AT2)||(LA253_0 >= BEGIN && LA253_0 <= CASE)||(LA253_0 >= CONTAINS && LA253_0 <= CONTINUE)||LA253_0==DEFAULT||LA253_0==DISPID||LA253_0==DOT||(LA253_0 >= DQ && LA253_0 <= DW)||LA253_0==EXIT||LA253_0==EXPORT||LA253_0==FALSE||LA253_0==FINAL||LA253_0==FOR||LA253_0==GOTO||LA253_0==HELPER||LA253_0==IF||(LA253_0 >= IMPLEMENTS && LA253_0 <= INHERITED)||LA253_0==LBRACK||(LA253_0 >= LOCAL && LA253_0 <= MESSAGE)||LA253_0==NAME||LA253_0==OBJECT||LA253_0==OPERATOR||LA253_0==OUT||(LA253_0 >= POINTER && LA253_0 <= PRIVATE)||LA253_0==PUBLIC||LA253_0==RAISE||(LA253_0 >= READ && LA253_0 <= READONLY)||(LA253_0 >= REFERENCE && LA253_0 <= REGISTER)||(LA253_0 >= REMOVE && LA253_0 <= REPEAT)||LA253_0==SEMI||LA253_0==STATIC||(LA253_0 >= STORED && LA253_0 <= STRING)||(LA253_0 >= TRUE && LA253_0 <= TRY)||(LA253_0 >= TkHexNum && LA253_0 <= TkIntNum)||LA253_0==UNSAFE||(LA253_0 >= VAR && LA253_0 <= WRITEONLY)||LA253_0==198||LA253_0==203||LA253_0==209) ) {
 				alt253=1;
 			}
 			else if ( (LA253_0==UNTIL) ) {
@@ -28265,7 +28469,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:589:40: ( statementList )?
 			int alt263=2;
 			int LA263_0 = input.LA(1);
-			if ( (LA263_0==ABSOLUTE||LA263_0==ADD||LA263_0==ANSISTRING||LA263_0==ASM||(LA263_0 >= ASSIGN && LA263_0 <= AT2)||(LA263_0 >= BEGIN && LA263_0 <= CASE)||(LA263_0 >= CONTAINS && LA263_0 <= CONTINUE)||LA263_0==DEFAULT||LA263_0==DISPID||LA263_0==DOT||(LA263_0 >= DQ && LA263_0 <= DW)||LA263_0==EXIT||LA263_0==EXPORT||LA263_0==FALSE||LA263_0==FINAL||LA263_0==FOR||LA263_0==GOTO||LA263_0==HELPER||LA263_0==IF||(LA263_0 >= IMPLEMENTS && LA263_0 <= INHERITED)||LA263_0==LBRACK||(LA263_0 >= LOCAL && LA263_0 <= MESSAGE)||LA263_0==NAME||LA263_0==OBJECT||LA263_0==OPERATOR||LA263_0==OUT||(LA263_0 >= POINTER && LA263_0 <= POINTER2)||LA263_0==RAISE||(LA263_0 >= READ && LA263_0 <= READONLY)||(LA263_0 >= REFERENCE && LA263_0 <= REGISTER)||(LA263_0 >= REMOVE && LA263_0 <= REPEAT)||LA263_0==SEMI||LA263_0==STATIC||(LA263_0 >= STORED && LA263_0 <= STRING)||(LA263_0 >= TRUE && LA263_0 <= TRY)||(LA263_0 >= TkHexNum && LA263_0 <= TkIntNum)||LA263_0==UNSAFE||(LA263_0 >= VAR && LA263_0 <= WRITEONLY)||LA263_0==198||LA263_0==203||LA263_0==209) ) {
+			if ( (LA263_0==ABSOLUTE||LA263_0==ADD||LA263_0==ANSISTRING||LA263_0==ASM||(LA263_0 >= ASSIGN && LA263_0 <= AT2)||(LA263_0 >= BEGIN && LA263_0 <= CASE)||(LA263_0 >= CONTAINS && LA263_0 <= CONTINUE)||LA263_0==DEFAULT||LA263_0==DISPID||LA263_0==DOT||(LA263_0 >= DQ && LA263_0 <= DW)||LA263_0==EXIT||LA263_0==EXPORT||LA263_0==FALSE||LA263_0==FINAL||LA263_0==FOR||LA263_0==GOTO||LA263_0==HELPER||LA263_0==IF||(LA263_0 >= IMPLEMENTS && LA263_0 <= INHERITED)||LA263_0==LBRACK||(LA263_0 >= LOCAL && LA263_0 <= MESSAGE)||LA263_0==NAME||LA263_0==OBJECT||LA263_0==OPERATOR||LA263_0==OUT||(LA263_0 >= POINTER && LA263_0 <= PRIVATE)||LA263_0==PUBLIC||LA263_0==RAISE||(LA263_0 >= READ && LA263_0 <= READONLY)||(LA263_0 >= REFERENCE && LA263_0 <= REGISTER)||(LA263_0 >= REMOVE && LA263_0 <= REPEAT)||LA263_0==SEMI||LA263_0==STATIC||(LA263_0 >= STORED && LA263_0 <= STRING)||(LA263_0 >= TRUE && LA263_0 <= TRY)||(LA263_0 >= TkHexNum && LA263_0 <= TkIntNum)||LA263_0==UNSAFE||(LA263_0 >= VAR && LA263_0 <= WRITEONLY)||LA263_0==198||LA263_0==203||LA263_0==209) ) {
 				alt263=1;
 			}
 			else if ( (LA263_0==END) ) {
@@ -28292,7 +28496,7 @@ public class DelphiParser extends Parser {
 			if ( state.backtracking==0 ) stream_END.add(string_literal797);
 
 			// AST REWRITE
-			// elements: statementList, END, BEGIN
+			// elements: END, statementList, BEGIN
 			// token labels: 
 			// rule labels: retval
 			// token list labels: 
@@ -28423,6 +28627,8 @@ public class DelphiParser extends Parser {
 				case OUT:
 				case POINTER:
 				case POINTER2:
+				case PRIVATE:
+				case PUBLIC:
 				case RAISE:
 				case READ:
 				case READONLY:
@@ -28593,6 +28799,8 @@ public class DelphiParser extends Parser {
 						case OUT:
 						case POINTER:
 						case POINTER2:
+						case PRIVATE:
+						case PUBLIC:
 						case RAISE:
 						case READ:
 						case READONLY:
@@ -29278,6 +29486,8 @@ public class DelphiParser extends Parser {
 			case OPERATOR:
 			case OUT:
 			case POINTER:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REFERENCE:
@@ -29998,7 +30208,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:615:38: ( statementList )?
 					int alt275=2;
 					int LA275_0 = input.LA(1);
-					if ( (LA275_0==ABSOLUTE||LA275_0==ADD||LA275_0==ANSISTRING||LA275_0==ASM||(LA275_0 >= ASSIGN && LA275_0 <= AT2)||(LA275_0 >= BEGIN && LA275_0 <= CASE)||(LA275_0 >= CONTAINS && LA275_0 <= CONTINUE)||LA275_0==DEFAULT||LA275_0==DISPID||LA275_0==DOT||(LA275_0 >= DQ && LA275_0 <= DW)||LA275_0==EXIT||LA275_0==EXPORT||LA275_0==FALSE||LA275_0==FINAL||LA275_0==FOR||LA275_0==GOTO||LA275_0==HELPER||LA275_0==IF||(LA275_0 >= IMPLEMENTS && LA275_0 <= INHERITED)||LA275_0==LBRACK||(LA275_0 >= LOCAL && LA275_0 <= MESSAGE)||LA275_0==NAME||LA275_0==OBJECT||LA275_0==OPERATOR||LA275_0==OUT||(LA275_0 >= POINTER && LA275_0 <= POINTER2)||LA275_0==RAISE||(LA275_0 >= READ && LA275_0 <= READONLY)||(LA275_0 >= REFERENCE && LA275_0 <= REGISTER)||(LA275_0 >= REMOVE && LA275_0 <= REPEAT)||LA275_0==SEMI||LA275_0==STATIC||(LA275_0 >= STORED && LA275_0 <= STRING)||(LA275_0 >= TRUE && LA275_0 <= TRY)||(LA275_0 >= TkHexNum && LA275_0 <= TkIntNum)||LA275_0==UNSAFE||(LA275_0 >= VAR && LA275_0 <= WRITEONLY)||LA275_0==198||LA275_0==203||LA275_0==209) ) {
+					if ( (LA275_0==ABSOLUTE||LA275_0==ADD||LA275_0==ANSISTRING||LA275_0==ASM||(LA275_0 >= ASSIGN && LA275_0 <= AT2)||(LA275_0 >= BEGIN && LA275_0 <= CASE)||(LA275_0 >= CONTAINS && LA275_0 <= CONTINUE)||LA275_0==DEFAULT||LA275_0==DISPID||LA275_0==DOT||(LA275_0 >= DQ && LA275_0 <= DW)||LA275_0==EXIT||LA275_0==EXPORT||LA275_0==FALSE||LA275_0==FINAL||LA275_0==FOR||LA275_0==GOTO||LA275_0==HELPER||LA275_0==IF||(LA275_0 >= IMPLEMENTS && LA275_0 <= INHERITED)||LA275_0==LBRACK||(LA275_0 >= LOCAL && LA275_0 <= MESSAGE)||LA275_0==NAME||LA275_0==OBJECT||LA275_0==OPERATOR||LA275_0==OUT||(LA275_0 >= POINTER && LA275_0 <= PRIVATE)||LA275_0==PUBLIC||LA275_0==RAISE||(LA275_0 >= READ && LA275_0 <= READONLY)||(LA275_0 >= REFERENCE && LA275_0 <= REGISTER)||(LA275_0 >= REMOVE && LA275_0 <= REPEAT)||LA275_0==SEMI||LA275_0==STATIC||(LA275_0 >= STORED && LA275_0 <= STRING)||(LA275_0 >= TRUE && LA275_0 <= TRY)||(LA275_0 >= TkHexNum && LA275_0 <= TkIntNum)||LA275_0==UNSAFE||(LA275_0 >= VAR && LA275_0 <= WRITEONLY)||LA275_0==198||LA275_0==203||LA275_0==209) ) {
 						alt275=1;
 					}
 					else if ( (LA275_0==EXCEPT) ) {
@@ -30057,7 +30267,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:616:38: ( statementList )?
 					int alt276=2;
 					int LA276_0 = input.LA(1);
-					if ( (LA276_0==ABSOLUTE||LA276_0==ADD||LA276_0==ANSISTRING||LA276_0==ASM||(LA276_0 >= ASSIGN && LA276_0 <= AT2)||(LA276_0 >= BEGIN && LA276_0 <= CASE)||(LA276_0 >= CONTAINS && LA276_0 <= CONTINUE)||LA276_0==DEFAULT||LA276_0==DISPID||LA276_0==DOT||(LA276_0 >= DQ && LA276_0 <= DW)||LA276_0==EXIT||LA276_0==EXPORT||LA276_0==FALSE||LA276_0==FINAL||LA276_0==FOR||LA276_0==GOTO||LA276_0==HELPER||LA276_0==IF||(LA276_0 >= IMPLEMENTS && LA276_0 <= INHERITED)||LA276_0==LBRACK||(LA276_0 >= LOCAL && LA276_0 <= MESSAGE)||LA276_0==NAME||LA276_0==OBJECT||LA276_0==OPERATOR||LA276_0==OUT||(LA276_0 >= POINTER && LA276_0 <= POINTER2)||LA276_0==RAISE||(LA276_0 >= READ && LA276_0 <= READONLY)||(LA276_0 >= REFERENCE && LA276_0 <= REGISTER)||(LA276_0 >= REMOVE && LA276_0 <= REPEAT)||LA276_0==SEMI||LA276_0==STATIC||(LA276_0 >= STORED && LA276_0 <= STRING)||(LA276_0 >= TRUE && LA276_0 <= TRY)||(LA276_0 >= TkHexNum && LA276_0 <= TkIntNum)||LA276_0==UNSAFE||(LA276_0 >= VAR && LA276_0 <= WRITEONLY)||LA276_0==198||LA276_0==203||LA276_0==209) ) {
+					if ( (LA276_0==ABSOLUTE||LA276_0==ADD||LA276_0==ANSISTRING||LA276_0==ASM||(LA276_0 >= ASSIGN && LA276_0 <= AT2)||(LA276_0 >= BEGIN && LA276_0 <= CASE)||(LA276_0 >= CONTAINS && LA276_0 <= CONTINUE)||LA276_0==DEFAULT||LA276_0==DISPID||LA276_0==DOT||(LA276_0 >= DQ && LA276_0 <= DW)||LA276_0==EXIT||LA276_0==EXPORT||LA276_0==FALSE||LA276_0==FINAL||LA276_0==FOR||LA276_0==GOTO||LA276_0==HELPER||LA276_0==IF||(LA276_0 >= IMPLEMENTS && LA276_0 <= INHERITED)||LA276_0==LBRACK||(LA276_0 >= LOCAL && LA276_0 <= MESSAGE)||LA276_0==NAME||LA276_0==OBJECT||LA276_0==OPERATOR||LA276_0==OUT||(LA276_0 >= POINTER && LA276_0 <= PRIVATE)||LA276_0==PUBLIC||LA276_0==RAISE||(LA276_0 >= READ && LA276_0 <= READONLY)||(LA276_0 >= REFERENCE && LA276_0 <= REGISTER)||(LA276_0 >= REMOVE && LA276_0 <= REPEAT)||LA276_0==SEMI||LA276_0==STATIC||(LA276_0 >= STORED && LA276_0 <= STRING)||(LA276_0 >= TRUE && LA276_0 <= TRY)||(LA276_0 >= TkHexNum && LA276_0 <= TkIntNum)||LA276_0==UNSAFE||(LA276_0 >= VAR && LA276_0 <= WRITEONLY)||LA276_0==198||LA276_0==203||LA276_0==209) ) {
 						alt276=1;
 					}
 					else if ( (LA276_0==FINALLY) ) {
@@ -30090,7 +30300,7 @@ public class DelphiParser extends Parser {
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:616:65: ( statementList )?
 					int alt277=2;
 					int LA277_0 = input.LA(1);
-					if ( (LA277_0==ABSOLUTE||LA277_0==ADD||LA277_0==ANSISTRING||LA277_0==ASM||(LA277_0 >= ASSIGN && LA277_0 <= AT2)||(LA277_0 >= BEGIN && LA277_0 <= CASE)||(LA277_0 >= CONTAINS && LA277_0 <= CONTINUE)||LA277_0==DEFAULT||LA277_0==DISPID||LA277_0==DOT||(LA277_0 >= DQ && LA277_0 <= DW)||LA277_0==EXIT||LA277_0==EXPORT||LA277_0==FALSE||LA277_0==FINAL||LA277_0==FOR||LA277_0==GOTO||LA277_0==HELPER||LA277_0==IF||(LA277_0 >= IMPLEMENTS && LA277_0 <= INHERITED)||LA277_0==LBRACK||(LA277_0 >= LOCAL && LA277_0 <= MESSAGE)||LA277_0==NAME||LA277_0==OBJECT||LA277_0==OPERATOR||LA277_0==OUT||(LA277_0 >= POINTER && LA277_0 <= POINTER2)||LA277_0==RAISE||(LA277_0 >= READ && LA277_0 <= READONLY)||(LA277_0 >= REFERENCE && LA277_0 <= REGISTER)||(LA277_0 >= REMOVE && LA277_0 <= REPEAT)||LA277_0==SEMI||LA277_0==STATIC||(LA277_0 >= STORED && LA277_0 <= STRING)||(LA277_0 >= TRUE && LA277_0 <= TRY)||(LA277_0 >= TkHexNum && LA277_0 <= TkIntNum)||LA277_0==UNSAFE||(LA277_0 >= VAR && LA277_0 <= WRITEONLY)||LA277_0==198||LA277_0==203||LA277_0==209) ) {
+					if ( (LA277_0==ABSOLUTE||LA277_0==ADD||LA277_0==ANSISTRING||LA277_0==ASM||(LA277_0 >= ASSIGN && LA277_0 <= AT2)||(LA277_0 >= BEGIN && LA277_0 <= CASE)||(LA277_0 >= CONTAINS && LA277_0 <= CONTINUE)||LA277_0==DEFAULT||LA277_0==DISPID||LA277_0==DOT||(LA277_0 >= DQ && LA277_0 <= DW)||LA277_0==EXIT||LA277_0==EXPORT||LA277_0==FALSE||LA277_0==FINAL||LA277_0==FOR||LA277_0==GOTO||LA277_0==HELPER||LA277_0==IF||(LA277_0 >= IMPLEMENTS && LA277_0 <= INHERITED)||LA277_0==LBRACK||(LA277_0 >= LOCAL && LA277_0 <= MESSAGE)||LA277_0==NAME||LA277_0==OBJECT||LA277_0==OPERATOR||LA277_0==OUT||(LA277_0 >= POINTER && LA277_0 <= PRIVATE)||LA277_0==PUBLIC||LA277_0==RAISE||(LA277_0 >= READ && LA277_0 <= READONLY)||(LA277_0 >= REFERENCE && LA277_0 <= REGISTER)||(LA277_0 >= REMOVE && LA277_0 <= REPEAT)||LA277_0==SEMI||LA277_0==STATIC||(LA277_0 >= STORED && LA277_0 <= STRING)||(LA277_0 >= TRUE && LA277_0 <= TRY)||(LA277_0 >= TkHexNum && LA277_0 <= TkIntNum)||LA277_0==UNSAFE||(LA277_0 >= VAR && LA277_0 <= WRITEONLY)||LA277_0==198||LA277_0==203||LA277_0==209) ) {
 						alt277=1;
 					}
 					else if ( (LA277_0==END) ) {
@@ -30233,6 +30443,8 @@ public class DelphiParser extends Parser {
 			case OUT:
 			case POINTER:
 			case POINTER2:
+			case PRIVATE:
+			case PUBLIC:
 			case RAISE:
 			case READ:
 			case READONLY:
@@ -30467,6 +30679,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -30643,7 +30857,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:625:30: ( statement ( ';' )? | ';' )
 			int alt284=2;
 			int LA284_0 = input.LA(1);
-			if ( (LA284_0==EOF||LA284_0==ABSOLUTE||LA284_0==ADD||LA284_0==ANSISTRING||LA284_0==ASM||(LA284_0 >= ASSIGN && LA284_0 <= AT2)||(LA284_0 >= BEGIN && LA284_0 <= CASE)||(LA284_0 >= CONTAINS && LA284_0 <= CONTINUE)||LA284_0==DEFAULT||LA284_0==DISPID||LA284_0==DOT||(LA284_0 >= DQ && LA284_0 <= DW)||(LA284_0 >= ELSE && LA284_0 <= END)||LA284_0==EXIT||LA284_0==EXPORT||LA284_0==FALSE||LA284_0==FINAL||LA284_0==FOR||LA284_0==GOTO||LA284_0==HELPER||LA284_0==IF||(LA284_0 >= IMPLEMENTS && LA284_0 <= INHERITED)||LA284_0==LBRACK||(LA284_0 >= LOCAL && LA284_0 <= MESSAGE)||LA284_0==NAME||LA284_0==OBJECT||(LA284_0 >= ON && LA284_0 <= OPERATOR)||LA284_0==OUT||(LA284_0 >= POINTER && LA284_0 <= POINTER2)||LA284_0==RAISE||(LA284_0 >= READ && LA284_0 <= READONLY)||(LA284_0 >= REFERENCE && LA284_0 <= REGISTER)||(LA284_0 >= REMOVE && LA284_0 <= REPEAT)||LA284_0==STATIC||(LA284_0 >= STORED && LA284_0 <= STRING)||(LA284_0 >= TRUE && LA284_0 <= TRY)||(LA284_0 >= TkHexNum && LA284_0 <= TkIntNum)||LA284_0==UNSAFE||(LA284_0 >= VAR && LA284_0 <= WRITEONLY)||LA284_0==198||LA284_0==203||LA284_0==209) ) {
+			if ( (LA284_0==EOF||LA284_0==ABSOLUTE||LA284_0==ADD||LA284_0==ANSISTRING||LA284_0==ASM||(LA284_0 >= ASSIGN && LA284_0 <= AT2)||(LA284_0 >= BEGIN && LA284_0 <= CASE)||(LA284_0 >= CONTAINS && LA284_0 <= CONTINUE)||LA284_0==DEFAULT||LA284_0==DISPID||LA284_0==DOT||(LA284_0 >= DQ && LA284_0 <= DW)||(LA284_0 >= ELSE && LA284_0 <= END)||LA284_0==EXIT||LA284_0==EXPORT||LA284_0==FALSE||LA284_0==FINAL||LA284_0==FOR||LA284_0==GOTO||LA284_0==HELPER||LA284_0==IF||(LA284_0 >= IMPLEMENTS && LA284_0 <= INHERITED)||LA284_0==LBRACK||(LA284_0 >= LOCAL && LA284_0 <= MESSAGE)||LA284_0==NAME||LA284_0==OBJECT||(LA284_0 >= ON && LA284_0 <= OPERATOR)||LA284_0==OUT||(LA284_0 >= POINTER && LA284_0 <= PRIVATE)||LA284_0==PUBLIC||LA284_0==RAISE||(LA284_0 >= READ && LA284_0 <= READONLY)||(LA284_0 >= REFERENCE && LA284_0 <= REGISTER)||(LA284_0 >= REMOVE && LA284_0 <= REPEAT)||LA284_0==STATIC||(LA284_0 >= STORED && LA284_0 <= STRING)||(LA284_0 >= TRUE && LA284_0 <= TRY)||(LA284_0 >= TkHexNum && LA284_0 <= TkIntNum)||LA284_0==UNSAFE||(LA284_0 >= VAR && LA284_0 <= WRITEONLY)||LA284_0==198||LA284_0==203||LA284_0==209) ) {
 				alt284=1;
 			}
 			else if ( (LA284_0==SEMI) ) {
@@ -31077,6 +31291,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -33331,7 +33547,7 @@ public class DelphiParser extends Parser {
 					}
 
 				}
-				else if ( (LA302_2==ABSOLUTE||(LA302_2 >= ADD && LA302_2 <= ANSISTRING)||LA302_2==AS||(LA302_2 >= AT && LA302_2 <= AT2)||LA302_2==BREAK||(LA302_2 >= CONTAINS && LA302_2 <= DELAYED)||LA302_2==DISPID||LA302_2==DIV||LA302_2==DOT||(LA302_2 >= DQ && LA302_2 <= DW)||LA302_2==EQUAL||LA302_2==EXIT||LA302_2==EXPORT||LA302_2==FALSE||LA302_2==FINAL||(LA302_2 >= FUNCTION && LA302_2 <= GE)||(LA302_2 >= GT && LA302_2 <= HELPER)||(LA302_2 >= IMPLEMENTS && LA302_2 <= INHERITED)||LA302_2==IS||LA302_2==LBRACK||LA302_2==LE||(LA302_2 >= LOCAL && LA302_2 <= NAME)||LA302_2==NIL||(LA302_2 >= NOT && LA302_2 <= OBJECT)||(LA302_2 >= OPERATOR && LA302_2 <= OUT)||(LA302_2 >= PLUS && LA302_2 <= POINTER2)||LA302_2==PROCEDURE||LA302_2==QuotedString||(LA302_2 >= READ && LA302_2 <= READONLY)||(LA302_2 >= REFERENCE && LA302_2 <= REGISTER)||LA302_2==REMOVE||(LA302_2 >= SHL && LA302_2 <= STATIC)||(LA302_2 >= STORED && LA302_2 <= STRING)||LA302_2==TRUE||(LA302_2 >= TkHexNum && LA302_2 <= TkIntNum)||LA302_2==TkRealNum||LA302_2==UNSAFE||(LA302_2 >= VARARGS && LA302_2 <= VIRTUAL)||(LA302_2 >= WRITE && LA302_2 <= WRITEONLY)||(LA302_2 >= XOR && LA302_2 <= 210)) ) {
+				else if ( (LA302_2==ABSOLUTE||(LA302_2 >= ADD && LA302_2 <= ANSISTRING)||LA302_2==AS||(LA302_2 >= AT && LA302_2 <= AT2)||LA302_2==BREAK||(LA302_2 >= CONTAINS && LA302_2 <= DELAYED)||LA302_2==DISPID||LA302_2==DIV||LA302_2==DOT||(LA302_2 >= DQ && LA302_2 <= DW)||LA302_2==EQUAL||LA302_2==EXIT||LA302_2==EXPORT||LA302_2==FALSE||LA302_2==FINAL||(LA302_2 >= FUNCTION && LA302_2 <= GE)||(LA302_2 >= GT && LA302_2 <= HELPER)||(LA302_2 >= IMPLEMENTS && LA302_2 <= INHERITED)||LA302_2==IS||LA302_2==LBRACK||LA302_2==LE||(LA302_2 >= LOCAL && LA302_2 <= NAME)||LA302_2==NIL||(LA302_2 >= NOT && LA302_2 <= OBJECT)||(LA302_2 >= OPERATOR && LA302_2 <= OUT)||(LA302_2 >= PLUS && LA302_2 <= PROCEDURE)||LA302_2==PUBLIC||LA302_2==QuotedString||(LA302_2 >= READ && LA302_2 <= READONLY)||(LA302_2 >= REFERENCE && LA302_2 <= REGISTER)||LA302_2==REMOVE||(LA302_2 >= SHL && LA302_2 <= STATIC)||(LA302_2 >= STORED && LA302_2 <= STRING)||LA302_2==TRUE||(LA302_2 >= TkHexNum && LA302_2 <= TkIntNum)||LA302_2==TkRealNum||LA302_2==UNSAFE||(LA302_2 >= VARARGS && LA302_2 <= VIRTUAL)||(LA302_2 >= WRITE && LA302_2 <= WRITEONLY)||(LA302_2 >= XOR && LA302_2 <= 210)) ) {
 					alt302=3;
 				}
 
@@ -33772,6 +33988,8 @@ public class DelphiParser extends Parser {
 			case OPERATOR:
 			case OUT:
 			case POINTER:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REFERENCE:
@@ -33925,7 +34143,7 @@ public class DelphiParser extends Parser {
 
 
 	// $ANTLR start "usedKeywordsAsNames"
-	// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:714:1: usedKeywordsAsNames : ( ( ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT ) | ( FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME ) | ( OBJECT | OUT | OPERATOR | POINTER | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED ) | ( STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY ) );
+	// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:714:1: usedKeywordsAsNames : ( ( ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT ) | ( FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME ) | ( OBJECT | OUT | OPERATOR | POINTER | PUBLIC | PRIVATE | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED ) | ( STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY ) );
 	public final DelphiParser.usedKeywordsAsNames_return usedKeywordsAsNames() throws RecognitionException {
 		DelphiParser.usedKeywordsAsNames_return retval = new DelphiParser.usedKeywordsAsNames_return();
 		retval.start = input.LT(1);
@@ -33940,14 +34158,14 @@ public class DelphiParser extends Parser {
 		try {
 			if ( state.backtracking>0 && alreadyParsedRule(input, 170) ) { return retval; }
 
-			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:714:30: ( ( ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT ) | ( FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME ) | ( OBJECT | OUT | OPERATOR | POINTER | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED ) | ( STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY ) )
+			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:714:30: ( ( ABSOLUTE | ADD | ANSISTRING | AT | BREAK | CONTAINS | CONTINUE | DEFAULT | DQ | DW | DISPID | EXIT | EXPORT ) | ( FALSE | FINAL | HELPER | IMPLEMENTS | IN | INDEX | LOCAL | MESSAGE | NAME ) | ( OBJECT | OUT | OPERATOR | POINTER | PUBLIC | PRIVATE | READ | READONLY | REFERENCE | REGISTER | REMOVE | STORED ) | ( STRICT | STRING | STATIC | TRUE | UNSAFE | VARARGS | VARIANT | VIRTUAL | WRITE | WRITEONLY ) )
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:
 			{
 			root_0 = (Object)adaptor.nil();
 
 
 			set953=input.LT(1);
-			if ( input.LA(1)==ABSOLUTE||input.LA(1)==ADD||input.LA(1)==ANSISTRING||input.LA(1)==AT||input.LA(1)==BREAK||(input.LA(1) >= CONTAINS && input.LA(1) <= CONTINUE)||input.LA(1)==DEFAULT||input.LA(1)==DISPID||(input.LA(1) >= DQ && input.LA(1) <= DW)||input.LA(1)==EXIT||input.LA(1)==EXPORT||input.LA(1)==FALSE||input.LA(1)==FINAL||input.LA(1)==HELPER||(input.LA(1) >= IMPLEMENTS && input.LA(1) <= INDEX)||input.LA(1)==LOCAL||input.LA(1)==MESSAGE||input.LA(1)==NAME||input.LA(1)==OBJECT||input.LA(1)==OPERATOR||input.LA(1)==OUT||input.LA(1)==POINTER||(input.LA(1) >= READ && input.LA(1) <= READONLY)||(input.LA(1) >= REFERENCE && input.LA(1) <= REGISTER)||input.LA(1)==REMOVE||input.LA(1)==STATIC||(input.LA(1) >= STORED && input.LA(1) <= STRING)||input.LA(1)==TRUE||input.LA(1)==UNSAFE||(input.LA(1) >= VARARGS && input.LA(1) <= VIRTUAL)||(input.LA(1) >= WRITE && input.LA(1) <= WRITEONLY) ) {
+			if ( input.LA(1)==ABSOLUTE||input.LA(1)==ADD||input.LA(1)==ANSISTRING||input.LA(1)==AT||input.LA(1)==BREAK||(input.LA(1) >= CONTAINS && input.LA(1) <= CONTINUE)||input.LA(1)==DEFAULT||input.LA(1)==DISPID||(input.LA(1) >= DQ && input.LA(1) <= DW)||input.LA(1)==EXIT||input.LA(1)==EXPORT||input.LA(1)==FALSE||input.LA(1)==FINAL||input.LA(1)==HELPER||(input.LA(1) >= IMPLEMENTS && input.LA(1) <= INDEX)||input.LA(1)==LOCAL||input.LA(1)==MESSAGE||input.LA(1)==NAME||input.LA(1)==OBJECT||input.LA(1)==OPERATOR||input.LA(1)==OUT||input.LA(1)==POINTER||input.LA(1)==PRIVATE||input.LA(1)==PUBLIC||(input.LA(1) >= READ && input.LA(1) <= READONLY)||(input.LA(1) >= REFERENCE && input.LA(1) <= REGISTER)||input.LA(1)==REMOVE||input.LA(1)==STATIC||(input.LA(1) >= STORED && input.LA(1) <= STRING)||input.LA(1)==TRUE||input.LA(1)==UNSAFE||(input.LA(1) >= VARARGS && input.LA(1) <= VIRTUAL)||(input.LA(1) >= WRITE && input.LA(1) <= WRITEONLY) ) {
 				input.consume();
 				if ( state.backtracking==0 ) adaptor.addChild(root_0, (Object)adaptor.create(set953));
 				state.errorRecovery=false;
@@ -34077,7 +34295,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:733:30: ( ident ( ',' ident )* -> ^( ident ( ident )* ) )
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:733:32: ident ( ',' ident )*
 			{
-			pushFollow(FOLLOW_ident_in_identList21465);
+			pushFollow(FOLLOW_ident_in_identList21473);
 			ident955=ident();
 			state._fsp--;
 			if (state.failed) return retval;
@@ -34095,10 +34313,10 @@ public class DelphiParser extends Parser {
 				case 1 :
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:733:39: ',' ident
 					{
-					char_literal956=(Token)match(input,COMMA,FOLLOW_COMMA_in_identList21468); if (state.failed) return retval; 
+					char_literal956=(Token)match(input,COMMA,FOLLOW_COMMA_in_identList21476); if (state.failed) return retval; 
 					if ( state.backtracking==0 ) stream_COMMA.add(char_literal956);
 
-					pushFollow(FOLLOW_ident_in_identList21470);
+					pushFollow(FOLLOW_ident_in_identList21478);
 					ident957=ident();
 					state._fsp--;
 					if (state.failed) return retval;
@@ -34198,7 +34416,7 @@ public class DelphiParser extends Parser {
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:735:30: ( ident ( ',' ident )* -> ident ( ident )* )
 			// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:735:32: ident ( ',' ident )*
 			{
-			pushFollow(FOLLOW_ident_in_identListFlat21535);
+			pushFollow(FOLLOW_ident_in_identListFlat21543);
 			ident958=ident();
 			state._fsp--;
 			if (state.failed) return retval;
@@ -34216,10 +34434,10 @@ public class DelphiParser extends Parser {
 				case 1 :
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:735:39: ',' ident
 					{
-					char_literal959=(Token)match(input,COMMA,FOLLOW_COMMA_in_identListFlat21538); if (state.failed) return retval; 
+					char_literal959=(Token)match(input,COMMA,FOLLOW_COMMA_in_identListFlat21546); if (state.failed) return retval; 
 					if ( state.backtracking==0 ) stream_COMMA.add(char_literal959);
 
-					pushFollow(FOLLOW_ident_in_identListFlat21540);
+					pushFollow(FOLLOW_ident_in_identListFlat21548);
 					ident960=ident();
 					state._fsp--;
 					if (state.failed) return retval;
@@ -34355,6 +34573,8 @@ public class DelphiParser extends Parser {
 			case OPERATOR:
 			case OUT:
 			case POINTER:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REFERENCE:
@@ -34388,7 +34608,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					TkIdentifier961=(Token)match(input,TkIdentifier,FOLLOW_TkIdentifier_in_label21614); if (state.failed) return retval;
+					TkIdentifier961=(Token)match(input,TkIdentifier,FOLLOW_TkIdentifier_in_label21622); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					TkIdentifier961_tree = (Object)adaptor.create(TkIdentifier961);
 					adaptor.addChild(root_0, TkIdentifier961_tree);
@@ -34402,7 +34622,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					TkIntNum962=(Token)match(input,TkIntNum,FOLLOW_TkIntNum_in_label21647); if (state.failed) return retval;
+					TkIntNum962=(Token)match(input,TkIntNum,FOLLOW_TkIntNum_in_label21655); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					TkIntNum962_tree = (Object)adaptor.create(TkIntNum962);
 					adaptor.addChild(root_0, TkIntNum962_tree);
@@ -34416,7 +34636,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					TkHexNum963=(Token)match(input,TkHexNum,FOLLOW_TkHexNum_in_label21680); if (state.failed) return retval;
+					TkHexNum963=(Token)match(input,TkHexNum,FOLLOW_TkHexNum_in_label21688); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					TkHexNum963_tree = (Object)adaptor.create(TkHexNum963);
 					adaptor.addChild(root_0, TkHexNum963_tree);
@@ -34430,7 +34650,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					pushFollow(FOLLOW_usedKeywordsAsNames_in_label21713);
+					pushFollow(FOLLOW_usedKeywordsAsNames_in_label21721);
 					usedKeywordsAsNames964=usedKeywordsAsNames();
 					state._fsp--;
 					if (state.failed) return retval;
@@ -34510,7 +34730,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					TkRealNum965=(Token)match(input,TkRealNum,FOLLOW_TkRealNum_in_intRealNum21768); if (state.failed) return retval;
+					TkRealNum965=(Token)match(input,TkRealNum,FOLLOW_TkRealNum_in_intRealNum21776); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					TkRealNum965_tree = (Object)adaptor.create(TkRealNum965);
 					adaptor.addChild(root_0, TkRealNum965_tree);
@@ -34524,7 +34744,7 @@ public class DelphiParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 
 
-					pushFollow(FOLLOW_intNum_in_intRealNum21801);
+					pushFollow(FOLLOW_intNum_in_intRealNum21809);
 					intNum966=intNum();
 					state._fsp--;
 					if (state.failed) return retval;
@@ -34652,7 +34872,7 @@ public class DelphiParser extends Parser {
 			root_0 = (Object)adaptor.nil();
 
 
-			pushFollow(FOLLOW_ident_in_namespaceName21945);
+			pushFollow(FOLLOW_ident_in_namespaceName21953);
 			ident968=ident();
 			state._fsp--;
 			if (state.failed) return retval;
@@ -34671,13 +34891,13 @@ public class DelphiParser extends Parser {
 				case 1 :
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:748:39: '.' ident
 					{
-					char_literal969=(Token)match(input,DOT,FOLLOW_DOT_in_namespaceName21948); if (state.failed) return retval;
+					char_literal969=(Token)match(input,DOT,FOLLOW_DOT_in_namespaceName21956); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					char_literal969_tree = (Object)adaptor.create(char_literal969);
 					adaptor.addChild(root_0, char_literal969_tree);
 					}
 
-					pushFollow(FOLLOW_ident_in_namespaceName21950);
+					pushFollow(FOLLOW_ident_in_namespaceName21958);
 					ident970=ident();
 					state._fsp--;
 					if (state.failed) return retval;
@@ -34756,7 +34976,7 @@ public class DelphiParser extends Parser {
 					int LA310_1 = input.LA(2);
 					if ( (LA310_1==DOT) ) {
 						int LA310_5 = input.LA(3);
-						if ( (synpred654_Delphi()) ) {
+						if ( (synpred656_Delphi()) ) {
 							alt310=1;
 						}
 
@@ -34771,7 +34991,7 @@ public class DelphiParser extends Parser {
 						int LA310_6 = input.LA(3);
 						if ( (LA310_6==DOT) ) {
 							int LA310_10 = input.LA(4);
-							if ( (synpred654_Delphi()) ) {
+							if ( (synpred656_Delphi()) ) {
 								alt310=1;
 							}
 
@@ -34782,7 +35002,7 @@ public class DelphiParser extends Parser {
 						int LA310_7 = input.LA(3);
 						if ( (LA310_7==DOT) ) {
 							int LA310_11 = input.LA(4);
-							if ( (synpred654_Delphi()) ) {
+							if ( (synpred656_Delphi()) ) {
 								alt310=1;
 							}
 
@@ -34818,6 +35038,8 @@ public class DelphiParser extends Parser {
 				case OPERATOR:
 				case OUT:
 				case POINTER:
+				case PRIVATE:
+				case PUBLIC:
 				case READ:
 				case READONLY:
 				case REFERENCE:
@@ -34838,7 +35060,7 @@ public class DelphiParser extends Parser {
 					int LA310_3 = input.LA(2);
 					if ( (LA310_3==DOT) ) {
 						int LA310_8 = input.LA(3);
-						if ( (synpred654_Delphi()) ) {
+						if ( (synpred656_Delphi()) ) {
 							alt310=1;
 						}
 
@@ -34851,13 +35073,13 @@ public class DelphiParser extends Parser {
 				case 1 :
 					// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:750:34: ident '.'
 					{
-					pushFollow(FOLLOW_ident_in_qualifiedIdent22005);
+					pushFollow(FOLLOW_ident_in_qualifiedIdent22013);
 					ident971=ident();
 					state._fsp--;
 					if (state.failed) return retval;
 					if ( state.backtracking==0 ) adaptor.addChild(root_0, ident971.getTree());
 
-					char_literal972=(Token)match(input,DOT,FOLLOW_DOT_in_qualifiedIdent22007); if (state.failed) return retval;
+					char_literal972=(Token)match(input,DOT,FOLLOW_DOT_in_qualifiedIdent22015); if (state.failed) return retval;
 					if ( state.backtracking==0 ) {
 					char_literal972_tree = (Object)adaptor.create(char_literal972);
 					adaptor.addChild(root_0, char_literal972_tree);
@@ -34871,7 +35093,7 @@ public class DelphiParser extends Parser {
 				}
 			}
 
-			pushFollow(FOLLOW_ident_in_qualifiedIdent22012);
+			pushFollow(FOLLOW_ident_in_qualifiedIdent22020);
 			ident973=ident();
 			state._fsp--;
 			if (state.failed) return retval;
@@ -36735,6 +36957,8 @@ public class DelphiParser extends Parser {
 			case NAME:
 			case OPERATOR:
 			case OUT:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REGISTER:
@@ -37346,6 +37570,8 @@ public class DelphiParser extends Parser {
 			case NAME:
 			case OPERATOR:
 			case OUT:
+			case PRIVATE:
+			case PUBLIC:
 			case READ:
 			case READONLY:
 			case REGISTER:
@@ -38348,6 +38574,8 @@ public class DelphiParser extends Parser {
 					case NAME:
 					case OPERATOR:
 					case OUT:
+					case PRIVATE:
+					case PUBLIC:
 					case READ:
 					case READONLY:
 					case REGISTER:
@@ -39392,6 +39620,8 @@ public class DelphiParser extends Parser {
 		case OPERATOR:
 		case OUT:
 		case POINTER:
+		case PRIVATE:
+		case PUBLIC:
 		case READ:
 		case READONLY:
 		case REFERENCE:
@@ -39815,7 +40045,7 @@ public class DelphiParser extends Parser {
 		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:591:50: ( statement )?
 		int alt395=2;
 		int LA395_0 = input.LA(1);
-		if ( (LA395_0==ABSOLUTE||LA395_0==ADD||LA395_0==ANSISTRING||LA395_0==ASM||(LA395_0 >= ASSIGN && LA395_0 <= AT2)||(LA395_0 >= BEGIN && LA395_0 <= CASE)||(LA395_0 >= CONTAINS && LA395_0 <= CONTINUE)||LA395_0==DEFAULT||LA395_0==DISPID||LA395_0==DOT||(LA395_0 >= DQ && LA395_0 <= DW)||LA395_0==EXIT||LA395_0==EXPORT||LA395_0==FALSE||LA395_0==FINAL||LA395_0==FOR||LA395_0==GOTO||LA395_0==HELPER||LA395_0==IF||(LA395_0 >= IMPLEMENTS && LA395_0 <= INHERITED)||LA395_0==LBRACK||(LA395_0 >= LOCAL && LA395_0 <= MESSAGE)||LA395_0==NAME||LA395_0==OBJECT||LA395_0==OPERATOR||LA395_0==OUT||(LA395_0 >= POINTER && LA395_0 <= POINTER2)||LA395_0==RAISE||(LA395_0 >= READ && LA395_0 <= READONLY)||(LA395_0 >= REFERENCE && LA395_0 <= REGISTER)||(LA395_0 >= REMOVE && LA395_0 <= REPEAT)||LA395_0==STATIC||(LA395_0 >= STORED && LA395_0 <= STRING)||(LA395_0 >= TRUE && LA395_0 <= TRY)||(LA395_0 >= TkHexNum && LA395_0 <= TkIntNum)||LA395_0==UNSAFE||(LA395_0 >= VAR && LA395_0 <= WRITEONLY)||LA395_0==198||LA395_0==203||LA395_0==209) ) {
+		if ( (LA395_0==ABSOLUTE||LA395_0==ADD||LA395_0==ANSISTRING||LA395_0==ASM||(LA395_0 >= ASSIGN && LA395_0 <= AT2)||(LA395_0 >= BEGIN && LA395_0 <= CASE)||(LA395_0 >= CONTAINS && LA395_0 <= CONTINUE)||LA395_0==DEFAULT||LA395_0==DISPID||LA395_0==DOT||(LA395_0 >= DQ && LA395_0 <= DW)||LA395_0==EXIT||LA395_0==EXPORT||LA395_0==FALSE||LA395_0==FINAL||LA395_0==FOR||LA395_0==GOTO||LA395_0==HELPER||LA395_0==IF||(LA395_0 >= IMPLEMENTS && LA395_0 <= INHERITED)||LA395_0==LBRACK||(LA395_0 >= LOCAL && LA395_0 <= MESSAGE)||LA395_0==NAME||LA395_0==OBJECT||LA395_0==OPERATOR||LA395_0==OUT||(LA395_0 >= POINTER && LA395_0 <= PRIVATE)||LA395_0==PUBLIC||LA395_0==RAISE||(LA395_0 >= READ && LA395_0 <= READONLY)||(LA395_0 >= REFERENCE && LA395_0 <= REGISTER)||(LA395_0 >= REMOVE && LA395_0 <= REPEAT)||LA395_0==STATIC||(LA395_0 >= STORED && LA395_0 <= STRING)||(LA395_0 >= TRUE && LA395_0 <= TRY)||(LA395_0 >= TkHexNum && LA395_0 <= TkIntNum)||LA395_0==UNSAFE||(LA395_0 >= VAR && LA395_0 <= WRITEONLY)||LA395_0==198||LA395_0==203||LA395_0==209) ) {
 			alt395=1;
 		}
 		else if ( (LA395_0==EOF) ) {
@@ -40021,7 +40251,7 @@ public class DelphiParser extends Parser {
 		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:607:79: ( constExpression )?
 		int alt399=2;
 		int LA399_0 = input.LA(1);
-		if ( (LA399_0==ABSOLUTE||(LA399_0 >= ADD && LA399_0 <= ANSISTRING)||LA399_0==AS||(LA399_0 >= AT && LA399_0 <= AT2)||LA399_0==BREAK||(LA399_0 >= CONTAINS && LA399_0 <= DEFAULT)||LA399_0==DISPID||LA399_0==DIV||LA399_0==DOT||(LA399_0 >= DQ && LA399_0 <= DW)||LA399_0==EQUAL||LA399_0==EXIT||LA399_0==EXPORT||LA399_0==FALSE||LA399_0==FINAL||(LA399_0 >= FUNCTION && LA399_0 <= GE)||(LA399_0 >= GT && LA399_0 <= HELPER)||(LA399_0 >= IMPLEMENTS && LA399_0 <= INHERITED)||LA399_0==IS||LA399_0==LBRACK||LA399_0==LE||(LA399_0 >= LOCAL && LA399_0 <= NAME)||LA399_0==NIL||(LA399_0 >= NOT && LA399_0 <= OBJECT)||(LA399_0 >= OPERATOR && LA399_0 <= OUT)||(LA399_0 >= PLUS && LA399_0 <= POINTER2)||LA399_0==PROCEDURE||LA399_0==QuotedString||(LA399_0 >= READ && LA399_0 <= READONLY)||(LA399_0 >= REFERENCE && LA399_0 <= REGISTER)||LA399_0==REMOVE||(LA399_0 >= SHL && LA399_0 <= STATIC)||(LA399_0 >= STORED && LA399_0 <= STRING)||LA399_0==TRUE||(LA399_0 >= TkHexNum && LA399_0 <= TkIntNum)||LA399_0==TkRealNum||LA399_0==UNSAFE||(LA399_0 >= VARARGS && LA399_0 <= VIRTUAL)||(LA399_0 >= WRITE && LA399_0 <= WRITEONLY)||(LA399_0 >= XOR && LA399_0 <= 210)) ) {
+		if ( (LA399_0==ABSOLUTE||(LA399_0 >= ADD && LA399_0 <= ANSISTRING)||LA399_0==AS||(LA399_0 >= AT && LA399_0 <= AT2)||LA399_0==BREAK||(LA399_0 >= CONTAINS && LA399_0 <= DEFAULT)||LA399_0==DISPID||LA399_0==DIV||LA399_0==DOT||(LA399_0 >= DQ && LA399_0 <= DW)||LA399_0==EQUAL||LA399_0==EXIT||LA399_0==EXPORT||LA399_0==FALSE||LA399_0==FINAL||(LA399_0 >= FUNCTION && LA399_0 <= GE)||(LA399_0 >= GT && LA399_0 <= HELPER)||(LA399_0 >= IMPLEMENTS && LA399_0 <= INHERITED)||LA399_0==IS||LA399_0==LBRACK||LA399_0==LE||(LA399_0 >= LOCAL && LA399_0 <= NAME)||LA399_0==NIL||(LA399_0 >= NOT && LA399_0 <= OBJECT)||(LA399_0 >= OPERATOR && LA399_0 <= OUT)||(LA399_0 >= PLUS && LA399_0 <= PROCEDURE)||LA399_0==PUBLIC||LA399_0==QuotedString||(LA399_0 >= READ && LA399_0 <= READONLY)||(LA399_0 >= REFERENCE && LA399_0 <= REGISTER)||LA399_0==REMOVE||(LA399_0 >= SHL && LA399_0 <= STATIC)||(LA399_0 >= STORED && LA399_0 <= STRING)||LA399_0==TRUE||(LA399_0 >= TkHexNum && LA399_0 <= TkIntNum)||LA399_0==TkRealNum||LA399_0==UNSAFE||(LA399_0 >= VARARGS && LA399_0 <= VIRTUAL)||(LA399_0 >= WRITE && LA399_0 <= WRITEONLY)||(LA399_0 >= XOR && LA399_0 <= 210)) ) {
 			alt399=1;
 		}
 		else if ( (LA399_0==EOF) ) {
@@ -40074,7 +40304,7 @@ public class DelphiParser extends Parser {
 		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:615:38: ( statementList )?
 		int alt400=2;
 		int LA400_0 = input.LA(1);
-		if ( (LA400_0==ABSOLUTE||LA400_0==ADD||LA400_0==ANSISTRING||LA400_0==ASM||(LA400_0 >= ASSIGN && LA400_0 <= AT2)||(LA400_0 >= BEGIN && LA400_0 <= CASE)||(LA400_0 >= CONTAINS && LA400_0 <= CONTINUE)||LA400_0==DEFAULT||LA400_0==DISPID||LA400_0==DOT||(LA400_0 >= DQ && LA400_0 <= DW)||LA400_0==EXIT||LA400_0==EXPORT||LA400_0==FALSE||LA400_0==FINAL||LA400_0==FOR||LA400_0==GOTO||LA400_0==HELPER||LA400_0==IF||(LA400_0 >= IMPLEMENTS && LA400_0 <= INHERITED)||LA400_0==LBRACK||(LA400_0 >= LOCAL && LA400_0 <= MESSAGE)||LA400_0==NAME||LA400_0==OBJECT||LA400_0==OPERATOR||LA400_0==OUT||(LA400_0 >= POINTER && LA400_0 <= POINTER2)||LA400_0==RAISE||(LA400_0 >= READ && LA400_0 <= READONLY)||(LA400_0 >= REFERENCE && LA400_0 <= REGISTER)||(LA400_0 >= REMOVE && LA400_0 <= REPEAT)||LA400_0==SEMI||LA400_0==STATIC||(LA400_0 >= STORED && LA400_0 <= STRING)||(LA400_0 >= TRUE && LA400_0 <= TRY)||(LA400_0 >= TkHexNum && LA400_0 <= TkIntNum)||LA400_0==UNSAFE||(LA400_0 >= VAR && LA400_0 <= WRITEONLY)||LA400_0==198||LA400_0==203||LA400_0==209) ) {
+		if ( (LA400_0==ABSOLUTE||LA400_0==ADD||LA400_0==ANSISTRING||LA400_0==ASM||(LA400_0 >= ASSIGN && LA400_0 <= AT2)||(LA400_0 >= BEGIN && LA400_0 <= CASE)||(LA400_0 >= CONTAINS && LA400_0 <= CONTINUE)||LA400_0==DEFAULT||LA400_0==DISPID||LA400_0==DOT||(LA400_0 >= DQ && LA400_0 <= DW)||LA400_0==EXIT||LA400_0==EXPORT||LA400_0==FALSE||LA400_0==FINAL||LA400_0==FOR||LA400_0==GOTO||LA400_0==HELPER||LA400_0==IF||(LA400_0 >= IMPLEMENTS && LA400_0 <= INHERITED)||LA400_0==LBRACK||(LA400_0 >= LOCAL && LA400_0 <= MESSAGE)||LA400_0==NAME||LA400_0==OBJECT||LA400_0==OPERATOR||LA400_0==OUT||(LA400_0 >= POINTER && LA400_0 <= PRIVATE)||LA400_0==PUBLIC||LA400_0==RAISE||(LA400_0 >= READ && LA400_0 <= READONLY)||(LA400_0 >= REFERENCE && LA400_0 <= REGISTER)||(LA400_0 >= REMOVE && LA400_0 <= REPEAT)||LA400_0==SEMI||LA400_0==STATIC||(LA400_0 >= STORED && LA400_0 <= STRING)||(LA400_0 >= TRUE && LA400_0 <= TRY)||(LA400_0 >= TkHexNum && LA400_0 <= TkIntNum)||LA400_0==UNSAFE||(LA400_0 >= VAR && LA400_0 <= WRITEONLY)||LA400_0==198||LA400_0==203||LA400_0==209) ) {
 			alt400=1;
 		}
 		else if ( (LA400_0==EXCEPT) ) {
@@ -40366,22 +40596,22 @@ public class DelphiParser extends Parser {
 	}
 	// $ANTLR end synpred467_Delphi
 
-	// $ANTLR start synpred654_Delphi
-	public final void synpred654_Delphi_fragment() throws RecognitionException {
+	// $ANTLR start synpred656_Delphi
+	public final void synpred656_Delphi_fragment() throws RecognitionException {
 		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:750:34: ( ident '.' )
 		// D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g:750:34: ident '.'
 		{
-		pushFollow(FOLLOW_ident_in_synpred654_Delphi22005);
+		pushFollow(FOLLOW_ident_in_synpred656_Delphi22013);
 		ident();
 		state._fsp--;
 		if (state.failed) return;
 
-		match(input,DOT,FOLLOW_DOT_in_synpred654_Delphi22007); if (state.failed) return;
+		match(input,DOT,FOLLOW_DOT_in_synpred656_Delphi22015); if (state.failed) return;
 
 		}
 
 	}
-	// $ANTLR end synpred654_Delphi
+	// $ANTLR end synpred656_Delphi
 
 	// Delegated rules
 
@@ -41757,11 +41987,11 @@ public class DelphiParser extends Parser {
 		state.failed=false;
 		return success;
 	}
-	public final boolean synpred654_Delphi() {
+	public final boolean synpred656_Delphi() {
 		state.backtracking++;
 		int start = input.mark();
 		try {
-			synpred654_Delphi_fragment(); // can never throw exception
+			synpred656_Delphi_fragment(); // can never throw exception
 		} catch (RecognitionException re) {
 			System.err.println("impossible: "+re);
 		}
@@ -42736,29 +42966,30 @@ public class DelphiParser extends Parser {
 	static final String DFA26_minS =
 		"\1\4\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0\3\uffff"+
 		"\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1\0\1\uffff"+
-		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff\1\0\4\uffff";
 	static final String DFA26_maxS =
 		"\1\u00d2\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0"+
 		"\3\uffff\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1"+
-		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff"+
+		"\1\0\4\uffff";
 	static final String DFA26_acceptS =
 		"\1\uffff\1\2\147\uffff\1\1";
 	static final String DFA26_specialS =
 		"\10\uffff\1\0\22\uffff\1\1\1\2\7\uffff\1\3\1\4\1\5\3\uffff\1\6\12\uffff"+
 		"\1\7\3\uffff\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\uffff\1\17\5\uffff\1"+
 		"\20\2\uffff\1\21\1\uffff\1\22\5\uffff\1\23\1\uffff\1\24\1\uffff\1\25\5"+
-		"\uffff\1\26\2\uffff\1\27\5\uffff\1\30\4\uffff}>";
+		"\uffff\1\26\2\uffff\1\27\1\uffff\1\30\1\31\2\uffff\1\32\4\uffff}>";
 	static final String[] DFA26_transitionS = {
 			"\1\126\1\uffff\1\145\1\1\1\145\1\uffff\3\1\1\uffff\1\1\1\145\2\1\1\uffff"+
 			"\1\1\1\145\5\1\1\uffff\2\1\2\145\1\1\1\76\3\1\1\74\1\uffff\5\1\2\145"+
 			"\3\uffff\4\1\1\145\1\1\1\107\2\1\1\34\1\1\1\uffff\1\145\2\1\2\uffff\2"+
 			"\1\1\uffff\1\1\1\145\3\uffff\1\1\1\77\1\46\1\124\3\1\1\uffff\2\1\1\10"+
-			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\137\1\1\1\145\1"+
-			"\1\3\uffff\3\1\1\145\3\1\1\uffff\5\1\1\uffff\1\1\2\uffff\1\65\1\72\1"+
-			"\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff\1\1\1\uffff\4\1"+
-			"\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff\1\1\1\44\1"+
-			"\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2\uffff\1\71"+
-			"\1\73\1\uffff\1\1\1\45\14\1",
+			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\142\1\1\1\145\1"+
+			"\1\3\uffff\3\1\1\145\1\1\1\137\1\1\1\uffff\2\1\1\141\2\1\1\uffff\1\1"+
+			"\2\uffff\1\65\1\72\1\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff"+
+			"\1\1\1\uffff\4\1\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff"+
+			"\1\1\1\44\1\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2"+
+			"\uffff\1\71\1\73\1\uffff\1\1\1\45\14\1",
 			"",
 			"",
 			"",
@@ -42855,8 +43086,8 @@ public class DelphiParser extends Parser {
 			"",
 			"\1\uffff",
 			"",
-			"",
-			"",
+			"\1\uffff",
+			"\1\uffff",
 			"",
 			"",
 			"\1\uffff",
@@ -43217,6 +43448,32 @@ public class DelphiParser extends Parser {
 						break;
 
 					case 24 : 
+						int LA26_97 = input.LA(1);
+						 
+						int index26_97 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred39_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index26_97);
+						if ( s>=0 ) return s;
+						break;
+
+					case 25 : 
+						int LA26_98 = input.LA(1);
+						 
+						int index26_98 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred39_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index26_98);
+						if ( s>=0 ) return s;
+						break;
+
+					case 26 : 
 						int LA26_101 = input.LA(1);
 						 
 						int index26_101 = input.index();
@@ -43244,29 +43501,30 @@ public class DelphiParser extends Parser {
 	static final String DFA30_minS =
 		"\1\4\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0\3\uffff"+
 		"\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1\0\1\uffff"+
-		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff\1\0\4\uffff";
 	static final String DFA30_maxS =
 		"\1\u00d2\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0"+
 		"\3\uffff\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1"+
-		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff"+
+		"\1\0\4\uffff";
 	static final String DFA30_acceptS =
 		"\1\uffff\1\2\147\uffff\1\1";
 	static final String DFA30_specialS =
 		"\10\uffff\1\0\22\uffff\1\1\1\2\7\uffff\1\3\1\4\1\5\3\uffff\1\6\12\uffff"+
 		"\1\7\3\uffff\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\uffff\1\17\5\uffff\1"+
 		"\20\2\uffff\1\21\1\uffff\1\22\5\uffff\1\23\1\uffff\1\24\1\uffff\1\25\5"+
-		"\uffff\1\26\2\uffff\1\27\5\uffff\1\30\4\uffff}>";
+		"\uffff\1\26\2\uffff\1\27\1\uffff\1\30\1\31\2\uffff\1\32\4\uffff}>";
 	static final String[] DFA30_transitionS = {
 			"\1\126\1\uffff\1\145\1\1\1\145\1\uffff\3\1\1\uffff\1\1\1\145\2\1\1\uffff"+
 			"\1\1\1\145\5\1\1\uffff\2\1\2\145\1\1\1\76\3\1\1\74\1\uffff\5\1\2\145"+
 			"\3\uffff\4\1\1\145\1\1\1\107\2\1\1\34\1\1\1\uffff\1\145\2\1\2\uffff\2"+
 			"\1\1\uffff\1\1\1\145\3\uffff\1\1\1\77\1\46\1\124\3\1\1\uffff\2\1\1\10"+
-			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\137\1\1\1\145\1"+
-			"\1\3\uffff\3\1\1\145\3\1\1\uffff\5\1\1\uffff\1\1\2\uffff\1\65\1\72\1"+
-			"\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff\1\1\1\uffff\4\1"+
-			"\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff\1\1\1\44\1"+
-			"\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2\uffff\1\71"+
-			"\1\73\1\uffff\1\1\1\45\14\1",
+			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\142\1\1\1\145\1"+
+			"\1\3\uffff\3\1\1\145\1\1\1\137\1\1\1\uffff\2\1\1\141\2\1\1\uffff\1\1"+
+			"\2\uffff\1\65\1\72\1\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff"+
+			"\1\1\1\uffff\4\1\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff"+
+			"\1\1\1\44\1\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2"+
+			"\uffff\1\71\1\73\1\uffff\1\1\1\45\14\1",
 			"",
 			"",
 			"",
@@ -43363,8 +43621,8 @@ public class DelphiParser extends Parser {
 			"",
 			"\1\uffff",
 			"",
-			"",
-			"",
+			"\1\uffff",
+			"\1\uffff",
 			"",
 			"",
 			"\1\uffff",
@@ -43725,6 +43983,32 @@ public class DelphiParser extends Parser {
 						break;
 
 					case 24 : 
+						int LA30_97 = input.LA(1);
+						 
+						int index30_97 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred44_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index30_97);
+						if ( s>=0 ) return s;
+						break;
+
+					case 25 : 
+						int LA30_98 = input.LA(1);
+						 
+						int index30_98 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred44_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index30_98);
+						if ( s>=0 ) return s;
+						break;
+
+					case 26 : 
 						int LA30_101 = input.LA(1);
 						 
 						int index30_101 = input.index();
@@ -43752,29 +44036,30 @@ public class DelphiParser extends Parser {
 	static final String DFA33_minS =
 		"\1\4\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0\3\uffff"+
 		"\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1\0\1\uffff"+
-		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff\1\0\4\uffff";
 	static final String DFA33_maxS =
 		"\1\u00d2\7\uffff\1\0\22\uffff\2\0\7\uffff\3\0\3\uffff\1\0\12\uffff\1\0"+
 		"\3\uffff\7\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1"+
-		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\4\uffff";
+		"\0\1\uffff\1\0\1\uffff\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff"+
+		"\1\0\4\uffff";
 	static final String DFA33_acceptS =
 		"\1\uffff\1\2\147\uffff\1\1";
 	static final String DFA33_specialS =
 		"\10\uffff\1\0\22\uffff\1\1\1\2\7\uffff\1\3\1\4\1\5\3\uffff\1\6\12\uffff"+
 		"\1\7\3\uffff\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\uffff\1\17\5\uffff\1"+
 		"\20\2\uffff\1\21\1\uffff\1\22\5\uffff\1\23\1\uffff\1\24\1\uffff\1\25\5"+
-		"\uffff\1\26\2\uffff\1\27\5\uffff\1\30\4\uffff}>";
+		"\uffff\1\26\2\uffff\1\27\1\uffff\1\30\1\31\2\uffff\1\32\4\uffff}>";
 	static final String[] DFA33_transitionS = {
 			"\1\126\1\uffff\1\145\1\1\1\145\1\uffff\3\1\1\uffff\1\1\1\145\2\1\1\uffff"+
 			"\1\1\1\145\5\1\1\uffff\2\1\2\145\1\1\1\76\3\1\1\74\1\uffff\5\1\2\145"+
 			"\3\uffff\4\1\1\145\1\1\1\107\2\1\1\34\1\1\1\uffff\1\145\2\1\2\uffff\2"+
 			"\1\1\uffff\1\1\1\145\3\uffff\1\1\1\77\1\46\1\124\3\1\1\uffff\2\1\1\10"+
-			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\137\1\1\1\145\1"+
-			"\1\3\uffff\3\1\1\145\3\1\1\uffff\5\1\1\uffff\1\1\2\uffff\1\65\1\72\1"+
-			"\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff\1\1\1\uffff\4\1"+
-			"\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff\1\1\1\44\1"+
-			"\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2\uffff\1\71"+
-			"\1\73\1\uffff\1\1\1\45\14\1",
+			"\2\uffff\2\1\1\112\2\1\1\145\2\1\1\52\5\1\1\145\2\1\1\142\1\1\1\145\1"+
+			"\1\3\uffff\3\1\1\145\1\1\1\137\1\1\1\uffff\2\1\1\141\2\1\1\uffff\1\1"+
+			"\2\uffff\1\65\1\72\1\uffff\1\145\1\101\1\uffff\1\145\2\uffff\4\1\1\uffff"+
+			"\1\1\1\uffff\4\1\1\145\1\1\1\75\1\134\1\145\3\1\1\33\1\uffff\1\1\15\uffff"+
+			"\1\1\1\44\1\1\3\uffff\1\1\6\uffff\1\122\1\1\2\uffff\1\1\1\114\2\145\2"+
+			"\uffff\1\71\1\73\1\uffff\1\1\1\45\14\1",
 			"",
 			"",
 			"",
@@ -43871,8 +44156,8 @@ public class DelphiParser extends Parser {
 			"",
 			"\1\uffff",
 			"",
-			"",
-			"",
+			"\1\uffff",
+			"\1\uffff",
 			"",
 			"",
 			"\1\uffff",
@@ -44233,6 +44518,32 @@ public class DelphiParser extends Parser {
 						break;
 
 					case 24 : 
+						int LA33_97 = input.LA(1);
+						 
+						int index33_97 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred47_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index33_97);
+						if ( s>=0 ) return s;
+						break;
+
+					case 25 : 
+						int LA33_98 = input.LA(1);
+						 
+						int index33_98 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred47_Delphi()) ) {s = 105;}
+						else if ( (true) ) {s = 1;}
+						 
+						input.seek(index33_98);
+						if ( s>=0 ) return s;
+						break;
+
+					case 26 : 
 						int LA33_101 = input.LA(1);
 						 
 						int index33_101 = input.index();
@@ -44274,10 +44585,10 @@ public class DelphiParser extends Parser {
 			"\1\4\1\uffff\1\7\1\uffff\1\7\2\uffff\1\5\2\uffff\1\7\4\uffff\2\4\1\uffff"+
 			"\1\4\1\7\4\uffff\1\7\1\6\1\7\1\4\3\uffff\1\4\1\uffff\1\4\2\uffff\1\4"+
 			"\1\uffff\1\7\2\4\1\7\2\4\1\7\1\uffff\1\4\1\uffff\2\4\1\7\2\uffff\1\7"+
-			"\1\4\1\7\6\uffff\1\4\1\7\1\4\1\uffff\1\4\5\uffff\1\4\4\uffff\2\7\1\uffff"+
-			"\2\7\1\uffff\1\7\11\uffff\4\4\1\7\1\uffff\3\7\3\uffff\1\3\17\uffff\1"+
-			"\4\1\1\1\4\3\uffff\1\4\6\uffff\1\7\4\uffff\3\7\2\uffff\2\7\1\uffff\1"+
-			"\4\1\2\14\4",
+			"\1\4\1\7\6\uffff\1\4\1\7\1\4\1\7\1\4\3\uffff\1\7\1\uffff\1\4\4\uffff"+
+			"\2\7\1\uffff\2\7\1\uffff\1\7\11\uffff\4\4\1\7\1\uffff\3\7\3\uffff\1\3"+
+			"\17\uffff\1\4\1\1\1\4\3\uffff\1\4\6\uffff\1\7\4\uffff\3\7\2\uffff\2\7"+
+			"\1\uffff\1\4\1\2\14\4",
 			"\1\4\2\uffff\1\4\5\uffff\1\4\10\uffff\1\11\14\uffff\1\4\1\uffff\1\10"+
 			"\1\4\10\uffff\1\4\17\uffff\1\4\1\uffff\1\4\6\uffff\1\4\5\uffff\1\4\1"+
 			"\uffff\1\4\2\uffff\1\4\2\uffff\2\4\1\uffff\2\4\5\uffff\1\4\4\uffff\1"+
@@ -44304,10 +44615,10 @@ public class DelphiParser extends Parser {
 			"\uffff\4\4\3\uffff\1\4\1\uffff\1\4\1\uffff\1\14\1\4\1\uffff\2\4\5\uffff"+
 			"\1\4\1\uffff\1\4\1\uffff\1\4\2\uffff\1\4\2\uffff\1\4\5\uffff\1\4\1\uffff"+
 			"\2\4\4\uffff\4\4\3\uffff\1\4\1\uffff\1\4\2\uffff\1\4\1\uffff\7\4\1\uffff"+
-			"\1\4\1\uffff\3\4\2\uffff\3\4\6\uffff\3\4\7\uffff\1\4\1\uffff\1\11\2\uffff"+
-			"\2\4\1\uffff\2\4\1\uffff\1\4\11\uffff\5\4\1\uffff\3\4\3\uffff\1\4\17"+
-			"\uffff\3\4\3\uffff\1\4\6\uffff\1\4\4\uffff\3\4\2\uffff\2\4\1\uffff\16"+
-			"\4",
+			"\1\4\1\uffff\3\4\2\uffff\3\4\6\uffff\4\4\4\uffff\1\4\1\uffff\1\4\1\uffff"+
+			"\1\11\2\uffff\2\4\1\uffff\2\4\1\uffff\1\4\11\uffff\5\4\1\uffff\3\4\3"+
+			"\uffff\1\4\17\uffff\3\4\3\uffff\1\4\6\uffff\1\4\4\uffff\3\4\2\uffff\2"+
+			"\4\1\uffff\16\4",
 			"\1\4\2\uffff\1\4\5\uffff\1\4\10\uffff\1\11\14\uffff\1\4\1\uffff\1\10"+
 			"\1\4\10\uffff\1\4\17\uffff\1\4\1\uffff\1\4\6\uffff\1\4\5\uffff\1\4\1"+
 			"\uffff\1\4\2\uffff\1\4\2\uffff\2\4\1\uffff\2\4\5\uffff\1\4\4\uffff\1"+
@@ -44317,9 +44628,9 @@ public class DelphiParser extends Parser {
 			"\17\1\uffff\1\17\3\uffff\1\17\6\uffff\2\17\7\uffff\1\17\1\uffff\1\17"+
 			"\2\uffff\1\17\2\uffff\1\17\10\uffff\1\17\4\uffff\3\17\13\uffff\1\17\2"+
 			"\uffff\1\17\2\uffff\1\17\5\uffff\1\17\2\uffff\1\17\1\uffff\1\17\7\uffff"+
-			"\1\17\15\uffff\2\17\1\uffff\2\17\1\uffff\1\17\15\uffff\1\17\1\uffff\3"+
-			"\17\3\uffff\1\17\20\uffff\1\15\13\uffff\1\17\4\uffff\3\17\2\uffff\2\17"+
-			"\2\uffff\1\16",
+			"\1\17\1\uffff\1\17\4\uffff\1\17\6\uffff\2\17\1\uffff\2\17\1\uffff\1\17"+
+			"\15\uffff\1\17\1\uffff\3\17\3\uffff\1\17\20\uffff\1\15\13\uffff\1\17"+
+			"\4\uffff\3\17\2\uffff\2\17\2\uffff\1\16",
 			"",
 			"\1\4\2\uffff\1\4\5\uffff\1\4\10\uffff\1\11\14\uffff\1\4\1\uffff\1\10"+
 			"\1\4\10\uffff\1\4\17\uffff\1\4\1\uffff\1\4\6\uffff\1\4\5\uffff\1\4\1"+
@@ -44335,9 +44646,9 @@ public class DelphiParser extends Parser {
 			"\22\1\uffff\1\22\3\uffff\1\22\6\uffff\2\22\7\uffff\1\22\1\uffff\1\22"+
 			"\2\uffff\1\22\2\uffff\1\22\10\uffff\1\22\4\uffff\3\22\13\uffff\1\22\2"+
 			"\uffff\1\22\2\uffff\1\22\5\uffff\1\22\2\uffff\1\22\1\uffff\1\22\7\uffff"+
-			"\1\22\15\uffff\2\22\1\uffff\2\22\1\uffff\1\22\15\uffff\1\22\1\uffff\3"+
-			"\22\3\uffff\1\22\20\uffff\1\20\13\uffff\1\22\4\uffff\3\22\2\uffff\2\22"+
-			"\2\uffff\1\21",
+			"\1\22\1\uffff\1\22\4\uffff\1\22\6\uffff\2\22\1\uffff\2\22\1\uffff\1\22"+
+			"\15\uffff\1\22\1\uffff\3\22\3\uffff\1\22\20\uffff\1\20\13\uffff\1\22"+
+			"\4\uffff\3\22\2\uffff\2\22\2\uffff\1\21",
 			"\1\4\2\uffff\1\4\5\uffff\1\4\10\uffff\1\11\14\uffff\1\4\1\uffff\1\10"+
 			"\1\4\10\uffff\1\4\17\uffff\1\4\1\uffff\1\4\6\uffff\1\4\5\uffff\1\4\1"+
 			"\uffff\1\4\2\uffff\1\4\2\uffff\2\4\1\uffff\2\4\5\uffff\1\4\4\uffff\1"+
@@ -46873,11 +47184,11 @@ public class DelphiParser extends Parser {
 	static final String DFA223_minS =
 		"\1\4\20\0\2\uffff\3\0\4\uffff\1\0\20\uffff\1\0\3\uffff\7\0\1\uffff\1\0"+
 		"\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1\0\1\uffff\1\0\13\uffff"+
-		"\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\23\uffff";
+		"\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff\1\0\23\uffff";
 	static final String DFA223_maxS =
 		"\1\u00d2\20\0\2\uffff\3\0\4\uffff\1\0\20\uffff\1\0\3\uffff\7\0\1\uffff"+
 		"\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\1\0\5\uffff\1\0\1\uffff\1\0\13\uffff"+
-		"\1\0\5\uffff\1\0\2\uffff\1\0\5\uffff\1\0\23\uffff";
+		"\1\0\5\uffff\1\0\2\uffff\1\0\1\uffff\2\0\2\uffff\1\0\23\uffff";
 	static final String DFA223_acceptS =
 		"\21\uffff\1\20\127\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\21\1\11\1"+
 		"\12\1\13\1\14\1\15\1\16\1\17";
@@ -46886,19 +47197,19 @@ public class DelphiParser extends Parser {
 		"\1\16\1\17\2\uffff\1\20\1\21\1\22\4\uffff\1\23\20\uffff\1\24\3\uffff\1"+
 		"\25\1\26\1\27\1\30\1\31\1\32\1\33\1\uffff\1\34\5\uffff\1\35\2\uffff\1"+
 		"\36\1\uffff\1\37\5\uffff\1\40\1\uffff\1\41\13\uffff\1\42\5\uffff\1\43"+
-		"\2\uffff\1\44\5\uffff\1\45\23\uffff}>";
+		"\2\uffff\1\44\1\uffff\1\45\1\46\2\uffff\1\47\23\uffff}>";
 	static final String[] DFA223_transitionS = {
 			"\1\126\1\uffff\1\145\1\21\1\145\1\uffff\3\21\1\uffff\1\21\1\145\1\1\1"+
 			"\21\1\uffff\1\21\1\145\5\21\1\uffff\2\21\2\145\1\16\1\64\3\21\1\62\1"+
 			"\uffff\5\21\2\145\3\uffff\4\21\1\145\1\21\1\75\2\21\1\12\1\21\1\uffff"+
 			"\1\145\2\21\2\uffff\2\21\1\uffff\1\21\1\145\3\uffff\1\21\1\65\1\25\1"+
 			"\112\3\21\1\uffff\2\21\1\20\2\uffff\2\21\1\100\1\15\1\21\1\145\1\5\1"+
-			"\21\1\32\1\21\1\13\1\21\1\3\1\21\1\145\2\21\1\137\1\21\1\145\1\21\3\uffff"+
-			"\2\21\1\4\1\145\1\6\2\21\1\uffff\4\21\1\17\1\uffff\1\21\2\uffff\1\53"+
-			"\1\60\1\uffff\1\145\1\67\1\uffff\1\145\2\uffff\4\21\1\uffff\1\21\1\uffff"+
-			"\4\21\1\145\1\21\1\63\1\134\1\145\3\21\1\11\1\uffff\1\21\15\uffff\1\10"+
-			"\1\23\1\10\3\uffff\1\7\6\uffff\1\110\1\21\2\uffff\1\21\1\102\2\145\2"+
-			"\uffff\1\57\1\61\1\uffff\1\21\1\24\1\2\12\21\1\14",
+			"\21\1\32\1\21\1\13\1\21\1\3\1\21\1\145\2\21\1\142\1\21\1\145\1\21\3\uffff"+
+			"\2\21\1\4\1\145\1\6\1\137\1\21\1\uffff\2\21\1\141\1\21\1\17\1\uffff\1"+
+			"\21\2\uffff\1\53\1\60\1\uffff\1\145\1\67\1\uffff\1\145\2\uffff\4\21\1"+
+			"\uffff\1\21\1\uffff\4\21\1\145\1\21\1\63\1\134\1\145\3\21\1\11\1\uffff"+
+			"\1\21\15\uffff\1\10\1\23\1\10\3\uffff\1\7\6\uffff\1\110\1\21\2\uffff"+
+			"\1\21\1\102\2\145\2\uffff\1\57\1\61\1\uffff\1\21\1\24\1\2\12\21\1\14",
 			"\1\uffff",
 			"\1\uffff",
 			"\1\uffff",
@@ -46995,8 +47306,8 @@ public class DelphiParser extends Parser {
 			"",
 			"\1\uffff",
 			"",
-			"",
-			"",
+			"\1\uffff",
+			"\1\uffff",
 			"",
 			"",
 			"\1\uffff",
@@ -47544,6 +47855,32 @@ public class DelphiParser extends Parser {
 						break;
 
 					case 37 : 
+						int LA223_97 = input.LA(1);
+						 
+						int index223_97 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred311_Delphi()) ) {s = 17;}
+						else if ( (true) ) {s = 113;}
+						 
+						input.seek(index223_97);
+						if ( s>=0 ) return s;
+						break;
+
+					case 38 : 
+						int LA223_98 = input.LA(1);
+						 
+						int index223_98 = input.index();
+						input.rewind();
+						s = -1;
+						if ( (synpred311_Delphi()) ) {s = 17;}
+						else if ( (true) ) {s = 113;}
+						 
+						input.seek(index223_98);
+						if ( s>=0 ) return s;
+						break;
+
+					case 39 : 
 						int LA223_101 = input.LA(1);
 						 
 						int index223_101 = input.index();
@@ -48155,8 +48492,8 @@ public class DelphiParser extends Parser {
 			"\106\1\137\1\15\1\133\1\uffff\1\143\1\54\1\57\2\uffff\1\3\1\64\1\uffff"+
 			"\1\36\1\143\3\uffff\1\142\1\121\1\27\1\140\1\24\1\141\1\125\1\uffff\1"+
 			"\64\1\105\1\22\2\uffff\1\64\1\42\1\123\1\1\1\32\1\143\1\10\1\33\1\75"+
-			"\1\135\1\16\1\122\1\6\1\64\1\143\1\61\1\60\1\65\1\33\1\143\1\124\3\uffff"+
-			"\1\127\1\41\1\7\1\143\1\11\1\67\1\2\1\uffff\1\76\1\66\1\70\1\71\1\21"+
+			"\1\135\1\16\1\122\1\6\1\64\1\143\1\61\1\60\1\70\1\33\1\143\1\124\3\uffff"+
+			"\1\127\1\41\1\7\1\143\1\11\1\65\1\2\1\uffff\1\76\1\66\1\67\1\71\1\21"+
 			"\1\uffff\1\104\2\uffff\1\111\1\114\1\uffff\1\143\1\46\1\uffff\1\143\2"+
 			"\uffff\1\112\1\77\1\103\1\130\1\uffff\1\43\1\uffff\4\33\1\143\1\132\1"+
 			"\117\1\62\1\143\1\144\1\101\1\146\1\14\1\uffff\1\100\15\uffff\1\13\1"+
@@ -49676,20 +50013,20 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_usesFileClause_in_program173 = new BitSet(new long[]{0x0080010818880800L,0x00100000000C0002L,0x1000000022000200L});
 	public static final BitSet FOLLOW_block_in_program177 = new BitSet(new long[]{0x0000010000000000L});
 	public static final BitSet FOLLOW_DOT_in_program179 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_PROGRAM_in_programHead233 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROGRAM_in_programHead233 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceName_in_programHead235 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_programParmSeq_in_programHead238 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_programHead242 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_programParmSeq293 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_programParmSeq293 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_programParmSeq296 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_programParmSeq299 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_programParmSeq299 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_programParmSeq301 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_programParmSeq308 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_libraryHead_in_library366 = new BitSet(new long[]{0x0080010818880800L,0x00100000000C0002L,0x1400000022000200L});
 	public static final BitSet FOLLOW_usesFileClause_in_library369 = new BitSet(new long[]{0x0080010818880800L,0x00100000000C0002L,0x1000000022000200L});
 	public static final BitSet FOLLOW_block_in_library373 = new BitSet(new long[]{0x0000010000000000L});
 	public static final BitSet FOLLOW_DOT_in_library375 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LIBRARY_in_libraryHead429 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LIBRARY_in_libraryHead429 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceName_in_libraryHead431 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_libraryHead434 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_libraryHead438 = new BitSet(new long[]{0x0000000000000002L});
@@ -49698,7 +50035,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_containsClause_in_packageE508 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_packageE512 = new BitSet(new long[]{0x0000010000000000L});
 	public static final BitSet FOLLOW_DOT_in_packageE514 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_PACKAGE_in_packageHead568 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PACKAGE_in_packageHead568 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceName_in_packageHead570 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_packageHead572 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_unitHead_in_unit633 = new BitSet(new long[]{0x0000000000000000L,0x0000000000010000L});
@@ -49706,7 +50043,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_unitImplementation_in_unit637 = new BitSet(new long[]{0x0002000000080000L,0x0000000000004000L});
 	public static final BitSet FOLLOW_unitBlock_in_unit639 = new BitSet(new long[]{0x0000010000000000L});
 	public static final BitSet FOLLOW_DOT_in_unit641 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_UNIT_in_unitHead698 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_UNIT_in_unitHead698 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceName_in_unitHead700 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_unitHead703 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_unitHead707 = new BitSet(new long[]{0x0000000000000002L});
@@ -49720,28 +50057,28 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_END_in_unitBlock929 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_compoundStatement_in_unitBlock962 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_END_in_unitBlock995 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_INITIALIZATION_in_unitInitialization1042 = new BitSet(new long[]{0xB25019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_INITIALIZATION_in_unitInitialization1042 = new BitSet(new long[]{0xB25019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_unitInitialization1044 = new BitSet(new long[]{0x2000000000000002L});
 	public static final BitSet FOLLOW_unitFinalization_in_unitInitialization1047 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FINALIZATION_in_unitFinalization1098 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_FINALIZATION_in_unitFinalization1098 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_unitFinalization1100 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_CONTAINS_in_containsClause1154 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_CONTAINS_in_containsClause1154 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceFileNameList_in_containsClause1156 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_REQUIRES_in_requiresClause1207 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_REQUIRES_in_requiresClause1207 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceNameList_in_requiresClause1209 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_USES_in_usesClause1264 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_USES_in_usesClause1264 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceNameList_in_usesClause1266 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_USES_in_usesFileClause1325 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_USES_in_usesFileClause1325 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceFileNameList_in_usesFileClause1327 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_namespaceFileName_in_namespaceFileNameList1379 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_COMMA_in_namespaceFileNameList1382 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_namespaceFileNameList1382 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceFileName_in_namespaceFileNameList1384 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_namespaceFileNameList1388 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_namespaceName_in_namespaceFileName1445 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000800L});
 	public static final BitSet FOLLOW_IN_in_namespaceFileName1448 = new BitSet(new long[]{0x0000000000000000L,0x0400000000000000L});
 	public static final BitSet FOLLOW_QuotedString_in_namespaceFileName1450 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_namespaceName_in_namespaceNameList1511 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_COMMA_in_namespaceNameList1514 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_namespaceNameList1514 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_namespaceName_in_namespaceNameList1516 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_namespaceNameList1520 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_declSection_in_block1593 = new BitSet(new long[]{0x0080000818880802L,0x00100000000C0002L,0x1000000022000200L});
@@ -49762,69 +50099,69 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_exportsSection_in_interfaceDecl2125 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_procDecl_in_interfaceDecl2158 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_methodDecl_in_interfaceDecl2191 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LABEL_in_labelDeclSection2240 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
+	public static final BitSet FOLLOW_LABEL_in_labelDeclSection2240 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
 	public static final BitSet FOLLOW_label_in_labelDeclSection2242 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_COMMA_in_labelDeclSection2245 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
+	public static final BitSet FOLLOW_COMMA_in_labelDeclSection2245 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
 	public static final BitSet FOLLOW_label_in_labelDeclSection2247 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_labelDeclSection2251 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_constKey_in_constSection2304 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_constDeclaration_in_constSection2307 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_customAttribute_in_constDeclaration2462 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_constKey_in_constSection2304 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_constDeclaration_in_constSection2307 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_customAttribute_in_constDeclaration2462 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_constDeclaration2466 = new BitSet(new long[]{0x0004000001000000L});
-	public static final BitSet FOLLOW_COLON_in_constDeclaration2469 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_constDeclaration2469 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_constDeclaration2471 = new BitSet(new long[]{0x0004000000000000L});
-	public static final BitSet FOLLOW_EQUAL_in_constDeclaration2475 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_constDeclaration2475 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_constDeclaration2477 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_constDeclaration2480 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_constDeclaration2484 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TYPE_in_typeSection2551 = new BitSet(new long[]{0x1250181160108150L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_typeDeclaration_in_typeSection2553 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_typeDeclaration_in_typeSection2556 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_customAttribute_in_typeDeclaration2622 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_TYPE_in_typeSection2551 = new BitSet(new long[]{0x1250181160108150L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_typeDeclaration_in_typeSection2553 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_typeDeclaration_in_typeSection2556 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_customAttribute_in_typeDeclaration2622 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_typeDeclaration2626 = new BitSet(new long[]{0x0004000000000000L});
-	public static final BitSet FOLLOW_EQUAL_in_typeDeclaration2628 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_typeDeclaration2628 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_typeDeclaration2630 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_typeDeclaration2633 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_typeDeclaration2637 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_varKey_in_varSection2714 = new BitSet(new long[]{0x1250181160108150L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_varDeclaration_in_varSection2716 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_varDeclaration_in_varSection2719 = new BitSet(new long[]{0x1250181160108152L,0x8002029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_customAttribute_in_varDeclaration2879 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_varKey_in_varSection2714 = new BitSet(new long[]{0x1250181160108150L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_varDeclaration_in_varSection2716 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_varDeclaration_in_varSection2719 = new BitSet(new long[]{0x1250181160108152L,0x810A029049081C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_customAttribute_in_varDeclaration2879 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_identListFlat_in_varDeclaration2883 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_varDeclaration2885 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_varDeclaration2885 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_varDeclaration2887 = new BitSet(new long[]{0x0024000400000010L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_varValueSpec_in_varDeclaration2890 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_varDeclaration2895 = new BitSet(new long[]{0x0020000400000000L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_varDeclaration2899 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_VAR_in_inlineVarDeclaration2963 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_VAR_in_inlineVarDeclaration2963 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_inlineVarDeclaration2965 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_inlineVarDeclaration2968 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_inlineVarDeclaration2968 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_inlineVarDeclaration2970 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_inlineVarDeclaration2974 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_inlineVarDeclaration2974 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_inlineVarDeclaration2976 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_VAR_in_inlineVarDeclaration3009 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_VAR_in_inlineVarDeclaration3009 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_inlineVarDeclaration3011 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_inlineVarDeclaration3013 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_inlineVarDeclaration3013 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_inlineVarDeclaration3015 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ABSOLUTE_in_varValueSpec3070 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ABSOLUTE_in_varValueSpec3070 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_varValueSpec3072 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ABSOLUTE_in_varValueSpec3105 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ABSOLUTE_in_varValueSpec3105 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_varValueSpec3107 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EQUAL_in_varValueSpec3140 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_varValueSpec3140 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_varValueSpec3142 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EXPORTS_in_exportsSection3193 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_EXPORTS_in_exportsSection3193 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_exportsSection3195 = new BitSet(new long[]{0x0000000002000000L,0x0000000042001000L,0x0000000000002100L});
 	public static final BitSet FOLLOW_exportItem_in_exportsSection3197 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_COMMA_in_exportsSection3200 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_exportsSection3200 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_exportsSection3202 = new BitSet(new long[]{0x0000000002000000L,0x0000000042001000L,0x0000000000002100L});
 	public static final BitSet FOLLOW_exportItem_in_exportsSection3204 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_exportsSection3208 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_exportItem3264 = new BitSet(new long[]{0x1250181168108150L,0x8002029049081C20L,0xF100100008E8042DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_exportItem3264 = new BitSet(new long[]{0x1250181168108150L,0x810A029049081C20L,0xF100100008E8042DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_formalParameterList_in_exportItem3267 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_exportItem3271 = new BitSet(new long[]{0x0000000000000002L,0x0000000040001000L,0x0000000000000100L});
-	public static final BitSet FOLLOW_INDEX_in_exportItem3276 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_INDEX_in_exportItem3276 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_exportItem3278 = new BitSet(new long[]{0x0000000000000002L,0x0000000040000000L,0x0000000000000100L});
-	public static final BitSet FOLLOW_NAME_in_exportItem3283 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NAME_in_exportItem3283 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_exportItem3285 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000000100L});
 	public static final BitSet FOLLOW_RESIDENT_in_exportItem3290 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_strucType_in_typeDecl3352 = new BitSet(new long[]{0x0000000000000002L});
@@ -49833,10 +50170,10 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_procedureType_in_typeDecl3451 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_variantType_in_typeDecl3484 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_subRangeType_in_typeDecl3517 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TYPE_in_typeDecl3551 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_TYPE_in_typeDecl3551 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_typeDecl3555 = new BitSet(new long[]{0x0000010000000002L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericPostfix_in_typeDecl3558 = new BitSet(new long[]{0x0000010000000002L,0x0000000002000000L});
-	public static final BitSet FOLLOW_DOT_in_typeDecl3563 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_typeDecl3563 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_typeDecl3565 = new BitSet(new long[]{0x0000010000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_paranthesePostfix_in_typeDecl3570 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_simpleType_in_typeDecl3605 = new BitSet(new long[]{0x0000000000000002L});
@@ -49847,30 +50184,30 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_fileType_in_strucTypePart3817 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_classDecl_in_strucTypePart3850 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ARRAY_in_arrayType3908 = new BitSet(new long[]{0x0000000000000000L,0x0000002000080000L});
-	public static final BitSet FOLLOW_LBRACK_in_arrayType3911 = new BitSet(new long[]{0x12501911E2118150L,0x941702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_arrayType3911 = new BitSet(new long[]{0x12501911E2118150L,0x951F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_arrayIndex_in_arrayType3914 = new BitSet(new long[]{0x0000000002000000L,0x1000000000000000L});
-	public static final BitSet FOLLOW_COMMA_in_arrayType3919 = new BitSet(new long[]{0x12501911E2118150L,0x941702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_arrayType3919 = new BitSet(new long[]{0x12501911E2118150L,0x951F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_arrayIndex_in_arrayType3922 = new BitSet(new long[]{0x0000000002000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_arrayType3928 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_arrayType3932 = new BitSet(new long[]{0x1A501931E8918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_OF_in_arrayType3932 = new BitSet(new long[]{0x1A501931E8918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_arraySubType_in_arrayType3934 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_typeId_in_arrayIndex4060 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_arrayIndex4093 = new BitSet(new long[]{0x0000020000000000L});
-	public static final BitSet FOLLOW_DOTDOT_in_arrayIndex4095 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOTDOT_in_arrayIndex4095 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_arrayIndex4097 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CONST_in_arraySubType4151 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_typeDecl_in_arraySubType4184 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_SET_in_setType4242 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_setType4244 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_OF_in_setType4244 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_setType4246 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FILE_in_fileType4320 = new BitSet(new long[]{0x0000000000000002L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_fileType4323 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_OF_in_fileType4323 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_fileType4325 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_POINTER2_in_pointerType4381 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_POINTER2_in_pointerType4381 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_pointerType4383 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_POINTER_in_pointerType4416 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_STRING_in_stringType4471 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-	public static final BitSet FOLLOW_LBRACK_in_stringType4474 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_stringType4474 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_stringType4476 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_stringType4478 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_TYPE_in_stringType4518 = new BitSet(new long[]{0x0000000000000100L});
@@ -49893,8 +50230,8 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_procedureTypeHeading_in_procedureReference4867 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FUNCTION_in_procedureTypeHeading4912 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_procedureTypeHeading4915 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_procedureTypeHeading4919 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_procedureTypeHeading4922 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_procedureTypeHeading4919 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_procedureTypeHeading4922 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_procedureTypeHeading4926 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_PROCEDURE_in_procedureTypeHeading4974 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_procedureTypeHeading4977 = new BitSet(new long[]{0x0000000000000002L});
@@ -49902,39 +50239,39 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_ident_in_simpleType5089 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_enumType_in_simpleType5122 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_constExpression_in_subRangeType5175 = new BitSet(new long[]{0x0000020000000000L});
-	public static final BitSet FOLLOW_DOTDOT_in_subRangeType5177 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOTDOT_in_subRangeType5177 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_subRangeType5179 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_enumType5236 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_enumType5236 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_enumType5238 = new BitSet(new long[]{0x0004000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_EQUAL_in_enumType5241 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_enumType5241 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_enumType5243 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_enumType5248 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_enumType5248 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_enumType5250 = new BitSet(new long[]{0x0004000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_EQUAL_in_enumType5253 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_enumType5253 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_enumType5255 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_enumType5262 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_qualifiedIdent_in_typeId5321 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_qualifiedIdent_in_genericTypeIdent5373 = new BitSet(new long[]{0x0000000000000002L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_genericTypeIdent5376 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LT_in_genericDefinition5433 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LT_in_genericDefinition5433 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_innerGeneric_in_genericDefinition5435 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L,0x0000000000002000L});
-	public static final BitSet FOLLOW_SEMI_in_genericDefinition5438 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_SEMI_in_genericDefinition5438 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_innerGeneric_in_genericDefinition5440 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L,0x0000000000002000L});
 	public static final BitSet FOLLOW_GT_in_genericDefinition5444 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_genericTypeIdent_in_innerGeneric5497 = new BitSet(new long[]{0x0000000003000002L});
-	public static final BitSet FOLLOW_COMMA_in_innerGeneric5500 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_innerGeneric5500 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_innerGeneric5502 = new BitSet(new long[]{0x0000000003000002L});
-	public static final BitSet FOLLOW_COLON_in_innerGeneric5507 = new BitSet(new long[]{0x1250181170908150L,0x8002029049001C20L,0xE100100008E8002FL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COLON_in_innerGeneric5507 = new BitSet(new long[]{0x1250181170908150L,0x810A029049001C20L,0xE100100008E8002FL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericConstraint_in_innerGeneric5509 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_innerGeneric5512 = new BitSet(new long[]{0x1250181170908150L,0x8002029049001C20L,0xE100100008E8002FL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_innerGeneric5512 = new BitSet(new long[]{0x1250181170908150L,0x810A029049001C20L,0xE100100008E8002FL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericConstraint_in_innerGeneric5514 = new BitSet(new long[]{0x0000000002000002L});
 	public static final BitSet FOLLOW_genericTypeIdent_in_genericConstraint5566 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_RECORD_in_genericConstraint5599 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_genericConstraint5632 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CONSTRUCTOR_in_genericConstraint5665 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LT_in_genericPostfix5716 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LT_in_genericPostfix5716 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_genericPostfix5718 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000010L});
-	public static final BitSet FOLLOW_COMMA_in_genericPostfix5721 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_genericPostfix5721 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_genericPostfix5723 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000010L});
 	public static final BitSet FOLLOW_GT_in_genericPostfix5727 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_LPAREN_in_paranthesePostfix5775 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0002280000000000L});
@@ -49948,7 +50285,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_recordDecl_in_classDecl6036 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_recordHelperDecl_in_classDecl6077 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_classTypeTypeDecl6133 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_classTypeTypeDecl6135 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_OF_in_classTypeTypeDecl6135 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_classTypeTypeDecl6137 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_classTypeDecl6197 = new BitSet(new long[]{0x1252181978928170L,0x83DA02904B081C22L,0xF10010002AE8122DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_classState_in_classTypeDecl6200 = new BitSet(new long[]{0x1252181978928150L,0x83DA02904B081C22L,0xF10010002AE8022DL,0x000000000000004CL});
@@ -49958,9 +50295,9 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_CLASS_in_classTypeDecl6265 = new BitSet(new long[]{0x0000000000000022L,0x0000000002000000L,0x0000000000001000L});
 	public static final BitSet FOLLOW_classState_in_classTypeDecl6268 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_classParent_in_classTypeDecl6273 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_classParent6431 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_classParent6431 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_classParent6433 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_classParent6436 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_classParent6436 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_classParent6438 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_classParent6442 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_visibility_in_classItem6510 = new BitSet(new long[]{0x0000000000000002L});
@@ -49974,7 +50311,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_CLASS_in_classHelperDecl6763 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
 	public static final BitSet FOLLOW_HELPER_in_classHelperDecl6765 = new BitSet(new long[]{0x8000000000000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_classParent_in_classHelperDecl6768 = new BitSet(new long[]{0x8000000000000000L});
-	public static final BitSet FOLLOW_FOR_in_classHelperDecl6772 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FOR_in_classHelperDecl6772 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_classHelperDecl6774 = new BitSet(new long[]{0x0002000818820000L,0x03D8008000080002L,0x1000000022400200L});
 	public static final BitSet FOLLOW_classHelperItem_in_classHelperDecl6777 = new BitSet(new long[]{0x0002000818820000L,0x03D8008000080002L,0x1000000022400200L});
 	public static final BitSet FOLLOW_END_in_classHelperDecl6781 = new BitSet(new long[]{0x0000000000000002L});
@@ -50025,34 +50362,34 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_CLASS_in_recordItem8166 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x1000000002000000L});
 	public static final BitSet FOLLOW_varSection_in_recordItem8170 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_identList_in_recordField8224 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_recordField8226 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_recordField8226 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_recordField8228 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_recordField8231 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_recordField8236 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_identList_in_recordVariantField8326 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_recordVariantField8328 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_recordVariantField8328 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_recordVariantField8330 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_hintingDirective_in_recordVariantField8333 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_recordVariantField8338 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_CASE_in_recordVariantSection8425 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_CASE_in_recordVariantSection8425 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_ident_in_recordVariantSection8428 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_recordVariantSection8430 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_recordVariantSection8430 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_recordVariantSection8434 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_recordVariantSection8436 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_recordVariant_in_recordVariantSection8439 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_SEMI_in_recordVariantSection8443 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_recordVariant_in_recordVariantSection8447 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_SEMI_in_recordVariantSection8451 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_OF_in_recordVariantSection8436 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_recordVariant_in_recordVariantSection8439 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_SEMI_in_recordVariantSection8443 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_recordVariant_in_recordVariantSection8447 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_SEMI_in_recordVariantSection8451 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8202DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_recordVariant8505 = new BitSet(new long[]{0x0000000003000000L});
-	public static final BitSet FOLLOW_COMMA_in_recordVariant8508 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_recordVariant8508 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_recordVariant8510 = new BitSet(new long[]{0x0000000003000000L});
 	public static final BitSet FOLLOW_COLON_in_recordVariant8514 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L});
-	public static final BitSet FOLLOW_LPAREN_in_recordVariant8516 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_recordVariantField_in_recordVariant8519 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_recordVariant8516 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_recordVariantField_in_recordVariant8519 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8042DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_RPAREN_in_recordVariant8523 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_RECORD_in_recordHelperDecl8575 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
 	public static final BitSet FOLLOW_HELPER_in_recordHelperDecl8577 = new BitSet(new long[]{0x8000000000000000L});
-	public static final BitSet FOLLOW_FOR_in_recordHelperDecl8579 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FOR_in_recordHelperDecl8579 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_recordHelperDecl8581 = new BitSet(new long[]{0x0002000818820000L,0x03D8008000080002L,0x0000000000400200L});
 	public static final BitSet FOLLOW_recordHelperItem_in_recordHelperDecl8584 = new BitSet(new long[]{0x0002000818820000L,0x03D8008000080002L,0x0000000000400200L});
 	public static final BitSet FOLLOW_END_in_recordHelperDecl8588 = new BitSet(new long[]{0x0000000000000002L});
@@ -50062,7 +50399,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_classProperty_in_recordHelperItem8736 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_classMethod8791 = new BitSet(new long[]{0x0000000810800000L,0x0010000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_classMethod8796 = new BitSet(new long[]{0x0000000810000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_methodKey_in_classMethod8800 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_methodKey_in_classMethod8800 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod8802 = new BitSet(new long[]{0x0000000000000000L,0x0000000006000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_genericDefinition_in_classMethod8805 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_classMethod8810 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50070,97 +50407,97 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_methodDirective_in_classMethod8817 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_customAttribute_in_classMethod8925 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_classMethod8930 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_classMethod8934 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_classMethod8934 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod8936 = new BitSet(new long[]{0x0000000001000000L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_classMethod8939 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_classMethod8944 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_classMethod8948 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_classMethod8951 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_classMethod8948 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_classMethod8951 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_classMethod8955 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classMethod8957 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_methodDirective_in_classMethod8960 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_customAttribute_in_classMethod9077 = new BitSet(new long[]{0x0000000000800000L,0x0000008000000000L});
 	public static final BitSet FOLLOW_CLASS_in_classMethod9082 = new BitSet(new long[]{0x0000000000000000L,0x0000008000000000L});
-	public static final BitSet FOLLOW_OPERATOR_in_classMethod9086 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_OPERATOR_in_classMethod9086 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9088 = new BitSet(new long[]{0x0000000001000000L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_classMethod9091 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_classMethod9096 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_classMethod9100 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_classMethod9103 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_classMethod9100 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_classMethod9103 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_classMethod9107 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classMethod9109 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_methodDirective_in_classMethod9112 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_customAttribute_in_classMethod9226 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_classMethod9231 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_classMethod9235 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_classMethod9235 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9237 = new BitSet(new long[]{0x0000010000000000L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_classMethod9240 = new BitSet(new long[]{0x0000010000000000L});
-	public static final BitSet FOLLOW_DOT_in_classMethod9244 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_DOT_in_classMethod9244 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9246 = new BitSet(new long[]{0x0004000000000000L});
-	public static final BitSet FOLLOW_EQUAL_in_classMethod9248 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_EQUAL_in_classMethod9248 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9250 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classMethod9252 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_classMethod9286 = new BitSet(new long[]{0x0000000000800000L,0x0010000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_classMethod9291 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_PROCEDURE_in_classMethod9295 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROCEDURE_in_classMethod9295 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9297 = new BitSet(new long[]{0x0000010000000000L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_classMethod9300 = new BitSet(new long[]{0x0000010000000000L});
-	public static final BitSet FOLLOW_DOT_in_classMethod9304 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_DOT_in_classMethod9304 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9306 = new BitSet(new long[]{0x0004000000000000L});
-	public static final BitSet FOLLOW_EQUAL_in_classMethod9308 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_EQUAL_in_classMethod9308 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classMethod9310 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classMethod9312 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_customAttribute_in_classField9368 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_customAttribute_in_classField9368 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_identList_in_classField9372 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_classField9374 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_classField9374 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_classField9376 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classField9378 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L});
 	public static final BitSet FOLLOW_hintingDirective_in_classField9381 = new BitSet(new long[]{0x0020000400000002L,0x0000800000800000L});
 	public static final BitSet FOLLOW_customAttribute_in_classProperty9488 = new BitSet(new long[]{0x0000000000800000L,0x0040000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_classProperty9493 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
-	public static final BitSet FOLLOW_PROPERTY_in_classProperty9497 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROPERTY_in_classProperty9497 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_classProperty9499 = new BitSet(new long[]{0x0000001101000000L,0x8000000200081400L,0x0000000000202001L,0x000000000000000CL});
 	public static final BitSet FOLLOW_classPropertyArray_in_classProperty9502 = new BitSet(new long[]{0x0000001101000000L,0x8000000200001400L,0x0000000000202001L,0x000000000000000CL});
-	public static final BitSet FOLLOW_COLON_in_classProperty9507 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COLON_in_classProperty9507 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_classProperty9509 = new BitSet(new long[]{0x0000001100000000L,0x8000000200001400L,0x0000000000202001L,0x000000000000000CL});
 	public static final BitSet FOLLOW_classPropertyIndex_in_classProperty9514 = new BitSet(new long[]{0x0000001100000000L,0x8000000200000400L,0x0000000000202001L,0x000000000000000CL});
 	public static final BitSet FOLLOW_classPropertySpecifier_in_classProperty9519 = new BitSet(new long[]{0x0000001100000000L,0x8000000200000400L,0x0000000000202001L,0x000000000000000CL});
 	public static final BitSet FOLLOW_SEMI_in_classProperty9523 = new BitSet(new long[]{0x0000000100000002L,0x0000000200000000L,0x0000000000200000L});
 	public static final BitSet FOLLOW_classPropertyEndSpecifier_in_classProperty9526 = new BitSet(new long[]{0x0000000100000002L,0x0000000200000000L,0x0000000000200000L});
-	public static final BitSet FOLLOW_LBRACK_in_classPropertyArray9692 = new BitSet(new long[]{0x1250181168108150L,0x8002029049081C20L,0xF100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LBRACK_in_classPropertyArray9692 = new BitSet(new long[]{0x1250181168108150L,0x810A029049081C20L,0xF100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_formalParameterList_in_classPropertyArray9694 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_classPropertyArray9696 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_INDEX_in_classPropertyIndex9743 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_INDEX_in_classPropertyIndex9743 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertyIndex9745 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classPropertyIndex9748 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_classPropertyReadWrite_in_classPropertySpecifier9795 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_classPropertyDispInterface_in_classPropertySpecifier9831 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_STORED_in_classPropertySpecifier9864 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_STORED_in_classPropertySpecifier9864 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertySpecifier9866 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DEFAULT_in_classPropertySpecifier9899 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DEFAULT_in_classPropertySpecifier9899 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertySpecifier9901 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_DEFAULT_in_classPropertySpecifier9934 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_NODEFAULT_in_classPropertySpecifier9983 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_IMPLEMENTS_in_classPropertySpecifier10016 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_IMPLEMENTS_in_classPropertySpecifier10016 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_classPropertySpecifier10018 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_STORED_in_classPropertyEndSpecifier10058 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_STORED_in_classPropertyEndSpecifier10058 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertyEndSpecifier10060 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classPropertyEndSpecifier10062 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DEFAULT_in_classPropertyEndSpecifier10099 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DEFAULT_in_classPropertyEndSpecifier10099 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertyEndSpecifier10101 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classPropertyEndSpecifier10103 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_DEFAULT_in_classPropertyEndSpecifier10136 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classPropertyEndSpecifier10138 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_NODEFAULT_in_classPropertyEndSpecifier10171 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_classPropertyEndSpecifier10173 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_READ_in_classPropertyReadWrite10217 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_READ_in_classPropertyReadWrite10217 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_classPropertyReadWrite10219 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-	public static final BitSet FOLLOW_LBRACK_in_classPropertyReadWrite10222 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_classPropertyReadWrite10222 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertyReadWrite10224 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_classPropertyReadWrite10226 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_WRITE_in_classPropertyReadWrite10300 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_WRITE_in_classPropertyReadWrite10300 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_classPropertyReadWrite10302 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-	public static final BitSet FOLLOW_LBRACK_in_classPropertyReadWrite10305 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_classPropertyReadWrite10305 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_classPropertyReadWrite10307 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_classPropertyReadWrite10309 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_READONLY_in_classPropertyDispInterface10388 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50175,15 +50512,15 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_PUBLIC_in_visibility10589 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_PUBLISHED_in_visibility10622 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_AUTOMATED_in_visibility10655 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_PROCEDURE_in_exportedProcHeading10709 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROCEDURE_in_exportedProcHeading10709 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_exportedProcHeading10711 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_exportedProcHeading10714 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_exportedProcHeading10718 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_exportedProcHeading10721 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_exportedProcHeading10718 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_exportedProcHeading10721 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_exportedProcHeading10725 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_exportedProcHeading10727 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
 	public static final BitSet FOLLOW_functionDirective_in_exportedProcHeading10730 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
-	public static final BitSet FOLLOW_FUNCTION_in_exportedProcHeading10765 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_exportedProcHeading10765 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_exportedProcHeading10767 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_exportedProcHeading10770 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_exportedProcHeading10774 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
@@ -50194,28 +50531,28 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_methodBody_in_methodDecl10844 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading10904 = new BitSet(new long[]{0x0000000810800000L,0x0010000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_methodDeclHeading10909 = new BitSet(new long[]{0x0000000810000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_methodKey_in_methodDeclHeading10914 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_methodKey_in_methodDeclHeading10914 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_methodName_in_methodDeclHeading10916 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_methodDeclHeading10919 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11017 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_methodDeclHeading11022 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_methodDeclHeading11026 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_methodDeclHeading11026 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_methodName_in_methodDeclHeading11028 = new BitSet(new long[]{0x0000000001000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_methodDeclHeading11031 = new BitSet(new long[]{0x0000000001000002L});
-	public static final BitSet FOLLOW_COLON_in_methodDeclHeading11036 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11039 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_methodDeclHeading11036 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11039 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_methodDeclHeading11043 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11152 = new BitSet(new long[]{0x0000000000800000L});
 	public static final BitSet FOLLOW_CLASS_in_methodDeclHeading11156 = new BitSet(new long[]{0x0000000000000000L,0x0000008000000000L});
-	public static final BitSet FOLLOW_OPERATOR_in_methodDeclHeading11158 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_OPERATOR_in_methodDeclHeading11158 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_methodName_in_methodDeclHeading11160 = new BitSet(new long[]{0x0000000001000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_methodDeclHeading11163 = new BitSet(new long[]{0x0000000001000002L});
-	public static final BitSet FOLLOW_COLON_in_methodDeclHeading11168 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11171 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_methodDeclHeading11168 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_methodDeclHeading11171 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_methodDeclHeading11175 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ident_in_methodName11424 = new BitSet(new long[]{0x0000010000000002L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_methodName11427 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_methodName11432 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_DOT_in_methodName11432 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_methodName11434 = new BitSet(new long[]{0x0000010000000002L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_methodName11437 = new BitSet(new long[]{0x0000010000000002L});
 	public static final BitSet FOLLOW_procDeclHeading_in_procDecl11498 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50223,27 +50560,27 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_functionDirective_in_procDecl11503 = new BitSet(new long[]{0x05E0000C18C81802L,0x0010C400818C8003L,0x3100000022102A08L});
 	public static final BitSet FOLLOW_procBody_in_procDecl11508 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_procDeclHeading11574 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_PROCEDURE_in_procDeclHeading11578 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROCEDURE_in_procDeclHeading11578 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_procDeclHeading11580 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_procDeclHeading11583 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_procDeclHeading11683 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_procDeclHeading11687 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_procDeclHeading11687 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_procDeclHeading11689 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_procDeclHeading11692 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_procDeclHeading11696 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_procDeclHeading11696 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_procDeclHeading11698 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_formalParameterSection11798 = new BitSet(new long[]{0x1250181168108150L,0x8002029049081C20L,0xF100100008E8042DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_formalParameterSection11798 = new BitSet(new long[]{0x1250181168108150L,0x810A029049081C20L,0xF100100008E8042DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_formalParameterList_in_formalParameterSection11801 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_formalParameterSection11805 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_formalParameter_in_formalParameterList11858 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_SEMI_in_formalParameterList11861 = new BitSet(new long[]{0x1250181168108150L,0x8002029049081C20L,0xF100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_SEMI_in_formalParameterList11861 = new BitSet(new long[]{0x1250181168108150L,0x810A029049081C20L,0xF100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_formalParameter_in_formalParameterList11863 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_customAttribute_in_formalParameter11925 = new BitSet(new long[]{0x1250181168108150L,0x8002029049001C20L,0xF100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_parmType_in_formalParameter11930 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_customAttribute_in_formalParameter11925 = new BitSet(new long[]{0x1250181168108150L,0x810A029049001C20L,0xF100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_parmType_in_formalParameter11930 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_identListFlat_in_formalParameter11934 = new BitSet(new long[]{0x0004000001000002L});
-	public static final BitSet FOLLOW_COLON_in_formalParameter11937 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_formalParameter11937 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_formalParameter11939 = new BitSet(new long[]{0x0004000000000002L});
-	public static final BitSet FOLLOW_EQUAL_in_formalParameter11944 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_formalParameter11944 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_formalParameter11946 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_block_in_methodBody12169 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_methodBody12171 = new BitSet(new long[]{0x0000000000000002L});
@@ -50251,75 +50588,75 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_SEMI_in_procBody12234 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
 	public static final BitSet FOLLOW_functionDirective_in_procBody12237 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
 	public static final BitSet FOLLOW_EXTERNAL_in_procBody12275 = new BitSet(new long[]{0x0560000400401002L,0x0000C400C1809000L,0x2100000000100808L});
-	public static final BitSet FOLLOW_NAME_in_procBody12278 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NAME_in_procBody12278 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_procBody12280 = new BitSet(new long[]{0x0560000400401002L,0x0000C400C1809000L,0x2100000000100808L});
-	public static final BitSet FOLLOW_INDEX_in_procBody12284 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_INDEX_in_procBody12284 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_procBody12286 = new BitSet(new long[]{0x0560000400401002L,0x0000C400C1809000L,0x2100000000100808L});
 	public static final BitSet FOLLOW_functionDirective_in_procBody12291 = new BitSet(new long[]{0x0560000400401002L,0x0000C40081808000L,0x2100000000100808L});
 	public static final BitSet FOLLOW_block_in_procBody12327 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_procBody12329 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttributeList_in_customAttribute12382 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttributeDecl_in_customAttributeList12429 = new BitSet(new long[]{0x0000000000000002L,0x0000000000080000L});
-	public static final BitSet FOLLOW_LBRACK_in_customAttributeDecl12477 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LBRACK_in_customAttributeDecl12477 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_customAttributeIdent_in_customAttributeDecl12479 = new BitSet(new long[]{0x0000000000000000L,0x1000000002000000L});
-	public static final BitSet FOLLOW_LPAREN_in_customAttributeDecl12482 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8042DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_customAttributeDecl12482 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8042DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expressionList_in_customAttributeDecl12485 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_customAttributeDecl12489 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_customAttributeDecl12493 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_qualifiedIdent_in_customAttributeIdent12563 = new BitSet(new long[]{0x0000000001000002L});
-	public static final BitSet FOLLOW_COLON_in_customAttributeIdent12566 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COLON_in_customAttributeIdent12566 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_customAttributeIdent12568 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_anonymousExpression_in_expression12628 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_simpleExpression_in_expression12669 = new BitSet(new long[]{0x0004000000000002L,0x0000000804420814L});
-	public static final BitSet FOLLOW_relOp_in_expression12672 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_relOp_in_expression12672 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_simpleExpression_in_expression12674 = new BitSet(new long[]{0x0004000000000002L});
-	public static final BitSet FOLLOW_EQUAL_in_expression12679 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_expression12679 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_expression12681 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_PROCEDURE_in_anonymousExpression12732 = new BitSet(new long[]{0x0080000818880800L,0x00100000020C0002L,0x1000000022000200L});
 	public static final BitSet FOLLOW_formalParameterSection_in_anonymousExpression12735 = new BitSet(new long[]{0x0080000818880800L,0x00100000000C0002L,0x1000000022000200L});
 	public static final BitSet FOLLOW_block_in_anonymousExpression12739 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FUNCTION_in_anonymousExpression12772 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_anonymousExpression12775 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_anonymousExpression12779 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_anonymousExpression12779 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_anonymousExpression12781 = new BitSet(new long[]{0x0080000818880800L,0x00100000000C0002L,0x1000000022000200L});
 	public static final BitSet FOLLOW_block_in_anonymousExpression12783 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_factor_in_simpleExpression12832 = new BitSet(new long[]{0x0000004000000482L,0x0001010030000000L,0x0000000000078000L,0x000000000001F720L});
-	public static final BitSet FOLLOW_operator_in_simpleExpression12835 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_operator_in_simpleExpression12835 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_simpleExpression12837 = new BitSet(new long[]{0x0000004000000482L,0x0001010030000000L,0x0000000000078000L,0x000000000001F720L});
-	public static final BitSet FOLLOW_AT2_in_factor12898 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_AT2_in_factor12898 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_factor12900 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_199_in_factor12933 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_199_in_factor12933 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_factor12935 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_NOT_in_factor12975 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NOT_in_factor12975 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_factor12977 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_PLUS_in_factor13010 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_PLUS_in_factor13010 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_factor13012 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_MINUS_in_factor13045 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_MINUS_in_factor13045 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_factor13047 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_POINTER2_in_factor13080 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_POINTER2_in_factor13080 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_factor13082 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_intRealNum_in_factor13126 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_TRUE_in_factor13159 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FALSE_in_factor13192 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_NIL_in_factor13225 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_210_in_factor13258 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_factor13336 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_factor13336 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_factor13338 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_RPAREN_in_factor13340 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_RPAREN_in_factor13340 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_factor13342 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_factor13375 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_factor13375 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_factor13377 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_factor13379 = new BitSet(new long[]{0x0000010000000002L,0x0004000000000000L});
 	public static final BitSet FOLLOW_POINTER2_in_factor13382 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_factor13387 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_factor13387 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_factor13389 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_stringFactor_in_factor13432 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_factor13435 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_factor13435 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_simpleExpression_in_factor13437 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_setSection_in_factor13472 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_factor13505 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_typeId_in_factor13538 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L});
-	public static final BitSet FOLLOW_LPAREN_in_factor13540 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_factor13540 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_factor13542 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_factor13544 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_controlString_in_stringFactor13598 = new BitSet(new long[]{0x0000000000000002L,0x0400000000000000L});
@@ -50332,41 +50669,41 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_controlString_in_stringFactor13658 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ControlChar_in_controlString13712 = new BitSet(new long[]{0x0000000080000002L});
 	public static final BitSet FOLLOW_ControlChar_in_controlString13715 = new BitSet(new long[]{0x0000000080000002L});
-	public static final BitSet FOLLOW_LBRACK_in_setSection13772 = new BitSet(new long[]{0x12501911E0118150L,0x941702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_setSection13772 = new BitSet(new long[]{0x12501911E0118150L,0x951F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_setSection13775 = new BitSet(new long[]{0x0000020002000000L,0x1000000000000000L});
-	public static final BitSet FOLLOW_set_in_setSection13778 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_set_in_setSection13778 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_setSection13786 = new BitSet(new long[]{0x0000020002000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_setSection13792 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_203_in_designator13849 = new BitSet(new long[]{0x1250191160118152L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002004CL});
-	public static final BitSet FOLLOW_INHERITED_in_designator13854 = new BitSet(new long[]{0x1250191160118152L,0x800602904F081C20L,0xE100100008E8002DL,0x000000000002004CL});
+	public static final BitSet FOLLOW_203_in_designator13849 = new BitSet(new long[]{0x1250191160118152L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002004CL});
+	public static final BitSet FOLLOW_INHERITED_in_designator13854 = new BitSet(new long[]{0x1250191160118152L,0x810E02904F081C20L,0xE100100008E8002DL,0x000000000002004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_designator13861 = new BitSet(new long[]{0x0000010000010002L,0x0004000006080000L,0x0000000000000000L,0x0000000000020000L});
 	public static final BitSet FOLLOW_typeId_in_designator13865 = new BitSet(new long[]{0x0000010000010002L,0x0004000006080000L,0x0000000000000000L,0x0000000000020000L});
 	public static final BitSet FOLLOW_designatorItem_in_designator13872 = new BitSet(new long[]{0x0000010000010002L,0x0004000006080000L,0x0000000000000000L,0x0000000000020000L});
 	public static final BitSet FOLLOW_POINTER2_in_designatorItem13925 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_209_in_designatorItem13958 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_set_in_designatorItem13991 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_set_in_designatorItem13991 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_designatorItem13999 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LT_in_designatorItem14047 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LT_in_designatorItem14047 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_designatorItem14049 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000010L});
-	public static final BitSet FOLLOW_COMMA_in_designatorItem14052 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_COMMA_in_designatorItem14052 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_genericTypeIdent_in_designatorItem14054 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000010L});
 	public static final BitSet FOLLOW_GT_in_designatorItem14058 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LBRACK_in_designatorItem14099 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_designatorItem14099 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expressionList_in_designatorItem14101 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_designatorItem14103 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_designatorItem14136 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8042DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_designatorItem14136 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8042DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_designatorItem14139 = new BitSet(new long[]{0x0000000003000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_colonConstruct_in_designatorItem14142 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_designatorItem14147 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_designatorItem14147 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_designatorItem14149 = new BitSet(new long[]{0x0000000003000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_colonConstruct_in_designatorItem14152 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_designatorItem14160 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_expressionList14237 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_expressionList14240 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_expressionList14240 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_expressionList14242 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COLON_in_colonConstruct14295 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_colonConstruct14295 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_colonConstruct14297 = new BitSet(new long[]{0x0000000001000002L});
-	public static final BitSet FOLLOW_COLON_in_colonConstruct14300 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_colonConstruct14300 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_colonConstruct14302 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ifStatement_in_statement15340 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_caseStatement_in_statement15373 = new BitSet(new long[]{0x0000000000000002L});
@@ -50379,144 +50716,144 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_assemblerStatement_in_statement15604 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_compoundStatement_in_statement15637 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_label_in_statement15670 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_statement15672 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_COLON_in_statement15672 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_statement15674 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_simpleStatement_in_statement15707 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_IF_in_ifStatement15761 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_IF_in_ifStatement15761 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_ifStatement15763 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000001000000L});
-	public static final BitSet FOLLOW_THEN_in_ifStatement15765 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_THEN_in_ifStatement15765 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_ifStatement15767 = new BitSet(new long[]{0x0001000000000002L});
-	public static final BitSet FOLLOW_ELSE_in_ifStatement15770 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_ELSE_in_ifStatement15770 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_ifStatement15772 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_CASE_in_caseStatement15826 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_CASE_in_caseStatement15826 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_caseStatement15828 = new BitSet(new long[]{0x0000000000000000L,0x0000002000000000L});
-	public static final BitSet FOLLOW_OF_in_caseStatement15830 = new BitSet(new long[]{0x12531911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_caseItem_in_caseStatement15833 = new BitSet(new long[]{0x12531911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_ELSE_in_caseStatement15838 = new BitSet(new long[]{0x925219116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_OF_in_caseStatement15830 = new BitSet(new long[]{0x12531911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_caseItem_in_caseStatement15833 = new BitSet(new long[]{0x12531911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ELSE_in_caseStatement15838 = new BitSet(new long[]{0x925219116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_caseStatement15840 = new BitSet(new long[]{0x0002000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_caseStatement15843 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_caseStatement15849 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_caseLabel_in_caseItem15906 = new BitSet(new long[]{0x0000000003000000L});
-	public static final BitSet FOLLOW_COMMA_in_caseItem15909 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_caseItem15909 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_caseLabel_in_caseItem15911 = new BitSet(new long[]{0x0000000003000000L});
-	public static final BitSet FOLLOW_COLON_in_caseItem15915 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_COLON_in_caseItem15915 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_caseItem15917 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_caseItem15920 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_caseLabel15979 = new BitSet(new long[]{0x0000020000000002L});
-	public static final BitSet FOLLOW_DOTDOT_in_caseLabel15982 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOTDOT_in_caseLabel15982 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_caseLabel15984 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_REPEAT_in_repeatStatement16036 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF300380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_REPEAT_in_repeatStatement16036 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF300380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_repeatStatement16039 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0200000000000000L});
-	public static final BitSet FOLLOW_UNTIL_in_repeatStatement16043 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_UNTIL_in_repeatStatement16043 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_repeatStatement16045 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_WHILE_in_whileStatement16096 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_WHILE_in_whileStatement16096 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_whileStatement16098 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_whileStatement16100 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_whileStatement16100 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_whileStatement16102 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FOR_in_forStatement16155 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
-	public static final BitSet FOLLOW_VAR_in_forStatement16158 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_FOR_in_forStatement16155 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_VAR_in_forStatement16158 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_forStatement16162 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_forStatement16165 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_forStatement16165 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_forStatement16167 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_forStatement16171 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_forStatement16171 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_forStatement16173 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000004000000L});
-	public static final BitSet FOLLOW_TO_in_forStatement16175 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_TO_in_forStatement16175 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_forStatement16177 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_forStatement16179 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_forStatement16179 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_forStatement16181 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FOR_in_forStatement16214 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
-	public static final BitSet FOLLOW_VAR_in_forStatement16217 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_FOR_in_forStatement16214 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_VAR_in_forStatement16217 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_forStatement16221 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_forStatement16224 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_forStatement16224 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_forStatement16226 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_forStatement16230 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_forStatement16230 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_forStatement16232 = new BitSet(new long[]{0x0000040000000000L});
-	public static final BitSet FOLLOW_DOWNTO_in_forStatement16234 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOWNTO_in_forStatement16234 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_forStatement16236 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_forStatement16238 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_forStatement16238 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_forStatement16240 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FOR_in_forStatement16273 = new BitSet(new long[]{0x1250191161118150L,0x800602904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
-	public static final BitSet FOLLOW_VAR_in_forStatement16276 = new BitSet(new long[]{0x1250191161118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_FOR_in_forStatement16273 = new BitSet(new long[]{0x1250191161118150L,0x810E02904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_VAR_in_forStatement16276 = new BitSet(new long[]{0x1250191161118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_forStatement16280 = new BitSet(new long[]{0x0000000001000000L,0x0000000000000800L});
-	public static final BitSet FOLLOW_COLON_in_forStatement16283 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_forStatement16283 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_forStatement16285 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-	public static final BitSet FOLLOW_IN_in_forStatement16289 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_IN_in_forStatement16289 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_forStatement16291 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_forStatement16293 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_forStatement16293 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_forStatement16295 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_WITH_in_withStatement16347 = new BitSet(new long[]{0x1250191160118550L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_WITH_in_withStatement16347 = new BitSet(new long[]{0x1250191160118550L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_withItemList_in_withStatement16349 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_withStatement16351 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_withStatement16351 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_withStatement16353 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_withItem_in_withItemList16406 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_withItemList16409 = new BitSet(new long[]{0x1250191160118550L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_COMMA_in_withItemList16409 = new BitSet(new long[]{0x1250191160118550L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_withItem_in_withItemList16411 = new BitSet(new long[]{0x0000000002000002L});
 	public static final BitSet FOLLOW_designator_in_withItem16470 = new BitSet(new long[]{0x0000000000000402L});
-	public static final BitSet FOLLOW_AS_in_withItem16473 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_AS_in_withItem16473 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_withItem16475 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_BEGIN_in_compoundStatement16525 = new BitSet(new long[]{0x925219116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_BEGIN_in_compoundStatement16525 = new BitSet(new long[]{0x925219116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_compoundStatement16528 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_compoundStatement16532 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statement_in_statementList16598 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
-	public static final BitSet FOLLOW_SEMI_in_statementList16603 = new BitSet(new long[]{0x925019116039C952L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_SEMI_in_statementList16603 = new BitSet(new long[]{0x925019116039C952L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_statementList16606 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_designator_in_simpleStatement16660 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_simpleStatement16662 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_simpleStatement16662 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_simpleStatement16664 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_simpleStatement16697 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_gotoStatement_in_simpleStatement16731 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_inlineVarDeclaration_in_simpleStatement16764 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_GOTO_in_gotoStatement16816 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
+	public static final BitSet FOLLOW_GOTO_in_gotoStatement16816 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100380008E8002DL,0x000000000000000CL});
 	public static final BitSet FOLLOW_label_in_gotoStatement16818 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_EXIT_in_gotoStatement16851 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
-	public static final BitSet FOLLOW_LPAREN_in_gotoStatement16854 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_gotoStatement16854 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_gotoStatement16856 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_gotoStatement16858 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_BREAK_in_gotoStatement16893 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_CONTINUE_in_gotoStatement16926 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_constExpression16979 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_constExpression16979 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_recordConstExpression_in_constExpression16981 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002400L});
-	public static final BitSet FOLLOW_SEMI_in_constExpression16984 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_SEMI_in_constExpression16984 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_recordConstExpression_in_constExpression16986 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002400L});
 	public static final BitSet FOLLOW_RPAREN_in_constExpression16990 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_constExpression17024 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_constExpression17024 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_constExpression17026 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_constExpression17029 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_constExpression17029 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_constExpression17031 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_RPAREN_in_constExpression17035 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_RPAREN_in_constExpression17035 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_constExpression17038 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_constExpression17074 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ident_in_recordConstExpression17118 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_recordConstExpression17120 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_recordConstExpression17120 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_recordConstExpression17122 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_recordConstExpression17125 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TRY_in_tryStatement17183 = new BitSet(new long[]{0x925819116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_TRY_in_tryStatement17183 = new BitSet(new long[]{0x925819116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_tryStatement17186 = new BitSet(new long[]{0x0008000000000000L});
-	public static final BitSet FOLLOW_EXCEPT_in_tryStatement17190 = new BitSet(new long[]{0x925319116039C950L,0x880602D04F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_EXCEPT_in_tryStatement17190 = new BitSet(new long[]{0x925319116039C950L,0x890E02D04F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_handlerList_in_tryStatement17192 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_tryStatement17194 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TRY_in_tryStatement17227 = new BitSet(new long[]{0xD25019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_TRY_in_tryStatement17227 = new BitSet(new long[]{0xD25019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_tryStatement17230 = new BitSet(new long[]{0x4000000000000000L});
-	public static final BitSet FOLLOW_FINALLY_in_tryStatement17234 = new BitSet(new long[]{0x925219116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_FINALLY_in_tryStatement17234 = new BitSet(new long[]{0x925219116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_tryStatement17237 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_tryStatement17241 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_handler_in_handlerList17296 = new BitSet(new long[]{0x0001000000000002L,0x0000004000000000L});
-	public static final BitSet FOLLOW_ELSE_in_handlerList17301 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_ELSE_in_handlerList17301 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_handlerList17303 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_handlerList17338 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ON_in_handler17396 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_handlerIdent_in_handler17399 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ON_in_handler17396 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_handlerIdent_in_handler17399 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_handler17403 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_handler17405 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_handler17405 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_handlerStatement_in_handler17407 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ident_in_handlerIdent17462 = new BitSet(new long[]{0x0000000001000000L});
 	public static final BitSet FOLLOW_COLON_in_handlerIdent17464 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statement_in_handlerStatement17513 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_handlerStatement17516 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_SEMI_in_handlerStatement17551 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_RAISE_in_raiseStatement17602 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_RAISE_in_raiseStatement17602 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_raiseStatement17605 = new BitSet(new long[]{0x0000000000008002L});
-	public static final BitSet FOLLOW_AT_in_raiseStatement17610 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_AT_in_raiseStatement17610 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_raiseStatement17612 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ASM_in_assemblerStatement17665 = new BitSet(new long[]{0xFFFFFFFFFFFFFFF0L,0xFFFFFFFFFFFFFFFFL,0xFFFFFFFFFFFFFFFFL,0x000000000007FFFFL});
 	public static final BitSet FOLLOW_END_in_assemblerStatement17673 = new BitSet(new long[]{0x0000000000000002L});
@@ -50546,7 +50883,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_SEMI_in_reintroduceDirective18536 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_OVERLOAD_in_overloadDirective18586 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_overloadDirective18589 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_MESSAGE_in_bindingDirective18644 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_MESSAGE_in_bindingDirective18644 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_bindingDirective18646 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_bindingDirective18648 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_STATIC_in_bindingDirective18681 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50592,16 +50929,16 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_SEMI_in_externalDirective19758 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_EXTERNAL_in_externalDirective19794 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_externalDirective19796 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EXTERNAL_in_externalDirective19829 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EXTERNAL_in_externalDirective19829 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_externalDirective19831 = new BitSet(new long[]{0x0000000200000000L,0x0000000040001000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_externalSpecifier_in_externalDirective19834 = new BitSet(new long[]{0x0000000200000000L,0x0000000040001000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_DELAYED_in_externalDirective19839 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_externalDirective19843 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_NAME_in_externalSpecifier19892 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NAME_in_externalSpecifier19892 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_externalSpecifier19894 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_INDEX_in_externalSpecifier19927 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_INDEX_in_externalSpecifier19927 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_externalSpecifier19929 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DISPID_in_dispIDDirective19982 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DISPID_in_dispIDDirective19982 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_dispIDDirective19984 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_dispIDDirective19986 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_TkIdentifier_in_ident20049 = new BitSet(new long[]{0x0000000000000002L});
@@ -50610,24 +50947,24 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_198_in_ident20121 = new BitSet(new long[]{0xFFFB3CFD78FABFF0L,0x8BFAFFF7E987FF2BL,0xF78000003FF9DBFFL,0x000000000000002FL});
 	public static final BitSet FOLLOW_keywordsAsIdentifier_in_ident20123 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_usedKeywordsAsNames_in_ident20160 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ident_in_identList21465 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_identList21468 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_ident_in_identList21470 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_ident_in_identListFlat21535 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_identListFlat21538 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_ident_in_identListFlat21540 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_TkIdentifier_in_label21614 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TkIntNum_in_label21647 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TkHexNum_in_label21680 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_usedKeywordsAsNames_in_label21713 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TkRealNum_in_intRealNum21768 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_intNum_in_intRealNum21801 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ident_in_namespaceName21945 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_namespaceName21948 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_ident_in_namespaceName21950 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_ident_in_qualifiedIdent22005 = new BitSet(new long[]{0x0000010000000000L});
-	public static final BitSet FOLLOW_DOT_in_qualifiedIdent22007 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
-	public static final BitSet FOLLOW_ident_in_qualifiedIdent22012 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ident_in_identList21473 = new BitSet(new long[]{0x0000000002000002L});
+	public static final BitSet FOLLOW_COMMA_in_identList21476 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ident_in_identList21478 = new BitSet(new long[]{0x0000000002000002L});
+	public static final BitSet FOLLOW_ident_in_identListFlat21543 = new BitSet(new long[]{0x0000000002000002L});
+	public static final BitSet FOLLOW_COMMA_in_identListFlat21546 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ident_in_identListFlat21548 = new BitSet(new long[]{0x0000000002000002L});
+	public static final BitSet FOLLOW_TkIdentifier_in_label21622 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TkIntNum_in_label21655 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TkHexNum_in_label21688 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_usedKeywordsAsNames_in_label21721 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_TkRealNum_in_intRealNum21776 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_intNum_in_intRealNum21809 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ident_in_namespaceName21953 = new BitSet(new long[]{0x0000010000000002L});
+	public static final BitSet FOLLOW_DOT_in_namespaceName21956 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ident_in_namespaceName21958 = new BitSet(new long[]{0x0000010000000002L});
+	public static final BitSet FOLLOW_ident_in_qualifiedIdent22013 = new BitSet(new long[]{0x0000010000000000L});
+	public static final BitSet FOLLOW_DOT_in_qualifiedIdent22015 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ident_in_qualifiedIdent22020 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_declSection_in_synpred23_Delphi1593 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_blockBody_in_synpred24_Delphi1598 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_methodDecl_in_synpred30_Delphi1875 = new BitSet(new long[]{0x0000000000000002L});
@@ -50640,15 +50977,15 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_customAttribute_in_synpred45_Delphi2622 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_varDeclaration_in_synpred47_Delphi2719 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred49_Delphi2879 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_VAR_in_synpred53_Delphi2963 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_VAR_in_synpred53_Delphi2963 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred53_Delphi2965 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_synpred53_Delphi2968 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred53_Delphi2968 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred53_Delphi2970 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_synpred53_Delphi2974 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_synpred53_Delphi2974 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred53_Delphi2976 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ABSOLUTE_in_synpred54_Delphi3070 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_ABSOLUTE_in_synpred54_Delphi3070 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_qualifiedIdent_in_synpred54_Delphi3072 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ABSOLUTE_in_synpred55_Delphi3105 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ABSOLUTE_in_synpred55_Delphi3105 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_synpred55_Delphi3107 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_strucType_in_synpred62_Delphi3352 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_pointerType_in_synpred63_Delphi3385 = new BitSet(new long[]{0x0000000000000002L});
@@ -50657,18 +50994,18 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_variantType_in_synpred66_Delphi3484 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_subRangeType_in_synpred67_Delphi3517 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_genericPostfix_in_synpred69_Delphi3558 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DOT_in_synpred70_Delphi3563 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred70_Delphi3563 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred70_Delphi3565 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_paranthesePostfix_in_synpred71_Delphi3570 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TYPE_in_synpred72_Delphi3551 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_TYPE_in_synpred72_Delphi3551 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_typeId_in_synpred72_Delphi3555 = new BitSet(new long[]{0x0000010000000002L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericPostfix_in_synpred72_Delphi3558 = new BitSet(new long[]{0x0000010000000002L,0x0000000002000000L});
-	public static final BitSet FOLLOW_DOT_in_synpred72_Delphi3563 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred72_Delphi3563 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred72_Delphi3565 = new BitSet(new long[]{0x0000010000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_paranthesePostfix_in_synpred72_Delphi3570 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_OF_in_synpred83_Delphi4323 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_OF_in_synpred83_Delphi4323 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred83_Delphi4325 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LBRACK_in_synpred85_Delphi4474 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LBRACK_in_synpred85_Delphi4474 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred85_Delphi4476 = new BitSet(new long[]{0x0000000000000000L,0x1000000000000000L});
 	public static final BitSet FOLLOW_RBRACK_in_synpred85_Delphi4478 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_codePageNumber_in_synpred88_Delphi4525 = new BitSet(new long[]{0x0000000000000002L});
@@ -50715,7 +51052,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_customAttribute_in_synpred177_Delphi8791 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred182_Delphi8791 = new BitSet(new long[]{0x0000000810800000L,0x0010000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_synpred182_Delphi8796 = new BitSet(new long[]{0x0000000810000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_methodKey_in_synpred182_Delphi8800 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_methodKey_in_synpred182_Delphi8800 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred182_Delphi8802 = new BitSet(new long[]{0x0000000000000000L,0x0000000006000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_genericDefinition_in_synpred182_Delphi8805 = new BitSet(new long[]{0x0000000000000000L,0x0000000002000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred182_Delphi8810 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50725,12 +51062,12 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_customAttribute_in_synpred187_Delphi8951 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred189_Delphi8925 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_synpred189_Delphi8930 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_synpred189_Delphi8934 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_synpred189_Delphi8934 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred189_Delphi8936 = new BitSet(new long[]{0x0000000001000000L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_synpred189_Delphi8939 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred189_Delphi8944 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_synpred189_Delphi8948 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_synpred189_Delphi8951 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred189_Delphi8948 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_synpred189_Delphi8951 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred189_Delphi8955 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred189_Delphi8957 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_methodDirective_in_synpred189_Delphi8960 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
@@ -50738,34 +51075,34 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_customAttribute_in_synpred194_Delphi9103 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred196_Delphi9077 = new BitSet(new long[]{0x0000000000800000L,0x0000008000000000L});
 	public static final BitSet FOLLOW_CLASS_in_synpred196_Delphi9082 = new BitSet(new long[]{0x0000000000000000L,0x0000008000000000L});
-	public static final BitSet FOLLOW_OPERATOR_in_synpred196_Delphi9086 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_OPERATOR_in_synpred196_Delphi9086 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred196_Delphi9088 = new BitSet(new long[]{0x0000000001000000L,0x0000000006000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_synpred196_Delphi9091 = new BitSet(new long[]{0x0000000001000000L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred196_Delphi9096 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_synpred196_Delphi9100 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_synpred196_Delphi9103 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred196_Delphi9100 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_synpred196_Delphi9103 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred196_Delphi9107 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred196_Delphi9109 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_methodDirective_in_synpred196_Delphi9112 = new BitSet(new long[]{0x1560201400401022L,0x0000CC0089808000L,0xA000000000180818L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred197_Delphi9226 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred200_Delphi9226 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_synpred200_Delphi9231 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_synpred200_Delphi9235 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_synpred200_Delphi9235 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred200_Delphi9237 = new BitSet(new long[]{0x0000010000000000L,0x0000000004000000L});
 	public static final BitSet FOLLOW_genericDefinition_in_synpred200_Delphi9240 = new BitSet(new long[]{0x0000010000000000L});
-	public static final BitSet FOLLOW_DOT_in_synpred200_Delphi9244 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_DOT_in_synpred200_Delphi9244 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred200_Delphi9246 = new BitSet(new long[]{0x0004000000000000L});
-	public static final BitSet FOLLOW_EQUAL_in_synpred200_Delphi9248 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_EQUAL_in_synpred200_Delphi9248 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred200_Delphi9250 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred200_Delphi9252 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred201_Delphi9286 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred204_Delphi9368 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred206_Delphi9488 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_SEMI_in_synpred213_Delphi9748 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DEFAULT_in_synpred217_Delphi9899 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DEFAULT_in_synpred217_Delphi9899 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred217_Delphi9901 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_DEFAULT_in_synpred218_Delphi9934 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DEFAULT_in_synpred221_Delphi10099 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DEFAULT_in_synpred221_Delphi10099 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred221_Delphi10101 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred221_Delphi10103 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_DEFAULT_in_synpred222_Delphi10136 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
@@ -50776,18 +51113,18 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_customAttribute_in_synpred242_Delphi10904 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred245_Delphi10904 = new BitSet(new long[]{0x0000000810800000L,0x0010000000000000L});
 	public static final BitSet FOLLOW_CLASS_in_synpred245_Delphi10909 = new BitSet(new long[]{0x0000000810000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_methodKey_in_synpred245_Delphi10914 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_methodKey_in_synpred245_Delphi10914 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_methodName_in_synpred245_Delphi10916 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred245_Delphi10919 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred246_Delphi11017 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred249_Delphi11039 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred251_Delphi11017 = new BitSet(new long[]{0x0000000000800000L,0x0000000000000002L});
 	public static final BitSet FOLLOW_CLASS_in_synpred251_Delphi11022 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-	public static final BitSet FOLLOW_FUNCTION_in_synpred251_Delphi11026 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_FUNCTION_in_synpred251_Delphi11026 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_methodName_in_synpred251_Delphi11028 = new BitSet(new long[]{0x0000000001000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred251_Delphi11031 = new BitSet(new long[]{0x0000000001000002L});
-	public static final BitSet FOLLOW_COLON_in_synpred251_Delphi11036 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
-	public static final BitSet FOLLOW_customAttribute_in_synpred251_Delphi11039 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred251_Delphi11036 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_customAttribute_in_synpred251_Delphi11039 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred251_Delphi11043 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred252_Delphi11152 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred254_Delphi11171 = new BitSet(new long[]{0x0000000000000002L});
@@ -50795,61 +51132,61 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_procBody_in_synpred262_Delphi11508 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred263_Delphi11574 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred265_Delphi11574 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
-	public static final BitSet FOLLOW_PROCEDURE_in_synpred265_Delphi11578 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_PROCEDURE_in_synpred265_Delphi11578 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred265_Delphi11580 = new BitSet(new long[]{0x0000000000000002L,0x0000000002000000L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred265_Delphi11583 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred266_Delphi11683 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttribute_in_synpred270_Delphi11925 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_functionDirective_in_synpred276_Delphi12237 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_NAME_in_synpred278_Delphi12278 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NAME_in_synpred278_Delphi12278 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred278_Delphi12280 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_INDEX_in_synpred279_Delphi12284 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_INDEX_in_synpred279_Delphi12284 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred279_Delphi12286 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_functionDirective_in_synpred280_Delphi12291 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_customAttributeDecl_in_synpred282_Delphi12429 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expressionList_in_synpred283_Delphi12485 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_anonymousExpression_in_synpred286_Delphi12628 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_relOp_in_synpred287_Delphi12672 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_relOp_in_synpred287_Delphi12672 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_simpleExpression_in_synpred287_Delphi12674 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_EQUAL_in_synpred288_Delphi12679 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_EQUAL_in_synpred288_Delphi12679 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred288_Delphi12681 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_formalParameterSection_in_synpred289_Delphi12735 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_operator_in_synpred292_Delphi12835 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_operator_in_synpred292_Delphi12835 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred292_Delphi12837 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_AT2_in_synpred293_Delphi12898 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_AT2_in_synpred293_Delphi12898 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred293_Delphi12900 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_199_in_synpred294_Delphi12933 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_199_in_synpred294_Delphi12933 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred294_Delphi12935 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_NOT_in_synpred295_Delphi12975 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_NOT_in_synpred295_Delphi12975 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred295_Delphi12977 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_PLUS_in_synpred296_Delphi13010 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_PLUS_in_synpred296_Delphi13010 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred296_Delphi13012 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_MINUS_in_synpred297_Delphi13045 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_MINUS_in_synpred297_Delphi13045 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_factor_in_synpred297_Delphi13047 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_POINTER2_in_synpred298_Delphi13080 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_POINTER2_in_synpred298_Delphi13080 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_ident_in_synpred298_Delphi13082 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_intRealNum_in_synpred299_Delphi13126 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_TRUE_in_synpred300_Delphi13159 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_FALSE_in_synpred301_Delphi13192 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_NIL_in_synpred302_Delphi13225 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_210_in_synpred303_Delphi13258 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_synpred304_Delphi13336 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_synpred304_Delphi13336 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred304_Delphi13338 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_RPAREN_in_synpred304_Delphi13340 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_RPAREN_in_synpred304_Delphi13340 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_synpred304_Delphi13342 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_POINTER2_in_synpred305_Delphi13382 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DOT_in_synpred306_Delphi13387 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred306_Delphi13387 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred306_Delphi13389 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_synpred307_Delphi13375 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_synpred307_Delphi13375 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred307_Delphi13377 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_synpred307_Delphi13379 = new BitSet(new long[]{0x0000010000000002L,0x0004000000000000L});
 	public static final BitSet FOLLOW_POINTER2_in_synpred307_Delphi13382 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_synpred307_Delphi13387 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred307_Delphi13387 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred307_Delphi13389 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_DOT_in_synpred308_Delphi13435 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred308_Delphi13435 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_simpleExpression_in_synpred308_Delphi13437 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_stringFactor_in_synpred309_Delphi13432 = new BitSet(new long[]{0x0000010000000002L});
-	public static final BitSet FOLLOW_DOT_in_synpred309_Delphi13435 = new BitSet(new long[]{0x12501911E0118150L,0x840702955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOT_in_synpred309_Delphi13435 = new BitSet(new long[]{0x12501911E0118150L,0x850F02955F083C20L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_simpleExpression_in_synpred309_Delphi13437 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_setSection_in_synpred310_Delphi13472 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_synpred311_Delphi13505 = new BitSet(new long[]{0x0000000000000002L});
@@ -50861,7 +51198,7 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_controlString_in_synpred316_Delphi13658 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_ControlChar_in_synpred317_Delphi13715 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_synpred320_Delphi13775 = new BitSet(new long[]{0x0000020002000002L});
-	public static final BitSet FOLLOW_set_in_synpred320_Delphi13778 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_set_in_synpred320_Delphi13778 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred320_Delphi13786 = new BitSet(new long[]{0x0000020002000002L});
 	public static final BitSet FOLLOW_203_in_synpred321_Delphi13849 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_INHERITED_in_synpred322_Delphi13854 = new BitSet(new long[]{0x0000000000000002L});
@@ -50871,77 +51208,77 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_designatorItem_in_synpred325_Delphi13872 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_expression_in_synpred336_Delphi14139 = new BitSet(new long[]{0x0000000003000002L});
 	public static final BitSet FOLLOW_colonConstruct_in_synpred336_Delphi14142 = new BitSet(new long[]{0x0000000002000002L});
-	public static final BitSet FOLLOW_COMMA_in_synpred336_Delphi14147 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_synpred336_Delphi14147 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred336_Delphi14149 = new BitSet(new long[]{0x0000000003000002L});
 	public static final BitSet FOLLOW_colonConstruct_in_synpred336_Delphi14152 = new BitSet(new long[]{0x0000000002000002L});
 	public static final BitSet FOLLOW_label_in_synpred375_Delphi15670 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_COLON_in_synpred375_Delphi15672 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_COLON_in_synpred375_Delphi15672 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_synpred375_Delphi15674 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ELSE_in_synpred376_Delphi15770 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_ELSE_in_synpred376_Delphi15770 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_synpred376_Delphi15772 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_synpred383_Delphi16039 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FOR_in_synpred386_Delphi16155 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
-	public static final BitSet FOLLOW_VAR_in_synpred386_Delphi16158 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_FOR_in_synpred386_Delphi16155 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_VAR_in_synpred386_Delphi16158 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_synpred386_Delphi16162 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_synpred386_Delphi16165 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred386_Delphi16165 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred386_Delphi16167 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_synpred386_Delphi16171 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_synpred386_Delphi16171 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred386_Delphi16173 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000004000000L});
-	public static final BitSet FOLLOW_TO_in_synpred386_Delphi16175 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_TO_in_synpred386_Delphi16175 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred386_Delphi16177 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_synpred386_Delphi16179 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_synpred386_Delphi16179 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_synpred386_Delphi16181 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_FOR_in_synpred389_Delphi16214 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
-	public static final BitSet FOLLOW_VAR_in_synpred389_Delphi16217 = new BitSet(new long[]{0x125019116111C150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_FOR_in_synpred389_Delphi16214 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xF100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_VAR_in_synpred389_Delphi16217 = new BitSet(new long[]{0x125019116111C150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_synpred389_Delphi16221 = new BitSet(new long[]{0x0000000001004000L});
-	public static final BitSet FOLLOW_COLON_in_synpred389_Delphi16224 = new BitSet(new long[]{0x1A501931E0918350L,0x841722955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COLON_in_synpred389_Delphi16224 = new BitSet(new long[]{0x1A501931E0918350L,0x851F22955F093C22L,0xE102380028E8402FL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_typeDecl_in_synpred389_Delphi16226 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_synpred389_Delphi16230 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_synpred389_Delphi16230 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred389_Delphi16232 = new BitSet(new long[]{0x0000040000000000L});
-	public static final BitSet FOLLOW_DOWNTO_in_synpred389_Delphi16234 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_DOWNTO_in_synpred389_Delphi16234 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred389_Delphi16236 = new BitSet(new long[]{0x0000008000000000L});
-	public static final BitSet FOLLOW_DO_in_synpred389_Delphi16238 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_DO_in_synpred389_Delphi16238 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_synpred389_Delphi16240 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_synpred394_Delphi16528 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statement_in_synpred395_Delphi16598 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statement_in_synpred396_Delphi16606 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_SEMI_in_synpred397_Delphi16603 = new BitSet(new long[]{0x925019116039C952L,0x880602904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_SEMI_in_synpred397_Delphi16603 = new BitSet(new long[]{0x925019116039C952L,0x890E02904F083D28L,0xF100380018E8006DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statement_in_synpred397_Delphi16606 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_synpred398_Delphi16660 = new BitSet(new long[]{0x0000000000004000L});
-	public static final BitSet FOLLOW_ASSIGN_in_synpred398_Delphi16662 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_ASSIGN_in_synpred398_Delphi16662 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred398_Delphi16664 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_synpred399_Delphi16697 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_gotoStatement_in_synpred400_Delphi16731 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_synpred402_Delphi16854 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_synpred402_Delphi16854 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_expression_in_synpred402_Delphi16856 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000400L});
 	public static final BitSet FOLLOW_RPAREN_in_synpred402_Delphi16858 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_synpred406_Delphi16979 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_LPAREN_in_synpred406_Delphi16979 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_recordConstExpression_in_synpred406_Delphi16981 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002400L});
-	public static final BitSet FOLLOW_SEMI_in_synpred406_Delphi16984 = new BitSet(new long[]{0x1250181160108150L,0x8002029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
+	public static final BitSet FOLLOW_SEMI_in_synpred406_Delphi16984 = new BitSet(new long[]{0x1250181160108150L,0x810A029049001C20L,0xE100100008E8002DL,0x000000000000004CL});
 	public static final BitSet FOLLOW_recordConstExpression_in_synpred406_Delphi16986 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002400L});
 	public static final BitSet FOLLOW_RPAREN_in_synpred406_Delphi16990 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_constExpression_in_synpred408_Delphi17038 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_LPAREN_in_synpred409_Delphi17024 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_LPAREN_in_synpred409_Delphi17024 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_synpred409_Delphi17026 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_COMMA_in_synpred409_Delphi17029 = new BitSet(new long[]{0x12501911E0118150L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_COMMA_in_synpred409_Delphi17029 = new BitSet(new long[]{0x12501911E0118150L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_synpred409_Delphi17031 = new BitSet(new long[]{0x0000000002000000L,0x0000000000000000L,0x0000000000000400L});
-	public static final BitSet FOLLOW_RPAREN_in_synpred409_Delphi17035 = new BitSet(new long[]{0x12501911E0118152L,0x841702955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
+	public static final BitSet FOLLOW_RPAREN_in_synpred409_Delphi17035 = new BitSet(new long[]{0x12501911E0118152L,0x851F02955F083C22L,0xE102380008E8002DL,0x00000000000608CCL});
 	public static final BitSet FOLLOW_constExpression_in_synpred409_Delphi17038 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_synpred411_Delphi17186 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_TRY_in_synpred412_Delphi17183 = new BitSet(new long[]{0x925819116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_TRY_in_synpred412_Delphi17183 = new BitSet(new long[]{0x925819116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_synpred412_Delphi17186 = new BitSet(new long[]{0x0008000000000000L});
-	public static final BitSet FOLLOW_EXCEPT_in_synpred412_Delphi17190 = new BitSet(new long[]{0x925319116039C950L,0x880602D04F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_EXCEPT_in_synpred412_Delphi17190 = new BitSet(new long[]{0x925319116039C950L,0x890E02D04F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_handlerList_in_synpred412_Delphi17192 = new BitSet(new long[]{0x0002000000000000L});
 	public static final BitSet FOLLOW_END_in_synpred412_Delphi17194 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_synpred413_Delphi17230 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statementList_in_synpred414_Delphi17237 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_handler_in_synpred417_Delphi17296 = new BitSet(new long[]{0x0001000000000002L,0x0000004000000000L});
-	public static final BitSet FOLLOW_ELSE_in_synpred417_Delphi17301 = new BitSet(new long[]{0x925019116039C950L,0x880602904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
+	public static final BitSet FOLLOW_ELSE_in_synpred417_Delphi17301 = new BitSet(new long[]{0x925019116039C950L,0x890E02904F083D28L,0xF100380018E8206DL,0x000000000002084FL});
 	public static final BitSet FOLLOW_statementList_in_synpred417_Delphi17303 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_statement_in_synpred420_Delphi17513 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred420_Delphi17516 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_designator_in_synpred421_Delphi17605 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_AT_in_synpred422_Delphi17610 = new BitSet(new long[]{0x1250191160118150L,0x800602904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
+	public static final BitSet FOLLOW_AT_in_synpred422_Delphi17610 = new BitSet(new long[]{0x1250191160118150L,0x810E02904F083C20L,0xE100100008E8002DL,0x000000000002084CL});
 	public static final BitSet FOLLOW_designator_in_synpred422_Delphi17612 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_callConvention_in_synpred436_Delphi18268 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_callConventionNoSemi_in_synpred440_Delphi18391 = new BitSet(new long[]{0x0100000000000000L,0x0000000000000000L,0x2000000000000000L});
@@ -50951,6 +51288,6 @@ public class DelphiParser extends Parser {
 	public static final BitSet FOLLOW_SEMI_in_synpred443_Delphi18589 = new BitSet(new long[]{0x0000000000000002L});
 	public static final BitSet FOLLOW_EXTERNAL_in_synpred467_Delphi19794 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000002000L});
 	public static final BitSet FOLLOW_SEMI_in_synpred467_Delphi19796 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ident_in_synpred654_Delphi22005 = new BitSet(new long[]{0x0000010000000000L});
-	public static final BitSet FOLLOW_DOT_in_synpred654_Delphi22007 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ident_in_synpred656_Delphi22013 = new BitSet(new long[]{0x0000010000000000L});
+	public static final BitSet FOLLOW_DOT_in_synpred656_Delphi22015 = new BitSet(new long[]{0x0000000000000002L});
 }
