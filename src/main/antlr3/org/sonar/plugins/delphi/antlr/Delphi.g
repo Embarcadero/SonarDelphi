@@ -193,6 +193,7 @@ typeDecl                     : strucType
                              | stringType
                              | procedureType
                              | variantType
+                             | subRangeType
                              | ('type')? typeId (genericPostfix)? ('.' typeDecl)* (paranthesePostfix)?
                              | simpleType                             
                              ;
@@ -244,10 +245,9 @@ procedureTypeHeading         : 'function' (formalParameterSection)? ':' (customA
 variantType                  : 'variant' // SzJ TODO TEMP
                              ;
 simpleType                   : ident
-                             | subRangeType
                              | enumType
                              ;
-subRangeType                 : constExpression ('..' constExpression)?
+subRangeType                 : constExpression '..' constExpression
                              ;
 enumType                     : '(' ident ('=' expression)? (',' ident ('=' expression)? )* ')'
                              ;
