@@ -12,7 +12,10 @@ interface
 type
   TMyChar = Char;
   TMySetOfChar = set of Char;
-
+  
+  TVerticalAlignment = (taAlignTop, taAlignBottom, taVerticalCenter);
+  TTopBottom = TVerticalAlignment.taAlignTop..TVerticalAlignment.taAlignBottom;
+  
   PMyPointer = ^Integer;
 
 	IMyInterface = interface
