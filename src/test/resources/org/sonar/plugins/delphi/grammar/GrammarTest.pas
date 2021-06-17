@@ -13,6 +13,7 @@ type
   TMyChar = Char;
   TMySetOfChar = set of Char;
   
+  TLockscreenVisibility = (Public, Private, Secret);  
   TVerticalAlignment = (taAlignTop, taAlignBottom, taVerticalCenter);
   TTopBottom = TVerticalAlignment.taAlignTop..TVerticalAlignment.taAlignBottom;
   
