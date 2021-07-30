@@ -303,4 +303,64 @@ begin
 	(myClass as TMyClass).free();	//violation
 end;
 
+procedure ImplicitGeneralException();
+begin
+	try
+	except
+		HandleException;
+	end;
+end;
+
+procedure ExplicitGeneralExceptionWithoutVariable();
+begin
+	try
+	except 
+		on Exception do 
+		begin
+			HandleException;
+		end;	
+	end;
+end;
+
+procedure ExplicitGeneralExceptionWithVariable();
+begin
+	try
+	except 
+		on e: Exception do 
+		begin
+			HandleException;
+		end;
+	end;
+end;
+
+procedure SequenceOfExceptionHandlersWithExplicitGeneralExceptionWithoutVariable();
+begin
+	try
+	except 
+		on EZeroDivide do 
+		begin 
+			HandleZeroDivide;
+		end;
+		on Exception do 
+		begin
+			HandleException;
+		end;
+	end;
+end;
+
+procedure SequenceOfExceptionHandlersWithExplicitGeneralExceptionWithoutVariable();
+begin
+	try
+	except 
+		on z: EZeroDivide do 
+		begin 
+			HandleZeroDivide;
+		end;
+		on e: Exception do 
+		begin
+			HandleException;
+		end;
+	end;
+end;
+
 end.

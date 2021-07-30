@@ -279,16 +279,13 @@
 		</properties>
 	</rule>
 
-	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.NodeSequenceRule" message="Catching general exception"
+	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.CatchingGeneralExceptionRule" message="Catching general exception"
 		name="CatchingGeneralExceptionRule">
 		<description>You should not catch general exceptions but descendants of Exception class.
 		</description>
 		<properties>
 			<property name="baseEffort">
 				<value>15min</value>
-			</property>
-			<property name="sequence">
-				<value>:,exception,do</value>
 			</property>
 		</properties>
 		<example><![CDATA[

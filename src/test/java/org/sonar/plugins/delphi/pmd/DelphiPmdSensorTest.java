@@ -118,7 +118,8 @@ public class DelphiPmdSensorTest {
     sensor.execute(sensorContext);
 
     RuleData ruleData[] = // all expected rule violations and their lines
-    {new RuleData("ClassNameRule", 7),
+    {
+      new RuleData("ClassNameRule", 7),
       new RuleData("NoSemiAfterOverloadRule", 9),
       new RuleData("TypeAliasRule", 13),
       new RuleData("TypeAliasRule", 14),
@@ -129,6 +130,7 @@ public class DelphiPmdSensorTest {
       new RuleData("RecordNameRule", 34),
       new RuleData("InheritedMethodWithNoCodeRule", 45),
       new RuleData("ThenTryRule", 51),
+      new RuleData("CatchingGeneralExceptionRule", 54),
       new RuleData("EmptyExceptBlockRule", 54),
       new RuleData("TooManyArgumentsRule", 58),
       new RuleData("TooManyVariablesRule", 59),
@@ -159,7 +161,13 @@ public class DelphiPmdSensorTest {
       new RuleData("NoSemicolonRule", 291),
       new RuleData("NoSemicolonRule", 293),
       new RuleData("CastAndFreeRule", 302),
-      new RuleData("CastAndFreeRule", 303)};
+      new RuleData("CastAndFreeRule", 303),
+      new RuleData("CatchingGeneralExceptionRule", 309),
+      new RuleData("CatchingGeneralExceptionRule", 318),
+      new RuleData("CatchingGeneralExceptionRule", 329),
+      new RuleData("CatchingGeneralExceptionRule", 344),
+      new RuleData("CatchingGeneralExceptionRule", 359),
+    };
 
     // Sort the violations by line number, so we don't have to add
     // violations order
