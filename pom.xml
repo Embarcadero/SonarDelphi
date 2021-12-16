@@ -77,9 +77,11 @@
 	</ciManagement>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
 		<!--Version Fields-->
-                <sonarQubeMinVersion>7.9</sonarQubeMinVersion>
-                <sonar.version>7.9</sonar.version>
+		<sonarQubeMinVersion>7.9</sonarQubeMinVersion>
+		<sonar.version>7.9</sonar.version>
 		<sonarcobertura.version>1.4</sonarcobertura.version>
 		<antlr-runtime.version>3.4</antlr-runtime.version>
 		<slf4j.version>1.7.5</slf4j.version>
