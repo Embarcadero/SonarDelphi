@@ -14,8 +14,6 @@ public class CatchingGeneralExceptionRule extends DelphiRule {
     @Override
     public void visit(DelphiPMDNode node, RuleContext ctx) {
 
-
-        int a = node.getLine();
         // Skip if not an except block
         if (node.getType() != DelphiLexer.EXCEPT)
             return;
