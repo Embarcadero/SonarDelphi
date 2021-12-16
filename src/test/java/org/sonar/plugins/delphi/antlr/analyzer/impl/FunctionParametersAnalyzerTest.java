@@ -22,8 +22,12 @@
  */
 package org.sonar.plugins.delphi.antlr.analyzer.impl;
 
+import static org.hamcrest.Matchers.containsString;
+import static org.junit.Assert.assertEquals;
+
+import java.io.File;
+
 import org.antlr.runtime.CommonToken;
-import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.tree.CommonTree;
 import org.antlr.runtime.tree.Tree;
 import org.junit.Before;
@@ -43,12 +47,6 @@ import org.sonar.plugins.delphi.core.language.FunctionInterface;
 import org.sonar.plugins.delphi.core.language.impl.DelphiArgument;
 import org.sonar.plugins.delphi.core.language.impl.DelphiFunction;
 import org.sonar.plugins.delphi.utils.DelphiUtils;
-
-import java.io.File;
-import java.io.IOException;
-
-import static org.hamcrest.Matchers.containsString;
-import static org.junit.Assert.assertEquals;
 
 public class FunctionParametersAnalyzerTest {
 

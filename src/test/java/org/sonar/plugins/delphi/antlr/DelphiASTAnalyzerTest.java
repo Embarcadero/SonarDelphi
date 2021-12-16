@@ -22,7 +22,11 @@
  */
 package org.sonar.plugins.delphi.antlr;
 
-import org.antlr.runtime.RecognitionException;
+import static org.junit.Assert.assertEquals;
+
+import java.io.File;
+import java.util.List;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.sonar.plugins.delphi.DelphiTestUtils;
@@ -35,12 +39,6 @@ import org.sonar.plugins.delphi.core.language.ClassFieldInterface;
 import org.sonar.plugins.delphi.core.language.ClassInterface;
 import org.sonar.plugins.delphi.core.language.FunctionInterface;
 import org.sonar.plugins.delphi.utils.DelphiUtils;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public class DelphiASTAnalyzerTest {
 
