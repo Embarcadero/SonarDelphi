@@ -42,7 +42,7 @@ import java.util.Set;
  * Class calculating basic file metrics: lines of code and comments,
  * documentation.
  */
-public class BasicMetrics extends DefaultMetrics implements MetricsInterface {
+public class BasicMetrics extends DefaultMetrics {
 
   private final SensorContext context;
 

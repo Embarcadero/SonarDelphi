@@ -44,7 +44,7 @@ import java.util.Set;
 /**
  * Class counting function cyclomatic complexity.
  */
-public class ComplexityMetrics extends DefaultMetrics implements MetricsInterface {
+public class ComplexityMetrics extends DefaultMetrics {
 
   public static final RuleKey RULE_KEY_METHOD_CYCLOMATIC_COMPLEXITY = RuleKey.of(DelphiPmdConstants.REPOSITORY_KEY, "MethodCyclomaticComplexityRule");
 
