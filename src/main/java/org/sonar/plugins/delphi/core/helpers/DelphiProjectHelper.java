@@ -23,11 +23,11 @@
 package org.sonar.plugins.delphi.core.helpers;
 
 import org.apache.commons.lang.StringUtils;
-import org.sonar.api.batch.ScannerSide;
 import org.sonar.api.batch.fs.FilePredicates;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.config.Configuration;
+import org.sonar.api.scanner.ScannerSide;
 import org.sonar.plugins.delphi.DelphiPlugin;
 import org.sonar.plugins.delphi.core.DelphiLanguage;
 import org.sonar.plugins.delphi.project.DelphiProject;
