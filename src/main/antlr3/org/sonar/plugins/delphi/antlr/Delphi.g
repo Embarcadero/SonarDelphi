@@ -369,7 +369,7 @@ classMethod                  : (customAttribute)? ('class')? methodKey ident (ge
                              | (customAttribute)? ('class')? 'function' ident (genericDefinition)? '.' ident '=' ident ';'
                              | (customAttribute)? ('class')? 'procedure' ident (genericDefinition)? '.' ident '=' ident ';'
                              ;
-classField                   : (customAttribute)? identList ':' typeDecl ';' (hintingDirective)*
+classField                   : (customAttribute)? identList ':' typeDecl (hintingDirective)*  ';'
                              -> (customAttribute)? ^(TkClassField ^(TkVariableIdents identList) ^(TkVariableType typeDecl))
                              ;
 classProperty                : (customAttribute)? ('class')? 'property' ident (classPropertyArray)? (':' genericTypeIdent)? (classPropertyIndex)? (classPropertySpecifier)* ';' (classPropertyEndSpecifier)*

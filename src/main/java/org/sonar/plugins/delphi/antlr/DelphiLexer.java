@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2021-06-17 16:04:11
+// $ANTLR 3.5.1 D:\\Projects\\SonarDelphi\\src\\main\\antlr3\\org\\sonar\\plugins\\delphi\\antlr\\Delphi.g 2022-05-16 08:11:49
 
 /*
  * Sonar Delphi Plugin

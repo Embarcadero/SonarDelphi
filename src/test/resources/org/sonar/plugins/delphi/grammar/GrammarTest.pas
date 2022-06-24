@@ -32,6 +32,7 @@ type
     FId: Integer;
   strict protected
     FStrictProtectedId: Integer;
+    FDeprecatedMember: Integer deprecated;
   protected
     FName: string;
   public
