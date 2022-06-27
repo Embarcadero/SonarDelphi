@@ -119,11 +119,11 @@
 			<artifactId>antlr-runtime</artifactId>
 			<version>${antlr-runtime.version}</version>
 		</dependency>
-                <dependency>
-                    <groupId>net.sourceforge.pmd</groupId>
-                    <artifactId>pmd-core</artifactId>
-                    <version>${pmd.version}</version>
-                </dependency>
+		<dependency>
+			<groupId>net.sourceforge.pmd</groupId>
+			<artifactId>pmd-core</artifactId>
+			<version>${pmd.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>xalan</groupId>
 			<artifactId>xalan</artifactId>
