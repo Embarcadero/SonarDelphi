@@ -25,11 +25,13 @@ package org.sonar.plugins.delphi.pmd;
 import static org.junit.Assert.assertEquals;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 import org.junit.Test;
 import org.sonar.plugins.delphi.antlr.ast.DelphiAST;
 import org.sonar.plugins.delphi.utils.DelphiUtils;
+
 
 import net.sourceforge.pmd.lang.ast.Node;
 
@@ -45,6 +47,22 @@ public class DelphiPMDTest {
     List<Node> nodes = pmd.getNodesFromAST(ast);
 
     assertEquals(7, nodes.size());
+  }
+
+  @Test
+  public void processFile_DeprecatedUnit_NoIssuesFound() throws IOException {
+    RuleVerifier.newVerifier()
+                .onFile("/org/sonar/plugins/delphi/PMDTest/DelphiPMDTest_ProcessFile_DeprecatedUnit.pas")
+                .withCheck("ClassNameRule")
+                .verifyNoIssues();
+  }
+
+  @Test
+  public void processFile_ExperimentalUnit_NoIssuesFound() throws IOException {
+    RuleVerifier.newVerifier()
+                .onFile("/org/sonar/plugins/delphi/PMDTest/DelphiPMDTest_ProcessFile_ExperimentalUnit.pas")
+                .withCheck("ClassNameRule")
+                .verifyNoIssues();
   }
 
 }

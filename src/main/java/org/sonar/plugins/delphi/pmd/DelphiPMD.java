@@ -28,6 +28,7 @@ import net.sourceforge.pmd.lang.Language;
 import net.sourceforge.pmd.lang.ast.Node;
 import net.sourceforge.pmd.lang.LanguageRegistry;
 import org.antlr.runtime.tree.CommonTree;
+import org.sonar.plugins.delphi.antlr.DelphiLexer;
 import org.sonar.plugins.delphi.antlr.ast.ASTTree;
 import org.sonar.plugins.delphi.antlr.ast.DelphiAST;
 import org.sonar.plugins.delphi.antlr.ast.DelphiPMDNode;
@@ -64,6 +65,9 @@ public class DelphiPMD {
       if (ast.isError()) {
         throw new ParseException("grammar error");
       }
+
+      if (isDeprecatedOrExperimental(ast))
+        return;
 
       List<Node> nodes = getNodesFromAST(ast);
       ruleSets.apply(nodes, ctx, language);
@@ -105,6 +109,21 @@ public class DelphiPMD {
     for (int i = 0; i < node.getChildCount(); ++i) {
       indexNode((CommonTree) node.getChild(i), list);
     }
+  }
+
+  /**
+   * Checks whether the unit represented by the specified AST is marked as 
+   * deprecated or experimental.
+   * 
+   * @return 
+   * True if unit is marked as deprecated or experimental; otherwise, false.
+   */
+  private boolean isDeprecatedOrExperimental(ASTTree ast) {
+    CommonTree unitNode = (CommonTree)ast.getChild(0);
+    CommonTree lastUnitNode = (CommonTree)unitNode.getChild(unitNode.getChildCount() -1);
+    int lastUnitNodeType = lastUnitNode.getType();
+
+    return lastUnitNodeType == DelphiLexer.DEPRECATED || lastUnitNodeType == DelphiLexer.EXPERIMENTAL;
   }
 
   /**
