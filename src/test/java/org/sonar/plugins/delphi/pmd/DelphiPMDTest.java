@@ -58,6 +58,14 @@ public class DelphiPMDTest {
   }
 
   @Test
+  public void processFile_DeprecatedUnitWithComment_NoIssuesFound() throws IOException {
+    RuleVerifier.newVerifier()
+                .onFile("/org/sonar/plugins/delphi/PMDTest/DelphiPMDTest_ProcessFile_DeprecatedUnitWithComment.pas")
+                .withCheck("UnitNameRule")
+                .verifyNoIssues();
+  }
+
+  @Test
   public void processFile_ExperimentalUnit_NoIssuesFound() throws IOException {
     RuleVerifier.newVerifier()
                 .onFile("/org/sonar/plugins/delphi/PMDTest/DelphiPMDTest_ProcessFile_ExperimentalUnit.pas")

@@ -120,10 +120,15 @@ public class DelphiPMD {
    */
   private boolean isDeprecatedOrExperimental(ASTTree ast) {
     CommonTree unitNode = (CommonTree)ast.getChild(0);
-    CommonTree lastUnitNode = (CommonTree)unitNode.getChild(unitNode.getChildCount() -1);
-    int lastUnitNodeType = lastUnitNode.getType();
 
-    return lastUnitNodeType == DelphiLexer.DEPRECATED || lastUnitNodeType == DelphiLexer.EXPERIMENTAL;
+    for (Object child : unitNode.getChildren()) {
+      CommonTree node = (CommonTree)child;
+      
+      if (node.getType() == DelphiLexer.DEPRECATED || node.getType() == DelphiLexer.EXPERIMENTAL)
+        return true;
+    }
+
+    return false;
   }
 
   /**
