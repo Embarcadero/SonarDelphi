@@ -113,6 +113,12 @@
 			<version>${sonar.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.6</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- Plugin's specific deps -->
 		<dependency>
 			<groupId>org.antlr</groupId>
@@ -245,12 +251,7 @@
 			<groupId>com.google.collections</groupId>
 			<artifactId>google-collections</artifactId>
 			<version>1.0</version>
-		</dependency>	
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.6</version>
-		</dependency>	
+		</dependency>			
 	</dependencies>
 
 
