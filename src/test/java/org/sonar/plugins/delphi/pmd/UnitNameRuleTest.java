@@ -22,8 +22,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.is;
 
-import java.io.IOException;
-
 import org.junit.Test;
 
 public class UnitNameRuleTest extends BasePmdRuleTest {
@@ -40,14 +38,6 @@ public class UnitNameRuleTest extends BasePmdRuleTest {
     execute(new DelphiUnitBuilderTest().unitName("MySonar.MyUnit"));
 
     assertThat(issues, is(empty()));
-  }
-
-  @Test
-  public void processFile_DeprecatedComment_NoIssuesFound() throws IOException {
-    RuleVerifier.newVerifier()
-                .onFile("/org/sonar/plugins/delphi/PMDTest/UnitNameRule_DeprecatedComment.pas")
-                .withCheck("UnitNameRule")
-                .verifyNoIssues();
   }
 
 /*  @Test
