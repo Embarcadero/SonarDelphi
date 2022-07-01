@@ -24,6 +24,10 @@ package org.sonar.plugins.delphi.pmd.xml;
 
 
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.NoTypePermission;
+import com.thoughtworks.xstream.security.NullPermission;
+import com.thoughtworks.xstream.security.PrimitiveTypePermission;
+
 import org.sonar.api.profiles.RulesProfile;
 import org.sonar.api.rules.*;
 import org.sonar.plugins.delphi.pmd.DelphiPmdConstants;
@@ -58,6 +62,10 @@ public final class DelphiRulesUtils {
     xstream.processAnnotations(DelphiRule.class);
     xstream.processAnnotations(Property.class);
     xstream.aliasSystemAttribute("ref", "class");
+    xstream.addPermission(NoTypePermission.NONE);
+    xstream.addPermission(NullPermission.NULL);
+    xstream.addPermission(PrimitiveTypePermission.PRIMITIVES);
+    xstream.allowTypesByWildcard(new String[] { "org.sonar.plugins.delphi.pmd.xml.*" });
 
     return (Ruleset) xstream.fromXML(configuration);
   }
