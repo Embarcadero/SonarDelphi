@@ -90,12 +90,20 @@ public class ConstructorWithoutInheritedStatementRuleTest extends BasePmdRuleTes
 
     assertThat(issues, is(empty()));
   }
-
+  
   @Test
   public void classConstructor_NoIssue() throws IOException {
     RuleVerifier.newVerifier()
-                .onFile("/org/sonar/plugins/delphi/PMDTest/ConstructorWithoutInheritedStatementRule_ClassConstructor.pas")
-                .withCheck("ConstructorWithoutInheritedStatementRule")
-                .verifyNoIssues();
+    .onFile("/org/sonar/plugins/delphi/PMDTest/ConstructorWithoutInheritedStatementRule_ClassConstructor.pas")
+    .withCheck("ConstructorWithoutInheritedStatementRule")
+    .verifyNoIssues();
   }
+  
+    @Test
+    public void overloadedConstructorCalled_NoIssue() throws IOException {
+      RuleVerifier.newVerifier()
+                  .onFile("/org/sonar/plugins/delphi/PMDTest/ConstructorWithoutInheritedStatementRule_OverloadConstructorCalled.pas")
+                  .withCheck("ConstructorWithoutInheritedStatementRule")
+                  .verifyNoIssues();
+    }
 }

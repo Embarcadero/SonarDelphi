@@ -19,20 +19,27 @@
 package org.sonar.plugins.delphi.pmd.rules;
 
 import net.sourceforge.pmd.RuleContext;
+
+import org.antlr.runtime.tree.Tree;
 import org.sonar.plugins.delphi.antlr.DelphiLexer;
 import org.sonar.plugins.delphi.antlr.ast.DelphiPMDNode;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class ConstructorWithoutInheritedStatementRule extends NoInheritedStatementRule {
 
+  private static final int MAX_LOOK_AHEAD = 3;
+
   private List<String> knewRecords = new ArrayList<>();
+  private HashSet<String> declaredConstructors = new HashSet<>();
 
   @Override
   protected void init() {
     super.init();
     knewRecords.clear();
+    declaredConstructors.clear();
     setLookFor("constructor");
   }
 
@@ -41,6 +48,9 @@ public class ConstructorWithoutInheritedStatementRule extends NoInheritedStateme
     if (node.getType() == DelphiLexer.TkRecord) {
       knewRecords.add(node.getParent().getText());
     }
+
+    if (node.getType() == DelphiLexer.CONSTRUCTOR)
+      declaredConstructors.add(node.getChild(0).getChild(0).getText());
 
     super.visit(node, ctx);
   }
@@ -59,6 +69,33 @@ public class ConstructorWithoutInheritedStatementRule extends NoInheritedStateme
       return false;
     }
 
+    if (isConstructorOverloadCalled(node))
+      return false;
+
     return true;
+  }
+
+  private boolean isConstructorOverloadCalled(DelphiPMDNode node) {
+    // This solution isn't perfect and could miss violations when the constructor
+    // calls a function that has the same name as an constructor overload
+    Tree beginNode = null;
+    for (int i = node.getChildIndex() + 1; i < node.getChildIndex() + MAX_LOOK_AHEAD
+      && i < node.getParent().getChildCount(); ++i) {
+      if (node.getParent().getChild(i).getType() == DelphiLexer.BEGIN) {
+        beginNode = node.getParent().getChild(i);
+        break;
+      }
+    }
+
+    if (beginNode != null) {
+      for (int c = 0; c < beginNode.getChildCount(); c++) {
+        if (beginNode.getChild(c).getType() == DelphiLexer.TkIdentifier) {
+          if (declaredConstructors.contains(beginNode.getChild(c).getText()))
+            return true;
+        }
+      }
+    }
+
+    return false;
   }
 }
