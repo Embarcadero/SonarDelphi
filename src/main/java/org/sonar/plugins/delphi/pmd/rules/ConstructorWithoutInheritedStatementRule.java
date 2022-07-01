@@ -41,15 +41,27 @@ public class ConstructorWithoutInheritedStatementRule extends NoInheritedStateme
     if (node.getType() == DelphiLexer.TkRecord) {
       knewRecords.add(node.getParent().getText());
     }
+
+    if (isInterfaceSection() && node.getType() == DelphiLexer.CONSTRUCTOR)
+      declaredConstructors.add(node.getChild(0).getChild(0).getText());
+
     super.visit(node, ctx);
   }
 
   @Override
   protected boolean shouldAddRule(DelphiPMDNode node) {
-    if (node.getChild(0).getType() == DelphiLexer.TkFunctionName) {
-      String typeName = node.getChild(0).getChild(0).getText();
-      return !knewRecords.contains(typeName);
+    if (node.getChild(0).getType() != DelphiLexer.TkFunctionName)
+      return super.shouldAddRule(node);
+    
+    String functionName = node.getChild(0).getChild(0).getText();
+    if (knewRecords.contains(functionName))
+      return false;
+
+    // Skip class constructor
+    if (node.childIndex > 0 && node.getParent().getChild(node.childIndex-1).getType() == DelphiLexer.CLASS) {
+      return false;
     }
-    return super.shouldAddRule(node);
+
+    return true;
   }
 }

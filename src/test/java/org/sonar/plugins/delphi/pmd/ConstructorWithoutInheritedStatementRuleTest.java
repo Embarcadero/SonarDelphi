@@ -22,6 +22,8 @@ import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.io.IOException;
+
 import org.junit.Test;
 
 public class ConstructorWithoutInheritedStatementRuleTest extends BasePmdRuleTest {
@@ -89,4 +91,11 @@ public class ConstructorWithoutInheritedStatementRuleTest extends BasePmdRuleTes
     assertThat(issues, is(empty()));
   }
 
+  @Test
+  public void classConstructor_NoIssue() throws IOException {
+    RuleVerifier.newVerifier()
+                .onFile("/org/sonar/plugins/delphi/PMDTest/ConstructorWithoutInheritedStatementRule_ClassConstructor.pas")
+                .withCheck("ConstructorWithoutInheritedStatementRule")
+                .verifyNoIssues();
+  }
 }
