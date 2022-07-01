@@ -42,9 +42,6 @@ public class ConstructorWithoutInheritedStatementRule extends NoInheritedStateme
       knewRecords.add(node.getParent().getText());
     }
 
-    if (isInterfaceSection() && node.getType() == DelphiLexer.CONSTRUCTOR)
-      declaredConstructors.add(node.getChild(0).getChild(0).getText());
-
     super.visit(node, ctx);
   }
 
