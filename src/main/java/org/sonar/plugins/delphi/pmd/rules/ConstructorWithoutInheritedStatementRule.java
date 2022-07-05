@@ -49,7 +49,7 @@ public class ConstructorWithoutInheritedStatementRule extends NoInheritedStateme
       knewRecords.add(node.getParent().getText());
     }
 
-    if (node.getType() == DelphiLexer.CONSTRUCTOR)
+    if (node.getType() == DelphiLexer.CONSTRUCTOR && node.getChildCount() > 0)
       declaredConstructors.add(node.getChild(0).getChild(0).getText());
 
     super.visit(node, ctx);
