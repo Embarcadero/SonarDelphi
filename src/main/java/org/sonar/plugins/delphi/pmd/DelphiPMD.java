@@ -119,8 +119,10 @@ public class DelphiPMD {
    * True if unit is marked as deprecated or experimental; otherwise, false.
    */
   private boolean isDeprecatedOrExperimental(ASTTree ast) {
-    CommonTree unitNode = (CommonTree)ast.getChild(0);
+    if (ast.getChild(0).getType() != DelphiLexer.UNIT)
+      return false;
 
+    CommonTree unitNode = (CommonTree)ast.getChild(0);
     for (Object child : unitNode.getChildren()) {
       CommonTree node = (CommonTree)child;
       
