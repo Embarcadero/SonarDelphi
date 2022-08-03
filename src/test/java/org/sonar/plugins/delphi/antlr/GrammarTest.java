@@ -138,4 +138,9 @@ public class GrammarTest {
     parseFile("InterfaceMethodResolutionClause.pas");
   }
 
+  @Test
+  public void parseRecordHelperWithClassVariable() throws Exception {
+    parseFile("RecordHelperWithClassVariable.pas");
+  }
+
 }

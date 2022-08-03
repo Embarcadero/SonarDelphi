@@ -359,6 +359,7 @@ recordHelperItem             : visibility
                              | constSection
                              | classMethod
                              | classProperty
+                             | ('class')? varSection
                              ;
 classMethod                  : (customAttribute)? ('class')? methodKey ident (genericDefinition)? (formalParameterSection)? ';' (methodDirective)* 
                              ->  (customAttribute)? ('class')? ^(methodKey ^(TkFunctionName ident) (genericDefinition)? ^(TkFunctionArgs (formalParameterSection)?) (methodDirective)*)
