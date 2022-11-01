@@ -1,6 +1,6 @@
 ![Java CI with Maven](https://github.com/JAM-Software/SonarDelphi/workflows/Java%20CI%20with%20Maven/badge.svg)
 
-[Embarcadero](https://www.embarcadero.com/)'s officially version of the *Sonar Delphi* plugin for use to analyze Delphi projects with SonarQube. Working to collect updates and contributions from other versions into this one and move if forward with new features. Thanks to [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/), and [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/) for working with us on this, and everyone else who's contributed to the Sonar-Delphi projects on GibHub.
+[Embarcadero](https://www.embarcadero.com/)'s officially version of the **Sonar Delphi** plugin for use to analyze [Delphi](https://www.embarcadero.com/products/delphi) source code with SonarQube. Working to collect updates and contributions from other versions into this one and move if forward with new features. Thanks to [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/), and [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/) for working with us on this, and everyone else who's contributed to the Sonar-Delphi projects on GitHub.
 
 # SonarQube Delphi
 
