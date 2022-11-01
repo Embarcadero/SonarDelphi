@@ -4,21 +4,13 @@
 
 # SonarQube Delphi
 
-Is a SonarQube (http://www.sonarqube.org/) plugin and provides
+Is a [SonarQube](http://www.sonarqube.org/) plugin that provides
   * 49 Rules for Delphi
-  * TestCoverage using [DelphiCodeCoverage](https://github.com/DelphiCodeCoverage/DelphiCodeCoverage/releases) or AQtime (license needed)
-   * Optional .html output for TestCoverage
-  * Unittests results using DUnitX
+  * TestCoverage using [DelphiCodeCoverage](https://github.com/DelphiCodeCoverage/DelphiCodeCoverage/releases) or [SmartBear's AQtime](https://smartbear.com/product/aqtime-pro/) (license required)
+   * Optional `.html` output for TestCoverage
+  * Unit test results using [DUnitX](https://github.com/VSoftTechnologies/DUnitX)
 
-This is Plugin-Version 1.0 SonarQube 7.9(LTS) or higher is needed (tested with SonarQube 7.9.3 and 8.2.0)
-It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi and https://github.com/mendrix/SonarDelphi, all credit goes to them.
-JAM Software has created its own fork in order to fix issues seen with our Delphi code.
-
-This plugin was originally a [Sabre Airline Solutions](http://www.sabreairlinesolutions.com/home/) donation.
-
-## License
-
-The entire plugin follows the GPL: https://github.com/SandroLuck/SonarDelphi/blob/master/src/LUCK_LICENSE.txt
+This is Plugin-Version 1.0. SonarQube 7.9(LTS) or higher is needed (tested with SonarQube 7.9.3 and 8.2.0)
 
 ## Reporting Issues
 
@@ -180,3 +172,11 @@ The plugin uses an ANTLR3 grammar to parse the Delphi language. The grammar defi
 After successfully changing and testing the Delphi.g grammar you have to generate the new parser code (menu Generate, option Generate Code). Now copy the files **DelphiLexer.java** and **DelphiParser.java** from **/src/main/antlr3/org/sonar/plugins/delphi/antlr/output/** to **/src/main/java/org/sonar/plugins/delphi/antlr/** and (re)build the plugin.
 
 Note: it is important to make sure your new grammar changes are also tested. If you only have to make sure that they can be parsed without errors, you can add your new language features to one of the existing grammar files in **/src/main/java/org/sonar/plugins/delphi/antlr** (the newest is **GrammarTest2020.pas**).
+
+## Credits and notable contributors
+
+* [Sabre Airline Solutions](http://www.sabreairlinesolutions.com/home/)
+* [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/)
+* [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/)
+* [Sandro Luck](https://github.com/SandroLuck/SonarDelphi)
+* [Fabricio Colombo](https://github.com/fabriciocolombo/sonar-delphi)
