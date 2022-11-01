@@ -2,6 +2,8 @@
 
 [Embarcadero](https://www.embarcadero.com/)'s officially version of the **Sonar Delphi** plugin for use to analyze [Delphi](https://www.embarcadero.com/products/delphi) source code with SonarQube. Working to collect updates and contributions from other versions into this one and move if forward with new features. Thanks to [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/), and [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/) for working with us on this, and everyone else who's contributed to the Sonar-Delphi projects on GitHub.
 
+![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(black%20text).svg#gh-light-mode-only)![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(white%20text).svg#gh-dark-mode-only)
+
 # SonarQube Delphi
 
 Is a [SonarQube](http://www.sonarqube.org/) plugin that provides
