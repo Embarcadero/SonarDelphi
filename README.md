@@ -179,6 +179,6 @@ Note: it is important to make sure your new grammar changes are also tested. If 
 
 * [Sabre Airline Solutions](http://www.sabreairlinesolutions.com/home/)
 * [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/)
-* [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/)
+* [Laurens van Run](https://github.com/Laurensvanrun) of [MendriX](http://www.mendrix.nl/)
 * [Sandro Luck](https://github.com/SandroLuck/SonarDelphi)
 * [Fabricio Colombo](https://github.com/fabriciocolombo/sonar-delphi)
