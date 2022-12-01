@@ -2,6 +2,8 @@
 
 [Embarcadero](https://www.embarcadero.com/)'s officially version of the **Sonar Delphi** plugin for use to analyze [Delphi](https://www.embarcadero.com/products/delphi) source code with SonarQube. Working to collect updates and contributions from other versions into this one and move if forward with new features. Thanks to [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/), and [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/) for working with us on this, and everyone else who's contributed to the Sonar-Delphi projects on GitHub.
 
+We are accepting pull requests and looking for more contributors. 
+
 ![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(black%20text).svg#gh-light-mode-only)![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(white%20text).svg#gh-dark-mode-only)
 
 # SonarQube Delphi
@@ -163,11 +165,11 @@ Now you attach your Eclipse (or other) debugger to port 8000 to start debugging.
 
 ## Changing the grammar with ANLTRWorks
 
-The plugin uses an ANTLR3 grammar to parse the Delphi language. The grammar definition can be found in **/src/main/antlr3/org/sonar/plugins/delphi/antlr/delphi.g**. An easy way to check and modify this grammar is using [ANTLRWorks](https://www.antlr3.org/works/). Here you can test your grammar on new files and implement new language definitions.
+The plugin uses an ANTLR3 grammar to parse the Delphi language. The [grammar definition](https://github.com/Embarcadero/SonarDelphi/blob/main/src/main/antlr3/org/sonar/plugins/delphi/antlr/Delphi.g) can be found in `/src/main/antlr3/org/sonar/plugins/delphi/antlr/delphi.g`. An easy way to check and modify this grammar is using [ANTLRWorks](https://www.antlr3.org/works/). Here you can test your grammar on new files and implement new language definitions.
 
-After successfully changing and testing the Delphi.g grammar you have to generate the new parser code (menu Generate, option Generate Code). Now copy the files **DelphiLexer.java** and **DelphiParser.java** from **/src/main/antlr3/org/sonar/plugins/delphi/antlr/output/** to **/src/main/java/org/sonar/plugins/delphi/antlr/** and (re)build the plugin.
+After successfully changing and testing the Delphi.g grammar you have to generate the new parser code (menu Generate, option Generate Code). Now copy the files **DelphiLexer.java** and **DelphiParser.java** from `/src/main/antlr3/org/sonar/plugins/delphi/antlr/output/` to `/src/main/java/org/sonar/plugins/delphi/antlr/` and (re)build the plugin.
 
-Note: it is important to make sure your new grammar changes are also tested. If you only have to make sure that they can be parsed without errors, you can add your new language features to one of the existing grammar files in **/src/main/java/org/sonar/plugins/delphi/antlr** (the newest is **GrammarTest2020.pas**).
+**Note:** it is important to make sure your new grammar changes are also tested. If you only have to make sure that they can be parsed without errors, you can add your new language features to one of the existing grammar files in **/src/main/java/org/sonar/plugins/delphi/antlr** (the newest is **GrammarTest2020.pas**).
 
 ## Credits and notable contributors
 
