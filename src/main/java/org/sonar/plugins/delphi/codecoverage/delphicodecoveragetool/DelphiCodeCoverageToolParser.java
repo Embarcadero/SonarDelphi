@@ -22,20 +22,17 @@
  */
 package org.sonar.plugins.delphi.codecoverage.delphicodecoveragetool;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.coverage.NewCoverage;
 import org.sonar.plugins.delphi.codecoverage.DelphiCodeCoverageParser;
 import org.sonar.plugins.delphi.core.helpers.DelphiProjectHelper;
 import org.sonar.plugins.delphi.utils.DelphiUtils;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
@@ -82,19 +79,19 @@ public class DelphiCodeCoverageToolParser implements DelphiCodeCoverageParser
 
   private void parseFileNode (SensorContext sensorContext, Node srcFile){
     String fileName = srcFile.getAttributes().getNamedItem("name").getTextContent();
+    String fileNameWithoutPath = Path.of(fileName).getFileName().toString();
     try {
-      InputFile sourceFile = delphiProjectHelper.findFileInDirectories(fileName);
-      NewCoverage newCoverage = sensorContext.newCoverage();
-      newCoverage.onFile(sourceFile);
+        InputFile sourceFile = delphiProjectHelper.findFileInDirectories(fileNameWithoutPath);
+        NewCoverage newCoverage = sensorContext.newCoverage();
+        newCoverage.onFile(sourceFile);
 
-      parseValue(srcFile.getTextContent(), newCoverage);
-      newCoverage.save();
+        parseValue(srcFile.getTextContent(), newCoverage);
+        newCoverage.save();
+    } catch (FileNotFoundException e) {
+        DelphiUtils.LOG.info("File not found in project " + fileNameWithoutPath);
     }
-    catch (FileNotFoundException e) {
-      DelphiUtils.LOG.info("File not found in project " + fileName);
-    }
+  }
 
- }
   private void parseReportFile(SensorContext sensorContext)
   {
     DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
