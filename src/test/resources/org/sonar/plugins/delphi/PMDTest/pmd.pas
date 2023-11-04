@@ -246,28 +246,28 @@ var
 	myClass: TSecondClass;
 begin
 	while i = 0 do				//should trigger a violation
-		with myClass do
+		with myClass do         //should trigger a violation
 		begin
 			myClass.WMPaint();
 		end;
 		
 	while i <> 0 do				//should NOT trigger a violation
 	begin				
-		with myClass do
+		with myClass do         //should trigger a violation
 		begin
 			myClass.WMPaint();
 		end;
 	end;
 	
 	if i = 0 then				//violation 
-		with myClass do
+		with myClass do         //should trigger a violation
 		begin
 			myClass.WMPaint();
 		end;
 		
 	if i = 0 then					//NO violation
 	begin 
-		with myClass do
+		with myClass do         //should trigger a violation
 		begin
 			myClass.WMPaint();
 		end;

@@ -625,4 +625,17 @@ x.Free;			//GOOD, sufficent enough
 		</properties>
 	</rule>
 
+	<rule since="" class="org.sonar.plugins.delphi.pmd.rules.WithRule" message="Do not use with statement, it's a bad practice."
+		  name="WithRule">
+		<description>According to Plenustech Style Guide whit should not be used.
+		</description>
+		<properties>
+			<property name="baseEffort">
+				<value>10min</value>
+			</property>
+			<property name="Threshold">
+				<value>10</value>
+			</property>
+		</properties>
+	</rule>
 </ruleset>
