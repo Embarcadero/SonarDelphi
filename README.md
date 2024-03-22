@@ -1,8 +1,19 @@
 ![Java CI with Maven](https://github.com/JAM-Software/SonarDelphi/workflows/Java%20CI%20with%20Maven/badge.svg)
 
+# Please Note
+This fork of SonarDelphi is now very out of date and has not had any contributions for a few years now.
+
+Embarcadero recommends that you adopt the fork found here: [https://github.com/integrated-application-development/sonar-delphi](https://github.com/integrated-application-development/sonar-delphi)
+
+Their fork has been accepted and adopted by SonarQube which is a maginificent achievement. 
+
+---
+
 [Embarcadero](https://www.embarcadero.com/)'s official version of the **Sonar Delphi** plugin for analyzing [Delphi](https://www.embarcadero.com/products/delphi) source code with SonarQube. Working to collect updates and contributions from other versions into this one and move if forward with new features. Thanks to [Joachim Marder](https://github.com/joachimmarder) of [JAM Software](http://www.jam-software.com/), and [Laurens van Run](https://github.com/Laurensvanrun) of [Mendrix](http://www.mendrix.nl/) for working with us on this, and everyone else who's contributed to the Sonar-Delphi projects on GitHub.
 
-We are accepting pull requests and looking for more contributors. 
+~~We are accepting pull requests and looking for more contributors.~~
+
+**We are no longer accepting pull requests.** We recommend you contribute to the above alternative repository.
 
 ![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(black%20text).svg#gh-light-mode-only)![SonarDelphi](https://raw.githubusercontent.com/Embarcadero/SonarDelphi/master/logos/SonarDelphi%20(white%20text).svg#gh-dark-mode-only)
 
