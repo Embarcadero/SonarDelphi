@@ -185,6 +185,8 @@ exportsSection               : 'exports' ident exportItem (',' ident exportItem)
                              ;
 exportItem                   : ('(' (formalParameterList)? ')')? (INDEX expression)? (NAME expression)? ('resident')?
                              ;
+inlineConstDeclaration       : 'const' ident (':' typeDecl)? '=' expression
+                             ;
 //****************************
 //section type
 //****************************
@@ -595,6 +597,7 @@ simpleStatement              : designator ':=' expression
                              | designator // call
                              | gotoStatement
                              | inlineVarDeclaration
+                             | inlineConstDeclaration
                              ;
 gotoStatement                : 'goto' label
                              | 'exit' ('(' expression ')')?
